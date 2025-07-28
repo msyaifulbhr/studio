@@ -38,6 +38,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
+import { saveCorrection } from "@/ai/flows/save-correction";
 import hsCodesData from "@/data/hs-codes.json";
 
 const formSchema = z.object({
@@ -80,12 +81,25 @@ export function HsCodeAnalyzer() {
     }
   }
 
-  const handleApprove = () => {
-    console.log("Feedback: Approved", { productName: form.getValues("productName"), hsCode: result?.hsCodeAndDescription });
-    toast({
-      title: "Terima Kasih!",
-      description: "Umpan balik Anda membantu kami menjadi lebih baik.",
-    });
+  const handleApprove = async () => {
+    // Optionally save the approved result for future learning
+    try {
+      await saveCorrection({
+        productName: form.getValues("productName"),
+        correctHsCode: result!.hsCodeAndDescription.split(' - ')[0],
+      });
+      toast({
+        title: "Terima Kasih!",
+        description: "Umpan balik Anda membantu kami menjadi lebih baik.",
+      });
+    } catch (error) {
+      console.error("Failed to save correction:", error);
+      toast({
+        title: "Kesalahan",
+        description: "Gagal menyimpan umpan balik. Silakan coba lagi.",
+        variant: "destructive",
+      });
+    }
     setFeedbackGiven(true);
   };
   
@@ -93,26 +107,39 @@ export function HsCodeAnalyzer() {
     setShowFeedbackDialog(true);
   }
 
-  const handleFeedbackSubmit = () => {
-    console.log("Feedback: Disapproved", { productName: form.getValues("productName"), wrongHsCode: result?.hsCodeAndDescription, correctHsCode });
-    
-    const correctedCodeEntry = hsCodesData.find(item => item.code === correctHsCode);
-    const correctedDescription = correctedCodeEntry ? correctedCodeEntry.description : 'Deskripsi tidak ditemukan';
-    
-    if (result) {
-      setResult({
-        ...result,
-        hsCodeAndDescription: `${correctHsCode} - ${correctedDescription}`,
-      });
-    }
+  const handleFeedbackSubmit = async () => {
+    try {
+        await saveCorrection({
+            productName: form.getValues("productName"),
+            correctHsCode: correctHsCode
+        });
 
-    toast({
-        title: "Terima Kasih Atas Koreksinya!",
-        description: `Kami telah mencatat bahwa kode yang benar adalah ${correctHsCode}.`,
-    });
-    setFeedbackGiven(true);
-    setShowFeedbackDialog(false);
-    setCorrectHsCode('');
+        const correctedCodeEntry = hsCodesData.find(item => item.code === correctHsCode);
+        const correctedDescription = correctedCodeEntry ? correctedCodeEntry.description : 'Deskripsi tidak ditemukan';
+        
+        if (result) {
+          setResult({
+            ...result,
+            hsCodeAndDescription: `${correctHsCode} - ${correctedDescription}`,
+          });
+        }
+
+        toast({
+            title: "Terima Kasih Atas Koreksinya!",
+            description: `Kami telah mencatat bahwa kode yang benar adalah ${correctHsCode}.`,
+        });
+        setFeedbackGiven(true);
+        setShowFeedbackDialog(false);
+        setCorrectHsCode('');
+
+    } catch (error) {
+        console.error("Failed to save correction:", error);
+        toast({
+          title: "Kesalahan",
+          description: "Gagal menyimpan koreksi Anda. Silakan coba lagi.",
+          variant: "destructive",
+        });
+    }
   };
 
   return (
