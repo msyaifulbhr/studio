@@ -40,14 +40,14 @@ const prompt = ai.definePrompt({
 
 Nama Produk: {{{productName}}}
 
-Berikut adalah daftar kemungkinan Kode HS dan deskripsinya:
+Berikut adalah daftar kemungkinan Kode HS dan deskripsinya dalam format 'KODE - Deskripsi':
 {{{hsCodes}}}
 
 Berdasarkan nama produk dan daftar di atas, berikan analisis, Kode HS, dan deskripsi kategori.
 
 Pastikan Kode HS hanya berisi angka, dan panjangnya 6 digit.
 
-Keluarkan Kode HS dan deskripsi kategori persis seperti yang ditunjukkan dalam daftar di atas.
+Keluarkan Kode HS dan deskripsi kategori persis seperti yang ditunjukkan dalam daftar di atas (tanpa menyertakan kode dalam deskripsi).
 
 Teks Analisis:
 Kode HS:
@@ -64,10 +64,25 @@ const classifyProductFlow = ai.defineFlow(
     const hsCodesPath = path.join(process.cwd(), 'src', 'data', 'hs-codes.csv');
     const hsCodesCsv = await fs.readFile(hsCodesPath, 'utf-8');
     
-    // Pass the CSV content directly to the prompt.
+    // Process CSV to create 'CODE - Description' format
+    const processedHsCodes = hsCodesCsv
+      .split('\n')
+      .slice(1) // Skip header row
+      .map(row => {
+        const [code, description] = row.split(',');
+        if (code && description) {
+          // Wrap description in quotes if it contains commas
+          const cleanDescription = description.includes(',') ? `"${description}"` : description;
+          return `${code.trim()} - ${cleanDescription.trim()}`;
+        }
+        return '';
+      })
+      .filter(Boolean) // Remove empty lines
+      .join('\n');
+
     const {output} = await prompt({
         productName: input.productName,
-        hsCodes: hsCodesCsv,
+        hsCodes: processedHsCodes,
     });
     return output!;
   }

@@ -1,5 +1,6 @@
 hs_code,description
+000000,"Barang"
+010000,"Binatang hidup"
+010100,"Kuda, keledai, bagal dan hinnie, hidup"
 010200,"Binatang hidup jenis lembu"
-847130,"Mesin pemproses data otomatis, portabel"
-902511,"Termometer, tidak dikombinasikan dengan peralatan lain"
-630790,"Kain lap"
+010300,"Babi hidup"
