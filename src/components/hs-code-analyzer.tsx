@@ -30,7 +30,7 @@ import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify
 
 const formSchema = z.object({
   productName: z.string().min(2, {
-    message: "Product name must be at least 2 characters.",
+    message: "Nama produk harus minimal 2 karakter.",
   }),
 });
 
@@ -55,8 +55,8 @@ export function HsCodeAnalyzer() {
     } catch (error) {
       console.error(error);
       toast({
-        title: "Error",
-        description: "Failed to classify the product. Please try again.",
+        title: "Kesalahan",
+        description: "Gagal mengklasifikasikan produk. Silakan coba lagi.",
         variant: "destructive",
       });
     } finally {
@@ -72,9 +72,9 @@ export function HsCodeAnalyzer() {
                 <Wand2 className="h-6 w-6 text-primary"/>
             </div>
             <div className="flex flex-col">
-                <CardTitle className="text-2xl font-headline">HS Code Analyzer</CardTitle>
+                <CardTitle className="text-2xl font-headline">Penganalisis Kode HS</CardTitle>
                 <CardDescription className="mt-1">
-                  Enter a product name to classify it using AI.
+                  Masukkan nama produk untuk mengklasifikasikannya menggunakan AI.
                 </CardDescription>
             </div>
         </div>
@@ -87,9 +87,9 @@ export function HsCodeAnalyzer() {
               name="productName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Product Name</FormLabel>
+                  <FormLabel>Nama Produk</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., live cattle, portable computer, or thermometer" {...field} />
+                    <Input placeholder="misalnya, sapi hidup, komputer portabel, atau termometer" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -99,10 +99,10 @@ export function HsCodeAnalyzer() {
               {isLoading ? (
                 <>
                   <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                  Analyzing...
+                  Menganalisis...
                 </>
               ) : (
-                "Analyze"
+                "Analisis"
               )}
             </Button>
           </form>
@@ -112,7 +112,7 @@ export function HsCodeAnalyzer() {
          <CardFooter>
             <div className="w-full flex flex-col items-center justify-center text-center p-8 space-y-2">
                 <Loader2 className="h-8 w-8 animate-spin text-primary"/>
-                <p className="text-muted-foreground">AI is thinking...</p>
+                <p className="text-muted-foreground">AI sedang berpikir...</p>
             </div>
          </CardFooter>
       )}
@@ -120,20 +120,20 @@ export function HsCodeAnalyzer() {
         <>
           <Separator className="my-0"/>
           <CardFooter className="flex flex-col items-start gap-4 pt-6">
-              <h3 className="text-xl font-semibold font-headline">Classification Result</h3>
+              <h3 className="text-xl font-semibold font-headline">Hasil Klasifikasi</h3>
               <div className="w-full space-y-4 rounded-lg border bg-muted/20 p-4">
                   <div>
-                      <h4 className="font-semibold text-primary">Analysis</h4>
+                      <h4 className="font-semibold text-primary">Analisis</h4>
                       <p className="text-muted-foreground mt-1">{result.analysisText}</p>
                   </div>
                   <Separator/>
                    <div className="flex justify-between items-center">
-                      <h4 className="font-semibold text-primary">HS Code</h4>
+                      <h4 className="font-semibold text-primary">Kode HS</h4>
                       <p className="font-mono text-lg text-primary bg-primary/10 px-3 py-1 rounded-md">{result.hsCode}</p>
                   </div>
                   <Separator/>
                    <div>
-                      <h4 className="font-semibold text-primary">Category Description</h4>
+                      <h4 className="font-semibold text-primary">Deskripsi Kategori</h4>
                       <p className="text-muted-foreground mt-1">{result.categoryDescription}</p>
                   </div>
               </div>
