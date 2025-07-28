@@ -36,6 +36,15 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
 import { saveCorrection } from "@/ai/flows/save-correction";
@@ -61,6 +70,8 @@ export function HsCodeAnalyzer() {
   const [correctHsCode, setCorrectHsCode] = useState('');
   const [currentItemForFeedback, setCurrentItemForFeedback] = useState<ResultWithOriginal | null>(null);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const [viewMode, setViewMode] = useState("card");
+
 
   const { toast } = useToast();
 
@@ -243,50 +254,84 @@ export function HsCodeAnalyzer() {
             </div>
         )}
 
-        {results && !isLoading && (
-            <div className="space-y-4">
-                {results.map((item, index) => (
-                    <Card key={index} className="shadow-lg rounded-2xl animate-in fade-in-50">
-                        <CardHeader>
-                            <CardTitle className="text-xl font-headline">
-                                Hasil Klasifikasi untuk: <span className="font-bold text-primary">{item.originalProductName}</span>
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="space-y-6">
-                            <div>
-                                <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Analisis AI</h4>
-                                <p className="text-foreground/80 mt-2">{item.analysisText}</p>
-                            </div>
-                            <Separator/>
-                            <div>
-                                <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Rekomendasi Kategori</h4>
-                                <p className="text-lg font-bold text-foreground/80 mt-2">{item.hsCodeAndDescription}</p>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            {!item.feedbackGiven ? (
-                            <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 py-4 border-t">
-                                <span className="text-sm font-medium text-muted-foreground">Apakah hasil ini sesuai?</span>
-                                <div className="flex gap-2">
-                                    <Button variant="outline" size="lg" onClick={() => handleApprove(item)} className="gap-2">
-                                        <ThumbsUp className="h-5 w-5 text-green-500"/>
-                                        <span>Setuju</span>
-                                    </Button>
-                                    <Button variant="outline" size="lg" onClick={() => handleDisapprove(item)} className="gap-2">
-                                        <ThumbsDown className="h-5 w-5 text-red-500"/>
-                                        <span>Tidak Setuju</span>
-                                    </Button>
-                                </div>
-                            </div>
-                            ) : (
-                                <div className="w-full text-center text-green-600 font-medium py-4 border-t">
-                                    <p>Terima kasih atas masukan Anda!</p>
-                                </div>
-                            )}
-                        </CardFooter>
-                    </Card>
-                ))}
-            </div>
+        {results && !isLoading && results.length > 0 && (
+          <Tabs defaultValue="card" className="w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="card">Tampilan Kartu</TabsTrigger>
+              <TabsTrigger value="table">Tampilan Tabel</TabsTrigger>
+            </TabsList>
+            <TabsContent value="card">
+              <div className="space-y-4 mt-4">
+                  {results.map((item, index) => (
+                      <Card key={index} className="shadow-lg rounded-2xl animate-in fade-in-50">
+                          <CardHeader>
+                              <CardTitle className="text-xl font-headline">
+                                  Hasil Klasifikasi untuk: <span className="font-bold text-primary">{item.originalProductName}</span>
+                              </CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-6">
+                              <div>
+                                  <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Analisis AI</h4>
+                                  <p className="text-foreground/80 mt-2">{item.analysisText}</p>
+                              </div>
+                              <Separator/>
+                              <div>
+                                  <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Rekomendasi Kategori</h4>
+                                  <p className="text-lg font-bold text-foreground/80 mt-2">{item.hsCodeAndDescription}</p>
+                              </div>
+                          </CardContent>
+                          <CardFooter>
+                              {!item.feedbackGiven ? (
+                              <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 py-4 border-t">
+                                  <span className="text-sm font-medium text-muted-foreground">Apakah hasil ini sesuai?</span>
+                                  <div className="flex gap-2">
+                                      <Button variant="outline" size="lg" onClick={() => handleApprove(item)} className="gap-2">
+                                          <ThumbsUp className="h-5 w-5 text-green-500"/>
+                                          <span>Setuju</span>
+                                      </Button>
+                                      <Button variant="outline" size="lg" onClick={() => handleDisapprove(item)} className="gap-2">
+                                          <ThumbsDown className="h-5 w-5 text-red-500"/>
+                                          <span>Tidak Setuju</span>
+                                      </Button>
+                                  </div>
+                              </div>
+                              ) : (
+                                  <div className="w-full text-center text-green-600 font-medium py-4 border-t">
+                                      <p>Terima kasih atas masukan Anda!</p>
+                                  </div>
+                              )}
+                          </CardFooter>
+                      </Card>
+                  ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="table">
+                <Card className="mt-4 shadow-lg rounded-2xl">
+                    <Table>
+                        <TableHeader>
+                            <TableRow>
+                                <TableHead className="font-bold">Nama Barang</TableHead>
+                                <TableHead className="font-bold">Kode HS</TableHead>
+                                <TableHead className="font-bold">Deskripsi</TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {results.map((item, index) => {
+                                const [hsCode, ...descriptionParts] = item.hsCodeAndDescription.split(' - ');
+                                const description = descriptionParts.join(' - ');
+                                return (
+                                    <TableRow key={index}>
+                                        <TableCell>{item.originalProductName}</TableCell>
+                                        <TableCell className="font-mono">{hsCode}</TableCell>
+                                        <TableCell>{description}</TableCell>
+                                    </TableRow>
+                                );
+                            })}
+                        </TableBody>
+                    </Table>
+                </Card>
+            </TabsContent>
+          </Tabs>
         )}
         
         <AlertDialog open={showFeedbackDialog} onOpenChange={setShowFeedbackDialog}>
@@ -313,7 +358,5 @@ export function HsCodeAnalyzer() {
     </div>
   );
 }
-
-    
 
     
