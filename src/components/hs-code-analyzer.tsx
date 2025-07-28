@@ -256,7 +256,7 @@ export function HsCodeAnalyzer() {
 
         {results && !isLoading && results.length > 0 && (
           <Tabs defaultValue="card" className="w-full">
-            <div className="flex justify-end">
+            <div className="flex justify-center">
               <TabsList>
                 <TabsTrigger value="card" aria-label="Tampilan Kartu">
                   <LayoutGrid className="h-5 w-5" />
@@ -364,5 +364,3 @@ export function HsCodeAnalyzer() {
     </div>
   );
 }
-
-    
