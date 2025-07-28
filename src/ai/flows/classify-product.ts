@@ -14,13 +14,13 @@ import fs from 'fs/promises';
 import path from 'path';
 
 const ClassifyProductInputSchema = z.object({
-  productName: z.string().describe('Nama produk yang akan diklasifikasikan.'),
+  productName: z.string().describe('Nama barang yang akan diklasifikasikan.'),
 });
 export type ClassifyProductInput = z.infer<typeof ClassifyProductInputSchema>;
 
 const ClassifyProductOutputSchema = z.object({
-  analysisText: z.string().describe('Analisis klasifikasi produk.'),
-  hsCodeAndDescription: z.string().describe('Kode HS 6-digit dan deskripsi yang digabungkan untuk produk. e.g. "100500 - Jagung"'),
+  analysisText: z.string().describe('Analisis klasifikasi barang.'),
+  hsCodeAndDescription: z.string().describe('Kode HS 6-digit dan deskripsi yang digabungkan untuk barang. e.g. "382200 - Reagen diagnosa atau laboratorium pada bahan pendukung, olahan reagen diagnosa atau laboratorium pada bahan pendukung maupun tidak, disiapkan dalam bentuk kit maupun tidak, selain yang dimaksud dalam pos 30.06； bahan referensi bersertifikat."'),
 });
 export type ClassifyProductOutput = z.infer<typeof ClassifyProductOutputSchema>;
 
@@ -37,7 +37,7 @@ const prompt = ai.definePrompt({
   output: {schema: ClassifyProductOutputSchema},
   prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code. Tugas Anda adalah untuk secara ketat mengklasifikasikan nama produk yang diberikan ke dalam Kode HS 6-digit yang PALING SESUAI dari daftar yang disediakan.
 
-PENTING: Anda HARUS memilih salah satu kode dari daftar di bawah ini. JANGAN gunakan pengetahuan eksternal atau sumber lain. Jika tidak ada kode dalam daftar yang cocok dengan produk, Anda HARUS mengembalikan "000000 - Barang" sebagai jawabannya.
+PENTING: Anda HARUS memilih salah satu kode dari daftar di bawah ini. JANGAN gunakan pengetahuan eksternal atau sumber lain. Jika tidak ada kode dalam daftar yang cocok dengan produk, Anda HARUS menyarankan "000000 - Barang" sebagai jawabannya.
 
 Nama Produk: {{{productName}}}
 

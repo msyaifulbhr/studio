@@ -1,10 +1,11 @@
+
 "use client";
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2 } from "lucide-react";
+import { Loader2, Wand2, ThumbsUp, ThumbsDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -24,19 +25,33 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
 
 const formSchema = z.object({
   productName: z.string().min(2, {
-    message: "Nama produk harus minimal 2 karakter.",
+    message: "Nama barang harus minimal 2 karakter.",
   }),
 });
 
 export function HsCodeAnalyzer() {
   const [result, setResult] = useState<ClassifyProductOutput | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [feedbackGiven, setFeedbackGiven] = useState(false);
+  const [showFeedbackDialog, setShowFeedbackDialog] = useState(false);
+  const [correctHsCode, setCorrectHsCode] = useState('');
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -49,6 +64,7 @@ export function HsCodeAnalyzer() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsLoading(true);
     setResult(null);
+    setFeedbackGiven(false);
     try {
       const classificationResult = await classifyProduct(values);
       setResult(classificationResult);
@@ -64,6 +80,32 @@ export function HsCodeAnalyzer() {
     }
   }
 
+  const handleApprove = () => {
+    // Logic to save the positive feedback can be added here in the future
+    console.log("Feedback: Approved", { productName: form.getValues("productName"), hsCode: result?.hsCodeAndDescription });
+    toast({
+      title: "Terima Kasih!",
+      description: "Umpan balik Anda membantu kami.",
+    });
+    setFeedbackGiven(true);
+  };
+  
+  const handleDisapprove = () => {
+    setShowFeedbackDialog(true);
+  }
+
+  const handleFeedbackSubmit = () => {
+    // Logic to save the corrective feedback can be added here
+    console.log("Feedback: Disapproved", { productName: form.getValues("productName"), wrongHsCode: result?.hsCodeAndDescription, correctHsCode });
+    toast({
+        title: "Terima Kasih Atas Koreksinya!",
+        description: `Kami telah mencatat bahwa kode yang benar adalah ${correctHsCode}.`,
+    });
+    setFeedbackGiven(true);
+    setShowFeedbackDialog(false);
+  };
+
+
   return (
     <Card className="w-full max-w-2xl shadow-2xl rounded-2xl">
       <CardHeader>
@@ -72,7 +114,7 @@ export function HsCodeAnalyzer() {
                 <Wand2 className="h-6 w-6 text-primary"/>
             </div>
             <div className="flex flex-col">
-                <CardTitle className="text-2xl font-headline">cari Kode HS</CardTitle>
+                <CardTitle className="text-2xl font-headline">Cari Kode HS</CardTitle>
                 <CardDescription className="mt-1">
                   Masukkan nama barang untuk mengklasifikasikannya
                 </CardDescription>
@@ -87,7 +129,7 @@ export function HsCodeAnalyzer() {
               name="productName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Nama Barang atau Jasa</FormLabel>
+                  <FormLabel>Nama Barang</FormLabel>
                   <FormControl>
                     <Input placeholder="misalnya, sapi hidup, komputer portabel, atau termometer" {...field} />
                   </FormControl>
@@ -132,9 +174,41 @@ export function HsCodeAnalyzer() {
                       <p className="font-bold text-muted-foreground mt-1">{result.hsCodeAndDescription}</p>
                   </div>
               </div>
+              {!feedbackGiven && (
+                <div className="w-full flex justify-end items-center gap-4 px-4">
+                    <span className="text-sm text-muted-foreground">Apakah hasil ini sesuai?</span>
+                    <Button variant="ghost" size="icon" onClick={handleApprove}>
+                        <ThumbsUp className="h-5 w-5 text-green-500"/>
+                    </Button>
+                    <Button variant="ghost" size="icon" onClick={handleDisapprove}>
+                        <ThumbsDown className="h-5 w-5 text-red-500"/>
+                    </Button>
+                </div>
+              )}
           </CardFooter>
         </>
       )}
+       <AlertDialog open={showFeedbackDialog} onOpenChange={setShowFeedbackDialog}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Bantu kami belajar</AlertDialogTitle>
+            <AlertDialogDescription>
+              Jika hasil klasifikasi tidak sesuai, mohon masukkan Kode HS yang benar. Ini akan sangat membantu kami meningkatkan akurasi AI.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <div className="py-4">
+            <Input 
+              placeholder="Masukkan Kode HS yang benar (contoh: 010200)"
+              value={correctHsCode}
+              onChange={(e) => setCorrectHsCode(e.target.value)}
+            />
+          </div>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Batal</AlertDialogCancel>
+            <AlertDialogAction onClick={handleFeedbackSubmit} disabled={!correctHsCode}>Kirim</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </Card>
   );
 }

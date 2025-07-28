@@ -18,5 +18,1185 @@
   {
     "code": "010300",
     "description": "Babi hidup"
+  },
+  {
+    "code": "010400",
+    "description": "Biri-biri dan kambing, hidup"
+  },
+  {
+    "code": "010500",
+    "description": "Unggas hidup, yaitu ayam dari spesies Gallus domesticus, bebek, angsa, kalkun dan ayam guinea"
+  },
+  {
+    "code": "010600",
+    "description": "Binatang hidup lainnya"
+  },
+  {
+    "code": "020000",
+    "description": "Daging dan sisa daging yang dapat dimakan"
+  },
+  {
+    "code": "020100",
+    "description": "Daging binatang jenis lembu, segar atau dingin"
+  },
+  {
+    "code": "020200",
+    "description": "Daging binatang jenis lembu, beku"
+  },
+  {
+    "code": "020300",
+    "description": "Daging babi, segar, dingin atau beku"
+  },
+  {
+    "code": "020400",
+    "description": "Daging bid-bid atau kamblng, segar, dingin atau beku"
+  },
+  {
+    "code": "020500",
+    "description": "Daging kuda, keledai, bagal atau hinnie, segar, dingin atau beku"
+  },
+  {
+    "code": "020600",
+    "description": "Sisa yang dapat dimakan dari binatang jenis lembu, babi, biri-biri, kambing, kuda, keledai, bagal atau hinnie, segar, dingin atau beku."
+  },
+  {
+    "code": "020700",
+    "description": "Daging dan sisanya yang dapat dimakan, dari unggas dari pos 01.05, segar, dingin atau beku"
+  },
+  {
+    "code": "020800",
+    "description": "Daging dan sisanya yang dapat dimakan dari binatang lainnya, segar, dingin atau beku"
+  },
+  {
+    "code": "020900",
+    "description": "Lemak babi tanpa daging dan lemak unggas, tidak dicairkan atau diekstraksi dengan cara lain, segar, dingin, beku, dlasinkan, dalam air garam, dikeringkan atau diasapi"
+  },
+  {
+    "code": "021000",
+    "description": "Daging dan sisanya yang dapat dimakan, diasinkan, dalam air garam, dikeringkan atau diasapi; tepung dan tepung kasar dari daging dan sisanya yang dapat dimakan"
+  },
+  {
+    "code": "030000",
+    "description": "lkan dan krustasea, moluska serta invertebrata air lainnya"
+  },
+  {
+    "code": "030100",
+    "description": "Ikan hidup"
+  },
+  {
+    "code": "030200",
+    "description": "Ikan, segar atau dingin, tidak termasuk potongan ikan tanpa tulang dan daging ikan lainnya dari pos 03.04"
+  },
+  {
+    "code": "030300",
+    "description": "Ikan beku, tidak termasuk potongan ikan tanpa tulang dan daging ikan lainnya dari pos 03.04"
+  },
+  {
+    "code": "030400",
+    "description": "Fillet dan daging ikan lainnya (dicincang maupun tidak), segar, dlngln atau beku"
+  },
+  {
+    "code": "030500",
+    "description": "lkan, dikeringkan, diasinkan atau dalam air garam; lkan diasapi, dimasak maupun tidak sebelum atau selama proses pengasapan"
+  },
+  {
+    "code": "030600",
+    "description": "Krustasea, bercangkang maupun tidak, hidup, segar, dingin, beku, dikeringkan, diasinkan atau dalam air garam; krustasea diasapi, dimasak maupun tidak sebelum atau selama proses pengasapan; krustasea, bercangkang, dikukus atau direbus, dingin, beku., dilr:eringkan, diasinkan atau dalam air garam maupun tidak"
+  },
+  {
+    "code": "030700",
+    "description": "Moluska, bercangkang maupun tidak, hidup, segar, dingin, beku, dikeringkan, diasinkan atau dalam air garam; moluska diasapi, bercangkang maupun tidak, dimasak maupun tidak sebelum atau selama proses pengasapan"
+  },
+  {
+    "code": "030800",
+    "description": "Invertebrata air selain krustasea dan moluska, hidup, segar, dingin, beku, dikeringkan, diasinkan atau dalam air garam; Invertebrata air selain krustasea dan moluska diasapi, dimasak maupun tidak sebelum atau selama proses pengasapan"
+  },
+  {
+    "code": "030900",
+    "description": "Tepung, tepung kasar dan pellet dari ikan atau krustasea, moluska atau invertebrata air lainnya, layak untuk dikonsumsi manusia"
+  },
+  {
+    "code": "040000",
+    "description": "Produk susu; telur unggas; madu alam; produk hewani yang dapat dimakan, tidak dirinci atau termasuk dalam pos lain"
+  },
+  {
+    "code": "040100",
+    "description": "Susu dan kepala susu, tidak dipekatkan maupun tidak mengandung tambahan gula atau bahan pemanis lainnya"
+  },
+  {
+    "code": "040200",
+    "description": "Susu dan kepala susu, dipekatkan atau mengandung tambahan gula atau bahan pemanis lainnya"
+  },
+  {
+    "code": "040300",
+    "description": "Yoghurt; susu mentega, susu dan kepala susu dikentalkan, kefir dan susu dan krim difermentasi atau diasamkan lainnya, dipekatkan atau mengandung tambahan gula atau bahan pemanis lainnya atau diberi rasa atau mengandung tambahan buah-buahan, kacang-kacangan atau kakao maupun tidak"
+  },
+  {
+    "code": "040400",
+    "description": "Whey, dipekatkan atau mengandung tambahan gula atau bahan pemanis lainnya maupun tidak; produk terdiri dari susu alam sebagai unsur utama, mengandung tambahan gula, bahan pemanis lainnya maupun tidak, tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "040500",
+    "description": "Mentega dan lemak serta minyak lainnya yang diperoleh dari susu; dairy spreads"
+  },
+  {
+    "code": "040600",
+    "description": "Keju dan dadih susu"
+  },
+  {
+    "code": "040700",
+    "description": "Telur unggas bercangkang, segar, diawetkan atau dimasak"
+  },
+  {
+    "code": "040800",
+    "description": "Telur unggas, tanpa cangkang, dan kuning telur, segar, dikeringkan, dikukus atau direbus, dibentuk, beku atau diawetkan secara lain, mengandung tambahan gula atau bahan pemanis lainnya maupun tidak"
+  },
+  {
+    "code": "040900",
+    "description": "Madu alam"
+  },
+  {
+    "code": "041000",
+    "description": "Serangga dan produk lainnya yang dapat dimakan berasal dari hewan, tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "050000",
+    "description": "Produk hewani, tidak dirinci atau termasuk dalam pos lain"
+  },
+  {
+    "code": "050100",
+    "description": "Rambut manusia, tidak dikerjakan, dicuci atau digosok maupun tidak; sisa rambut manusia."
+  },
+  {
+    "code": "050200",
+    "description": "Bulu dan bulu kasar dari babi, babi ternak atau babi hutan; bulu berang-berang dan bulu binatang lainnya yang dapat dibuat sikat; sisa dari bulu atau bulu kasar semacam itu."
+  },
+  {
+    "code": "050400",
+    "description": "Usus, kandung kemih dan lambung binatang (selain ikan), utuh dan potongannya, segar, dingin, beku, diasinkan, dalam air garam, kering atau diasapi."
+  },
+  {
+    "code": "050500",
+    "description": "Kulit dan bagian lainnya dari unggas, masih berbulu atau berbulu halus, bulu unggas dan bagiannya (pinggirannya dipangkas maupun tidak) dan bulu halus, tidak dikerjakan lebih lanjut selain dibersihkan, disucihamakan atau dikerjakan untuk pengawetan; bubuk dan sisa dari bulu atau bagiannya."
+  },
+  {
+    "code": "050600",
+    "description": "Tulang dan teras tanduk, tidak dikerjakan, dihilangkan lemaknya, dikerjakan secara sederhana (tetapi tidak dipotong menjadi berbentuk), dikerjakan dengan asam atau dihilangkan gelatinnya; bubuk dan sisa dari produk tersebut."
+  },
+  {
+    "code": "050700",
+    "description": "Gading, tempurung kura-kura, whalebone dan whalebone hair, tanduk, ranggah, kuku (binatang sejenis kuda atau sapi), kuku burung, cakar burung dan paruh burung, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dipotong menjadi berbentuk; bubuk dan sisa dari produk tersebut."
+  },
+  {
+    "code": "050800",
+    "description": "Koral dan barang serupa itu, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dikerjakan lebih lanjut; cangkang moluska, krustasea atau echinodermata dan cuttle-bone, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dipotong menjadi berbentuk, bubuk dan sisanya."
+  },
+  {
+    "code": "050900",
+    "description": "Ambar, kastor, jebat dan kesturi; kantaridi; empedu, kering maupun tidak; kelenjar dan produk binatang lainnya yang digunakan dalam olahan produk farmasi, segar, dingin, beku atau diawetkan sementara secara lain"
+  },
+  {
+    "code": "051000",
+    "description": "Ambar, kastor, jebat dan kesturi; kantaridi; empedu, kering maupun tidak; kelenjar dan produk binatang lainnya yang digunakan dalam olahan produk farmasi, segar, dingin, beku atau diawetkan sementara secara lain."
+  },
+  {
+    "code": "051100",
+    "description": "Produk hewani tidak dirinci atau termasuk dalam pos lain; binatang mati dari Bab 1 atau 3, tidak layak untuk dikonsumsi manusia."
+  },
+  {
+    "code": "060000",
+    "description": "Pohon hidup dan tanaman lainnya; umbi, akar dan sejenisnya; bunga potong dan daun ornamen"
+  },
+  {
+    "code": "060100",
+    "description": "Umbi, bonggol, akar berbonggol, batang dibawah tanah, tajuk dan akar tongkat, dorman, sedang tumbuh atau berbunga; tanaman dan akar chicory selain akar dari pos 12.12"
+  },
+  {
+    "code": "060200",
+    "description": "Tanaman hidup lainnya (termasuk akarnya), potongan dan cangkokan; sulur jamur"
+  },
+  {
+    "code": "060300",
+    "description": "Bunga dan kuncup bunga potong dari jenis yang cocok untuk karangan bunga atau untuk keperluan pajangan, segar, dikeringkan, dicelup, dikelantang, diresapi, atau dikerjakan secara lain"
+  },
+  {
+    "code": "060400",
+    "description": "Daun, dahan dan bagian lainnya dari tanaman, tanpa bunga atau kuncup bunga, dan rumput, lumut mosse dan lumut lichen, dari jenis yang cocok untuk karangan bunga atau keperluan pajangan, segar, dikeringkan, dicelup, dikelantang, diresapi atau diolah secara lain"
+  },
+  {
+    "code": "070000",
+    "description": "Sayuran dan akar serta bonggol tertentu yang dapat dimakan"
+  },
+  {
+    "code": "070100",
+    "description": "Kentang, segar atau dingin"
+  },
+  {
+    "code": "070200",
+    "description": "Tomat, segar atau dingin"
+  },
+  {
+    "code": "070300",
+    "description": "Bawang bombay, bawang merah, bawang putih, bawang bakung/perai dan sayuran sejenis lainnya, segar atau dingin"
+  },
+  {
+    "code": "070400",
+    "description": "Kubis, bunga kol, kohlrabi, kale dan brassica sejenis yang dapat dimakan, segar atau dingin"
+  },
+  {
+    "code": "070500",
+    "description": "Selada {Lactuca sativa) dan chicory (Cichorium spp.), segar atau dingin"
+  },
+  {
+    "code": "070600",
+    "description": "Wortel, lobak cina, akar bit untuk salad, salsify, celeriac, lobak dan akar sejenis yang dapat dimakan, segar atau dingin"
+  },
+  {
+    "code": "070700",
+    "description": "Ketimun dan ketimun acar, segar atau dingin"
+  },
+  {
+    "code": "070800",
+    "description": "Sayuran polongan, dikupas atau tidak, segar atau dingin"
+  },
+  {
+    "code": "070900",
+    "description": "Sayuran lainnya, segar atau dingin"
+  },
+  {
+    "code": "071000",
+    "description": "Sayuran (tidak dimasak atau dimasak dengan dikukus atau direbus), beku"
+  },
+  {
+    "code": "071100",
+    "description": "Sayuran yang diawetkan sementara, tetapi tidak cocok untuk konsumsi langsung"
+  },
+  {
+    "code": "071200",
+    "description": "Sayuran dikeringkan, utuh, potongan, irisan, patahan atau dalam bentuk bubuk, tetapi tidak diolah lebih lanjut"
+  },
+  {
+    "code": "071300",
+    "description": "Sayuran polongan dikeringkan, dikupas, dikuliti atau dibelah maupun tidak"
+  },
+  {
+    "code": "071400",
+    "description": "Ubi kayu, arrowroot, salep, Jerusalem artichokes, ubi jalar serta akar-akaran dan bonggol-bonggolan semacam itu yang mengandung banyak pati atau inulin, segar, dingin, beku atau dikeringkan, dalam bentuk irisan maupun tidak atau dalam bentuk pelet; empulur sagu"
+  },
+  {
+    "code": "080000",
+    "description": "Buah dan buah bertempurung yang dapat dimakan; kulit dari buah jeruk atau melon"
+  },
+  {
+    "code": "080100",
+    "description": "Kelapa, kacang Brasil dan kacang mede, segar atau dikeringkan, \u00a0dihilangkan tempurungnya atau dikupas maupun tidak"
+  },
+  {
+    "code": "080200",
+    "description": "Buah bertempurung lainnya, segar atau dikeringkan, dihilangkan tempurungnya atau dikupas maupun tidak"
+  },
+  {
+    "code": "080300",
+    "description": "Pisang, termasuk pisang yang tidak cocok dikonsumsi langsung sebagai buah, segar atau dikeringkan"
+  },
+  {
+    "code": "080400",
+    "description": "Korma, buah ara, nanas, alpokat, jambu, mangga, dan manggis, segar atau dikeringkan"
+  },
+  {
+    "code": "080500",
+    "description": "Buah jeruk, segar atau dikeringkan"
+  },
+  {
+    "code": "080600",
+    "description": "Anggur, segar atau dikeringkan"
+  },
+  {
+    "code": "080700",
+    "description": "Melon (termasuk semangka) dan papaws (pepaya), segar"
+  },
+  {
+    "code": "080800",
+    "description": "Apel, pir dan quince, segar"
+  },
+  {
+    "code": "080900",
+    "description": "Aprikot, ceri, persik (termasuk nektarln), plum dan sloe, segar"
+  },
+  {
+    "code": "081000",
+    "description": "Buah lainnya, segar"
+  },
+  {
+    "code": "081100",
+    "description": "Buah dan buah bertempurung, tidak dimasak atau dimasak dengan cara dikukus atau direbus, beku, mengandung tambahan gula atau bahan pemanis lainnya maupun tidak"
+  },
+  {
+    "code": "081200",
+    "description": "Buah dan buah bertempurung diawetkan sementara, tetapi tidak cocok untuk konsumsi langsung"
+  },
+  {
+    "code": "081300",
+    "description": "Buah, kering, selain yang disebut dalam pos 08.01 sampai dengan 08.06; campuran dari buah bertempurung atau buah kering dari Bab ini"
+  },
+  {
+    "code": "081400",
+    "description": "Kulit buah jeruk atau melon (termasuk semangka), segar, beku, dikeringkan atau diawetkan sementara dalam air garam, air belerang atau dalam larutan pengawet lainnya"
+  },
+  {
+    "code": "090000",
+    "description": "Kopi, teh, mate dan rempah-rempah"
+  },
+  {
+    "code": "090100",
+    "description": "Kopi, digongseng atau dihilangkan kafeinnya maupun tidak; sekam dan kulit kopi; pengganti kopi mengandung kopi dengan \u00a0perbandingan berapapun"
+  },
+  {
+    "code": "090200",
+    "description": "Teh, diberl rasa maupun tidak"
+  },
+  {
+    "code": "090300",
+    "description": "Mate"
+  },
+  {
+    "code": "090400",
+    "description": "Lada dari genus Piper; buah dari genus Capsicum atau dari genus Pimenta yang dikeringkan atau dihancurkan atau ditumbuk"
+  },
+  {
+    "code": "090500",
+    "description": "Vanila"
+  },
+  {
+    "code": "090600",
+    "description": "Kayu manis dan bunga kayu manis"
+  },
+  {
+    "code": "090700",
+    "description": "Cengkeh (utuh, bunga dan tangkai)."
+  },
+  {
+    "code": "090800",
+    "description": "Biji pale, bunga pala dan kapulaga"
+  },
+  {
+    "code": "090900",
+    "description": "Biji adas manis, badian, adas pedas, ketumbar, jintan hitam atau jintan; buah juniper"
+  },
+  {
+    "code": "091000",
+    "description": "Jahe, saffron, turmeric (curcuma), thyme, daun salam, kari dan rempah-rempah lainnya"
+  },
+  {
+    "code": "100000",
+    "description": "Serealia"
+  },
+  {
+    "code": "100100",
+    "description": "Gandum dan meslin"
+  },
+  {
+    "code": "100200",
+    "description": "Gandum hitam"
+  },
+  {
+    "code": "100300",
+    "description": "Barli"
+  },
+  {
+    "code": "100400",
+    "description": "Oat"
+  },
+  {
+    "code": "100500",
+    "description": "Jagung"
+  },
+  {
+    "code": "100600",
+    "description": "Beras"
+  },
+  {
+    "code": "100700",
+    "description": "Butiran sorghum"
+  },
+  {
+    "code": "100800",
+    "description": "Buckwheat, millet dan biji canary; serealia lainnya."
+  },
+  {
+    "code": "110000",
+    "description": "Produk industri penggilingan; malt; pati; inulin; gluten gandum"
+  },
+  {
+    "code": "110100",
+    "description": "Tepung gandum atau tepung meslin"
+  },
+  {
+    "code": "110200",
+    "description": "Tepung serelia selain gandum atau meslin"
+  },
+  {
+    "code": "110300",
+    "description": "Menir, tepung kasar dan pelet serelia"
+  },
+  {
+    "code": "110400",
+    "description": "Butir serealia dikerjakan secara lain (misalnya, dikuliti, digiling, dipipihkan, dikikis, diiris atau dipecah), kecuali beras dari pos 10.06; lembaga serealia, utuh, digiling, dipipihkan atau ditumbuk"
+  },
+  {
+    "code": "110500",
+    "description": "Tepung, tepung kasar, bubuk, serpih, butir dan pelet kentang"
+  },
+  {
+    "code": "110600",
+    "description": "Tepung, tepung kasar dan bubuk dari sayuran polongan dikeringkan dari pos 07.13, dari sagu atau dari akar atau bonggol dari pos 07.14 atau dari produk Bab 8."
+  },
+  {
+    "code": "110700",
+    "description": "Malt, digongseng maupun tidak"
+  },
+  {
+    "code": "110800",
+    "description": "Pati; inulin"
+  },
+  {
+    "code": "110900",
+    "description": "Gluten gandum, dikeringkan maupun tidak"
+  },
+  {
+    "code": "120000",
+    "description": "Biji dan buah mengandung minyak; bermacam macam butir, biji dan buah; tanaman industri atau tanaman obat; jerami dan makanan ternak"
+  },
+  {
+    "code": "120100",
+    "description": "Kacang kedelai, pecah maupun tidak"
+  },
+  {
+    "code": "120200",
+    "description": "Kacang tanah, tidak digongseng atau dimasak secara lain, dihilangkan tempurungnya atau pecah maupun tidak"
+  },
+  {
+    "code": "120300",
+    "description": "Kopra"
+  },
+  {
+    "code": "120400",
+    "description": "Biji rami, pecah maupun tidak"
+  },
+  {
+    "code": "120500",
+    "description": "Biji lobak atau colza, pecah maupun tidak"
+  },
+  {
+    "code": "120600",
+    "description": "Biji bunga matahari, pecah maupun tidak"
+  },
+  {
+    "code": "120700",
+    "description": "Biji dan buah lainnya yang mengandung minyak, pecah maupun tidak"
+  },
+  {
+    "code": "120800",
+    "description": "Tepung halus dan tepung kasar dari biji atau buah yang mengandung minyak, selain mustar"
+  },
+  {
+    "code": "120900",
+    "description": "Biji, &ult dan spora, dari jenis yang digunakan untuk disemai"
+  },
+  {
+    "code": "121000",
+    "description": "Kerucut buah hop, segar atau dikeringkan, ditumbuk, dijadikan bubuk atau dalam bentuk pelet maupun tidak; lupulin"
+  },
+  {
+    "code": "121100",
+    "description": "Tanaman dan bagiannya (termasuk biji dan buah), yang terutama dipakai dalam pembuatan wewangian, dalam farmasi atau untuk insektisida, fungisida atau untuk tujuan yang semacam itu, segar, didinginkan, beku atau dikeringkan, baik dipotong, dihancurkan atau dijadikan bubuk maupun tidak"
+  },
+  {
+    "code": "121200",
+    "description": "Kacang karob, rumput laut dan ganggang lainnya, bit gula dan tebu, segar, dingin, beku atau dikeringkan, ditumbuk maupun tldak; kulit keras buah dan kernel serta produk nabati lainnya (termasuk akar chicory yang tidak digongseng dari varietas Cichorium intybus sativum) dari jenis yang terutama digunakan untuk konsumsi manusia, tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "121300",
+    "description": "Jerami dan sekam serealia, tidak diolah, balk dicacah, ditumbuk, ditekan atau dalam bentuk pelet maupun tidak"
+  },
+  {
+    "code": "121400",
+    "description": "Swedes (sejenis lobak), mangold (sejenis bit), akar makanan ternak, rumput kering, lucerne (alfalfa), semanggi, sainfoin, Kale makanan ternak, lupine, Vetch dan produk makanan ternak sejenis lainnya, dalam bentuk pelet maupun tidak"
+  },
+  {
+    "code": "130000",
+    "description": "Lak; getah, damar dan sap serta ekstrak nabati lainnya"
+  },
+  {
+    "code": "130100",
+    "description": "Lak; getah alam, damar, getah-damar dan oleoresins (misalnya, getah balsem)"
+  },
+  {
+    "code": "130200",
+    "description": "Sap dan ekstrak nabati; zat pektik, pektinat dan pektat; Agar-agar dan lendir serta bahan pengental lainnya, dimodifikasi maupun tidak, berasal dari produk nabati"
+  },
+  {
+    "code": "140000",
+    "description": "Bahan anyaman nabati; produk nabati tidak dirinci atau termasuk dalam pos lain"
+  },
+  {
+    "code": "140100",
+    "description": "Bahan nabati dari jenis yang terutama dipakai untuk anyam-anyaman (misalnya, bambu, rotan, buluh, kumbuh, osier, rafia, jerami serealia dibersibkan, dikelantang atau dicelup, dan kulit pohon limau)"
+  },
+  {
+    "code": "140400",
+    "description": "Produk nabati tidak dirinci atau termasuk pos lainnya"
+  },
+  {
+    "code": "150000",
+    "description": "Lemak dan minyak hewani atau nabati serta produk disosiasinya; lemak olahan yang dapat dimakan; malam hewani atau malam nabati"
+  },
+  {
+    "code": "150100",
+    "description": "Lemak babi (termasuk lard) dan lemak unggas, selain dari pos 02.09 atau 15.03"
+  },
+  {
+    "code": "150200",
+    "description": "Lemak dari binatang jenis lembu, biri-biri atau kambing, selain pos 15.03"
+  },
+  {
+    "code": "150300",
+    "description": "Lard stearin, minyak lard, oleostearin, minyak oleo dan minyak tallow, tidak diemulsi atau dicampur atau diolah dengan cara lain"
+  },
+  {
+    "code": "150400",
+    "description": "Lemak dan minyak serta fraksinya, dari ikan atau binatang laut menyusui, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "150500",
+    "description": "Wool grease dan zat lemak turunannya (termasuk lanolin)."
+  },
+  {
+    "code": "150600",
+    "description": "Lemak dan minyak binatang lainnya serta fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "150700",
+    "description": "Minyak kacang kedelai dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "150800",
+    "description": "Minyak kacang tanah dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "150900",
+    "description": "Minyak zaitun dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "151000",
+    "description": "Minyak lain dan fraksinya, diperoleh semata-mata dari zaitun, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia, termasuk campuran dari beberapa minyak atau fraksinya dengan minyak atau fraksi dari pos 15.09"
+  },
+  {
+    "code": "151100",
+    "description": "Minyak kelapa sawit dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "151200",
+    "description": "Minyak biji bunga matahari, safflower atau biji kapas dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "151300",
+    "description": "Minyak kelapa (kopra), kernel kelapa sawit atau babassu dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikaid secara kimia"
+  },
+  {
+    "code": "151400",
+    "description": "Minyak lobak, colza atau mustar dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "151500",
+    "description": "Lemak dan minyak nabati atau mikroba tertentu lainnya (termasuk minyak jojoba) dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+  },
+  {
+    "code": "151600",
+    "description": "Lemak dan minyak hewani, nabati atau mikroba dan fraksinya, sebagian atau seluruhnya dihidrogenasi, diinter-esterifikasi, \u00a0re-esterifikasi atau dielaidinisasi, dimurnikan maupun tidak, tetapi tidak diolah lebih lanjut"
+  },
+  {
+    "code": "151700",
+    "description": "Margarin; campuran atau olahan yang \u00a0dapat dimakan dari lemak atau minyak hewani, nabati atau mikroba atau dari fraksi lemak atau minyak yang berbeda dalam bab ini, selain lemak dan minyak yang dapat dimakan atau fraksinya dari pos 15.16"
+  },
+  {
+    "code": "151800",
+    "description": "Lemak dan minyak hewani, nabati atau mikroba serta fraksinya, dipanaskan, dioksidasi, didehidrasi, disulfurisasi, ditiup, dipolimerisasi dengan panas dalam hampa udara atau dalam gas inert atau dimodifikasi secara kimia lainnya, tidak termasuk dari pos 15.16; olahan atau campuran yang tidak dapat dimakan dari lemak atau minyak hewani, nabati atau mlkroba atau dari fraksi lemak atau minyak yang berbeda dalam Bab ini, tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "152000",
+    "description": "Gliserol, mentah; air gliserol dan larutan alkali gliserol"
+  },
+  {
+    "code": "152100",
+    "description": "Malam nabati (selain trigliserida), malam lebah, malam serangga lainnya dan spermaceti, dimurnikan atau diwarnai maupun tidak"
+  },
+  {
+    "code": "152200",
+    "description": "Degra; residu yang diperoleh dari pengolahan zat berlemak atau malam hewani atau nabati"
+  },
+  {
+    "code": "160000",
+    "description": "Olahan dari daging, dari ikan, dari krustasea, moluska atau invertebrata air lainnya"
+  },
+  {
+    "code": "160100",
+    "description": "Sosis dan produk semacamnya, dari daging, sisa daging, darah atau serangga; olahan makanan berasal dari produk ini"
+  },
+  {
+    "code": "160200",
+    "description": "Daging, sisa daging, darah atau serangga lainnya yang diolah atau diawetkan"
+  },
+  {
+    "code": "160300",
+    "description": "Ekstrak dan jus dari daging, ikan atau krustasea, moluska atau invertebrata air lainnya"
+  },
+  {
+    "code": "160400",
+    "description": "Ikan diolah atau diawetkan; kaviar dan pengganti kaviar yang diolah dari telur ikan"
+  },
+  {
+    "code": "160500",
+    "description": "Krustasea, moluska dan invertebrata air lainnya, diolah atau diawetkan"
+  },
+  {
+    "code": "170000",
+    "description": "Gula dan kembang gula"
+  },
+  {
+    "code": "170100",
+    "description": "Gula tebu atau gula bit dan sukrosa murni Jdmiawi, dalam bentuk padat"
+  },
+  {
+    "code": "170200",
+    "description": "Gula lainnya, termasuk laktosa, maltosa, glukosa dan fruktosa murni kimiawi, dalam bentuk padat; sirop gula tidak mengandung tambahan bahan perasa atau pewarna; madu artifisial, dicampur dengan madu alam maupun tidak; karamel"
+  },
+  {
+    "code": "170300",
+    "description": "Tetes hasil dari ekstraksi atau pemurnian gula"
+  },
+  {
+    "code": "170400",
+    "description": "Kembang gula (termasuk coklat putih), tidak mengandung kakao"
+  },
+  {
+    "code": "180000",
+    "description": "Kakao dan olahan kakao"
+  },
+  {
+    "code": "180100",
+    "description": "Biji kakao, utuh atau pecah, mentah atau digongseng"
+  },
+  {
+    "code": "180200",
+    "description": "Kulit, sekam, selaput dan sisa kakao lainnya"
+  },
+  {
+    "code": "180300",
+    "description": "Pasta kakao, dihilangkan lemaknya maupun tidak"
+  },
+  {
+    "code": "180400",
+    "description": "Mentega, lemak dan minyak kakao"
+  },
+  {
+    "code": "180500",
+    "description": "Bubuk kakao, tidak mengandung tambahan gula a.tau bahan pemanis lainnya"
+  },
+  {
+    "code": "180600",
+    "description": "Coklat dan olahan makanan lainnya mengandung kakao."
+  },
+  {
+    "code": "190000",
+    "description": "Olahan dari serealia, tepung, pati atau susu; produk industri kue"
+  },
+  {
+    "code": "190100",
+    "description": "Ekstrak malt; olahan makanan dari tepung, menir, tepung kasar, pati atau ekstrak malt, tidak mengandung kakao atau mengandung kakao kurang dari 40 % menurut beratnya yang dihitung atas dasar kakao yang dihilangkan seluruh lemaknya, tidak dirinci atau termasuk pos lainnya; olahan makanan dari pos 04.01 sampai dengan 04.04, tidak mengandung kakao atau mengandung kakao kurang dari 5 % menurut beratnya yang dihitung atas dasar kakao yang dihilangkan seluruh lemaknya, tidak dirinci atau termasuk pos lainnya"
+  },
+  {
+    "code": "190200",
+    "description": "Pasta, dimasak atau diisi maupun tidak (dengan daging atau bahan lainnya) atau diolah secara lain, seperti spagheti, makaroni, mie, lasagna, gnocchi, ravioli, cannelloni; couscous, diolah maupun tidak"
+  },
+  {
+    "code": "190300",
+    "description": "Tapioka dan penggantinya diolah dari \u00a0pati, dalam bentuk serpih, butir, pearls, hasll ayakan atau bentuk semacam itu"
+  },
+  {
+    "code": "190400",
+    "description": "Makanan olahan diperoleh dengan cara menggembungkan atau menggongseng serealia atau produk serealia (misalnya, keripik jagung); serealia (selain jagung), dalam bentuk butir atau serpih atau butir yang dikerjakan secara lain (kecuali tepung, menir dan tepung kasar), belum dimasak atau diolah secara lain, tidak dirinci atau termasuk pos lainnya"
+  },
+  {
+    "code": "190500",
+    "description": "Roti, kue kering, kue, biskuit dan produk roti lainnya, mengandung kakao maupun tidak; wafer komuni, selongsong kosong dari jenis yang cocok untuk keperluan farmasi, sealing wafers, rice paper dan produk yang semacam itu."
+  },
+  {
+    "code": "200000",
+    "description": "Olahan dari sayufan, buah, biji/kacang atau bagian lain dari tanaman"
+  },
+  {
+    "code": "200100",
+    "description": "Sayuran, buah, kacang dan bagian tanaman lainnya yang dapat dimakan, diolah atau diawetkan dengan cuka atau asam asetat"
+  },
+  {
+    "code": "200200",
+    "description": "Tomat diolah atau diawetkan selain dengan cuka atau asam asetat"
+  },
+  {
+    "code": "200300",
+    "description": "Jamur dan cendawan tanah, diolah atau diawetkan selain dengan cuka atau asam asetat"
+  },
+  {
+    "code": "200400",
+    "description": "Sayuran lainnya yang diolah atau diawetkan selain dengan cuka atau asam asetat, beku, selain produk dari pos 20.06"
+  },
+  {
+    "code": "200500",
+    "description": "Sayuran lainnya yang diolah atau diawetkan selain dengan cuka atau asam asetat, tidak beku, selain produk dari pos 20.06."
+  },
+  {
+    "code": "200600",
+    "description": "Sayuran, buah, kacang, kulit buah dan bagian lain dari tanaman, diawetkan dengan gula (dikeringkan, dilapisi atau dikristalisasi)"
+  },
+  {
+    "code": "200700",
+    "description": "Selai, jell buah, marmelade, pure dan pasta dari buah atau kacang, diperoleh dari pemasakan, mengandung tambahan gula atau bahan pemanis lainnya maupun tidak"
+  },
+  {
+    "code": "200800",
+    "description": "Buah, kacang dan bagian tanaman lainnya yang dapat dimakan, diolah atau diawetkan secara lain, mengandung tambahan gula atau bahan pemanis lainnya atau alkohol maupun tidak, tidak dirinci atau termasuk pos lainnya"
+  },
+  {
+    "code": "200900",
+    "description": "Jus buah atau buah bertempurung (termasuk grape must dan air kelapa) dan jus sayuran, tidak difermentasi dan tidak mengandung tambahan alkohol, mengandung tambahan gula atau pemanis lainnya maupun tidak"
+  },
+  {
+    "code": "210000",
+    "description": "Bermacam-macam olahan yang dapat dimakan"
+  },
+  {
+    "code": "210100",
+    "description": "Ekstrak, esens dan konsentrat, dari kopi, teh atau mate, dan olahan dengan dasar produk ini atau dengan dasar kopi, teh atau mate; chicory digongseng dan pengganti kopi yang digongseng lainnya, dan ekstrak, esens dan konsentratnya"
+  },
+  {
+    "code": "210200",
+    "description": "Ragi (aktif atau tidak aktif); mikro-organisme bersel tunggal lainnya, mati (tetapi tidak termasuk vaksin dari pos 30.02); bubuk pengembang roti"
+  },
+  {
+    "code": "210300",
+    "description": "Saus dan olahannya; campuran bahan penyedap dan campuran bumbu; tepung mustar dan tepung kasar mustar serta mustar olahan"
+  },
+  {
+    "code": "210400",
+    "description": "Sop dan kaldu serta olahannya; olahan makanan campuran homogen"
+  },
+  {
+    "code": "210500",
+    "description": "Es krim dan es lainnya yang dapat dimakan, mengandung kakao maupun tidak"
+  },
+  {
+    "code": "210600",
+    "description": "Olahan makanan yang tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "220000",
+    "description": "Minuman, alkohol dan cuka"
+  },
+  {
+    "code": "220100",
+    "description": "Air, termasuk air mineral alam atau artiflsial dan air soda, tidak mengandung tambahan gula atau bahan pemanis lainnya maupun pemberi rasa; es dan salju"
+  },
+  {
+    "code": "220200",
+    "description": "Air, termasuk air mineral dan air soda, mengandung tambahan gula atau bahan pemanis lainnya atau pemberi rasa, dan minuman yang tidak mengandung alkohol lainnya, tidak termasuk jus buah, buah bertempurung atau sayuran dari pos 20.09"
+  },
+  {
+    "code": "220300",
+    "description": "Bir terbuat dari malt"
+  },
+  {
+    "code": "220400",
+    "description": "Minuman fermentasi (wine) dari buah anggur segar, termasuk minuman fermentasi (wine) yang diperkuat; grape must selain dari pos 20.09."
+  },
+  {
+    "code": "220500",
+    "description": "Vermouth dan minuman fermentasi lainnya dari buah anggur segar yang diberi rasa dengan zat nabati atau zat beraroma"
+  },
+  {
+    "code": "220600",
+    "description": "Minuman fermentasi lainnya (misalnya, fermentasi buah apel, buah pir, larutan madu dalam air, sake); campuran minuman fermentasi dan campuran minuman fermentasi dengan minuman yang tidak mengandung alkohol, tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "220700",
+    "description": "Etil alkohol yang tidak didenaturasi dengan kadar alkohol 80 % atau lebih menurut volumenya; etil alkohol dan alkohol lainnya, didenaturasi berapapun kadarnya"
+  },
+  {
+    "code": "220800",
+    "description": "Etil alkohol yang tidak didenaturasi dengan kadar alkohol kurang dari 80 % menurut volumenya; alkohol, sopi manis dan minuman beralkohol lainnya"
+  },
+  {
+    "code": "220900",
+    "description": "Cuka dan pengganti cuka diperoleh dari asam asetat"
+  },
+  {
+    "code": "230000",
+    "description": "Residu dan sisa dari industri makanan; olahan makanan hewan"
+  },
+  {
+    "code": "230100",
+    "description": "Tepung, tepung kasar dan pelet, dari daging atau sisanya, dari ikan atau krustasea, moluska atau invertebrata air lainnya, tidak layak untuk dikonkumsi manusia; greaves"
+  },
+  {
+    "code": "230200",
+    "description": "Sekam, dedak dan residu lainnya, berbentuk pelet maupun tidak, berasal dari pengayakan, penggilingan atau pengerjaan lainnya dari serealia atau dari tanaman polongan"
+  },
+  {
+    "code": "230300",
+    "description": "Residu dari pembuatan pati dan residu semacam itu, pulp bit, ampas tebu dan sisa lainnya dari pembuatan gula, endapan dan sisa pembuatan bir atau penyulingan, berbentuk pelet maupun tidak"
+  },
+  {
+    "code": "230400",
+    "description": "Bungkil dan residu padat lainnya, ditumbuk maupun tidak atau berbentuk pelet, basil dari ekstraksi minyak kacang kedelai"
+  },
+  {
+    "code": "230500",
+    "description": "Bungkil dan residu padat lainnya, ditumbuk maupun tidak atau berbentuk pelet, basil dari ekstraksi minyak kacang tanah"
+  },
+  {
+    "code": "230600",
+    "description": "Bungkil dan residu padat lainnya, ditumbuk maupun tidak atau berbentuk pelet, basil dari ekstraksi lemak atau minyak nabati atau mikroba selain dari pos 23.04 atau 23.05"
+  },
+  {
+    "code": "230700",
+    "description": "Endapan minuman fermentasi; kerak minuman fermentasi"
+  },
+  {
+    "code": "230800",
+    "description": "Bahan nabati dan sisa nabati, residu nabati dan hasil sampingannya, dalam bentuk pelet maupun tidak, dari jenis yang digunakan untuk makanan hewan, tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "230900",
+    "description": "Olahan dari jenis yang digunakan untuk makanan hewan"
+  },
+  {
+    "code": "240000",
+    "description": "Tembakau dan pengganti tembakau dipabrikasi"
+  },
+  {
+    "code": "240100",
+    "description": "Tembakau belum dipabrikasi; sisa tembakau"
+  },
+  {
+    "code": "240200",
+    "description": "Cerutu, cheroot, cerutu kecil dan sigaret, dari tembakau atau pengganti tembakau"
+  },
+  {
+    "code": "240300",
+    "description": "Tembakau dipabrlkasi lainnya dan pengganti tembakau dipabrikasi; tembakau \"dihomogenisasi\" atau \"dibentuk kembali\"; ekstrak dan esens tembakau"
+  },
+  {
+    "code": "240400",
+    "description": "Produk yang mengandung tembakau, tembakau dibentuk kembali, nikotin, atau pengganti tembakau atau nikotin, dimaksudkan untuk inhalasi tanpa pembakaran; produk mengandung nikotin lainnya yang dimaksudkan untuk memasukkan nikotin ke dalam tubuh manusia"
+  },
+  {
+    "code": "250000",
+    "description": "Garam; belerang; tanah dan batu; bahan pemlester, kapur dan semen"
+  },
+  {
+    "code": "250100",
+    "description": "Garam (termasuk garam meja dan garam didenaturasi) dan natrium klorida murni, dalam larutan air atau mengandung tambahan bahan anti-caking atau free-flowing maupuntidak; air laut"
+  },
+  {
+    "code": "250200",
+    "description": "Pirit besi tidak digongseng"
+  },
+  {
+    "code": "250300",
+    "description": "Belerang dari segala jenis, selain belerang sublimasi, belerang basil endapan dan belerang koloidal."
+  },
+  {
+    "code": "250400",
+    "description": "Grafit alam"
+  },
+  {
+    "code": "250500",
+    "description": "Pasir alam dari segala jenis, berwarna maupun tidak, selain pasir mengandung logam dari Bab 26."
+  },
+  {
+    "code": "250600",
+    "description": "Kuarsa (selain pasir alam); kuarsit, dikerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lainnya menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+  },
+  {
+    "code": "250700",
+    "description": "Kaolin dan tanah liat kaolin lainnya, dikalsinasi maupun tidak"
+  },
+  {
+    "code": "250800",
+    "description": "Tanah liat lainnya (tidak termasuk tanah liat muai dari pos 68.06), andalusite, kyanite dan sillimanite, dikalsinasi maupun tidak; mullite; tanah chamotte atau tanah dinas"
+  },
+  {
+    "code": "250900",
+    "description": "Kapur"
+  },
+  {
+    "code": "251000",
+    "description": "Kalsium fosfat alam, aluminium kalsium fosfat alam dan kapur fosfat"
+  },
+  {
+    "code": "251100",
+    "description": "Barium sulfat alam (barit); barium karbonat alam (witherite), dikalsinasi maupun tidak, selain barium oksida dari pos 28.16"
+  },
+  {
+    "code": "251200",
+    "description": "Tanah diatomea (misalnya, kieselguhr, tripolite dan diatomit) dan tanah semacam itu yang mengandung silika, dikalsinasi maupun tidak, dengan berat jenis sebesar 1 atau kurang"
+  },
+  {
+    "code": "251300",
+    "description": "Batu apung; amril; korundum alam, garnet alam dan ampelas alam lainnya, diolah dengan cara dipanaskan maupun tidak"
+  },
+  {
+    "code": "251400",
+    "description": "Batu sabak, dikerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+  },
+  {
+    "code": "251500",
+    "description": "Marmer, travertine, ecaussine dan batu berkapur lainnya untuk \u00a0monumen atau bangunan dengan berat jenis sebesar 2,5 atau lebih, dan alabaster, dlkerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+  },
+  {
+    "code": "251600",
+    "description": "Granit, porphyry, basal, batu pasir dan batu lainnya untuk membuat monumen atau bangunan, dikerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+  },
+  {
+    "code": "251700",
+    "description": "Kerikil, gravel, batu pecah atau batu tumbuk, yang lazim digunakan untuk campuran beton, untuk mengeraskan jalan atau untuk rel kereta api atau pemberat lainnya, shingle dan flint, diolah dengan dipanaskan maupun tidak; makadam dari terak, sampah atau sisa buangan industri semacam itu, bercampur dengan bahan tersebut dalam bagian pertama pos ini maupun tidak; makadam ter; butir, keping dan bubuk, dari batuan dari pos 25.15 atau 25.16, diolah dengan dipanaskan maupun tidak"
+  },
+  {
+    "code": "251800",
+    "description": "Dolomit, dikalsinasi atau disinter maupun tidak, termasuk dolomit yang dikerjakan secara kasar atau semata-mata dipotong, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+  },
+  {
+    "code": "251900",
+    "description": "Magnesium karbonat alam (magnesit); magnesia leburan; magnesia sinter, mengandung sedikit oksida lainnya yang ditambahkan sebelum disinter maupun tidak; magnesium oksida lainnya, murni maupun tidak"
+  },
+  {
+    "code": "252000",
+    "description": "Gips; anhidrit; plester (terdiri dari gips dikalsinasi atau kalsium sulfat) diwarnai maupun tidak, tanpa atau dengan sedlldt bahan akselerator atau retarder"
+  },
+  {
+    "code": "252100",
+    "description": "Fluks batu kapur; batu kapur dan batu. mengandung kapur lainnya, dari jenis yang digunakan untuk pembuatan kapur atau semen"
+  },
+  {
+    "code": "252200",
+    "description": "Kapur tohor, kapur kembang dan kapur hidrolis, selain kalsium oksida dan hidroksida dari pos 28.25"
+  },
+  {
+    "code": "252300",
+    "description": "Semen portland, semen alumina, semen terak, semen super sulfat dan semen hidrolis semacam itu, berwarna maupun tidak atau dalam bentuk clinker"
+  },
+  {
+    "code": "252400",
+    "description": "Asbes"
+  },
+  {
+    "code": "252500",
+    "description": "Mika, termasuk belahannya; sisa mika"
+  },
+  {
+    "code": "252600",
+    "description": "Steatit alam, dikerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar); talek"
+  },
+  {
+    "code": "252800",
+    "description": "Borat slam dan konsentrataya (dikalsinasi maupun tidak), tetapi tidak termasuk borat yang dipisahkan dari air garam alam; asam borat alam mergandung H3BO3, tidak lebih dari 85 % dihitung dari berat kering"
+  },
+  {
+    "code": "252900",
+    "description": "Felspar; leucite; nepheline dan nepheline syenite; fluorspar"
+  },
+  {
+    "code": "253000",
+    "description": "Bahan mineral yang tidak dirinci atau termasuk dalam pos lainnya"
+  },
+  {
+    "code": "260000",
+    "description": "Bijih logam, terak dan abu"
+  },
+  {
+    "code": "260100",
+    "description": "Bijih besi dan konsentratnya, termasuk pirit besi digongseng"
+  },
+  {
+    "code": "260200",
+    "description": "Bijih mangan dan konsentratnya, termasuk bljih mangan mengandung besi dan konsentratnya dengan kandungan mangan 20 % atau lebih, dihitung dari berat kering"
+  },
+  {
+    "code": "260300",
+    "description": "Bijih tembaga dan konsentratnya"
+  },
+  {
+    "code": "260400",
+    "description": "Bijih nikel dan konsentratnya."
+  },
+  {
+    "code": "260500",
+    "description": "Bijih kobalt dan konsentratnya"
+  },
+  {
+    "code": "260600",
+    "description": "Bijih aluminium dan konsentratnya"
+  },
+  {
+    "code": "260700",
+    "description": "Bijih timbal dan konsentratnya"
+  },
+  {
+    "code": "260800",
+    "description": "Bijih seng dan konsentratnya"
+  },
+  {
+    "code": "260900",
+    "description": "Bijih timah dan konsentratnya"
+  },
+  {
+    "code": "261000",
+    "description": "Bijih kromium dan konsentratnya"
+  },
+  {
+    "code": "261100",
+    "description": "Bijih tungsten dan konsentratnya"
+  },
+  {
+    "code": "261200",
+    "description": "Bijih uranium atau torium dan konsentratnya"
+  },
+  {
+    "code": "261300",
+    "description": "Bijih molibdenum dan konsentratnya"
+  },
+  {
+    "code": "261400",
+    "description": "Bijih titanium dan konsentratnya"
+  },
+  {
+    "code": "261500",
+    "description": "Bijih niobium, tantalum, vanadium atau zirkonium dan konsentratnya"
+  },
+  {
+    "code": "261600",
+    "description": "Bijih logam mulia dan konsentratnya"
+  },
+  {
+    "code": "261700",
+    "description": "Bijih lainnya dan konsentratnya"
+  },
+  {
+    "code": "261800",
+    "description": "Terak butiran (pasir terak) dari industri pembuatan besi atau baja"
+  },
+  {
+    "code": "261900",
+    "description": "Terak, sampah (selain terak butiran), kerak logam dan sisa lainnya dari pembuatan besi atau haja"
+  },
+  {
+    "code": "262000",
+    "description": "Terak, abu dan residu (selain dari pemhuatan besi atau baja) mengandung logam, arsenik atau senyawanya"
+  },
+  {
+    "code": "262100",
+    "description": "Terak logam dan abu lainnya, termasuk abu rumput laut (kelp); abu dan residu dari pembakaran limbah rumah tangga"
+  },
+  {
+    "code": "270000",
+    "description": "Bahan bakar mineral, minyak mineral dan produk sulingannya; zat mengandung bitumen; malam mineral"
+  },
+  {
+    "code": "270100",
+    "description": "Batu hara; briket, ovoid dan bahan bakar padat semacam itu dibuat dari batu bara"
+  },
+  {
+    "code": "270200",
+    "description": "Lignit, diaglomerasi maupun tidak, tidak termasuk jet"
+  },
+  {
+    "code": "270300",
+    "description": "Gambut (termasuk serasah gambut), diaglomerasi maupun tidak."
+  },
+  {
+    "code": "270400",
+    "description": "Kokas dan semi-kokas dad batu bara dari lignit atau dari gambut, diaglomerasi maupun tidak; retort karbon"
+  },
+  {
+    "code": "270500",
+    "description": "Gas batu hara, gas air, gas produser dan gas semacam itu, selain gas minyak bumi dan gas hidrokarbon lainnya"
+  },
+  {
+    "code": "270600",
+    "description": "Ter sulingan dari batu hara, dari lignit atau dari gambut, dan ter mineral lainnya, didehidrasi atau disuling sebagian maupun tidak, termasuk ter yang dibentuk kembali"
+  },
+  {
+    "code": "270700",
+    "description": "Minyak dan produk lainnya basil penyulingan ter batu bara bersuhu tinggi; produk semacam itu yang berat unsur aromatiknya melebihi unsur non aromatik"
+  },
+  {
+    "code": "270800",
+    "description": "Pek dan pek kokas, diperoleh dari ter batu bara atau dari ter mineral lainnya"
+  },
+  {
+    "code": "270900",
+    "description": "Minyak petroleum dan minyak yang diperoleh dari mineral mengandung bitumen, mentah"
+  },
+  {
+    "code": "271000",
+    "description": "Minyak petroleum dan minyak yang diperoleh dari mineral mengandung bitumen, selain mentah; preparat tidak dirinci atau termasuk dalam pos lainnya, mengandung minyak petroleum atau minyak yang diperoleh dari mineral mengandung bitumen 70 % atau lebih menurut beratnya, minyak ini merupakan unsur dasar dari preparat tersebut; minyak sisa"
+  },
+  {
+    "code": "271100",
+    "description": "Gas petroleum dan gas hidrokarbon lainnya"
+  },
+  {
+    "code": "271200",
+    "description": "Jell petroleum; malam parafin, malam petroleum mikrokristalin, slack wax, ozokerit, malam lignit, malam gambut, malam mineral lainnya, dan produk semacam itu yang diperoleh melalui sintesa atau proses lainnya, diwarnai maupun tidak"
+  },
+  {
+    "code": "271300",
+    "description": "Kokas petroleum, bitumen petroleum dan residu lainnya dari minyak petroleum atau dari minyak yang diperoleh dari mineral mengandung bitumen"
+  },
+  {
+    "code": "271400",
+    "description": "Bitumen dan aspal, alam; shale mengandung bitumen atau minyak dan pasir ter; asphaltite dan batu karang mengandung aspal"
+  },
+  {
+    "code": "271500",
+    "description": "Campuran mengandung bitumen berasal dari aspal alam, dari bitumen alam, dari bitumen petroleum, dari ter mineral atau dari pek ter mineral (misalnya, mastik mengandung bitumen, cut-back)"
+  },
+  {
+    "code": "271600",
+    "description": "Batu hara; briket, ovoid dan bahan bakar padat semacam itu dibuat dari batu bara"
+  },
+  {
+    "code": "280000",
+    "description": "Bahan kimia anorganik; senyawa organik atau anorganik dari logam mulia, dari logam tanah jarang, dari unsur radioaktif atau dari isotop"
+  },
+  {
+    "code": "280100",
+    "description": "Fluorin, klorin, bromin dan iodin"
+  },
+  {
+    "code": "280200",
+    "description": "Belerang, basil sublimasi atau endapan; belerang koloidal"
+  },
+  {
+    "code": "280300",
+    "description": "Karbon (carbon black dan bentuk lain dari karbon tidak dirinci atau termasuk dalam pos lainnya)"
+  },
+  {
+    "code": "280400",
+    "description": "Hidrogen, gas mulia dan non logam lainnya"
+  },
+  {
+    "code": "280500",
+    "description": "Logam alkali atau logam alkali tanah; logam tanah jarang, skandium dan itrium, dicampur atau dipadu maupun tidak; merkuri"
   }
 ]
