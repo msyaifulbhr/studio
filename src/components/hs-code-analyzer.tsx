@@ -38,6 +38,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
+import hsCodesData from "@/data/hs-codes.json";
 
 const formSchema = z.object({
   productName: z.string().min(2, {
@@ -94,6 +95,17 @@ export function HsCodeAnalyzer() {
 
   const handleFeedbackSubmit = () => {
     console.log("Feedback: Disapproved", { productName: form.getValues("productName"), wrongHsCode: result?.hsCodeAndDescription, correctHsCode });
+    
+    const correctedCodeEntry = hsCodesData.find(item => item.code === correctHsCode);
+    const correctedDescription = correctedCodeEntry ? correctedCodeEntry.description : 'Deskripsi tidak ditemukan';
+    
+    if (result) {
+      setResult({
+        ...result,
+        hsCodeAndDescription: `${correctHsCode} - ${correctedDescription}`,
+      });
+    }
+
     toast({
         title: "Terima Kasih Atas Koreksinya!",
         description: `Kami telah mencatat bahwa kode yang benar adalah ${correctHsCode}.`,
