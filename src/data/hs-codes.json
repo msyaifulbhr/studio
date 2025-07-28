@@ -192,10 +192,6 @@
     "description": "Koral dan barang serupa itu, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dikerjakan lebih lanjut; cangkang moluska, krustasea atau echinodermata dan cuttle-bone, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dipotong menjadi berbentuk, bubuk dan sisanya."
   },
   {
-    "code": "050900",
-    "description": "Ambar, kastor, jebat dan kesturi; kantaridi; empedu, kering maupun tidak; kelenjar dan produk binatang lainnya yang digunakan dalam olahan produk farmasi, segar, dingin, beku atau diawetkan sementara secara lain"
-  },
-  {
     "code": "051000",
     "description": "Ambar, kastor, jebat dan kesturi; kantaridi; empedu, kering maupun tidak; kelenjar dan produk binatang lainnya yang digunakan dalam olahan produk farmasi, segar, dingin, beku atau diawetkan sementara secara lain."
   },
@@ -289,7 +285,7 @@
   },
   {
     "code": "080100",
-    "description": "Kelapa, kacang Brasil dan kacang mede, segar atau dikeringkan, \u00a0dihilangkan tempurungnya atau dikupas maupun tidak"
+    "description": "Kelapa, kacang Brasil dan kacang mede, segar atau dikeringkan, dihilangkan tempurungnya atau dikupas maupun tidak"
   },
   {
     "code": "080200",
@@ -349,7 +345,7 @@
   },
   {
     "code": "090100",
-    "description": "Kopi, digongseng atau dihilangkan kafeinnya maupun tidak; sekam dan kulit kopi; pengganti kopi mengandung kopi dengan \u00a0perbandingan berapapun"
+    "description": "Kopi, digongseng atau dihilangkan kafeinnya maupun tidak; sekam dan kulit kopi; pengganti kopi mengandung kopi dengan perbandingan berapapun"
   },
   {
     "code": "090200",
@@ -501,7 +497,7 @@
   },
   {
     "code": "120900",
-    "description": "Biji, &ult dan spora, dari jenis yang digunakan untuk disemai"
+    "description": "Biji, bua? dan spora, dari jenis yang digunakan untuk disemai"
   },
   {
     "code": "121000",
@@ -513,11 +509,11 @@
   },
   {
     "code": "121200",
-    "description": "Kacang karob, rumput laut dan ganggang lainnya, bit gula dan tebu, segar, dingin, beku atau dikeringkan, ditumbuk maupun tldak; kulit keras buah dan kernel serta produk nabati lainnya (termasuk akar chicory yang tidak digongseng dari varietas Cichorium intybus sativum) dari jenis yang terutama digunakan untuk konsumsi manusia, tidak dirinci atau termasuk dalam pos lainnya"
+    "description": "Kacang karob, rumput laut dan ganggang lainnya, bit gula dan tebu, segar, dingin, beku atau dikeringkan, ditumbuk maupun tidak; kulit keras buah dan kernel serta produk nabati lainnya (termasuk akar chicory yang tidak digongseng dari varietas Cichorium intybus sativum) dari jenis yang terutama digunakan untuk konsumsi manusia, tidak dirinci atau termasuk dalam pos lainnya"
   },
   {
     "code": "121300",
-    "description": "Jerami dan sekam serealia, tidak diolah, balk dicacah, ditumbuk, ditekan atau dalam bentuk pelet maupun tidak"
+    "description": "Jerami dan sekam serealia, tidak diolah, baik dicacah, ditumbuk, ditekan atau dalam bentuk pelet maupun tidak"
   },
   {
     "code": "121400",
@@ -541,7 +537,7 @@
   },
   {
     "code": "140100",
-    "description": "Bahan nabati dari jenis yang terutama dipakai untuk anyam-anyaman (misalnya, bambu, rotan, buluh, kumbuh, osier, rafia, jerami serealia dibersibkan, dikelantang atau dicelup, dan kulit pohon limau)"
+    "description": "Bahan nabati dari jenis yang terutama dipakai untuk anyam-anyaman (misalnya, bambu, rotan, buluh, kumbuh, osier, rafia, jerami serealia dibersihkan, dikelantang atau dicelup, dan kulit pohon limau)"
   },
   {
     "code": "140400",
@@ -601,7 +597,7 @@
   },
   {
     "code": "151300",
-    "description": "Minyak kelapa (kopra), kernel kelapa sawit atau babassu dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikaid secara kimia"
+    "description": "Minyak kelapa (kopra), kernel kelapa sawit atau babassu dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
   },
   {
     "code": "151400",
@@ -613,11 +609,11 @@
   },
   {
     "code": "151600",
-    "description": "Lemak dan minyak hewani, nabati atau mikroba dan fraksinya, sebagian atau seluruhnya dihidrogenasi, diinter-esterifikasi, \u00a0re-esterifikasi atau dielaidinisasi, dimurnikan maupun tidak, tetapi tidak diolah lebih lanjut"
+    "description": "Lemak dan minyak hewani, nabati atau mikroba dan fraksinya, sebagian atau seluruhnya dihidrogenasi, diinter-esterifikasi, re-esterifikasi atau dielaidinisasi, dimurnikan maupun tidak, tetapi tidak diolah lebih lanjut"
   },
   {
     "code": "151700",
-    "description": "Margarin; campuran atau olahan yang \u00a0dapat dimakan dari lemak atau minyak hewani, nabati atau mikroba atau dari fraksi lemak atau minyak yang berbeda dalam bab ini, selain lemak dan minyak yang dapat dimakan atau fraksinya dari pos 15.16"
+    "description": "Margarin; campuran atau olahan yang dapat dimakan dari lemak atau minyak hewani, nabati atau mikroba atau dari fraksi lemak atau minyak yang berbeda dalam bab ini, selain lemak dan minyak yang dapat dimakan atau fraksinya dari pos 15.16"
   },
   {
     "code": "151800",
@@ -701,7 +697,7 @@
   },
   {
     "code": "180500",
-    "description": "Bubuk kakao, tidak mengandung tambahan gula a.tau bahan pemanis lainnya"
+    "description": "Bubuk kakao, tidak mengandung tambahan gula atau bahan pemanis lainnya"
   },
   {
     "code": "180600",
@@ -721,7 +717,7 @@
   },
   {
     "code": "190300",
-    "description": "Tapioka dan penggantinya diolah dari \u00a0pati, dalam bentuk serpih, butir, pearls, hasll ayakan atau bentuk semacam itu"
+    "description": "Tapioka dan penggantinya diolah dari pati, dalam bentuk serpih, butir, pearls, hasll ayakan atau bentuk semacam itu"
   },
   {
     "code": "190400",
@@ -733,7 +729,7 @@
   },
   {
     "code": "200000",
-    "description": "Olahan dari sayufan, buah, biji/kacang atau bagian lain dari tanaman"
+    "description": "Olahan dari sayuran, buah, biji/kacang atau bagian lain dari tanaman"
   },
   {
     "code": "200100",
@@ -961,7 +957,7 @@
   },
   {
     "code": "251500",
-    "description": "Marmer, travertine, ecaussine dan batu berkapur lainnya untuk \u00a0monumen atau bangunan dengan berat jenis sebesar 2,5 atau lebih, dan alabaster, dlkerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+    "description": "Marmer, travertine, ecaussine dan batu berkapur lainnya untuk monumen atau bangunan dengan berat jenis sebesar 2,5 atau lebih, dan alabaster, dlkerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
   },
   {
     "code": "251600",
@@ -981,7 +977,7 @@
   },
   {
     "code": "252000",
-    "description": "Gips; anhidrit; plester (terdiri dari gips dikalsinasi atau kalsium sulfat) diwarnai maupun tidak, tanpa atau dengan sedlldt bahan akselerator atau retarder"
+    "description": "Gips; anhidrit; plester (terdiri dari gips dikalsinasi atau kalsium sulfat) diwarnai maupun tidak, tanpa atau dengan sedikit bahan akselerator atau retarder"
   },
   {
     "code": "252100",
@@ -1009,7 +1005,7 @@
   },
   {
     "code": "252800",
-    "description": "Borat slam dan konsentrataya (dikalsinasi maupun tidak), tetapi tidak termasuk borat yang dipisahkan dari air garam alam; asam borat alam mergandung H3BO3, tidak lebih dari 85 % dihitung dari berat kering"
+    "description": "Borat alam dan konsentratnya (dikalsinasi maupun tidak), tetapi tidak termasuk borat yang dipisahkan dari air garam alam; asam borat alam mengandung H3BO3, tidak lebih dari 85 % dihitung dari berat kering"
   },
   {
     "code": "252900",
@@ -1029,7 +1025,7 @@
   },
   {
     "code": "260200",
-    "description": "Bijih mangan dan konsentratnya, termasuk bljih mangan mengandung besi dan konsentratnya dengan kandungan mangan 20 % atau lebih, dihitung dari berat kering"
+    "description": "Bijih mangan dan konsentratnya, termasuk bijih mangan mengandung besi dan konsentratnya dengan kandungan mangan 20 % atau lebih, dihitung dari berat kering"
   },
   {
     "code": "260300",
@@ -1097,11 +1093,11 @@
   },
   {
     "code": "261900",
-    "description": "Terak, sampah (selain terak butiran), kerak logam dan sisa lainnya dari pembuatan besi atau haja"
+    "description": "Terak, sampah (selain terak butiran), kerak logam dan sisa lainnya dari pembuatan besi atau baja"
   },
   {
     "code": "262000",
-    "description": "Terak, abu dan residu (selain dari pemhuatan besi atau baja) mengandung logam, arsenik atau senyawanya"
+    "description": "Terak, abu dan residu (selain dari pembuatan besi atau baja) mengandung logam, arsenik atau senyawanya"
   },
   {
     "code": "262100",
@@ -1125,7 +1121,7 @@
   },
   {
     "code": "270400",
-    "description": "Kokas dan semi-kokas dad batu bara dari lignit atau dari gambut, diaglomerasi maupun tidak; retort karbon"
+    "description": "Kokas dan semi-kokas dari batu bara dari lignit atau dari gambut, diaglomerasi maupun tidak; retort karbon"
   },
   {
     "code": "270500",
@@ -1173,7 +1169,7 @@
   },
   {
     "code": "271600",
-    "description": "Batu hara; briket, ovoid dan bahan bakar padat semacam itu dibuat dari batu bara"
+    "description": "Tenaga listrik."
   },
   {
     "code": "280000",
@@ -1198,5 +1194,1257 @@
   {
     "code": "280500",
     "description": "Logam alkali atau logam alkali tanah; logam tanah jarang, skandium dan itrium, dicampur atau dipadu maupun tidak; merkuri"
+  },
+  {
+    "code": "280600",
+    "description": "Hidrogen klorida (asam klorida); asam klorosulfat"
+  },
+  {
+    "code": "280700",
+    "description": "Asam sulfat; oleum"
+  },
+  {
+    "code": "280800",
+    "description": "Asam nitrat; asam sulfonitrat"
+  },
+  {
+    "code": "280900",
+    "description": "Difosfor pentaoksida; asam fosfat; asam polifosfat, mempunyai rumus kimiat tertentu maupun tidak"
+  },
+  {
+    "code": "281000",
+    "description": "Oksida boron; asam borat"
+  },
+  {
+    "code": "281100",
+    "description": "Asam anorganik: lainnya dan senyawa oksigen anorganik: dari bukan logam lainnya"
+  },
+  {
+    "code": "281200",
+    "description": "Halida dan halida oksida dari bukan logam"
+  },
+  {
+    "code": "281300",
+    "description": "Sulfida dari bukan logam; fosfor trisulfida komersial"
+  },
+  {
+    "code": "281400",
+    "description": "Amonia, anhidrat atau dalam larutan air"
+  },
+  {
+    "code": "281500",
+    "description": "Natrium hidroksida (soda api); kalium hidroksida (potas api); peroksida dari natrium atau kalium"
+  },
+  {
+    "code": "281600",
+    "description": "Hidroksida dan peroksida dari magnesium; oksida, hidroksida dan peroksida, dari strontium atau barium"
+  },
+  {
+    "code": "281700",
+    "description": "Seng oksida; seng peroksida"
+  },
+  {
+    "code": "281800",
+    "description": "Korundum artifisial, mempunyai rumus kimia tertentu maupun tidak; aluminium oksida; aluminium hidroksida"
+  },
+  {
+    "code": "281900",
+    "description": "Kromium oksida dan kromium hidroksida"
+  },
+  {
+    "code": "282000",
+    "description": "Mangan oksida"
+  },
+  {
+    "code": "282100",
+    "description": "Besi oksida dan besi hidroksida; tanah warna mengandung senyawa besi yang dievaluasi sebagai Fe2O3 sebanyak 70 % atau lebih menurut beratnya"
+  },
+  {
+    "code": "282200",
+    "description": "Kobalt oksida dan kobalt hidroksida; kobalt oksida komersial"
+  },
+  {
+    "code": "282300",
+    "description": "Titanium oksida"
+  },
+  {
+    "code": "282400",
+    "description": "Timbal oksida; timbal merah dan timbal oranye"
+  },
+  {
+    "code": "282500",
+    "description": "Hidrazin dan hidroksilamin serta garam anorganiknya; basa anorganik lainnya; logam oksida lainnya, logam hidroksida dan logam peroksida lainnya"
+  },
+  {
+    "code": "282600",
+    "description": "Fluorida; fluorosilikat, fluoroaluminat dan garam fluorin kompleks lainnya"
+  },
+  {
+    "code": "282700",
+    "description": "Klorida, klorida oksida dan klorida hidroksida; bromida dan bromida oksida; iodida dan iodida oksida"
+  },
+  {
+    "code": "282800",
+    "description": "Hipoklorit; kalsium hipoklorit komersial; klorit; hipobromit"
+  },
+  {
+    "code": "282900",
+    "description": "Klorat dan perklorat; bromat dan perbromat; iodat dan periodat"
+  },
+  {
+    "code": "283000",
+    "description": "Sulfida; polisulfida, mempunyai rumus kimia tertentu maupun tidak"
+  },
+  {
+    "code": "283100",
+    "description": "Ditionit dan sulfoksilat"
+  },
+  {
+    "code": "283200",
+    "description": "Sulfit; tiosulfat"
+  },
+  {
+    "code": "283300",
+    "description": "Sulfat; alum; peroksosulfat (persulfat)"
+  },
+  {
+    "code": "283400",
+    "description": "Nitrit; nitrat"
+  },
+  {
+    "code": "283500",
+    "description": "Fosfinat (hipofosfit), fosfonat (fosfit) dan fosfat; polifosfat, mempunyai rumus kimia tertentu maupun tidak"
+  },
+  {
+    "code": "283600",
+    "description": "Karbonat; peroksokarbonat (perkarbonat); amonium karbonat komersial mengandung amonium karbamat"
+  },
+  {
+    "code": "283700",
+    "description": "Sianida, sianida oksida dan sianida kompleks"
+  },
+  {
+    "code": "283900",
+    "description": "Silikat; logam alkali silikat komersial."
+  },
+  {
+    "code": "284000",
+    "description": "Borat; peroksoborat (perborat)"
+  },
+  {
+    "code": "284100",
+    "description": "Garam dari asam oksometalik atau asam peroksometalik"
+  },
+  {
+    "code": "284200",
+    "description": "Garam lainnya dari asam anorganik atau asam perokso (termasuk alumino silikat yang mempunyai rumus kimia tertentu maupun tidak), selain azida"
+  },
+  {
+    "code": "284300",
+    "description": "Logam mulia koloidal; senyawa organik atau anorganik dari logam mulia, mempunyai rumus kimia tertentu maupun tidak; amalgam dari logam mulia"
+  },
+  {
+    "code": "284400",
+    "description": "Unsur kimia radioaktif dan isotop radioaktif (termasuk unsur kimia fisil atau fertil dan isotop fisil atau fertil) dan senyawanya; campuran dan residu mengandung produk ini"
+  },
+  {
+    "code": "284500",
+    "description": "Isotop selain pos 28.44; senyawa, anorganik atau organik, dari isotop seperti itu, mempunyai rumus kimia tertentu maupun tidak"
+  },
+  {
+    "code": "284600",
+    "description": "Senyawa, anorganik atau organik, dari logam tanah jarang, dari itrium atau dari skandium atau dari campuran logam ini"
+  },
+  {
+    "code": "284700",
+    "description": "Hidrogen peroksida, dipadatkan dengan urea maupun tidak"
+  },
+  {
+    "code": "284900",
+    "description": "Karbida, mempunyai rumus kimia tertentu maupun tidak"
+  },
+  {
+    "code": "285000",
+    "description": "Hidrida, nitrida, azida, silisida dan borida, mempunyai rumus kimia tertentu maupun tidak selain senyawa yang juga merupakan karbida sebagaimana dimaksud dari pos 28.49"
+  },
+  {
+    "code": "285200",
+    "description": "Senyawa anorganik atau organik dari merkuri, memiliki rumus kimia tertentu maupun tidak, tidak termasuk amalgam"
+  },
+  {
+    "code": "285300",
+    "description": "Fosfida, memiliki rumus kimia sendiri maupun tidak, tidak termasuk ferofosfor; senyawa anorganik lainnya (termasuk air sulingan atau air konduktivitas dan air dengan kemurnian semacam itu); udara cair telah dihilangkan gas mulianya maupun tidak); udara tekan; amalgam, selain amalgam dari logam mulia"
+  },
+  {
+    "code": "290000",
+    "description": "Bahan Kimia Organik"
+  },
+  {
+    "code": "290100",
+    "description": "Hidrokarbon asiklik"
+  },
+  {
+    "code": "290200",
+    "description": "Hidrokarbon siklik"
+  },
+  {
+    "code": "290300",
+    "description": "Turunan halogenasi dari hidrokarbon"
+  },
+  {
+    "code": "290400",
+    "description": "Turunan sulfonasi, nitrasi atau nitrosasi dari hidrokarbon, dihalogenasi maupun tidak."
+  },
+  {
+    "code": "290500",
+    "description": "Alkohol asiklik dan turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "290600",
+    "description": "Alkohol siklik dan turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "290700",
+    "description": "Fenol; fenol-alkohol."
+  },
+  {
+    "code": "290800",
+    "description": "Turunan halogenasi, sulfonasi, nitrasi atau nitrosasi dari fenol atau fenol-alkohol."
+  },
+  {
+    "code": "290900",
+    "description": "Eter, eter-alkohol, eter-fenol, eter-alkohol-fenol, alkohol peroksida, eter peroksida, asetal dan hemiasetal peroksida, keton peroksida (mempunyai rumus kimia tertentu maupun tidak), dan turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291000",
+    "description": "Epoksida, epoksi alkohol, epoksi fenol dan epoksi eter, dengan tiga cincin, dan turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291100",
+    "description": "Asetal dan hemiasetal, dengan fungsi oksigen lainnya maupun tidak, dan turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291200",
+    "description": "Aldehida, dengan fungsi oksigen lainnya maupun tidak; polimer siklik dari aldehida; paraformaldehida."
+  },
+  {
+    "code": "291300",
+    "description": "Turunan halogenasi, sulfonasi, nitrasi atau nitrosasi produk dari pos 29.12."
+  },
+  {
+    "code": "291400",
+    "description": "Keton dan kinon, dengan fungsi oksigen lainnya maupun tidak, dan turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291500",
+    "description": "Asam monokarboksilat asiklik jenuh dan anhidrida, halida, peroksida dan asam peroksinya; turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291600",
+    "description": "Asam monokarboksilat asiklik tidak jenuh, asam monokarboksilat siklik, anhidrida, halida, peroksida dan asam peroksinya; turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291700",
+    "description": "Asam polikarboksilat, anhidrida, halida, peroksida dan asam peroksinya; turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291800",
+    "description": "Asam karboksilat dengan fungsi oksigen tambahan dan anhidrida, halida, peroksida dan asam peroksinya; turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "291900",
+    "description": "Ester fosfat dan garamnya, termasuk laktofosfat; turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "292000",
+    "description": "Ester dari asam anorganik bukan logam lainnya (tidak termasuk ester dari hidrogen halida) dan garamnya; turunan halogenasi, sulfonasi, nitrasi atau nitrosasinya."
+  },
+  {
+    "code": "292100",
+    "description": "Senyawa berfungsi amina."
+  },
+  {
+    "code": "292200",
+    "description": "Senyawa amino berfungsi oksigen."
+  },
+  {
+    "code": "292300",
+    "description": "Garam dan hidroksida amonium kuarterner; lesitin dan fosfoaminolipid lainnya, mempunyai rumus kimia tertentu maupun tidak."
+  },
+  {
+    "code": "292400",
+    "description": "Senyawa berfungsi karboksiamida; senyawa berfungsi amida dari asam karbonat."
+  },
+  {
+    "code": "292500",
+    "description": "Senyawa berfungsi karboksiimida (termasuk sakarin dan garamnya) dan senyawa berfungsi imina."
+  },
+  {
+    "code": "292600",
+    "description": "Senyawa berfungsi nitril."
+  },
+  {
+    "code": "292700",
+    "description": "Senyawa diazo-, azo- atau azoksi."
+  },
+  {
+    "code": "292800",
+    "description": "Turunan organik dari hidrazin atau dari hidroksilamina."
+  },
+  {
+    "code": "292900",
+    "description": "Senyawa dengan fungsi nitrogen lainnya."
+  },
+  {
+    "code": "293000",
+    "description": "Senyawa organo-belerang."
+  },
+  {
+    "code": "293100",
+    "description": "Senyawa organo-anorganik lainnya."
+  },
+  {
+    "code": "293200",
+    "description": "Senyawa heterosiklik hanya dengan hetero atom oksigen."
+  },
+  {
+    "code": "293300",
+    "description": "Senyawa heterosiklik hanya dengan hetero atom nitrogen."
+  },
+  {
+    "code": "293400",
+    "description": "Asam nukleat dan garamnya, mempunyai rumus kimia tertentu maupun tidak; senyawa heterosiklik lainnya."
+  },
+  {
+    "code": "293500",
+    "description": "Sulfonamida."
+  },
+  {
+    "code": "293600",
+    "description": "Provitamin dan vitamin, alami atau direproduksi secara sintesis (termasuk konsentrat alami), turunannya terutama digunakan sebagai vitamin, dan campuran dari bahan yang telah disebutkan, didalam pelarut apapun maupun tidak."
+  },
+  {
+    "code": "293700",
+    "description": "Hormon, prostaglandin, tromboksan dan leukotrien, alami atau direproduksi secara sintesis; turunan dan analog strukturnya, termasuk rantai polipeptida yang dimodifikasi, digunakan terutama sebagai hormon."
+  },
+  {
+    "code": "293800",
+    "description": "Glikosida, alami atau direproduksi secara sintesis, dan garam, eter, ester serta turunan lainnya."
+  },
+  {
+    "code": "293900",
+    "description": "Alkaloid, alami atau direproduksi secara sintesis, dan garam, eter, ester serta turunan lainnya."
+  },
+  {
+    "code": "294000",
+    "description": "Gula, murni secara kimia, selain sukrosa, laktosa, maltosa, glukosa dan fruktosa; gula eter, gula asetal dan gula ester, serta garamnya, selain produk dari pos 29.37, 29.38 atau 29.39."
+  },
+  {
+    "code": "294100",
+    "description": "Antibiotik."
+  },
+  {
+    "code": "294200",
+    "description": "Senyawa organik lainnya."
+  },
+  {
+    "code": "300000",
+    "description": "Produk farmasi"
+  },
+  {
+    "code": "300100",
+    "description": "Kelenjar dan bagian tubuh lainnya untuk keperluan terapeutik-organ tubuh, kering, berupa bubuk maupun tidak; ekstrak dari kelenjar atau organ tubuh lainnya atau dari sekresinya untuk keperluan terapeutik organ tubuh; heparin dan garamnya; subtansi lainnya dari manusia atau hewan disiapkan untuk keperluan terapeutik atau profilaktik, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "300200",
+    "description": "Darah manusia; darah hewan disiapkan untuk keperluan terapeutik, profilaktik atau diagnosis; antiserum, bagian darah dan produk imunologi lainnya, dimodifikasi maupun tidak atau diperoleh dengan proses bioteknologi maupun tidak; vaksin, toksin, kultur dari mikro-organisme (tidak termasuk ragi) dan produk yang semacam itu; kultur sel, dimodifikasi maupun tidak."
+  },
+  {
+    "code": "300300",
+    "description": "Obat (tidak termasuk barang dari pos 30.02, 30.05 atau 30.06) terdiri dari dua atau lebih konstituen yang telah dicampur bersama-sama untuk keperluan terapeutik atau profilaktik, tidak disiapkan dalam dosis tertentu atau tidak dalam bentuk kemasan untuk penjualan eceran."
+  },
+  {
+    "code": "300400",
+    "description": "Obat (tidak termasuk barang dari pos 30.02, 30.05 atau 30.06) terdiri dari produk campuran atau tidak untuk keperluan terapeutik atau profilaktik, disiapkan dalam dosis tertentu (termasuk those in the form of transdermal administration systems) atau dalam bentuk atau kemasan untuk penjualan eceran."
+  },
+  {
+    "code": "300500",
+    "description": "Gumpalan kapas, kasa, pembalut dan barang semacam itu (misalnya, perban, plester berperekat, tapal obat), diresapi atau dilapisi dengan zat farmasi atau disiapkan dalam bentuk atau kemasan untuk penjualan eceran untuk keperluan medis, pembedahan, perawatan gigi atau veteriner."
+  },
+  {
+    "code": "300600",
+    "description": "Barang farmasi dirinci dalam Catatan 4 pada Bab ini."
+  },
+  {
+    "code": "310000",
+    "description": "Pupuk"
+  },
+  {
+    "code": "310100",
+    "description": "Pupuk hewani atau nabati, dicampur bersama atau diolah secara kimia maupun tidak; pupuk yang dihasilkan dari pencampuran atau pengolahan secara kimia produk hewani atau nabati."
+  },
+  {
+    "code": "310200",
+    "description": "Pupuk mineral atau kimia, mengandung nitrogen."
+  },
+  {
+    "code": "310300",
+    "description": "Pupuk mineral atau pupuk kimia, mengandung fosfat."
+  },
+  {
+    "code": "310400",
+    "description": "Pupuk mineral atau kimia, mengandung kalium."
+  },
+  {
+    "code": "310500",
+    "description": "Pupuk mineral atau kimia mengandung dua atau tiga unsur penyubur nitrogen, fosfor dan kalium; pupuk lainnya; barang dari Bab ini dalam bentuk tablet atau bentuk semacam itu atau dalam kemasan dengan berat kotor tidak melebihi 10 kg."
+  },
+  {
+    "code": "320000",
+    "description": "Ekstrak penyamak atau pencelup; tanin dan turunannya; bahan celup, pigmen dan bahan pewarna lainnya; cat dan pernis; dempul dan mastik lainnya; tinta"
+  },
+  {
+    "code": "320100",
+    "description": "Ekstrak penyamak dari bahan nabati; tanin dan garamnya, eter, ester serta turunan lainnya."
+  },
+  {
+    "code": "320200",
+    "description": "Zat penyamak organik sintetik; zat penyamak anorganik; preparat penyamak, mengandung zat penyamak alami maupun tidak; preparat mengandung enzim untuk penyamakan pendahuluan."
+  },
+  {
+    "code": "320300",
+    "description": "Bahan pewarna dari nabati atau hewani (termasuk ekstrak pencelupan tetapi tidak termasuk animal black), mempunyai rumus kimia tertentu maupun tidak; preparat as specified in Note 3 to this Chapter based on colouring matter of vegetable or animal origin."
+  },
+  {
+    "code": "320400",
+    "description": "Bahan pewarna organik sintetik, mempunyai rumus kimia tertentu maupun tidak; preparat sebagaimana dirinci dalam Catatan 3 dari Bab ini yang berasal dari bahan pewarna organik sintetik; produk organik sintetik dari jenis yang digunakan sebagai bahan pencemerlang fluoresen atau sebagai luminofor, mempunyai rumus kimia tertentu maupun tidak."
+  },
+  {
+    "code": "320500",
+    "description": "Lak warna; preparat yang dibuat dari lak warna sebagaimana dirinci dalam Catatan 3 pada Bab ini."
+  },
+  {
+    "code": "320600",
+    "description": "Bahan pewarna lainnya; preparat sebagaimana dirinci dalam Catatan 3 pada Bab ini selain yang disebut dalam pos 32.03, 32.04 atau 32.05; produk anorganik dari jenis yang digunakan sebagai luminofor, mempunyai rumus kimia tertentu maupun tidak."
+  },
+  {
+    "code": "320700",
+    "description": "Pigmen olahan, bahan opasitas olahan dan pewarna olahan, enamel dan glasir yang dapat divitrifikasi, engobes (slip), pengkilap cair dan preparat semacam itu, dari jenis yang digunakan dalam industri keramik, enamel atau kaca; frit kaca dan kaca lainnya, dalam bentuk bubuk, butiran atau serpih."
+  },
+  {
+    "code": "320800",
+    "description": "Cat dan pernis (termasuk enamel dan lak) dibuat dari polimer sintetik atau polimer alam yang dimodifikasi secara kimia, didispersikan atau dilarutkan dalam media bukan air; larutan sebagaimana dinyatakan dalam Catatan 4 pada Bab ini."
+  },
+  {
+    "code": "320900",
+    "description": "Cat dan pernis (termasuk enamel dan lak) dibuat dari polimer sintetik atau polimer alam yang dimodifikasi secara kimia, didispersikan atau dilarutkan dalam media air."
+  },
+  {
+    "code": "321000",
+    "description": "Cat dan pernis lainnya (termasuk enamel, lak dan distemper); pigmen air olahan dari jenis yang digunakan untuk penyempurnaan kulit."
+  },
+  {
+    "code": "321100",
+    "description": "Olahan pengering."
+  },
+  {
+    "code": "321200",
+    "description": "Pigmen (termasuk bubuk dan serpih metalik) didispersikan dalam media bukan air, dalam bentuk cair atau pasta, dari jenis yang digunakan dalam pembuatan cat (termasuk enamel); stamping foil; bahan celup dan pewarna lainnya disiapkan dalam bentuk atau kemasan untuk penjualan eceran."
+  },
+  {
+    "code": "321300",
+    "description": "Pewarna untuk seniman, pelajar atau pelukis papan petunjuk, modifying tints, untuk hiburan dan sejenisnya, dalam tablet, tabung, jar, botol, bejana atau dalam bentuk atau kemasan semacam itu."
+  },
+  {
+    "code": "321400",
+    "description": "Dempul kaca, dempul pengenten, semen resin, kompon untuk mendempul dan mastik lainnya; painters'' filling; preparat pelapis tidak tahan panas untuk bagian luar, dinding bagian dalam, lantai, langit-langit atau sejenisnya."
+  },
+  {
+    "code": "321500",
+    "description": "Tinta cetak, tinta tulis atau tinta gambar dan tinta lainnya, konsentrat atau padat maupun tidak."
+  },
+  {
+    "code": "330000",
+    "description": "Minyak atsiri dan resinoida; preparat wewangian, kosmetika atau rias"
+  },
+  {
+    "code": "330100",
+    "description": "Minyak atsiri (mengandung terpena atau tidak), termasuk konkrit dan absolut; resinoida; ekstrak oleoresin; konsentrat minyak atsiri dalam lemak, dalam fixed oil, dalam malam atau sejenisnya, diperoleh melalui enfleurage atau maserasi; produk sertaan bersifat terpena pada proses penghilangan terpena dari minyak atsiri; hasil sulingan dengan air dan larutan air dari minyak atsiri."
+  },
+  {
+    "code": "330200",
+    "description": "Campuran dari berbagai zat bau-bauan dan campuran (termasuk larutan mengandung alkohol) dengan bahan dasar satu atau lebih dari berbagai zat ini, dari jenis yang digunakan sebagai bahan baku industri; preparat lain yang dibuat dari berbagai zat bau-bauan, dari jenis yang digunakan untuk pembuatan minuman."
+  },
+  {
+    "code": "330300",
+    "description": "Parfum dan cairan pewangi."
+  },
+  {
+    "code": "330400",
+    "description": "Preparat kecantikan atau rias dan preparat untuk perawatan kulit (selain obat-obatan), termasuk preparat pelindung kulit terhadap sinar matahari atau pencoklat kulit; preparat manikur atau pedikur."
+  },
+  {
+    "code": "330500",
+    "description": "Preparat digunakan untuk rambut."
+  },
+  {
+    "code": "330600",
+    "description": "Preparat kesehatan mulut atau gigi, termasuk pasta dan bubuk penguat gigi buatan; benang untuk pembersih sela gigi (dental floss), dalam kemasan tersendiri untuk penjualan eceran."
+  },
+  {
+    "code": "330700",
+    "description": "Preparat yang digunakan sebelum mencukur, sewaktu mencukur, atau sesudah mencukur, deodoran, preparat mandi, preparat perontok bulu dan preparat wewangian, kosmetika atau rias lainnya, tidak dirinci atau termasuk pos lain; preparat penghilang bau ruangan, diberi wewangian atau mengandung desinfektan maupun tidak."
+  },
+  {
+    "code": "340000",
+    "description": "Sabun, bahan aktif permukaan organik, preparat pembersih, preparat pelumas, malam artifisial, malam olahan, preparat pemoles dan penggosok, lilin dan barang semacam itu, pasta untuk model, \"malam untuk gigi\" dan preparat untuk gigi dengan bahan dasar plester"
+  },
+  {
+    "code": "340100",
+    "description": "Sabun; produk dan preparat aktif-permukaan organik digunakan sebagai sabun, dalam bentuk batangan, cake, potongan atau bentukan yang dicetak, mengandung sabun maupun tidak; produk dan preparat aktif permukaan organik untuk membersihkan kulit dalam bentuk cair atau krim dan disiapkan untuk penjualan eceran, mengandung sabun maupun tidak; kertas, gumpalan, kain kempa dan bukan tenunan, diresapi, dilapisi atau ditutupi dengan sabun atau deterjen."
+  },
+  {
+    "code": "340200",
+    "description": "Bahan aktif permukaan organik (selain sabun); preparat aktif permukaan, preparat pencuci (termasuk preparat pencuci tambahan) dan preparat pembersih, mengandung sabun maupun tidak, selain dari pos 34.01."
+  },
+  {
+    "code": "340300",
+    "description": "Preparat pelumas (termasuk preparat minyak pemotong, preparat pelepas baut atau mur, preparat anti-karat atau anti-korosi dan preparat pelepas cetakan, dengan bahan dasar pelumas) dan preparat dari jenis yang digunakan untuk meminyaki atau menggemuki bahan tekstil, kulit samak, kulit berbulu atau material lainnya, tetapi tidak termasuk preparat yang mengandung minyak petroleum atau minyak yang diperoleh dari mineral mengandung bitumen sebagai unsur dasar, 70 % atau lebih menurut beratnya."
+  },
+  {
+    "code": "340400",
+    "description": "Malam artifisial dan malam olahan."
+  },
+  {
+    "code": "340500",
+    "description": "Poles dan krim, untuk alas kaki, perabotan, lantai, coachwork, kaca atau logam, pasta dan bubuk penggosok dan preparat semacam itu (dalam bentuk kertas, gumpalan, kain kempa, bukan tenunan, plastik seluler atau karet seluler, diresapi, dilapisi atau ditutupi dengan preparat tersebut maupun tidak), tidak termasuk malam dari pos 34.04."
+  },
+  {
+    "code": "340600",
+    "description": "Lilin, taper dan sejenisnya."
+  },
+  {
+    "code": "340700",
+    "description": "Pasta untuk model, termasuk yang disiapkan untuk hiburan anak-anak; preparat yang dikenal sebagai \"malam untuk gigi\" atau sebagai \"kompon untuk membuat cetakan gigi\", disiapkan dalam set, dalam kemasan untuk penjualan eceran atau dalam bentuk pelat, bentuk sepatu kuda, stik atau bentuk semacam itu; preparat lainnya yang digunakan dalam kedokteran gigi, dengan dasar plester (dari gips yang dikalsinasi atau kalsium sulfat)."
+  },
+  {
+    "code": "350000",
+    "description": "Zat albumina; pati dimodifikasi; perekat; enzim"
+  },
+  {
+    "code": "350100",
+    "description": "Kasein, kaseinat dan turunan kasein lainnya; lem kasein."
+  },
+  {
+    "code": "350200",
+    "description": "Albumin (termasuk konsentrat dari dua atau lebih protein whey, yang mengandung protein whey lebih dari 80 % menurut beratnya, dihitung dari bahan kering), albuminat dan turunan albumin lainnya."
+  },
+  {
+    "code": "350300",
+    "description": "Gelatin (termasuk lembaran gelatin dalam bentuk empat persegi panjang (termasuk bujur sangkar), dikerjakan permukaannya atau diwarnai maupun tidak) dan turunan gelatin; isinglass; lem lain dari bahan hewani, tidak termasuk lem kasein dari pos 35.01."
+  },
+  {
+    "code": "350400",
+    "description": "Pepton dan turunannya; zat protein lain dan turunannya, tidak dirinci atau termasuk dalam pos lainnya; bubuk kulit jangat, dikrom maupun tidak."
+  },
+  {
+    "code": "350500",
+    "description": "Dekstrin dan pati yang dimodifikasi lainnya (misalnya, pati yang dipregelatinisasi atau yang diesterifikasi); lem yang dibuat dari pati, atau dekstrin atau pati yang dimodifikasi lainnya."
+  },
+  {
+    "code": "350600",
+    "description": "Lem olahan dan perekat olahan lainnya, tidak dirinci atau termasuk dalam pos lain; produk yang cocok digunakan sebagai lem atau perekat, disiapkan untuk penjualan eceran sebagai lem atau perekat, dengan berat bersih tidak melebihi 1 kg."
+  },
+  {
+    "code": "350700",
+    "description": "Enzim; enzim olahan tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "360000",
+    "description": "Bahan peledak; produk piroteknik; korek api; paduan piroforik; preparat tertentu yang mudah terbakar"
+  },
+  {
+    "code": "360100",
+    "description": "Bubuk propelan."
+  },
+  {
+    "code": "360200",
+    "description": "Bahan peledak olahan, selain bubuk propelan."
+  },
+  {
+    "code": "360300",
+    "description": "Sekering pengaman; kabel peledak; sumbu mesiu atau cap peledak; penyala; detonator listrik."
+  },
+  {
+    "code": "360400",
+    "description": "Kembang api, suar pemberi sinyal, roket hujan, sinyal kabut dan barang piroteknik lainnya."
+  },
+  {
+    "code": "360500",
+    "description": "Korek api, selain barang piroteknik dari pos 36.04."
+  },
+  {
+    "code": "360600",
+    "description": "Ferro-cerium dan paduan piroforik lainnya dalam segala bentuk; barang dari bahan mudah terbakar sebagaimana dirinci dalam Catatan 2 Bab ini."
+  },
+  {
+    "code": "370000",
+    "description": "Barang fotografi atau sinematografi"
+  },
+  {
+    "code": "370100",
+    "description": "Pelat dan film fotografi berbentuk lembaran, peka cahaya, tidak disinari, dari bahan apapun selain kertas, kertas karton atau tekstil; film cetak instan berbentuk lembaran, peka cahaya, tidak disinari, dalam kemasan maupun tidak."
+  },
+  {
+    "code": "370200",
+    "description": "Film fotografi dalam gulungan, peka cahaya, tidak disinari, dari bahan apapun selain kertas, kertas karton atau tekstil; film cetak instan dalam gulungan, peka cahaya, tidak disinari."
+  },
+  {
+    "code": "370300",
+    "description": "Kertas, kertas karton dan tekstil fotografi, peka cahaya, tidak disinari."
+  },
+  {
+    "code": "370400",
+    "description": "Pelat, film, kertas, kertas karton dan tekstil fotografi, disinari tetapi tidak dicuci."
+  },
+  {
+    "code": "370500",
+    "description": "Pelat dan film fotografi, disinari dan dicuci, selain film sinematografi."
+  },
+  {
+    "code": "370600",
+    "description": "Film sinematografi, disinari dan dicuci, digabung dengan trek suara maupun tidak atau hanya terdiri dari trek suara."
+  },
+  {
+    "code": "370700",
+    "description": "Preparat kimia digunakan untuk fotografi (selain pernis, lem, perekat dan preparat semacam itu); produk tidak dicampur digunakan untuk fotografi, disiapkan dalam ukuran tertentu atau disiapkan untuk penjualan eceran dalam bentuk siap pakai."
+  },
+  {
+    "code": "380000",
+    "description": "Aneka produk kimia"
+  },
+  {
+    "code": "380100",
+    "description": "Grafit artifisial; grafit koloidal atau grafit semi koloidal; preparat dibuat dari grafit atau karbon lainnya dalam bentuk pasta, blok, pelat atau barang semi manufaktur lainnya."
+  },
+  {
+    "code": "380200",
+    "description": "Karbon aktif; produk mineral alam aktif; jelaga hewani, termasuk jelaga hewani habis pakai."
+  },
+  {
+    "code": "380300",
+    "description": "Minyak tall, dimurnikan maupun tidak."
+  },
+  {
+    "code": "380400",
+    "description": "Residu alkali dari pembuatan pulp kayu, dipekatkan maupun tidak, dihilangkan gulanya atau diolah secara kimia, termasuk lignin sulfonat, tetapi tidak termasuk minyak tall dari pos 38.03."
+  },
+  {
+    "code": "380500",
+    "description": "Getah, terpentin kayu atau sulfat dan minyak mengandung terpena lainnya yang dihasilkan dari penyulingan atau pengolahan lainnya dari kayu jenis konifera; dipentena mentah; terpentin sulfit dan para-simen mentah lainnya; minyak cemara mengandung alfa-terpineol sebagai bahan utama."
+  },
+  {
+    "code": "380600",
+    "description": "Asam rosin dan asam damar serta turunannya; spirit rosin dan minyak rosin; run gum."
+  },
+  {
+    "code": "380700",
+    "description": "Ter kayu; minyak ter kayu; kreosot kayu; nafta kayu; pek nabati; pek untuk pabrik bir dan preparat semacam itu dibuat dari rosin, asam damar atau pek nabati."
+  },
+  {
+    "code": "380800",
+    "description": "Insektisida, rodentisida, fungisida, herbisida, produk anti-sprouting dan pengatur pertumbuhan tanaman, desinfektan dan produk semacam itu, disiapkan dalam bentuk atau kemasan untuk penjualan eceran atau sebagai preparat atau barang (misalnya, pita, sumbu dan lilin yang diproses dengan belerang, dan kertas lalat)."
+  },
+  {
+    "code": "380900",
+    "description": "Bahan untuk penyempurnaan, pembawa bahan celup untuk mempercepat proses pencelupan atau pengolahan bahan celup dan produk serta preparat lainnya (misalnya dressing dan mordant), dari jenis yang digunakan dalam industri tekstil, kertas, kulit samak atau industri sejenis, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "381000",
+    "description": "Preparat bersifat asam untuk permukaan logam; flux dan preparat tambahan lainnya untuk menyolder, mematri atau mengelas; bubuk dan pasta untuk menyolder, mematri atau mengelas terdiri dari logam dan bahan lain; preparat dari jenis yang digunakan sebagai inti atau pelapis untuk elektroda las atau batang las."
+  },
+  {
+    "code": "381100",
+    "description": "Preparat untuk mencegah ketukan, pencegah oksidasi, mencegah gum, meningkatkan viskositas, preparat anti-korosi dan olahan aditif lainnya, untuk minyak mineral (termasuk bensin) atau untuk cairan lain yang digunakan untuk tujuan yang sama seperti minyak mineral."
+  },
+  {
+    "code": "381200",
+    "description": "Olahan akselerator untuk karet; kompon peliat untuk karet atau plastik, tidak dirinci atau termasuk dalam pos lainnya; preparat antioksidasi dan kompon stabilisator lainnya untuk karet atau plastik."
+  },
+  {
+    "code": "381300",
+    "description": "Preparat dan bahan pengisi alat pemadam kebakaran; granat pemadam kebakaran yang sudah diisi."
+  },
+  {
+    "code": "381400",
+    "description": "Komposit pelarut dan pengencer organik, tidak dirinci atau termasuk dalam pos lainnya; olahan penghapus cat atau pernis."
+  },
+  {
+    "code": "381500",
+    "description": "Preparat inisiator reaksi, akselerator reaksi dan katalisator, tidak dirinci atau termasuk dalam pos lain."
+  },
+  {
+    "code": "381600",
+    "description": "Semen, mortar, beton dan komposisi semacam itu yang tahan api, termasuk campuran adukan dolomit, selain produk dari pos 38.01."
+  },
+  {
+    "code": "381700",
+    "description": "Campuran alkilbenzena dan campuran alkilnaftalena, selain yang dimaksud dalam pos 27.07 atau 29.02."
+  },
+  {
+    "code": "381800",
+    "description": "Unsur kimia yang diolah untuk digunakan dalam elektronik, dalam bentuk cakram, wafer atau bentuk semacam itu; senyawa kimia yang diolah untuk digunakan dalam elektronik."
+  },
+  {
+    "code": "381900",
+    "description": "Cairan rem hidrolik dan cairan olahan lainnya untuk transmisi hidrolik, tidak mengandung atau mengandung minyak petroleum atau minyak yang diperoleh dari mineral mengandung bitumen kurang dari 70 % menurut beratnya."
+  },
+  {
+    "code": "382000",
+    "description": "Preparat anti beku dan cairan olahan untuk mencairkan es."
+  },
+  {
+    "code": "382100",
+    "description": "Media kultur olahan untuk pengembangan atau perawatan mikro organisme (termasuk virus dan semacamnya) atau sel tumbuhan, manusia atau hewan."
+  },
+  {
+    "code": "382200",
+    "description": "Reagen diagnosa atau laboratorium pada bahan pendukung, olahan reagen diagnosa atau laboratorium pada bahan pendukung maupun tidak, disiapkan dalam bentuk kit maupun tidak, selain yang dimaksud dalam pos 30.06; bahan referensi bersertifikat."
+  },
+  {
+    "code": "382300",
+    "description": "Asam lemak monokarboksilat industri; minyak asam dari pemurnian; alkohol lemak industri."
+  },
+  {
+    "code": "382400",
+    "description": "Olahan pengikat untuk acuan atau inti penuangan logam; produk dan preparat kimia dari industri kimia atau industri terkait (termasuk olahan yang terdiri dari campuran produk alami), tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "382500",
+    "description": "Produk residu dari industri kimia atau industri terkait, tidak dirinci atau termasuk dalam pos lainnya; limbah rumah tangga; endapan kotoran; limbah lainnya yang dirinci dalam Catatan 6 pada bab ini."
+  },
+  {
+    "code": "382600",
+    "description": "Biodiesel dan campurannya, tidak mengandung atau mengandung kurang dari 70 % menurut beratnya minyak petroleum atau minyak yang diperoleh dari mineral mengandung bitumen."
+  },
+  {
+    "code": "382700",
+    "description": "Campuran mengandung turunan halogenasi dari metana, etana atau propana, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "390000",
+    "description": "Plastik dan barang daripadanya"
+  },
+  {
+    "code": "390100",
+    "description": "Polimer dari etilena, dalam bentuk asal."
+  },
+  {
+    "code": "390200",
+    "description": "Polimer dari propilena atau dari olefin lainnya, dalam bentuk asal."
+  },
+  {
+    "code": "390300",
+    "description": "Polimer dari stirena, dalam bentuk asal."
+  },
+  {
+    "code": "390400",
+    "description": "Polimer dari vinil klorida atau dari halogenasi olefin lainnya, dalam bentuk asal."
+  },
+  {
+    "code": "390500",
+    "description": "Polimer dari vinil asetat atau dari vinil ester lainnya, dalam bentuk asal; polimer vinil lainnya dalam bentuk asal."
+  },
+  {
+    "code": "390600",
+    "description": "Polimer akrilik dalam bentuk asal."
+  },
+  {
+    "code": "390700",
+    "description": "Poliasetal, polieter lainnya dan resin epoksida, dalam bentuk asal; polikarbonat, resinalkid, polialil ester dan poliester lainnya, dalam bentuk asal."
+  },
+  {
+    "code": "390800",
+    "description": "Poliamida dalam bentuk asal."
+  },
+  {
+    "code": "390900",
+    "description": "Amino-resin, resin fenolik dan poliuretan, dalam bentuk asal."
+  },
+  {
+    "code": "391000",
+    "description": "Silikon dalam bentuk asal."
+  },
+  {
+    "code": "391100",
+    "description": "Resin petroleum, resin kumaron-indena, politerpena, polisulfida, polisulfon dan produk lain dirinci dalam Catatan 3 pada Bab ini, tidak dirinci atau termasuk dalam pos lainnya, dalam bentuk asal."
+  },
+  {
+    "code": "391200",
+    "description": "Selulosa dan turunan kimianya, tidak dirinci atau termasuk dalam pos lainnya, dalam bentuk asal."
+  },
+  {
+    "code": "391300",
+    "description": "Polimer alam (misalnya, asam alginat) dan polimer alam yang dimodifikasi (misalnya protein dikeraskan, turunan kimia dari karet alam), tidak dirinci atau termasuk dalam pos manapun, dalam bentuk asal."
+  },
+  {
+    "code": "391400",
+    "description": "Penukar ion dibuat dari polimer pos 39.01 sampai dengan 39.13, dalam bentuk asal."
+  },
+  {
+    "code": "391500",
+    "description": "Sisa, reja dan skrap, dari plastik."
+  },
+  {
+    "code": "391600",
+    "description": "Monofilamen yang ukuran setiap penampang silangnya melebihi 1 mm, berbentuk batang kecil, stik dan profil, yang permukaannya dikerjakan maupun tidak tetapi tidak dikerjakan secara lain, dari plastik."
+  },
+  {
+    "code": "391700",
+    "description": "Pembuluh, pipa dan selang, serta alat kelengkapan dari padanya (misalnya, penyambung pipa, elbow, flensa), dari plastik."
+  },
+  {
+    "code": "391800",
+    "description": "Penutup lantai dari plastik, dengan perekat maupun tidak, dalam gulungan atau dalam bentuk ubin; penutup dinding atau langit-langit dari plastik, sebagaimana dinyatakan dalam Catatan 9 pada Bab ini."
+  },
+  {
+    "code": "391900",
+    "description": "Pelat, lembaran, film, foil, pita, strip dan bentuk pipih lainnya berperekat, dari plastik, dalam gulungan maupun tidak."
+  },
+  {
+    "code": "392000",
+    "description": "Pelat, lembaran, film, foil dan strip lainnya, dari plastik, non seluler dan tidak diperkuat, tidak dilaminasi, tidak didukung atau tidak dikombinasi dengan cara semacam itu dengan bahan lain."
+  },
+  {
+    "code": "392100",
+    "description": "Pelat, lembaran, film, foil dan strip lainnya dari plastik."
+  },
+  {
+    "code": "392200",
+    "description": "Bak mandi, bak mandi dengan pancuran, bak cuci, wastafel, bidet, mangkuk, tempat duduk dan penutup kloset, tangki air penyiram dan perlengkapan saniter semacam itu, dari plastik."
+  },
+  {
+    "code": "392300",
+    "description": "Wadah untuk mengangkut atau mengemas barang, dari plastik; sumbat, tutup, tutup botol dan penutup lainnya, dari plastik."
+  },
+  {
+    "code": "392400",
+    "description": "Perangkat makan, perangkat dapur, peralatan rumah tangga lainnya dan peralatan toilet atau higienis, dari plastik."
+  },
+  {
+    "code": "392500",
+    "description": "Perangkat bangunan dari plastik, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "392600",
+    "description": "Barang lain dari plastik dan barang dari bahan lain yang dimaksud dalam pos 39.01 sampai dengan 39.14."
+  },
+  {
+    "code": "400000",
+    "description": "Karet dan barang daripadanya"
+  },
+  {
+    "code": "400100",
+    "description": "Karet alam, balata, getah perca, guayule, chicle dan getah alam semacam itu, dalam bentuk asal atau pelat, lembaran atau strip."
+  },
+  {
+    "code": "400200",
+    "description": "Karet sintetik dan factice diperoleh dari minyak, dalam bentuk asal atau pelat, lembaran atau strip; campuran produk dari pos 40.01 dengan produk apapun dari pos ini, dalam bentuk asal atau pelat, lembaran atau strip."
+  },
+  {
+    "code": "400300",
+    "description": "Reclaimed rubber dalam bentuk asal atau pelat, lembaran atau strip."
+  },
+  {
+    "code": "400400",
+    "description": "Sisa, reja dan skrap karet (selain karet keras) dan bubuk serta butir yang diperoleh daripadanya."
+  },
+  {
+    "code": "400500",
+    "description": "Karet campuran, tidak divulkanisasi, dalam bentuk asal atau pelat, lembaran atau strip."
+  },
+  {
+    "code": "400600",
+    "description": "Bentuk lainnya (misalnya, bentuk batang kecil, pembuluh dan profil) dan barang (misalnya, cakram dan cincin), dari karet tidak divulkanisasi."
+  },
+  {
+    "code": "400700",
+    "description": "Benang dan tali karet divulkanisasi."
+  },
+  {
+    "code": "400800",
+    "description": "Bentuk pelat, lembaran, strip, batang kecil dan profil, dari karet divulkanisasi selain karet keras."
+  },
+  {
+    "code": "400900",
+    "description": "Pembuluh, pipa dan selang dari karet divulkanisasi selain karet keras, dengan atau tanpa alat kelengkapannya (misalnya, penghubung, siku, flensa)."
+  },
+  {
+    "code": "401000",
+    "description": "Ban atau belting pengangkut atau penggerak dari karet divulkanisasi."
+  },
+  {
+    "code": "401100",
+    "description": "Ban bertekanan, baru, dari karet."
+  },
+  {
+    "code": "401200",
+    "description": "Ban bertekanan, bekas atau ditelapaki ulang, dari karet; ban padat atau bantalan, telapak ban dan penutup ban dari karet."
+  },
+  {
+    "code": "401300",
+    "description": "Ban dalam, dari karet."
+  },
+  {
+    "code": "401400",
+    "description": "Barang higienis atau farmasi (termasuk dot), dari karet divulkanisasi selain karet keras, dengan atau tanpa alat kelengkapan dari karet keras."
+  },
+  {
+    "code": "401500",
+    "description": "Pakaian dan aksesori pakaian (termasuk sarung tangan, mitten dan mitt), untuk segala keperluan, dari karet divulkanisasi selain karet keras."
+  },
+  {
+    "code": "401600",
+    "description": "Barang lain dari karet divulkanisasi selain karet keras."
+  },
+  {
+    "code": "401700",
+    "description": "Karet keras (misalnya, ebonit) dalam segala bentuk, termasuk sisa dan skrap; barang dari karet keras."
+  },
+  {
+    "code": "410000",
+    "description": "Jangat dan kulit mentah (selain kulit berbulu dan kulit samak"
+  },
+  {
+    "code": "410100",
+    "description": "Hide dan skin mentah dari hewan jenis lembu (termasuk kerbau) atau hewan jenis kuda (segar, atau diasinkan, dikeringkan, dikapur, diasamkan atau diawetkan secara lain, tetapi tidak disamak, tidak diolah secara perkamen atau tidak diolah lebih lanjut), dihilangkan bulunya atau split maupun tidak."
+  },
+  {
+    "code": "410200",
+    "description": "Skin mentah dari biri - biri atau biri - biri muda (segar atau diasinkan, dikeringkan, dikapur, diasamkan atau diawetkan secara lain tetapi tidak disamak, tidak diolah secara perkamen atau tidak diolah lebih lanjut), dengan wol atau split maupun tidak, selain yang dikecualikan oleh Catatan 1 (c) pada Bab ini."
+  },
+  {
+    "code": "410300",
+    "description": "Hide dan skin mentah lainnya (segar atau diasinkan, dikeringkan, dikapur, diasamkan atau diawetkan secara lain, tetapi tidak disamak, tidak diolah secara perkamen atau tidak diolah lebih lanjut), dihilangkan bulunya atau split maupun tidak, selain yang dikecualikan oleh Catatan 1 (b) atau Catatan 1 (c) dalam Bab ini."
+  },
+  {
+    "code": "410400",
+    "description": "Hide dan skin dari hewan jenis lembu (termasuk kerbau) atau hewan jenis kuda yang disamak atau crust, tanpa bulu, split maupun tidak, tetapi tidak diolah lebih lanjut."
+  },
+  {
+    "code": "410500",
+    "description": "Skin dari biri-biri atau biri-biri muda disamak atau crust, tanpa wol, split maupun tidak, tetapi tidak diolah lebih lanjut."
+  },
+  {
+    "code": "410600",
+    "description": "Hide dan skin dari hewan lainnya disamak atau crust, tanpa wol atau bulu, split maupun tidak, tetapi tidak diolah lebih lanjut."
+  },
+  {
+    "code": "410700",
+    "description": "Kulit samak yang diolah lebih lanjut setelah penyamakan atau crusting, termasuk kulit samak yang diolah secara perkamen, dari hewan jenis lembu (termasuk kerbau) atau hewan jenis kuda, tanpa bulu, split maupun tidak, selain kulit samak dari pos 41.14."
+  },
+  {
+    "code": "411200",
+    "description": "Kulit samak yang diolah lebih lanjut setelah penyamakan atau crusting, termasuk kulit samak yang diolah secara perkamen dari biri-biri atau biri-biri muda, tanpa wol, split maupun tidak, selain kulit samak dari pos 41.14."
+  },
+  {
+    "code": "411300",
+    "description": "Kulit samak yang diolah lebih lanjut setelah penyamakan atau crusting, termasuk kulit samak yang diolah secara perkamen dari hewan lainnya, tanpa wol atau bulu, split maupun tidak, selain kulit samak dari pos 41.14."
+  },
+  {
+    "code": "411400",
+    "description": "Kulit chamois (termasuk kulit chamois kombinasi); kulit paten dan kulit paten dilaminasi, kulit samak dilapisi logam."
+  },
+  {
+    "code": "411500",
+    "description": "Kulit komposisi dengan bahan dasar kulit samak atau serat kulit samak, dalam lembaran tebal, lembaran atau strip, dalam gulungan maupun tidak; reja dan sisa lainnya dari kulit samak atau dari kulit komposisi, tidak cocok untuk pembuatan barang dari kulit samak; debu, bubuk dan tepung kulit samak."
+  },
+  {
+    "code": "420000",
+    "description": "Barang dari kulit samak; saddlery dan harness; barang untuk bepergian, tas tangan dan kemasan semacam itu; barang dari usus binatang (selain benang ulat sutra)"
+  },
+  {
+    "code": "420100",
+    "description": "Saddlery dan harness untuk semua macam binatang (termasuk tali kekang, kekang, penutup lutut, penutup mulut, tutup sadel, tas sadel, jaket anjing dan sejenisnya), dari berbagai bahan."
+  },
+  {
+    "code": "420200",
+    "description": "Peti, koper, vanity-case, tas eksekutif, tas kantor, tas sekolah, dompet kacamata, tas teropong, tas kamera, tas peralatan musik, koper senjata, sarung pistol dan kemasan semacam itu; tas untuk bepergian, tas makanan dan minuman bersekat, tas rias, ransel, tas tangan, tas belanja, dompet, pundi, tempat peta, tempat rokok, kantong tembakau, tas perkakas, tas olahraga, tempat botol, kotak perhiasan, kotak bedak, tempat pisau dan kemasan semacam itu dari kulit samak atau dari kulit komposisi, dengan lembaran dari plastik, atau dari bahan tekstil, atau dari serat vulkanisasi atau dari kertas karton seluruhnya atau sebagian besar dibungkus bahan tersebut atau dengan kertas."
+  },
+  {
+    "code": "420300",
+    "description": "Pakaian dan aksesori pakaian, dari kulit samak atau dari kulit komposisi."
+  },
+  {
+    "code": "420500",
+    "description": "Barang lainnya dari kulit samak atau dari kulit komposisi."
+  },
+  {
+    "code": "420600",
+    "description": "Barang dari usus (selain benang ulat sutra), dari kulit goldbeater, dari kandung kemih atau dari urat."
+  },
+  {
+    "code": "430000",
+    "description": "Kulit berbulu dan bulu artifisial; barang daripadanya"
+  },
+  {
+    "code": "430100",
+    "description": "Kulit berbulu mentah (termasuk kepala, ekor, cakar dan bagian atau potongan lainnya, cocok digunakan untuk pakaian kulit berbulu), selain hides dan skins mentah dari pos 41.01, 41.02 atau 41.03."
+  },
+  {
+    "code": "430200",
+    "description": "Kulit berbulu disamak atau dikerjakan (termasuk kepala, ekor, cakar dan bagian atau potongan lainnya), dipisah, atau disatukan (tanpa penambahan bahan lainnya) selain yang dimaksud dalam pos 43.03."
+  },
+  {
+    "code": "430300",
+    "description": "Pakaian, aksesori pakaian dan barang lainnya dari kulit berbulu."
+  },
+  {
+    "code": "430400",
+    "description": "Bulu artifisial dan barang terbuat dari padanya."
+  },
+  {
+    "code": "440000",
+    "description": "Kayu dan barang dari kayu; arang kayu"
+  },
+  {
+    "code": "440100",
+    "description": "Kayu bakar, berbentuk log, billet, ranting, ikatan cabang atau bentuk semacam itu; kayu dalam bentuk keping atau pecahan kayu; serbuk gergaji dan sisa serta skrap kayu, diaglomerasi berbentuk log, briket, pelet atau bentuk semacam itu maupun tidak diaglomerasi"
+  },
+  {
+    "code": "440200",
+    "description": "Arang kayu (termasuk arang dari tempurung atau arang dari buah bertempurung), diaglomerasi maupun tidak."
+  },
+  {
+    "code": "440300",
+    "description": "Kayu kasar, dihilangkan kulit atau kayu gubalnya maupun tidak, atau dibentuk bujur sangkar secara kasar."
+  },
+  {
+    "code": "440400",
+    "description": "Kayu simpai; galah belahan; piles, tiang pancang dan tonggak dari kayu, runcing tetapi tidak digergaji memanjang; tongkat kayu, dipotong secara kasar tetapi tidak dibubut, dibengkokkan atau dikerjakan secara lain, cocok untuk pembuatan tongkat jalan, payung, gagang perkakas atau sejenisnya; kepingan kayu dan sejenisnya."
+  },
+  {
+    "code": "440500",
+    "description": "Wol kayu; tepung kayu."
+  },
+  {
+    "code": "440600",
+    "description": "Bantalan (cross-tie) rel kereta api atau trem dari kayu."
+  },
+  {
+    "code": "440700",
+    "description": "Kayu digergaji atau dibelah memanjang, diiris atau dikuliti, diketam, diampelas atau end-jointed maupun tidak, dengan ketebalan melebihi 6 mm."
+  },
+  {
+    "code": "440800",
+    "description": "Lembaran untuk veneering (termasuk yang diperoleh dengan cara mengiris kayu yang dilaminasi), untuk kayu lapis atau kayu yang dilaminasi semacam itu dan kayu lainnya, digergaji memanjang, diiris atau dikuliti, diketam, diampelas, disambung atau end-jointed maupun tidak, dengan ketebalan tidak melebihi 6 mm."
+  },
+  {
+    "code": "440900",
+    "description": "Kayu (termasuk strip dan frieze untuk lantai papan, tidak dipasang) dibentuk tidak terputus (diberi lidah, diberi alur, tepinya dikorok, diberi lereng, V-jointed, beaded, diberi pola bentukan, dibundarkan atau sejenis itu), sepanjang tepi, ujung atau permukaannya, diketam, diampelas atau end-jointed maupun tidak."
+  },
+  {
+    "code": "441000",
+    "description": "Papan partikel, papan oriented strand (OSB) dan papan semacam itu (misalnya, papan wafer) dari kayu atau bahan mengandung lignin lainnya, diaglomerasi dengan resin atau dengan zat pengikat organik lainnya maupun tidak."
+  },
+  {
+    "code": "441100",
+    "description": "Papan fiber dari kayu atau bahan mengandung lignin lainnya, direkatkan dengan resin atau zat organik lainnya maupun tidak."
+  },
+  {
+    "code": "441200",
+    "description": "Kayu lapis, panel veneer dan kayu dilaminasi semacam itu."
+  },
+  {
+    "code": "441300",
+    "description": "Kayu dipadatkan, berbentuk blok, pelat, strip atau profil."
+  },
+  {
+    "code": "441400",
+    "description": "Bingkai kayu untuk lukisan, foto, cermin atau benda semacam itu."
+  },
+  {
+    "code": "441500",
+    "description": "Peti, kotak, krat, drum dan pengemas semacam itu, dari kayu; gelendong kabel dari kayu; palet, palet kotak dan papan untuk muatan lainnya, dari kayu; kerah palet dari kayu."
+  },
+  {
+    "code": "441600",
+    "description": "Tahang, tong, bejana, pasu dan produk lainnya dari pembuat tong/pasu dan bagiannya, dari kayu, termasuk stave."
+  },
+  {
+    "code": "441700",
+    "description": "Perkakas, badan perkakas, gagang perkakas, badan dan gagang sapu atau sikat dan gagangnya dari kayu; kelebut bot atau sepatu dan boot tree atau shoe tree, dari kayu."
+  },
+  {
+    "code": "441800",
+    "description": "Produk pertukangan dan bahan bangunan rumah dari kayu, termasuk panel kayu seluler, rakitan panel penutup lantai, atap sirap dan shake."
+  },
+  {
+    "code": "441900",
+    "description": "Perangkat makan dan perangkat dapur, dari kayu."
+  },
+  {
+    "code": "442000",
+    "description": "Tatakan kayu dan kayu bertatah; kotak dan peti untuk perhiasan atau peralatan makan dan barang semacam itu, dari kayu; patung kecil dan ornamen lainnya, dari kayu; perabotan dari kayu yang tidak termasuk Bab 94."
+  },
+  {
+    "code": "442100",
+    "description": "Barang lainnya dari kayu."
+  },
+  {
+    "code": "450000",
+    "description": "Gabus dan barang dari gabus"
+  },
+  {
+    "code": "450100",
+    "description": "Gabus alam, mentah atau diolah sederhana; gabus sisa; gabus pecahan, butiran atau gilingan."
+  },
+  {
+    "code": "450200",
+    "description": "Gabus alam, dikupas atau dibentuk bujur sangkar secara kasar, atau dalam blok empat persegi panjang (termasuk bujur sangkar), pelat, lembaran atau strip (termasuk sharp-edged blanks untuk sumbat atau penutup)."
+  },
+  {
+    "code": "450300",
+    "description": "Barang dari gabus alam."
+  },
+  {
+    "code": "450400",
+    "description": "Gabus diaglomerasi (dengan atau tanpa zat pengikat) dan barang dari gabus diaglomerasi."
+  },
+  {
+    "code": "460000",
+    "description": "Barang dari jerami, dari rumput esparto dan dari bahan anyaman lainnya; keranjang dan barang anyaman"
+  },
+  {
+    "code": "460100",
+    "description": "Anyaman dan produk semacam itu dari bahan anyaman, strip maupun tidak; bahan anyaman, anyaman dan produk semacam itu dari bahan anyaman, diikat bersama menjadi untaian atau tenunan sejajar, dalam bentuk lembaran, merupakan barang jadi maupun tidak (misalnya, mat, matting, tirai)."
+  },
+  {
+    "code": "460200",
+    "description": "Keranjang, barang anyaman dan barang lainnya, dibuat secara langsung menjadi berbentuk dari bahan anyaman atau dibuat dari barang dalam pos 46.01; barang dari loofah."
+  },
+  {
+    "code": "470000",
+    "description": "Pulp dari kayu atau dari bahan selulosa berserat lainnya; Kertas atau kertas karton yang dipulihkan (sisa dan skrap)"
+  },
+  {
+    "code": "470100",
+    "description": "Pulp kayu mekanik."
+  },
+  {
+    "code": "470200",
+    "description": "Pulp kayu kimia, dissolving grade."
+  },
+  {
+    "code": "470300",
+    "description": "Pulp kayu kimia, soda atau sulfat, selain dissolving grade."
+  },
+  {
+    "code": "470400",
+    "description": "Pulp kayu kimia, sulfit, selain dissolving grade."
+  },
+  {
+    "code": "470500",
+    "description": "Pulp kayu yang diperoleh melalui kombinasi proses pembuatan pulp secara mekanik dan kimia."
+  },
+  {
+    "code": "470600",
+    "description": "Pulp dari serat yang berasal dari kertas atau kertas karton yang dipulihkan (sisa dan skrap) atau dari bahan selulosa berserat lainnya."
+  },
+  {
+    "code": "470700",
+    "description": "Kertas atau kertas karton yang dipulihkan (sisa dan skrap)."
+  },
+  {
+    "code": "480000",
+    "description": "Kertas dan kertas karton; barang dari pulp kertas, dari kertas atau dari kertas karton"
+  },
+  {
+    "code": "480100",
+    "description": "Kertas koran, dalam gulungan atau lembaran."
+  },
+  {
+    "code": "480200",
+    "description": "Uncoated paper dan paperboard, dari jenis yang digunakan untuk penulisan, pencetakan atau keperluan grafik lainnya, dan non perforated punch-cards dan punch tape paper, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar) dari berbagai ukuran, selain dari pos 48.01 atau 48.03; hand-made paper dan paperboard."
+  },
+  {
+    "code": "480300",
+    "description": "Kertas toilet atau kertas tisu untuk kulit muka, kertas handuk atau kertas serbet dan kertas semacam itu dari jenis yang digunakan untuk keperluan rumah tangga atau saniter, gumpalan selulosa dan web dari serat selulosa, dikisutkan, dikerutkan, diembos, dilubangi, diwarnai permukaannya, dihias atau dicetak permukaannya maupun tidak, dalam gulungan atau lembaran."
+  },
+  {
+    "code": "480400",
+    "description": "Kertas kraft dan kertas karton tidak dilapisi, dalam gulungan atau lembaran, selain yang dimaksud dalam pos 48.02 atau 48.03."
+  },
+  {
+    "code": "480500",
+    "description": "Kertas dan kertas karton tidak dilapisi lainnya, dalam gulungan atau lembaran, tidak dikerjakan atau diproses lebih lanjut selain yang dirinci dalam Catatan 3 pada Bab ini."
+  },
+  {
+    "code": "480600",
+    "description": "Perkamen nabati, kertas tahan lemak, kertas kalkir dan kertas glasin serta kertas transparan dikilapkan atau kertas bening lainnya, dalam gulungan atau lembaran."
+  },
+  {
+    "code": "480700",
+    "description": "Kertas komposit dan kertas karton komposit (dibuat dengan merekatkan beberapa lapisan datar kertas atau kertas karton dengan perekat), permukaannya tidak dilapisi atau diresapi , bagian dalamnya diperkuat maupun tidak, dalam gulungan atau lembaran."
+  },
+  {
+    "code": "480800",
+    "description": "Kertas dan kertas karton, bergelombang (dengan atau tanpa dilekati lembaran yang datar permukaannya), dikisutkan, dikerutkan, diembos atau dilubangi, dalam gulungan atau lembaran, selain kertas dari jenis yang diuraikan dalam pos 48.03."
+  },
+  {
+    "code": "480900",
+    "description": "Kertas karbon, kertas self-copy dan kertas kopi atau kertas transfer lainnya (termasuk kertas dilapisi atau kertas diresapi untuk stensil duplikator atau pelat offset), dicetak maupun tidak, dalam gulungan atau lembaran."
+  },
+  {
+    "code": "481000",
+    "description": "Kertas dan kertas karton, dilapisi pada satu atau kedua sisinya dengan kaolin (China clay) atau dengan zat anorganik lainnya, dengan atau tanpa zat pengikat, dan tanpa lapisan lainnya, baik diwarnai permukaannya, dihias permukaannya maupun dicetak, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar), dalam berbagai ukuran."
+  },
+  {
+    "code": "481100",
+    "description": "Kertas, kertas karton, gumpalan selulosa dan web dari serat selulosa, dilapisi, diresapi, ditutupi, diwarnai permukaannya, dihias permukaannya atau dicetak, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar), dalam berbagai ukuran, selain barang dari jenis yang diuraikan dalam pos 48.03, 48.09 atau 48.10."
+  },
+  {
+    "code": "481200",
+    "description": "Blok, lempengan dan pelat filter, dari pulp kertas."
+  },
+  {
+    "code": "481300",
+    "description": "Kertas sigaret, dipotong menurut ukuran atau dalam bentuk buklet atau tabung maupun tidak."
+  },
+  {
+    "code": "481400",
+    "description": "Kertas dinding dan penutup dinding semacam itu; kertas jendela transparan."
+  },
+  {
+    "code": "481600",
+    "description": "Kertas karbon, kertas self-copy dan kertas kopi serta kertas transfer lainnya (selain yang dimaksud dalam pos 48.09), stensil duplikator dan pelat offset, dari kertas, disiapkan dalam kotak maupun tidak."
+  },
+  {
+    "code": "481700",
+    "description": "Amplop, kartu pos, kartu pos bergambar dan kartu korespondensi, dari kertas atau kertas karton; boks, kantong, dompet dan writing compendium, dari kertas atau kertas karton, berisi beraneka ragam alat tulis kantor dari kertas."
+  },
+  {
+    "code": "481800",
+    "description": "Kertas toilet dan kertas semacam itu, gumpalan selulosa atau web dari serat selulosa, dari jenis yang digunakan untuk keperluan rumah tangga atau saniter, dalam gulungan dengan lebar tidak melebihi 36 cm, atau dipotong menurut ukuran atau bentuk; saputangan, cleansing tissue, handuk, taplak meja, serbet, serbet bayi, tampon, sprei dan barang semacam itu untuk rumah tangga, saniter atau rumah sakit, pakaian dan aksesori pakaian, dari pulp kertas, kertas, gumpalan selulosa atau web dari serat selulosa."
+  },
+  {
+    "code": "481900",
+    "description": "Karton, boks, peti, tas dan kemasan lainnya, dari kertas, kertas karton, gumpalan selulosa atau web dari serat selulosa; boks arsip, baki surat, dan barang semacam itu dari jenis yang digunakan di kantor, toko atau sejenisnya."
+  },
+  {
+    "code": "482000",
+    "description": "Buku register, buku akun, buku catatan, buku pesanan, buku tanda terima, blok surat, blok memo, buku harian dan buku latihan, kertas isap, sampul buku (sampul lepas) dan sampul lainnya, dari kertas atau kertas karton; album untuk contoh atau untuk koleksi dan sampul buku, dari kertas atau kertas karton."
+  },
+  {
+    "code": "482100",
+    "description": "Label kertas atau kertas karton dari segala jenis, dicetak maupun tidak."
+  },
+  {
+    "code": "482200",
+    "description": "Bobbins, spools, cops dan penyangga semacam itu dari pulp kertas, kertas atau kertas karton (baik dilubangi maupun dikeraskan)."
+  },
+  {
+    "code": "482300",
+    "description": "Kertas, kertas karton, gumpalan selulosa dan web dari serat selulosa lainnya, dipotong menurut ukuran atau bentuk; barang lain dari pulp kertas, kertas, kertas karton, gumpalan selulosa atau web dari serat selulosa."
   }
 ]
