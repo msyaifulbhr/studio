@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, ThumbsUp, ThumbsDown, BookCopy } from "lucide-react";
+import { Loader2, Wand2, ThumbsUp, ThumbsDown, BookCopy, LayoutGrid, List } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -256,10 +256,16 @@ export function HsCodeAnalyzer() {
 
         {results && !isLoading && results.length > 0 && (
           <Tabs defaultValue="card" className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="card">Tampilan Kartu</TabsTrigger>
-              <TabsTrigger value="table">Tampilan Tabel</TabsTrigger>
-            </TabsList>
+            <div className="flex justify-end">
+              <TabsList>
+                <TabsTrigger value="card" aria-label="Tampilan Kartu">
+                  <LayoutGrid className="h-5 w-5" />
+                </TabsTrigger>
+                <TabsTrigger value="table" aria-label="Tampilan Tabel">
+                  <List className="h-5 w-5" />
+                </TabsTrigger>
+              </TabsList>
+            </div>
             <TabsContent value="card">
               <div className="space-y-4 mt-4">
                   {results.map((item, index) => (
