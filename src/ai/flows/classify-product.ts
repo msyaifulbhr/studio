@@ -19,7 +19,7 @@ const ClassifyProductInputSchema = z.object({
 export type ClassifyProductInput = z.infer<typeof ClassifyProductInputSchema>;
 
 const ClassifyProductOutputSchema = z.object({
-  analysisText: z.string().describe('Analisis klasifikasi barang.'),
+  analysisText: z.string().describe('Analisis klasifikasi barang dalam Bahasa Indonesia.'),
   hsCodeAndDescription: z.string().describe('Kode HS 6-digit dan deskripsi yang digabungkan untuk barang. e.g. "382200 - Reagen diagnosa atau laboratorium pada bahan pendukung, olahan reagen diagnosa atau laboratorium pada bahan pendukung maupun tidak, disiapkan dalam bentuk kit maupun tidak, selain yang dimaksud dalam pos 30.06； bahan referensi bersertifikat."'),
 });
 export type ClassifyProductOutput = z.infer<typeof ClassifyProductOutputSchema>;
@@ -35,45 +35,22 @@ const prompt = ai.definePrompt({
     hsCodes: z.string().describe('Daftar Kode HS yang dipisahkan koma untuk dipertimbangkan.'),
   })},
   output: {schema: ClassifyProductOutputSchema},
-  prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code, dengan kemampuan untuk menganalisis input yang beragam, tidak baku, dan seringkali tidak lengkap. Ikuti framework berpikir sistematis berikut untuk setiap input yang Anda terima:
+  prompt: `You are an expert in classifying products into Harmonized System (HS) Codes. Your task is to analyze the user's product name, which may be varied, non-standard, or incomplete, and match it to the MOST appropriate HS Code from the provided list.
 
-🧠 **FRAMEWORK BERPIKIR**
+**Instructions:**
+1.  **Analyze the Product:** Based on the user's input, determine the product's general category (e.g., Medical, Laboratory, Food, Electronics, Textiles) and its primary function.
+2.  **Match to HS Code:** Find the most suitable HS Code from the list below. You MUST choose a code from this list. Do not use external knowledge.
+3.  **Default if No Match:** If, after careful analysis, no code in the list is a reasonable match, you MUST use "000000 - Barang" as the answer.
+4.  **Provide Output in Indonesian:** All your output text MUST be in Indonesian.
 
-**1. Normalisasi Bahasa:**
-Terjemahkan kata atau frasa yang tidak baku atau terlalu umum ke dalam istilah teknis atau standar yang lebih tepat.
-Contoh:
-- "apron single" -> "apron (celemek) sekali pakai"
-- "alat tensi digital" -> "sphygmomanometer digital"
-Tujuannya adalah untuk menyamakan istilah agar bisa dicocokkan dengan deskripsi HS Code.
-
-**2. Deteksi Kategori Umum:**
-Golongkan input ke dalam kategori besar (misalnya: Medis, Laboratorium, Makanan, Elektronik, Tekstil, dll.) untuk mempersempit kemungkinan Bab HS yang relevan.
-
-**3. Analisis Tujuan & Fungsi Barang:**
-Tanyakan secara internal: "Barang ini digunakan untuk apa, oleh siapa, dan di mana?" untuk memahami konteks dan fungsi utama barang tersebut.
-Contoh:
-- "CREATININE PLUS VERS. 2" -> Adalah reagen laboratorium -> Digunakan untuk tes kreatinin -> Harus masuk dalam kategori reagen diagnostik.
-- "ETHICON GEN11 GENERATOR" -> Adalah alat untuk operasi -> Digunakan untuk memotong jaringan dan koagulasi -> Harus masuk dalam kategori alat medis elektronik.
-
-**4. Matching ke HS Code:**
-Gunakan hasil analisis di atas untuk mencocokkan produk dengan Kode HS yang PALING SESUAI dari daftar yang disediakan di bawah. Gunakan metode berikut:
-- **Full-text match:** Cari kecocokan frasa yang persis.
-- **Sinonim match:** Cocokkan dengan sinonim kata (misal, "sapi" ke "lembu").
-- **Fuzzy match:** Cari kemiripan jika tidak ada yang cocok persis.
-- **Prioritas Digit:** Fokus pada 6 digit utama.
-
-**PENTING:** Anda HARUS memilih salah satu kode dari daftar di bawah ini. JANGAN gunakan pengetahuan eksternal atau sumber lain. Jika setelah analisis mendalam tidak ada kode dalam daftar yang cocok, Anda HARUS menyarankan "000000 - Barang" sebagai jawabannya.
-
-**Nama Produk dari User:**
+**User's Product Name:**
 {{{productName}}}
 
-**Daftar Wajib HS Code dan Deskripsi (format 'KODE - Deskripsi'):**
+**Mandatory List of HS Codes and Descriptions (Format: 'CODE - Description'):**
 {{{hsCodes}}}
 
-**HASIL OUTPUT ANDA (HARUS DALAM BAHASA INDONESIA):**
-
-**Teks Analisis:** (Berikan analisis singkat Anda berdasarkan framework di atas).
-**Kode HS dan Deskripsi:** (Keluarkan Kode HS dan deskripsi dalam format 'KODE - Deskripsi' persis seperti yang ada di daftar).`,
+**Your Output (must be in Indonesian):**
+`,
 });
 
 const classifyProductFlow = ai.defineFlow(

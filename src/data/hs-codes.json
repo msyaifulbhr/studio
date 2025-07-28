@@ -192,6 +192,10 @@
     "description": "Koral dan barang serupa itu, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dikerjakan lebih lanjut; cangkang moluska, krustasea atau echinodermata dan cuttle-bone, tidak dikerjakan atau dikerjakan secara sederhana tetapi tidak dipotong menjadi berbentuk, bubuk dan sisanya."
   },
   {
+    "code": "050900",
+    "description": "Ambar, kastor, jebat dan kesturi; kantaridi; empedu, kering maupun tidak; kelenjar dan produk binatang lainnya yang digunakan dalam olahan produk farmasi, segar, dingin, beku atau diawetkan sementara secara lain"
+  },
+  {
     "code": "051000",
     "description": "Ambar, kastor, jebat dan kesturi; kantaridi; empedu, kering maupun tidak; kelenjar dan produk binatang lainnya yang digunakan dalam olahan produk farmasi, segar, dingin, beku atau diawetkan sementara secara lain."
   },
@@ -285,7 +289,7 @@
   },
   {
     "code": "080100",
-    "description": "Kelapa, kacang Brasil dan kacang mede, segar atau dikeringkan, dihilangkan tempurungnya atau dikupas maupun tidak"
+    "description": "Kelapa, kacang Brasil dan kacang mede, segar atau dikeringkan, \u00a0dihilangkan tempurungnya atau dikupas maupun tidak"
   },
   {
     "code": "080200",
@@ -345,7 +349,7 @@
   },
   {
     "code": "090100",
-    "description": "Kopi, digongseng atau dihilangkan kafeinnya maupun tidak; sekam dan kulit kopi; pengganti kopi mengandung kopi dengan perbandingan berapapun"
+    "description": "Kopi, digongseng atau dihilangkan kafeinnya maupun tidak; sekam dan kulit kopi; pengganti kopi mengandung kopi dengan \u00a0perbandingan berapapun"
   },
   {
     "code": "090200",
@@ -497,7 +501,7 @@
   },
   {
     "code": "120900",
-    "description": "Biji, bua? dan spora, dari jenis yang digunakan untuk disemai"
+    "description": "Biji, &ult dan spora, dari jenis yang digunakan untuk disemai"
   },
   {
     "code": "121000",
@@ -509,11 +513,11 @@
   },
   {
     "code": "121200",
-    "description": "Kacang karob, rumput laut dan ganggang lainnya, bit gula dan tebu, segar, dingin, beku atau dikeringkan, ditumbuk maupun tidak; kulit keras buah dan kernel serta produk nabati lainnya (termasuk akar chicory yang tidak digongseng dari varietas Cichorium intybus sativum) dari jenis yang terutama digunakan untuk konsumsi manusia, tidak dirinci atau termasuk dalam pos lainnya"
+    "description": "Kacang karob, rumput laut dan ganggang lainnya, bit gula dan tebu, segar, dingin, beku atau dikeringkan, ditumbuk maupun tldak; kulit keras buah dan kernel serta produk nabati lainnya (termasuk akar chicory yang tidak digongseng dari varietas Cichorium intybus sativum) dari jenis yang terutama digunakan untuk konsumsi manusia, tidak dirinci atau termasuk dalam pos lainnya"
   },
   {
     "code": "121300",
-    "description": "Jerami dan sekam serealia, tidak diolah, baik dicacah, ditumbuk, ditekan atau dalam bentuk pelet maupun tidak"
+    "description": "Jerami dan sekam serealia, tidak diolah, balk dicacah, ditumbuk, ditekan atau dalam bentuk pelet maupun tidak"
   },
   {
     "code": "121400",
@@ -537,7 +541,7 @@
   },
   {
     "code": "140100",
-    "description": "Bahan nabati dari jenis yang terutama dipakai untuk anyam-anyaman (misalnya, bambu, rotan, buluh, kumbuh, osier, rafia, jerami serealia dibersihkan, dikelantang atau dicelup, dan kulit pohon limau)"
+    "description": "Bahan nabati dari jenis yang terutama dipakai untuk anyam-anyaman (misalnya, bambu, rotan, buluh, kumbuh, osier, rafia, jerami serealia dibersibkan, dikelantang atau dicelup, dan kulit pohon limau)"
   },
   {
     "code": "140400",
@@ -597,7 +601,7 @@
   },
   {
     "code": "151300",
-    "description": "Minyak kelapa (kopra), kernel kelapa sawit atau babassu dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikasi secara kimia"
+    "description": "Minyak kelapa (kopra), kernel kelapa sawit atau babassu dan fraksinya, dimurnikan maupun tidak, tetapi tidak dimodifikaid secara kimia"
   },
   {
     "code": "151400",
@@ -609,11 +613,11 @@
   },
   {
     "code": "151600",
-    "description": "Lemak dan minyak hewani, nabati atau mikroba dan fraksinya, sebagian atau seluruhnya dihidrogenasi, diinter-esterifikasi, re-esterifikasi atau dielaidinisasi, dimurnikan maupun tidak, tetapi tidak diolah lebih lanjut"
+    "description": "Lemak dan minyak hewani, nabati atau mikroba dan fraksinya, sebagian atau seluruhnya dihidrogenasi, diinter-esterifikasi, \u00a0re-esterifikasi atau dielaidinisasi, dimurnikan maupun tidak, tetapi tidak diolah lebih lanjut"
   },
   {
     "code": "151700",
-    "description": "Margarin; campuran atau olahan yang dapat dimakan dari lemak atau minyak hewani, nabati atau mikroba atau dari fraksi lemak atau minyak yang berbeda dalam bab ini, selain lemak dan minyak yang dapat dimakan atau fraksinya dari pos 15.16"
+    "description": "Margarin; campuran atau olahan yang \u00a0dapat dimakan dari lemak atau minyak hewani, nabati atau mikroba atau dari fraksi lemak atau minyak yang berbeda dalam bab ini, selain lemak dan minyak yang dapat dimakan atau fraksinya dari pos 15.16"
   },
   {
     "code": "151800",
@@ -697,7 +701,7 @@
   },
   {
     "code": "180500",
-    "description": "Bubuk kakao, tidak mengandung tambahan gula atau bahan pemanis lainnya"
+    "description": "Bubuk kakao, tidak mengandung tambahan gula a.tau bahan pemanis lainnya"
   },
   {
     "code": "180600",
@@ -717,7 +721,7 @@
   },
   {
     "code": "190300",
-    "description": "Tapioka dan penggantinya diolah dari pati, dalam bentuk serpih, butir, pearls, hasll ayakan atau bentuk semacam itu"
+    "description": "Tapioka dan penggantinya diolah dari \u00a0pati, dalam bentuk serpih, butir, pearls, hasll ayakan atau bentuk semacam itu"
   },
   {
     "code": "190400",
@@ -729,7 +733,7 @@
   },
   {
     "code": "200000",
-    "description": "Olahan dari sayuran, buah, biji/kacang atau bagian lain dari tanaman"
+    "description": "Olahan dari sayufan, buah, biji/kacang atau bagian lain dari tanaman"
   },
   {
     "code": "200100",
@@ -957,7 +961,7 @@
   },
   {
     "code": "251500",
-    "description": "Marmer, travertine, ecaussine dan batu berkapur lainnya untuk monumen atau bangunan dengan berat jenis sebesar 2,5 atau lebih, dan alabaster, dlkerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
+    "description": "Marmer, travertine, ecaussine dan batu berkapur lainnya untuk \u00a0monumen atau bangunan dengan berat jenis sebesar 2,5 atau lebih, dan alabaster, dlkerjakan secara kasar atau semata-mata dipotong maupun tidak, digergaji atau dengan cara lain, menjadi balok atau lembaran tebal berbentuk empat persegi panjang (termasuk bujur sangkar)"
   },
   {
     "code": "251600",
@@ -977,7 +981,7 @@
   },
   {
     "code": "252000",
-    "description": "Gips; anhidrit; plester (terdiri dari gips dikalsinasi atau kalsium sulfat) diwarnai maupun tidak, tanpa atau dengan sedikit bahan akselerator atau retarder"
+    "description": "Gips; anhidrit; plester (terdiri dari gips dikalsinasi atau kalsium sulfat) diwarnai maupun tidak, tanpa atau dengan sedlldt bahan akselerator atau retarder"
   },
   {
     "code": "252100",
@@ -1005,7 +1009,7 @@
   },
   {
     "code": "252800",
-    "description": "Borat alam dan konsentratnya (dikalsinasi maupun tidak), tetapi tidak termasuk borat yang dipisahkan dari air garam alam; asam borat alam mengandung H3BO3, tidak lebih dari 85 % dihitung dari berat kering"
+    "description": "Borat slam dan konsentrataya (dikalsinasi maupun tidak), tetapi tidak termasuk borat yang dipisahkan dari air garam alam; asam borat alam mergandung H3BO3, tidak lebih dari 85 % dihitung dari berat kering"
   },
   {
     "code": "252900",
@@ -1025,7 +1029,7 @@
   },
   {
     "code": "260200",
-    "description": "Bijih mangan dan konsentratnya, termasuk bijih mangan mengandung besi dan konsentratnya dengan kandungan mangan 20 % atau lebih, dihitung dari berat kering"
+    "description": "Bijih mangan dan konsentratnya, termasuk bljih mangan mengandung besi dan konsentratnya dengan kandungan mangan 20 % atau lebih, dihitung dari berat kering"
   },
   {
     "code": "260300",
@@ -1093,11 +1097,11 @@
   },
   {
     "code": "261900",
-    "description": "Terak, sampah (selain terak butiran), kerak logam dan sisa lainnya dari pembuatan besi atau baja"
+    "description": "Terak, sampah (selain terak butiran), kerak logam dan sisa lainnya dari pembuatan besi atau haja"
   },
   {
     "code": "262000",
-    "description": "Terak, abu dan residu (selain dari pembuatan besi atau baja) mengandung logam, arsenik atau senyawanya"
+    "description": "Terak, abu dan residu (selain dari pemhuatan besi atau baja) mengandung logam, arsenik atau senyawanya"
   },
   {
     "code": "262100",
@@ -1121,7 +1125,7 @@
   },
   {
     "code": "270400",
-    "description": "Kokas dan semi-kokas dari batu bara dari lignit atau dari gambut, diaglomerasi maupun tidak; retort karbon"
+    "description": "Kokas dan semi-kokas dad batu bara dari lignit atau dari gambut, diaglomerasi maupun tidak; retort karbon"
   },
   {
     "code": "270500",
@@ -1169,7 +1173,7 @@
   },
   {
     "code": "271600",
-    "description": "Tenaga listrik."
+    "description": "Batu hara; briket, ovoid dan bahan bakar padat semacam itu dibuat dari batu bara"
   },
   {
     "code": "280000",
@@ -1277,7 +1281,7 @@
   },
   {
     "code": "282600",
-    "description": "Fluorida; fluorosilikat, fluoroaluminat dan garam fluorin kompleks lainnya"
+    "description": "Fluorida; fluorosilikat, Ouoroaluminat dan garam fluorin kompleks lainnya"
   },
   {
     "code": "282700",
@@ -1345,7 +1349,7 @@
   },
   {
     "code": "284400",
-    "description": "Unsur kimia radioaktif dan isotop radioaktif (termasuk unsur kimia fisil atau fertil dan isotop fisil atau fertil) dan senyawanya; campuran dan residu mengandung produk ini"
+    "description": "Unsur kimia radioaktif dan isotop radioaktif (termasuk unsur kimia fisil atau fertil dan isotop fisll atau fertil) dan senyawanya; campuran dan residu mengandung produk ini"
   },
   {
     "code": "284500",
@@ -2397,43 +2401,43 @@
   },
   {
     "code": "481000",
-    "description": "Kertas dan kertas karton, dilapisi pada satu atau kedua sisinya dengan kaolin (China clay) atau dengan zat anorganik lainnya, dengan atau tanpa zat pengikat, dan tanpa lapisan lainnya, baik diwarnai permukaannya, dihias permukaannya maupun dicetak, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar), dalam berbagai ukuran."
+    "description": "Kertas dan kertas karton, dilapisi satu atau kedua sisinya dengan kaolin (tanah liat Cina) atau zat anorganik lainnya, dengan atau tanpa bahan pengikat, dan tanpa pelapis lainnya, diwarnai, dihias atau dicetak permukaannya maupun tidak, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar) dari berbagai ukuran."
   },
   {
     "code": "481100",
-    "description": "Kertas, kertas karton, gumpalan selulosa dan web dari serat selulosa, dilapisi, diresapi, ditutupi, diwarnai permukaannya, dihias permukaannya atau dicetak, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar), dalam berbagai ukuran, selain barang dari jenis yang diuraikan dalam pos 48.03, 48.09 atau 48.10."
+    "description": "Kertas, kertas karton, gumpalan selulosa dan web dari serat selulosa, dilapisi, diresapi, ditutupi, diwarnai permukaannya, dihias atau dicetak permukaannya, dalam gulungan atau lembaran empat persegi panjang (termasuk bujur sangkar), dari berbagai ukuran, selain barang dari jenis yang diuraikan dalam pos 48.03, 48.09 atau 48.10."
   },
   {
     "code": "481200",
-    "description": "Blok, lempengan dan pelat filter, dari pulp kertas."
+    "description": "Blok, lempengan dan pelat saring, dari pulp kertas."
   },
   {
     "code": "481300",
-    "description": "Kertas sigaret, dipotong menurut ukuran atau dalam bentuk buklet atau tabung maupun tidak."
+    "description": "Kertas sigaret, dipotong menurut ukuran maupun tidak, baik dalam bentuk buklet atau tabung."
   },
   {
     "code": "481400",
-    "description": "Kertas dinding dan penutup dinding semacam itu; kertas jendela transparan."
+    "description": "Wallpaper dan penutup dinding semacam itu; kertas transparansi untuk jendela."
   },
   {
     "code": "481600",
-    "description": "Kertas karbon, kertas self-copy dan kertas kopi serta kertas transfer lainnya (selain yang dimaksud dalam pos 48.09), stensil duplikator dan pelat offset, dari kertas, disiapkan dalam kotak maupun tidak."
+    "description": "Kertas karbon, kertas self-copy dan kertas kopi atau kertas transfer lainnya (selain yang dimaksud dalam pos 48.09), stensil duplikator dan pelat offset, dari kertas, disiapkan dalam kotak maupun tidak."
   },
   {
     "code": "481700",
-    "description": "Amplop, kartu pos, kartu pos bergambar dan kartu korespondensi, dari kertas atau kertas karton; boks, kantong, dompet dan writing compendium, dari kertas atau kertas karton, berisi beraneka ragam alat tulis kantor dari kertas."
+    "description": "Amplop, kartu surat, kartu pos polos dan kartu korespondensi, dari kertas atau kertas karton; kotak, kantong, dompet dan kompendium tulisan, dari kertas atau kertas karton, berisi bermacam-macam kertas surat."
   },
   {
     "code": "481800",
-    "description": "Kertas toilet dan kertas semacam itu, gumpalan selulosa atau web dari serat selulosa, dari jenis yang digunakan untuk keperluan rumah tangga atau saniter, dalam gulungan dengan lebar tidak melebihi 36 cm, atau dipotong menurut ukuran atau bentuk; saputangan, cleansing tissue, handuk, taplak meja, serbet, serbet bayi, tampon, sprei dan barang semacam itu untuk rumah tangga, saniter atau rumah sakit, pakaian dan aksesori pakaian, dari pulp kertas, kertas, gumpalan selulosa atau web dari serat selulosa."
+    "description": "Kertas toilet dan kertas semacam itu, gumpalan selulosa atau web dari serat selulosa, dari jenis yang digunakan untuk keperluan rumah tangga atau saniter, dalam gulungan dengan lebar tidak melebihi 36 cm, atau dipotong menurut ukuran atau bentuk tertentu; saputangan, tisu pembersih, handuk, taplak meja, serbet, seprei dan keperluan rumah tangga semacam itu, barang keperluan saniter atau rumah sakit, pakaian dan aksesori pakaian, dari pulp kertas, kertas, gumpalan selulosa atau web serat selulosa."
   },
   {
     "code": "481900",
-    "description": "Karton, boks, peti, tas dan kemasan lainnya, dari kertas, kertas karton, gumpalan selulosa atau web dari serat selulosa; boks arsip, baki surat, dan barang semacam itu dari jenis yang digunakan di kantor, toko atau sejenisnya."
+    "description": "Kardus, kotak, peti, tas dan kemasan lainnya dari kertas, kertas karton, gumpalan selulosa atau web dari serat selulosa; kotak arsip, nampan surat dan barang semacam itu, dari kertas atau kertas karton, dari jenis yang digunakan di kantor, di toko atau sejenisnya."
   },
   {
     "code": "482000",
-    "description": "Buku register, buku akun, buku catatan, buku pesanan, buku tanda terima, blok surat, blok memo, buku harian dan buku latihan, kertas isap, sampul buku (sampul lepas) dan sampul lainnya, dari kertas atau kertas karton; album untuk contoh atau untuk koleksi dan sampul buku, dari kertas atau kertas karton."
+    "description": "Buku daftar, buku kas, buku catatan, buku pesanan, buku tanda terima, blok kertas surat, blok kertas memo, buku harian dan barang semacam itu, buku tulis, blok kertas isap, penjilid (lembaran lepas atau lain-lain), map, penyimpan berkas, formulir bermacam-macam bisnis, karbon set bersela lembaran kosong dan barang tulis-menulis lainnya, dari kertas atau kertas karton; album untuk contoh atau untuk koleksi dan sampul buku, dari kertas atau kertas karton."
   },
   {
     "code": "482100",
@@ -2441,10 +2445,2950 @@
   },
   {
     "code": "482200",
-    "description": "Bobbins, spools, cops dan penyangga semacam itu dari pulp kertas, kertas atau kertas karton (baik dilubangi maupun dikeraskan)."
+    "description": "Bobbin, kelos, cop dan alat penunjang semacam itu dari pulp kertas, kertas atau kertas karton (dilubangi atau dikeraskan maupun tidak)."
   },
   {
     "code": "482300",
-    "description": "Kertas, kertas karton, gumpalan selulosa dan web dari serat selulosa lainnya, dipotong menurut ukuran atau bentuk; barang lain dari pulp kertas, kertas, kertas karton, gumpalan selulosa atau web dari serat selulosa."
+    "description": "Kertas, kertas karton, gumpalan selulosa dan web serat selulosa lainnya, dipotong menurut ukuran atau bentuk; barang lainnya dari pulp kertas, kertas, kertas karton, gumpalan selulosa atau web serat selulosa."
+  },
+  {
+    "code": "490000",
+    "description": "Buku, koran, gambar cetakan dan produk lainnya dari industri percetakan; naskah tulisan tangan, naskah ketikan dan rencana"
+  },
+  {
+    "code": "490100",
+    "description": "Buku cetakan, brosur, selebaran dan barang cetakan semacam itu, dalam lembaran tunggal maupun tidak."
+  },
+  {
+    "code": "490200",
+    "description": "Koran, jurnal dan majalah berkala, bergambar atau berisi iklan maupun tidak."
+  },
+  {
+    "code": "490300",
+    "description": "Buku bergambar, buku untuk menggambar atau mewarnai untuk anak-anak."
+  },
+  {
+    "code": "490400",
+    "description": "Buku musik, dicetak atau dalam bentuk manuskrip, dijilid atau bergambar maupun tidak."
+  },
+  {
+    "code": "490500",
+    "description": "Peta dan peta hidrografi atau peta semacam itu dari segala jenis, termasuk atlas, peta dinding, peta topografi serta bola dunia, dicetak."
+  },
+  {
+    "code": "490600",
+    "description": "Rancangan dan gambar untuk arsitektur, permesinan, industri, perdagangan, topografi atau keperluan semacam itu, asli buatan tangan; teks tulisan tangan; reproduksi fotografi di atas kertas peka cahaya dan carbon copy dari barang-barang tersebut."
+  },
+  {
+    "code": "490700",
+    "description": "Perangko, meterai atau perangko semacam itu belum digunakan, yang berlaku atau baru diterbitkan oleh negara, yang mempunyai atau akan mempunyai harga yang nilainya diakui; kertas meterai; uang kertas; formulir cek; sertifikat saham, andil atau obligasi dan dokumen kepemilikan semacam itu."
+  },
+  {
+    "code": "490800",
+    "description": "Gambar tempel (decalcomania)."
+  },
+  {
+    "code": "490900",
+    "description": "Kartu pos dicetak atau diberi gambar; kartu ucapan selamat pribadi, pesan atau pengumuman, diberi gambar maupun tidak, dengan atau tanpa amplop atau hiasan."
+  },
+  {
+    "code": "491000",
+    "description": "Berbagai jenis kalender, dicetak, termasuk blok kalender."
+  },
+  {
+    "code": "491100",
+    "description": "Barang cetakan lainnya, termasuk gambar dan foto cetakan."
+  },
+  {
+    "code": "500000",
+    "description": "Sutra"
+  },
+  {
+    "code": "500100",
+    "description": "Kepompong ulat sutra cocok untuk digulung."
+  },
+  {
+    "code": "500200",
+    "description": "Sutra mentah (tidak dipintal)."
+  },
+  {
+    "code": "500300",
+    "description": "Sisa sutra (termasuk kepompong tidak cocok untuk digulung, sisa benang dan garnetted stock)."
+  },
+  {
+    "code": "500400",
+    "description": "Benang sutra (selain benang pintal dari sisa sutra) tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "500500",
+    "description": "Benang pintal dari sisa sutra, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "500600",
+    "description": "Benang sutra dan benang pintal dari sisa sutra, disiapkan untuk penjualan eceran; benang ulat sutra."
+  },
+  {
+    "code": "500700",
+    "description": "Kain tenunan dari sutra atau sisa sutra."
+  },
+  {
+    "code": "510000",
+    "description": "Wol, bulu hewan halus atau kasar; benang bulu kuda dan kain tenunan"
+  },
+  {
+    "code": "510100",
+    "description": "Wol, tidak digaruk atau disisir."
+  },
+  {
+    "code": "510200",
+    "description": "Bulu hewan halus atau kasar, tidak digaruk atau disisir."
+  },
+  {
+    "code": "510300",
+    "description": "Sisa dari wol atau dari bulu hewan halus atau kasar, termasuk sisa benang tetapi tidak termasuk garnetted stock."
+  },
+  {
+    "code": "510400",
+    "description": "Garnetted stock dari wol atau dari bulu hewan halus atau kasar."
+  },
+  {
+    "code": "510500",
+    "description": "Wol dan bulu hewan halus atau kasar, digaruk atau disisir (termasuk wol disisir dalam bentuk fragmen)."
+  },
+  {
+    "code": "510600",
+    "description": "Benang dari wol digaruk, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "510700",
+    "description": "Benang dari wol disisir, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "510800",
+    "description": "Benang dari bulu hewan halus (digaruk atau disisir), tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "510900",
+    "description": "Benang dari wol atau dari bulu hewan halus, disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "511000",
+    "description": "Benang dari bulu hewan kasar atau dari bulu kuda (termasuk benang lilit dari bulu kuda), disiapkan untuk penjualan eceran maupun tidak."
+  },
+  {
+    "code": "511100",
+    "description": "Kain tenunan dari wol atau bulu hewan halus digaruk."
+  },
+  {
+    "code": "511200",
+    "description": "Kain tenunan dari wol atau bulu hewan halus disisir."
+  },
+  {
+    "code": "511300",
+    "description": "Kain tenunan dari bulu hewan kasar atau bulu kuda."
+  },
+  {
+    "code": "520000",
+    "description": "Kapas"
+  },
+  {
+    "code": "520100",
+    "description": "Kapas, tidak digaruk atau disisir."
+  },
+  {
+    "code": "520200",
+    "description": "Sisa kapas (termasuk sisa benang dan garnetted stock)."
+  },
+  {
+    "code": "520300",
+    "description": "Kapas, digaruk atau disisir."
+  },
+  {
+    "code": "520400",
+    "description": "Benang jahit dari kapas, disiapkan untuk penjualan eceran maupun tidak."
+  },
+  {
+    "code": "520500",
+    "description": "Benang kapas (selain benang jahit), mengandung kapas 85 % atau lebih menurut beratnya, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "520600",
+    "description": "Benang kapas (selain benang jahit), mengandung kapas kurang dari 85 % menurut beratnya, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "520700",
+    "description": "Benang kapas (selain benang jahit) disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "520800",
+    "description": "Kain tenunan dari kapas, mengandung kapas 85 % atau lebih menurut beratnya, beratnya tidak lebih dari 200 g/m2."
+  },
+  {
+    "code": "520900",
+    "description": "Kain tenunan dari kapas, mengandung kapas 85 % atau lebih menurut beratnya, beratnya lebih dari 200 g/m2."
+  },
+  {
+    "code": "521000",
+    "description": "Kain tenunan dari kapas, mengandung kapas kurang dari 85 % menurut beratnya, dicampur terutama atau semata-mata dengan serat buatan, beratnya tidak lebih dari 200 g/m2."
+  },
+  {
+    "code": "521100",
+    "description": "Kain tenunan dari kapas, mengandung kapas kurang dari 85 % menurut beratnya, dicampur terutama atau semata-mata dengan serat buatan, beratnya lebih dari 200 g/m2."
+  },
+  {
+    "code": "521200",
+    "description": "Kain tenunan lainnya dari kapas."
+  },
+  {
+    "code": "530000",
+    "description": "Serat tekstil nabati lainnya; benang kertas dan kain tenunan Clari benang kertas"
+  },
+  {
+    "code": "530100",
+    "description": "Lena, mentah atau sudah dikerjakan tetapi tidak dipintal; tow lena dan sisa lena (termasuk sisa benang dan garnetted stock)."
+  },
+  {
+    "code": "530200",
+    "description": "True hemp (Cannabis sativa L.), mentah atau diolah tetapi tidak dipintal; tow dan sisa dari true hemp (termasuk sisa benang dan garnetted stock)."
+  },
+  {
+    "code": "530300",
+    "description": "Serat jute dan serat tekstil kulit pohon lainnya (tidak termasuk lena, true hemp dan rami), mentah atau diolah tetapi tidak dipintal; tow dan sisa dari serat tersebut (termasuk sisa benang dan garnetted stock)."
+  },
+  {
+    "code": "530500",
+    "description": "Serat kelapa, abaca (serat pisang manila atau Musa textilis Nee), rami dan serat tekstil nabati lainnya, tidak dirinci atau termasuk dalam pos manapun, mentah atau dikerjakan tetapi tidak dipintal; tow, noil dan sisa dari serat itu (termasuk sisa benang dan garnetted stock)."
+  },
+  {
+    "code": "530600",
+    "description": "Benang lena."
+  },
+  {
+    "code": "530700",
+    "description": "Benang dari serat jute atau dari serat tekstil kulit pohon lainnya dari pos 53.03."
+  },
+  {
+    "code": "530800",
+    "description": "Benang dari serat tekstil nabati lainnya; benang kertas."
+  },
+  {
+    "code": "530900",
+    "description": "Kain tenunan dari lena."
+  },
+  {
+    "code": "531000",
+    "description": "Kain tenunan dari serat jute atau dari serat tekstil kulit pohon lainnya dari pos 53.03."
+  },
+  {
+    "code": "531100",
+    "description": "Kain tenunan dari serat tekstil nabati lainnya; kain tenunan dari benang kertas."
+  },
+  {
+    "code": "540000",
+    "description": "Filamen buatan; strip dan sejenisnya dari bahan tekstil buatan"
+  },
+  {
+    "code": "540100",
+    "description": "Benang jahit dari filamen buatan, disiapkan untuk penjualan eceran maupun tidak."
+  },
+  {
+    "code": "540200",
+    "description": "Benang filamen sintetik (selain benang jahit), tidak disiapkan untuk penjualan eceran, termasuk monofilamen sintetik yang kurang dari 67 desiteks."
+  },
+  {
+    "code": "540300",
+    "description": "Benang filamen artifisial (selain benang jahit), tidak disiapkan untuk penjualan eceran, termasuk monofilamen artifisial yang kurang dari 67 desiteks."
+  },
+  {
+    "code": "540400",
+    "description": "Monofilamen sintetik dengan ukuran 67 desiteks atau lebih dan yang ukuran penampang silangnya tidak ada yang lebih dari 1 mm; strip dan sejenisnya (misalnya, jerami artifisial) dari bahan tekstil sintetik yang mempunyai lebar tidak melebihi 5 mm."
+  },
+  {
+    "code": "540500",
+    "description": "Monofilamen artifisial dengan ukuran 67 desiteks atau lebih dan yang ukuran penampang silangnya tidak ada yang lebih dari 1 mm; strip dan sejenisnya (misalnya, jerami artifisial) dari bahan tekstil artifisial yang mempunyai lebar tidak melebihi 5 mm."
+  },
+  {
+    "code": "540600",
+    "description": "Benang filamen buatan (selain benang jahit), disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "540700",
+    "description": "Kain tenunan dari benang filamen sintetik, termasuk kain tenunan yang diperoleh dari bahan dari pos 54.04."
+  },
+  {
+    "code": "540800",
+    "description": "Kain tenunan dari benang filamen artifisial, termasuk kain tenunan yang diperoleh dari bahan dari pos 54.05."
+  },
+  {
+    "code": "550000",
+    "description": "Serat Stapel Buatan"
+  },
+  {
+    "code": "550100",
+    "description": "Tow filamen sintetik."
+  },
+  {
+    "code": "550200",
+    "description": "Tow filamen artifisial."
+  },
+  {
+    "code": "550300",
+    "description": "Serat stapel sintetik, tidak digaruk, disisir atau diproses secara lain untuk dipintal."
+  },
+  {
+    "code": "550400",
+    "description": "Serat stapel artifisial, tidak digaruk, disisir atau diproses secara lain untuk dipintal."
+  },
+  {
+    "code": "550500",
+    "description": "Sisa (termasuk noil, sisa benang dan garnetted stock) dari serat buatan."
+  },
+  {
+    "code": "550600",
+    "description": "Serat stapel sintetik, digaruk, disisir atau diproses secara lain untuk dipintal."
+  },
+  {
+    "code": "550700",
+    "description": "Serat stapel artifisial, digaruk, disisir atau diproses secara lain untuk dipintal."
+  },
+  {
+    "code": "550800",
+    "description": "Benang jahit dari serat stapel buatan, disiapkan untuk penjualan eceran maupun tidak."
+  },
+  {
+    "code": "550900",
+    "description": "Benang (selain benang jahit) dari serat stapel sintetik, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "551000",
+    "description": "Benang (selain benang jahit) dari serat stapel artifisial, tidak disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "551100",
+    "description": "Benang (selain benang jahit) dari serat stapel buatan, disiapkan untuk penjualan eceran."
+  },
+  {
+    "code": "551200",
+    "description": "Kain tenunan dari serat stapel sintetik, mengandung serat stapel sintetik 85 % atau lebih menurut beratnya."
+  },
+  {
+    "code": "551300",
+    "description": "Kain tenunan dari serat stapel sintetik, mengandung serat tersebut kurang dari 85 % menurut beratnya, dicampur terutama atau semata-mata dengan kapas, dengan berat tidak melebihi 170 g/m2."
+  },
+  {
+    "code": "551400",
+    "description": "Kain tenunan dari serat stapel sintetik, mengandung serat tersebut kurang dari 85 % menurut beratnya, dicampur terutama atau semata-mata dengan kapas, dengan berat melebihi 170 g/m2."
+  },
+  {
+    "code": "551500",
+    "description": "Kain tenunan lainnya dari serat stapel sintetik."
+  },
+  {
+    "code": "551600",
+    "description": "Kain tenunan dari serat stapel artifisial."
+  },
+  {
+    "code": "560000",
+    "description": "Gumpalan, kain kempa dan bukan tenunan; benang khusus; benang pintal, tali, tambang dan kabel serta barang daripadanya"
+  },
+  {
+    "code": "560100",
+    "description": "Gumpalan bahan tekstil dan barang daripadanya; serat tekstil, panjangnya tidak melebihi 5 mm (flock), debu tekstil dan mill nep."
+  },
+  {
+    "code": "560200",
+    "description": "Kain kempa, diresapi, dilapisi, ditutupi atau dilaminasi maupun tidak."
+  },
+  {
+    "code": "560300",
+    "description": "Bukan tenunan, diresapi, dilapisi, ditutupi atau dilaminasi maupun tidak."
+  },
+  {
+    "code": "560400",
+    "description": "Benang dan tali karet, ditutupi tekstil; benang tekstil, dan strip serta sejenisnya dari pos 54.04 atau 54.05, diresapi, dilapisi, ditutupi atau diselubungi dengan karet atau plastik."
+  },
+  {
+    "code": "560500",
+    "description": "Benang berlogam, berpalut atau tidak, menjadi benang tekstil, atau strip serta sejenisnya dari pos 54.04 atau 54.05, dikombinasikan dengan logam dalam bentuk benang, strip atau bubuk atau ditutupi dengan logam."
+  },
+  {
+    "code": "560600",
+    "description": "Benang berpalut, dan strip serta sejenisnya dari pos 54.04 atau 54.05, berpalut (selain yang disebutkan dalam pos 56.05 dan benang bulu kuda berpalut); benang chenille (termasuk benang flock chenille); benang loop-wale."
+  },
+  {
+    "code": "560700",
+    "description": "Benang pintal, tali, tambang dan kabel, dianyam atau dijalin maupun tidak dan diresapi, dilapisi, ditutupi atau diselubungi dengan karet atau plastik maupun tidak."
+  },
+  {
+    "code": "560800",
+    "description": "Jaring disimpul dari benang pintal, tali atau tambang; jaring ikan jadi dan jaring jadi lainnya, dari bahan tekstil."
+  },
+  {
+    "code": "560900",
+    "description": "Barang dari benang, strip atau sejenisnya dari pos 54.04 atau 54.05, benang pintal, tali, tambang atau kabel, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "570000",
+    "description": "Karpet dan tekstil penutup lantai lainnya"
+  },
+  {
+    "code": "570100",
+    "description": "Karpet dan penutup lantai tekstil lainnya, disimpul, sudah jadi maupun belum."
+  },
+  {
+    "code": "570200",
+    "description": "Karpet dan penutup lantai tekstil lainnya, tenunan, tidak berumbai atau tidak dibentuk flock, sudah jadi maupun belum, termasuk \"Kelem\", \"Schumacks\", \"Karamanie\" dan babut tenunan tangan yang semacam itu."
+  },
+  {
+    "code": "570300",
+    "description": "Karpet dan penutup lantai tekstil lainnya (termasuk turf), berumbai, sudah jadi maupun belum."
+  },
+  {
+    "code": "570400",
+    "description": "Karpet dan penutup lantai tekstil lainnya, dari kain kempa, tidak berumbai atau tidak dibentuk flock, sudah jadi maupun belum."
+  },
+  {
+    "code": "570500",
+    "description": "Karpet dan penutup lantai tekstil lainnya, sudah jadi maupun belum."
+  },
+  {
+    "code": "580000",
+    "description": "Kain tenunan khusus; kain tekstil berjumbai; renda; permadani dinding; hiasan; sulaman"
+  },
+  {
+    "code": "580100",
+    "description": "Kain tenunan berbulu dan kain chenille, selain kain dari pos 58.02 atau 58.06."
+  },
+  {
+    "code": "580200",
+    "description": "Terry towelling dan kain tenunan terry semacam itu, selain kain pita dari pos 58.06; kain tekstil berumbai, selain produk dari pos 57.03."
+  },
+  {
+    "code": "580300",
+    "description": "Kasa, selain kain pita dari pos 58.06."
+  },
+  {
+    "code": "580400",
+    "description": "Kain tule dan kain jaring lainnya, tidak termasuk kain tenunan, rajutan atau kaitan; renda dalam lembaran, strip atau motif, selain kain dari pos 60.02 sampai dengan 60.06."
+  },
+  {
+    "code": "580500",
+    "description": "Permadani dinding tenunan tangan dari tipe Gobelin, Flander, Aubusson, Beauvais dan sejenisnya, dan permadani dinding dikerjakan dengan jarum (misalnya, bintik kecil, jeratan silang), sudah jadi maupun belum."
+  },
+  {
+    "code": "580600",
+    "description": "Kain pita tenunan, selain barang dari pos 58.07; kain pita terdiri dari benang lusi tanpa benang pakan yang disatukan dengan perekat (bolduc)."
+  },
+  {
+    "code": "580700",
+    "description": "Label, lencana dan barang semacam itu dari bahan tekstil, dalam lembaran, strip atau dipotong menjadi berbentuk atau berukuran, tidak disulam."
+  },
+  {
+    "code": "580800",
+    "description": "Kain jalinan dalam lembaran; kain perapih hiasan dalam lembaran, tanpa sulaman, selain rajutan atau kaitan; jumbai, pompon dan barang semacam itu."
+  },
+  {
+    "code": "580900",
+    "description": "Kain tenunan dari benang logam dan kain tenunan dari benang berlogam dari pos 56.05, dari jenis yang digunakan dalam pakaian, sebagai kain perabotan atau untuk keperluan semacam itu, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "581000",
+    "description": "Kain sulaman dalam lembaran, strip atau motif."
+  },
+  {
+    "code": "581100",
+    "description": "Quilted textile products dalam lembaran, disusun dari satu atau lebih lapisan bahan tekstil disatukan dengan padding dengan cara dijahit atau secara lain, selain kain sulaman dari pos 58.10."
+  },
+  {
+    "code": "590000",
+    "description": "Kain tekstil diresapi, dilapisi, ditutupi atau dilaminasi; barang tekstil dari jenis yang cocok untuk keperluan industri"
+  },
+  {
+    "code": "590100",
+    "description": "Kain tekstil dilapisi dengan perekat atau zat mengandung pati, dari jenis yang digunakan untuk kulit luar buku atau sejenisnya; kain kalkir; kanvas lukis siap pakai; buckram dan kain tekstil kaku semacam itu dari jenis yang digunakan untuk dasar topi."
+  },
+  {
+    "code": "590200",
+    "description": "Kain untuk ban dari benang dengan kekuatan tinggi dari nilon atau poliamida lainnya, poliester atau rayon viskose."
+  },
+  {
+    "code": "590300",
+    "description": "Kain tekstil diresapi, dilapisi, ditutupi atau dilaminasi dengan plastik, selain yang dimaksud dalam pos 59.02."
+  },
+  {
+    "code": "590400",
+    "description": "Linoleum, dipotong menjadi bentuk maupun tidak; penutup lantai yang terdiri dari lapisan atau penutup di atas dasar tekstil, dipotong menjadi bentuk maupun tidak."
+  },
+  {
+    "code": "590500",
+    "description": "Penutup dinding tekstil."
+  },
+  {
+    "code": "590600",
+    "description": "Kain tekstil berkaret, selain yang dimaksud dalam pos 59.02."
+  },
+  {
+    "code": "590700",
+    "description": "Kain tekstil diresapi, dilapisi atau ditutupi secara lain; kanvas dilukis menjadi layar pentas, kain latar belakang studio atau sejenisnya."
+  },
+  {
+    "code": "590800",
+    "description": "Sumbu, tenunan, anyaman atau rajutan dari tekstil untuk lampu, kompor, korek api, lilin atau sejenisnya; kaos lampu gas pijar dan kain kaos lampu rajutan berbentuk tabung untuk kaos lampu gas, diresapi maupun tidak."
+  },
+  {
+    "code": "590900",
+    "description": "Selang tekstil dan tabung tekstil semacam itu, dengan atau tanpa lapisan, pelindung atau aksesori dari bahan lain."
+  },
+  {
+    "code": "591000",
+    "description": "Ban atau belting penggerak atau pengangkut, dari bahan tekstil, diresapi, dilapisi, ditutupi atau dilaminasi dengan plastik, atau diperkuat dengan logam atau bahan lain maupun tidak."
+  },
+  {
+    "code": "591100",
+    "description": "Produk dan barang tekstil, untuk penggunaan teknis, dirinci dalam Catatan 8 pada Bab ini."
+  },
+  {
+    "code": "600000",
+    "description": "Kain rajutan atau kain kaitan"
+  },
+  {
+    "code": "600100",
+    "description": "Kain berbulu, termasuk kain \"berbulu panjang\" dan kain terry, rajutan atau kaitan."
+  },
+  {
+    "code": "600200",
+    "description": "Kain rajutan atau kaitan dengan lebar tidak melebihi 30 cm, mengandung benang elastomer atau benang karet 5 % atau lebih menurut beratnya, selain yang dimaksud dalam pos 60.01."
+  },
+  {
+    "code": "600300",
+    "description": "Kain rajutan atau kaitan dengan lebar tidak melebihi 30 cm, selain yang dimaksud dalam pos 60.01 atau 60.02."
+  },
+  {
+    "code": "600400",
+    "description": "Kain rajutan atau kaitan dengan lebar melebihi 30 cm, mengandung benang elastomer atau benang karet 5 % atau lebih menurut beratnya, selain yang dimaksud dalam pos 60.01."
+  },
+  {
+    "code": "600500",
+    "description": "Kain rajut lusi (termasuk kain yang dibuat dengan mesin rajut galon), selain yang dimaksud dalam pos 60.01 sampai dengan 60.04."
+  },
+  {
+    "code": "600600",
+    "description": "Kain rajutan atau kaitan lainnya."
+  },
+  {
+    "code": "610000",
+    "description": "Pakaian dan aksesori pakaian, barang rajutan atau kaitan"
+  },
+  {
+    "code": "610100",
+    "description": "Mantel panjang, car-coat, jubah bertopi, jubah, anorak (termasuk jaket-ski), wind-cheater, wind-jacket dan barang semacam itu, untuk pria atau anak laki-laki, rajutan atau kaitan, selain yang dimaksud dalam pos 61.03."
+  },
+  {
+    "code": "610200",
+    "description": "Mantel panjang, car-coat, jubah bertopi, jubah, anorak (termasuk jaket-ski), wind-cheater, wind-jacket dan barang semacam itu, untuk wanita atau anak perempuan, rajutan atau kaitan, selain yang dimaksud dalam pos 61.04."
+  },
+  {
+    "code": "610300",
+    "description": "Setelan, ensemble, jas, blazer, celana panjang, pakaian terusan berpenutup di depan dan bertali, celana panjang sampai lutut dan celana pendek (selain pakaian renang), untuk pria atau anak laki-laki, rajutan atau kaitan."
+  },
+  {
+    "code": "610400",
+    "description": "Setelan, ensemble, jas, blazer, gaun, rok, rok terpisah, celana panjang, pakaian terusan berpenutup di depan dan bertali, celana panjang sampai lutut dan celana pendek (selain pakaian renang), untuk wanita atau anak perempuan, rajutan atau kaitan."
+  },
+  {
+    "code": "610500",
+    "description": "Kemeja pria atau anak laki-laki, rajutan atau kaitan."
+  },
+  {
+    "code": "610600",
+    "description": "Blus, kemeja dan kemeja blus, untuk wanita atau anak perempuan, rajutan atau kaitan."
+  },
+  {
+    "code": "610700",
+    "description": "Celana kolor, celana dalam, kemeja tidur, piyama, pakaian mandi, dressing gown dan barang semacam itu, untuk pria atau anak laki-laki, rajutan atau kaitan."
+  },
+  {
+    "code": "610800",
+    "description": "Rok dalam, petticoat, celana dalam, panty, gaun malam, piyama, negligee, pakaian mandi, dressing gown dan barang semacam itu, untuk wanita atau anak perempuan, rajutan atau kaitan."
+  },
+  {
+    "code": "610900",
+    "description": "T-shirt, singlet dan kaus kutang lainnya, rajutan atau kaitan."
+  },
+  {
+    "code": "611000",
+    "description": "Jersey, pullover, cardigan, rompi dan barang semacam itu, rajutan atau kaitan."
+  },
+  {
+    "code": "611100",
+    "description": "Garmen dan aksesori pakaian untuk bayi, rajutan atau kaitan."
+  },
+  {
+    "code": "611200",
+    "description": "Track suit, ski suit dan pakaian renang, rajutan atau kaitan."
+  },
+  {
+    "code": "611300",
+    "description": "Garmen, dibuat dari kain rajutan atau kaitan dari pos 59.03, 59.06 atau 59.07."
+  },
+  {
+    "code": "611400",
+    "description": "Garmen lainnya, rajutan atau kaitan."
+  },
+  {
+    "code": "611500",
+    "description": "Panty hose, tight, stocking, kaus kaki dan hosiery lainnya, termasuk hosiery dikempa bergradasi (misalnya, stocking untuk penderita varises) dan alas kaki tanpa sol, rajutan atau kaitan."
+  },
+  {
+    "code": "611600",
+    "description": "Sarung tangan, mitten dan mitt, rajutan atau kaitan."
+  },
+  {
+    "code": "611700",
+    "description": "Aksesori pakaian jadi lainnya, rajutan atau kaitan; bagian dari garmen atau dari aksesori pakaian, rajutan atau kaitan."
+  },
+  {
+    "code": "620000",
+    "description": "Pakaian dan aksesori pakaian, bukan rajutan atau kaitan"
+  },
+  {
+    "code": "620100",
+    "description": "Mantel panjang, car-coat, jubah bertopi, cloak, anorak (termasuk jaket-ski), wind-cheater, wind-jacket dan barang semacam itu, untuk pria atau anak laki-laki, selain yang dimaksud dalam pos 62.03."
+  },
+  {
+    "code": "620200",
+    "description": "Mantel panjang, car-coat, jubah bertopi, cloak, anorak (termasuk jaket-ski), wind-cheater, wind-jacket dan barang semacam itu, untuk wanita atau anak perempuan, rajutan atau kaitan, selain yang dimaksud dalam pos 62.04."
+  },
+  {
+    "code": "620300",
+    "description": "Setelan, ensemble, jas, blazer, celana panjang, pakaian terusan berpenutup di depan dan bertali, celana panjang sampai lutut dan celana pendek (selain pakaian renang), untuk pria atau anak laki-laki."
+  },
+  {
+    "code": "620400",
+    "description": "Setelan, ensemble, jas, blazer, gaun, rok, rok terpisah, celana panjang, pakaian terusan berpenutup di depan dan bertali, celana panjang sampai lutut dan celana pendek (selain pakaian renang), untuk wanita atau anak perempuan."
+  },
+  {
+    "code": "620500",
+    "description": "Kemeja pria atau anak laki-laki."
+  },
+  {
+    "code": "620600",
+    "description": "Blus, kemeja dan blus kemeja, untuk wanita atau anak perempuan."
+  },
+  {
+    "code": "620700",
+    "description": "Singlet dan kaus kutang lainnya, celana kolor, celana dalam, pakaian tidur, piyama, pakaian mandi, dressing gown dan barang semacam itu, untuk pria atau anak laki-laki."
+  },
+  {
+    "code": "620800",
+    "description": "Singlet dan kaus kutang lainnya, pakaian dalam kombinasi, petticoat, celana dalam, panty, gaun malam, piyama, negligee, pakaian mandi, dressing gown dan barang semacam itu, untuk wanita atau anak perempuan."
+  },
+  {
+    "code": "620900",
+    "description": "Garmen dan aksesori pakaian bayi."
+  },
+  {
+    "code": "621000",
+    "description": "Garmen, dibuat dari kain dari pos 56.02, 56.03, 59.03, 59.06, atau 59.07."
+  },
+  {
+    "code": "621100",
+    "description": "Track suit, ski suit dan pakaian renang; garmen lainnya."
+  },
+  {
+    "code": "621200",
+    "description": "Brassiere, girdle, korset, brace, suspender, garter dan barang semacam itu serta bagiannya, rajutan atau kaitan maupun tidak."
+  },
+  {
+    "code": "621300",
+    "description": "Saputangan."
+  },
+  {
+    "code": "621400",
+    "description": "Syal, scarf, muffler, mantilla, veil dan sejenisnya."
+  },
+  {
+    "code": "621500",
+    "description": "Dasi, dasi kupu- kupu dan cravat."
+  },
+  {
+    "code": "621600",
+    "description": "Sarung tangan, mitten dan mitt."
+  },
+  {
+    "code": "621700",
+    "description": "Aksesori pakaian jadi lainnya; bagian dari garmen atau dari aksesori pakaian, selain yang dimaksud dalam pos 62.12."
+  },
+  {
+    "code": "630000",
+    "description": "Barang tekstil sudah jadi lainnya; set; pakaian bekas dan barang tekstil bekas; gombal"
+  },
+  {
+    "code": "630100",
+    "description": "Selimut dan selimut kecil untuk perjalanan."
+  },
+  {
+    "code": "630200",
+    "description": "Linen untuk tempat tidur, meja, toilet dan dapur."
+  },
+  {
+    "code": "630300",
+    "description": "Tirai (termasuk gorden) dan kerai dalam; tirai atau bed valances."
+  },
+  {
+    "code": "630400",
+    "description": "Barang perabotan lainnya, tidak termasuk yang dimaksud dalam pos 94.04."
+  },
+  {
+    "code": "630500",
+    "description": "Kantong dan karung, dari jenis yang digunakan untuk membungkus barang."
+  },
+  {
+    "code": "630600",
+    "description": "Terpal, awning dan kerai matahari; tenda (termasuk temporary canopy dan barang semacam itu); layar untuk perahu, papan selancar atau landcraft; barang keperluan berkemah."
+  },
+  {
+    "code": "630700",
+    "description": "Barang jadi lainnya, termasuk pola pakaian."
+  },
+  {
+    "code": "630800",
+    "description": "Set terdiri dari kain tenunan dan benang, dengan aksesori maupun tidak, untuk dibuat menjadi babut, permadani dinding, kain meja sulaman atau serbet, atau barang tekstil semacam itu, disiapkan dalam kemasan untuk penjualan eceran."
+  },
+  {
+    "code": "630900",
+    "description": "Pakaian bekas dan barang bekas lainnya."
+  },
+  {
+    "code": "631000",
+    "description": "Rag bekas atau baru, skrap dari benang pintal, tali , tali tambang dan kabel serta barang usang dari benang pintal, tali tambang atau kabel, dari bahan tekstil."
+  },
+  {
+    "code": "640000",
+    "description": "Alas kaki, pelindung kaki dan sejenisnya; bagian dari barang tersebut"
+  },
+  {
+    "code": "640100",
+    "description": "Alas kaki tahan air dengan sol luar dan bagian atas dari karet atau dari plastik, bagian atasnya tidak dipasang pada sol dan tidak dirakit dengan cara dijahit, dikeling, dipaku, disekrup, ditusuk atau proses semacam itu."
+  },
+  {
+    "code": "640200",
+    "description": "Alas kaki lainnya dengan sol luar dan bagian atas dari karet atau plastik."
+  },
+  {
+    "code": "640300",
+    "description": "Alas kaki dengan sol luar dari karet, plastik, kulit samak atau kulit komposisi dan bagian atas sepatu dari kulit samak."
+  },
+  {
+    "code": "640400",
+    "description": "Alas kaki dengan sol luar dari karet, plastik, kulit samak atau kulit komposisi dan bagian atasnya dari bahan tekstil."
+  },
+  {
+    "code": "640500",
+    "description": "Alas kaki lainnya."
+  },
+  {
+    "code": "640600",
+    "description": "Bagian dari alas kaki (termasuk bagian atas dipasang sol maupun tidak selain sol luar); sol dalam yang dapat dilepas, bantalan tumit dan barang semacam itu; pelindung kaki, pembalut kaki dan barang semacam itu, serta bagiannya."
+  },
+  {
+    "code": "650000",
+    "description": "Tutup kepala dan bagiannya"
+  },
+  {
+    "code": "650100",
+    "description": "Bentuk topi, badan topi dan tudung topi dari kain kempa, neither blocked to shape nor with made brims; plateaux dan manchon (termasuk manchon belah), dari kain kempa."
+  },
+  {
+    "code": "650200",
+    "description": "Model topi, dianyam atau dibuat dengan merakit strip dari berbagai bahan, tidak diberi bentuk, tidak dibuat pinggiran, tidak diberi garis dan tidak dirapikan pinggirannya."
+  },
+  {
+    "code": "650400",
+    "description": "Topi dan tutup kepala lainnya, dianyam atau dibuat dengan merakit strip dari berbagai bahan, diberi garis atau dirapikan pinggirannya maupun tidak."
+  },
+  {
+    "code": "650500",
+    "description": "Topi dan tutup kepala lainnya, rajutan atau kaitan, atau dibuat dari renda, kain kempa atau kain tekstil lainnya, dalam lembaran (tetapi tidak dalam bentuk strip), diberi garis, dirapikan pinggirannya maupun tidak; jaring rambut dari berbagai bahan, diberi garis dirapikan pinggirannya maupun tidak."
+  },
+  {
+    "code": "650600",
+    "description": "Tutup kepala lainnya, diberi garis atau dirapikan pinggirannya maupun tidak."
+  },
+  {
+    "code": "650700",
+    "description": "Ikat kepala, pelapis topi, tutup topi, dasar topi, rangka topi, klep dan tali dagu, untuk tutup kepala."
+  },
+  {
+    "code": "660000",
+    "description": "Payung, payung panas, tongkat jalan, tongkat duduk, cambuk, pecut dan bagiannya"
+  },
+  {
+    "code": "660100",
+    "description": "Payung dan payung panas (termasuk payung berbentuk tongkat jalan, payung taman dan payung semacam itu)."
+  },
+  {
+    "code": "660200",
+    "description": "Tongkat jalan, tongkat duduk, cambuk, pecut dan sejenisnya."
+  },
+  {
+    "code": "660300",
+    "description": "Bagian, hiasan dan aksesori barang dari pos 66.01 atau 66.02."
+  },
+  {
+    "code": "670000",
+    "description": "Bulu dan bulu halus unggas olahan serta barang dibuat dari bulu atau bulu halus unggas; bunga artifisial; barang dari rambut manusia"
+  },
+  {
+    "code": "670100",
+    "description": "Kulit dan bagian lainnya dari unggas dengan bulu atau bulu halusnya, bulu, bagian dari bulu, bulu halus dan barang terbuat dari padanya (selain barang dari pos 05.05 dan pena bulu angsa serta bulu lepas olahan)."
+  },
+  {
+    "code": "670200",
+    "description": "Bunga, daun dan buah artifisial serta bagian daripadanya; barang dibuat dari bunga, daun atau buah artifisial."
+  },
+  {
+    "code": "670300",
+    "description": "Rambut manusia, ditata, ditipiskan, dikelantang atau dikerjakan secara lain; wol atau bulu hewan lainnya atau bahan tekstil lainnya, disiapkan untuk digunakan dalam pembuatan wig atau sejenisnya."
+  },
+  {
+    "code": "670400",
+    "description": "Wig, jenggot, alis dan bulu mata palsu, cemara dan sejenisnya, dari rambut manusia atau bulu hewan atau dari bahan tekstil; barang dari rambut manusia tidak dirinci atau termasuk dalam pos lain."
+  },
+  {
+    "code": "680000",
+    "description": "Barang dari batu, plester, semen, asbes, mika atau bahan semacam itu"
+  },
+  {
+    "code": "680100",
+    "description": "Batu jalan, batu tepi jalan dan batu ubin, dari batu alami (kecuali batu sabak)."
+  },
+  {
+    "code": "680200",
+    "description": "Batu monumen dan batu bangunan dikerjakan (kecuali batu sabak) dan barang terbuat dari padanya, selain barang dari pos 68.01; kubus mosaik dan sejenisnya, dari batu alam (termasuk batu sabak), dengan alas maupun tidak; butiran, kepingan dan bubuk dengan warna artifisial dari batu alam (termasuk batu sabak)."
+  },
+  {
+    "code": "680300",
+    "description": "Batu sabak dikerjakan dan barang dari batu sabak atau dari batu sabak diaglomerasi."
+  },
+  {
+    "code": "680400",
+    "description": "Batu giling, batu asah, roda gerinda dan sejenisnya, tanpa rangka, untuk pengasah, penajam, pemoles, pemotong, batu penajam atau pemoles yang digerakkan dengan tangan, dan bagian daripadanya, dari batu alam, dari batu gosok alam atau artifisial diaglomerasi, atau dari keramik, dengan atau tanpa bagian dari bahan lain."
+  },
+  {
+    "code": "680500",
+    "description": "Bubuk atau butir gosok alam atau artifisial, dengan dasar dari bahan tekstil, kertas, kertas karton atau bahan lainnya, dipotong menjadi bentuk atau dijahit atau dibuat secara lain maupun tidak."
+  },
+  {
+    "code": "680600",
+    "description": "Wol terak, wol batuan dan wol mineral semacam itu; vermikulit melar, tanah liat muai, terak buih dan bahan mineral muai semacam itu; campuran dan barang dari bahan mineral isolasi tahan panas, isolasi suara atau serap suara, selain yang dimaksud dalam pos 68.11 atau 68.12 atau dari Bab 69."
+  },
+  {
+    "code": "680700",
+    "description": "Barang dari aspal atau dari bahan semacam itu (misalnya, bitumen petroleum atau pek dari ter batu bara)."
+  },
+  {
+    "code": "680800",
+    "description": "Panel, papan, ubin, blok dan barang semacam itu terbuat dari serat nabati, jerami atau dari serutan, kepingan, partikel, serbuk gergaji atau sisa lainnya, dari kayu, diaglomerasi dengan semen, plester atau pengikat mineral lainnya."
+  },
+  {
+    "code": "680900",
+    "description": "Barang dari plester atau dari komposisinya dengan dasar plester."
+  },
+  {
+    "code": "681000",
+    "description": "Barang dari semen, beton atau batu artifisial, diperkuat maupun tidak."
+  },
+  {
+    "code": "681100",
+    "description": "Barang dari semen asbes, dari semen serat selulosa atau sejenisnya."
+  },
+  {
+    "code": "681200",
+    "description": "Serat asbes pabrikasi; campuran dengan dasar dari asbes atau dengan dasar dari asbes dan magnesium karbonat; barang dari campuran semacam itu atau dari asbes (misalnya, benang jahit, kain tenunan, pakaian, tutup kepala, alas kaki, gasket), diperkuat maupun tidak, selain barang dari pos 68.11 atau 68.13."
+  },
+  {
+    "code": "681300",
+    "description": "Bahan friksi dan barang yang terbuat dari padanya (misalnya, lembaran, gulungan, strip, segmen, cakram, cincin pipih, bantalan), tidak terpasang, untuk rem, kopling atau sejenisnya, dengan dasar asbes, bahan mineral lain atau selulosa, dikombinasi dengan tekstil atau bahan lain maupun tidak."
+  },
+  {
+    "code": "681400",
+    "description": "Mika dikerjakan dan barang dari mika, termasuk mika diaglomerasi atau dibentuk kembali, di atas dasar kertas, kertas karton atau bahan lainnya maupun tidak."
+  },
+  {
+    "code": "681500",
+    "description": "Barang dari batu atau dari bahan mineral lainnya (termasuk serat karbon, barang dari serat karbon dan barang dari gambut), tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "690000",
+    "description": "Produk keramik"
+  },
+  {
+    "code": "690100",
+    "description": "Batu bata, blok, ubin dan barang keramik lainnya dari tanah diatomea (misalnya, kieselguhr, tripolite atau diatomite) atau dari tanah mengandung silika semacam itu."
+  },
+  {
+    "code": "690200",
+    "description": "Batu bata, blok, ubin dan keramik tahan panas untuk barang keperluan konstruksi, selain dari tanah diatomea atau dari tanah mengandung silika semacam itu."
+  },
+  {
+    "code": "690300",
+    "description": "Barang keramik tahan panas lainnya (misalnya, retor, cawan lebur, mofel, mulut pipa, sumbat, penopang, cangkir lebur, pembuluh, pipa, sarung, batang kecil dan gerbang geser), selain barang dari tanah diatomea atau tanah mengandung silika semacam itu."
+  },
+  {
+    "code": "690400",
+    "description": "Batu bata bangunan, blok lantai, ubin penopang atau pengisi dan sejenisnya dari keramik."
+  },
+  {
+    "code": "690500",
+    "description": "Ubin atap, cerobong berbentuk kap, tutup cerobong, lapisan cerobong, ornamen arsitektur dan barang keramik lainnya untuk konstruksi."
+  },
+  {
+    "code": "690600",
+    "description": "Pipa, saluran, talang dan alat kelengkapan pipa dari keramik."
+  },
+  {
+    "code": "690700",
+    "description": "Ubin dan paving, ubin perapian dan ubin dinding dari keramik; kubus mozaik dari keramik dan sejenisnya, dengan alas maupun tidak; keramik untuk finishing."
+  },
+  {
+    "code": "690900",
+    "description": "Barang keramik untuk laboratorium, kimia atau penggunaan teknik lainnya; palung keramik, pasu dan wadah semacam itu dari jenis yang digunakan dalam pertanian; pot keramik, tempayan dan barang semacam itu dari jenis digunakan untuk mengangkut atau mengepak barang."
+  },
+  {
+    "code": "691000",
+    "description": "Bak cuci, wastafel, alas baskom cuci, bak mandi, bidet, bejana kloset, tangki air pembilasan, tempat kencing, dan perlengkapan saniter semacam itu dari keramik."
+  },
+  {
+    "code": "691100",
+    "description": "Perangkat makan, perangkat dapur, peralatan rumah tangga lainnya dan peralatan toilet, dari porselin atau keramik cina."
+  },
+  {
+    "code": "691200",
+    "description": "Perangkat makan, perangkat dapur, peralatan rumah tangga lainnya dan peralatan toilet dari keramik, selain dari porselin atau keramik cina."
+  },
+  {
+    "code": "691300",
+    "description": "Patung dan barang keramik ornamental lainnya."
+  },
+  {
+    "code": "691400",
+    "description": "Barang keramik lainnya."
+  },
+  {
+    "code": "700000",
+    "description": "Kaca dan barang dari kaca"
+  },
+  {
+    "code": "700100",
+    "description": "Pecahan dan sisa serta skrap lainnya dari kaca, kecuali kaca dari tabung sinar katoda atau kaca aktif lainnya dari pos 85.49; kaca dalam bentuk butiran."
+  },
+  {
+    "code": "700200",
+    "description": "Kaca dalam bentuk bola (selain microspheres dari pos 70.18), batang kecil atau tabung, tidak dikerjakan."
+  },
+  {
+    "code": "700300",
+    "description": "Kaca tuang dan rolled glass, dalam lembaran atau profil, mempunyai lapisan penyerap, pemantul atau bukan pemantul maupun tidak, tetapi tidak dikerjakan secara lain."
+  },
+  {
+    "code": "700400",
+    "description": "Kaca tarik dan kaca tiup, dalam lembaran, mempunyai lapisan penyerap, pemantul atau bukan pemantul maupun tidak, tetapi tidak dikerjakan secara lain."
+  },
+  {
+    "code": "700500",
+    "description": "Kaca apung dan kaca yang permukaannya digosok atau dipoles, dalam lembaran, mempunyai lapisan penyerap, pemantul atau bukan pemantul maupun tidak, tetapi tidak dikerjakan secara lain."
+  },
+  {
+    "code": "700600",
+    "description": "Kaca dari pos 70.03, 70.04 atau 70.05, dibengkokkan, tepinya dikerjakan, diukir, dibor, dilapisi atau dikerjakan secara lain, tetapi tidak dibingkai atau dipasang dengan barang lain."
+  },
+  {
+    "code": "700700",
+    "description": "Kaca pengaman, terdiri dari kaca dikeraskan (tempered) atau dilaminasi."
+  },
+  {
+    "code": "700800",
+    "description": "Kaca dinding isolasi berlapis dari kaca."
+  },
+  {
+    "code": "700900",
+    "description": "Cermin kaca, dibingkai maupun tidak, termasuk kaca spion."
+  },
+  {
+    "code": "701000",
+    "description": "Carboy, botol, termos, kendi, teko, vial, ampul dan kemasan lainnya dari kaca, dari jenis yang digunakan untuk pengangkutan atau pengemasan barang; kendi kaca pengawet; sumbat, tutup dan penutup lainnya, dari kaca."
+  },
+  {
+    "code": "701100",
+    "description": "Sungkup kaca (termasuk bulb dan tabung), terbuka, dan bagiannya dari kaca, tanpa alat kelengkapan, untuk lampu listrik dan sumber cahaya, tabung sinar katoda atau sejenisnya."
+  },
+  {
+    "code": "701300",
+    "description": "Barang kaca dari jenis yang digunakan untuk meja, dapur, toilet, kantor, dekorasi dalam ruangan atau keperluan semacam itu (selain yang disebut dalam pos 70.10 atau 70.18)."
+  },
+  {
+    "code": "701400",
+    "description": "Barang kaca pemberi sinyal dan elemen optik dari kaca (selain yang dimaksud dalam pos 70.15), tidak dikerjakan secara optik."
+  },
+  {
+    "code": "701500",
+    "description": "Kaca jam atau kaca arloji dan kaca semacam itu, kaca untuk kacamata korektif atau non-korektif, bergelombang, bengkok, berongga atau sejenisnya, tidak dikerjakan secara optik; bola kaca berongga dan bagiannya, untuk pembuatan barang kaca tersebut di atas."
+  },
+  {
+    "code": "701600",
+    "description": "Paving blok, lembaran tebal, batu bata, bujur sangkar, ubin dan barang lainnya dari kaca padat atau kaca tuang, dipasang kawat maupun tidak, dari jenis yang digunakan untuk keperluan bangunan atau konstruksi; kaca kubus dan barang kaca kecil lainnya, dengan alas maupun tidak, untuk mosaik atau keperluan dekorasi semacam itu; kaca lapis timbal dan sejenisnya; kaca multi seluler atau kaca busa dalam bentuk blok, panel, pelat, selongsong atau bentuk semacam itu."
+  },
+  {
+    "code": "701700",
+    "description": "Barang kaca untuk keperluan laboratorium, hegienis atau farmasi, dengan tanda skala atau takaran maupun tidak."
+  },
+  {
+    "code": "701800",
+    "description": "Manik-manik, mutiara imitasi, batu mulia imitasi atau batu semi mulia imitasi dan barang kecil semacam itu dari kaca, dan barang daripadanya selain perhiasan imitasi; mata kaca selain mata pengganti untuk manusia; patung dan ornamen lainnya dari kaca tiup, selain perhiasan imitasi; kaca microsphere dengan diameter tidak melebihi 1 mm."
+  },
+  {
+    "code": "701900",
+    "description": "Manik-manik, mutiara imitasi, batu mulia imitasi atau batu semi mulia imitasi dan barang kecil semacam itu dari kaca, dan barang daripadanya selain perhiasan imitasi; mata kaca selain mata pengganti untuk manusia; patung dan ornamen lainnya dari kaca tiup, selain perhiasan imitasi; kaca microsphere dengan diameter tidak melebihi 1 mm."
+  },
+  {
+    "code": "702000",
+    "description": "Barang lainnya dari kaca."
+  },
+  {
+    "code": "710000",
+    "description": "Mutiara alam atau mutiara budidaya, batu mulia atau batu semi mulia, logam mulia, logam yang dipalut dengan logam mulia, dan barang daripadanya; perhiasan imitasi; koin"
+  },
+  {
+    "code": "710100",
+    "description": "Mutiara, alam atau budidaya, dikerjakan atau ditingkatkan mutunya maupun tidak, tetapi tidak diuntai, tidak dipasang atau tidak disusun; mutiara, alam atau budidaya, diuntai sementara untuk memudahkan pengangkutan."
+  },
+  {
+    "code": "710200",
+    "description": "Intan, dikerjakan maupun tidak, tetapi tidak dipasang atau tidak disusun."
+  },
+  {
+    "code": "710300",
+    "description": "Batu mulia (selain intan) dan batu semi mulia, dikerjakan atau ditingkatkan mutunya maupun tidak tetapi tidak diuntai, tidak dipasang atau tidak disusun; batu mulia yang tidak ditingkatkan mutunya (selain intan) dan batu semi mulia, diuntai sementara untuk memudahkan pengangkutan."
+  },
+  {
+    "code": "710400",
+    "description": "Batu mulia atau semi mulia sintetik atau direkonstruksi, dikerjakan atau ditingkatkan mutunya maupun tidak tetapi tidak diuntai, tidak dipasang atau tidak disusun; batu mulia atau semi mulia sintetik atau direkonstruksi, tidak ditingkatkan mutunya, diuntai sementara untuk memudahkan pengangkutan."
+  },
+  {
+    "code": "710500",
+    "description": "Debu dan bubuk dari batu mulia atau semi mulia, alam atau sintetik."
+  },
+  {
+    "code": "710600",
+    "description": "Perak (termasuk perak disepuh emas atau platina), tidak ditempa atau dalam bentuk setengah jadi, atau dalam bentuk bubuk."
+  },
+  {
+    "code": "710700",
+    "description": "Logam tidak mulia dipalut dengan perak, tidak dikerjakan lebih lanjut selain menjadi barang setengah jadi."
+  },
+  {
+    "code": "710800",
+    "description": "Emas (termasuk emas disepuh dengan platina) tidak ditempa atau dalam bentuk setengah jadi, atau dalam bentuk bubuk."
+  },
+  {
+    "code": "710900",
+    "description": "Logam tidak mulia atau perak, dipalut dengan emas, tidak dikerjakan lebih lanjut selain setengah jadi."
+  },
+  {
+    "code": "711000",
+    "description": "Platina, tidak ditempa atau dalam bentuk setengah jadi, atau dalam bentuk bubuk."
+  },
+  {
+    "code": "711100",
+    "description": "Logam tidak mulia, perak atau emas, dipalut dengan platina, tidak dikerjakan lebih lanjut selain setengah jadi."
+  },
+  {
+    "code": "711200",
+    "description": "Sisa dan skrap dari logam mulia atau dari logam yang dipalut dengan logam mulia; sisa dan skrap lainnya mengandung logam mulia atau senyawa logam mulia, dari jenis yang digunakan terutama untuk pemulihan logam mulia selain barang yang dimaksud dalam pos 85.49."
+  },
+  {
+    "code": "711300",
+    "description": "Barang perhiasan dan bagiannya, dari logam mulia atau dari logam yang dipalut dengan logam mulia."
+  },
+  {
+    "code": "711400",
+    "description": "Barang hasil tempaan pandai emas atau pandai perak dan bagiannya, dari logam mulia atau dari logam yang dipalut dengan logam mulia."
+  },
+  {
+    "code": "711500",
+    "description": "Barang lainnya dari logam mulia atau dari logam yang dipalut dengan logam mulia."
+  },
+  {
+    "code": "711600",
+    "description": "Barang dari mutiara alam atau mutiara budidaya, batu mulia atau batu semi mulia (alam, sintetik atau direkonstruksi)."
+  },
+  {
+    "code": "711700",
+    "description": "Perhiasan imitasi."
+  },
+  {
+    "code": "711800",
+    "description": "Koin."
+  },
+  {
+    "code": "720000",
+    "description": "Besi dan baja"
+  },
+  {
+    "code": "720100",
+    "description": "Besi pig dan besi cermin (spiegeleisen) dalam bentuk pig, blok atau bentuk asal lainnya."
+  },
+  {
+    "code": "720200",
+    "description": "Paduan fero."
+  },
+  {
+    "code": "720300",
+    "description": "Produk fero diperoleh dengan reduksi langsung dari bijih besi dan produk besi spon lainnya, dalam bentuk bongkah, pelet atau semacamnya; besi yang mempunyai kemurnian sekurang-kurangnya 99,94 %, dalam bentuk bongkah, pelet atau semacamnya."
+  },
+  {
+    "code": "720400",
+    "description": "Sisa dan skrap fero; ingot hasil peleburan kembali skrap besi atau baja."
+  },
+  {
+    "code": "720500",
+    "description": "Butir dan bubuk, dari besi pig, besi cermin (spiegeleisen), besi atau baja."
+  },
+  {
+    "code": "720600",
+    "description": "Besi dan baja bukan paduan dalam bentuk ingot atau bentuk asal lainnya (tidak termasuk besi dari pos 72.03)."
+  },
+  {
+    "code": "720700",
+    "description": "Produk setengah jadi dari besi atau baja bukan paduan."
+  },
+  {
+    "code": "720800",
+    "description": "Produk canai lantaian dari besi atau baja bukan paduan, dengan lebar 600 mm atau lebih, dicanai panas, tidak dipalut, tidak disepuh atau tidak dilapisi."
+  },
+  {
+    "code": "720900",
+    "description": "Produk canai lantaian dari besi atau baja bukan paduan, dengan lebar 600 mm atau lebih, dicanai dingin (cold-reduced), tidak dipalut, tidak disepuh atau tidak dilapisi."
+  },
+  {
+    "code": "721000",
+    "description": "Produk canai lantaian dari besi atau baja bukan paduan, dengan lebar 600 mm atau lebih, dipalut, disepuh atau dilapisi."
+  },
+  {
+    "code": "721100",
+    "description": "Produk canai lantaian dari besi atau baja bukan paduan, dengan lebar kurang dari 600 mm, tidak dipalut, tidak disepuh atau tidak dilapisi."
+  },
+  {
+    "code": "721200",
+    "description": "Produk canai lantaian dari besi atau baja bukan paduan, dengan lebar kurang dari 600 mm, dipalut, disepuh atau dilapisi."
+  },
+  {
+    "code": "721300",
+    "description": "Batang dan batang kecil, dicanai panas, dalam gulungan yang putarannya tidak beraturan, dari besi atau baja bukan paduan."
+  },
+  {
+    "code": "721400",
+    "description": "Batang dan batang kecil lainnya dari besi atau baja bukan paduan, tidak dikerjakan lebih lanjut selain ditempa, dicanai panas, ditarik panas atau diekstrusi panas, termasuk yang dipuntir setelah dicanai."
+  },
+  {
+    "code": "721500",
+    "description": "Batang dan batang kecil lainnya dari besi atau baja bukan paduan."
+  },
+  {
+    "code": "721600",
+    "description": "Angle, shape dan section dari besi atau baja bukan paduan."
+  },
+  {
+    "code": "721700",
+    "description": "Kawat besi atau baja bukan paduan."
+  },
+  {
+    "code": "721800",
+    "description": "Baja stainless berbentuk ingot atau bentuk asal lainnya; produk setengah jadi dari baja stainless."
+  },
+  {
+    "code": "721900",
+    "description": "Produk canai lantaian dari baja stainless, dengan lebar 600 mm atau lebih."
+  },
+  {
+    "code": "722000",
+    "description": "Produk canai lantaian dari baja stainless, dengan lebar kurang dari 600 mm."
+  },
+  {
+    "code": "722100",
+    "description": "Batang dan batang kecil, dicanai panas, dalam gulungan yang putarannya tidak beraturan, dari baja stainless."
+  },
+  {
+    "code": "722200",
+    "description": "Batang dan batang kecil lainnya dari baja stainless; angle, shape dan section dari baja stainless."
+  },
+  {
+    "code": "722300",
+    "description": "Kawat dari baja stainless."
+  },
+  {
+    "code": "722400",
+    "description": "Baja paduan lainnya dalam bentuk ingot atau bentuk asal lainnya; produk setengah jadi dari baja paduan lainnya."
+  },
+  {
+    "code": "722500",
+    "description": "Produk canai lantaian dari baja paduan lainnya, dengan lebar 600 mm atau lebih."
+  },
+  {
+    "code": "722600",
+    "description": "Produk canai lantaian dari baja paduan lainnya, dengan lebar kurang dari 600 mm."
+  },
+  {
+    "code": "722700",
+    "description": "Batang dan batang kecil, dicanai panas, dalam gulungan yang putarannya tidak beraturan, dari baja paduan lainnya."
+  },
+  {
+    "code": "722800",
+    "description": "Batang dan batang kecil lainnya dari baja paduan lainnya; angle, shape, dan section dari baja paduan lainnya; batang dan batang kecil bor berongga, dari baja paduan atau baja bukan paduan."
+  },
+  {
+    "code": "722900",
+    "description": "Kawat dari baja paduan lainnya."
+  },
+  {
+    "code": "730000",
+    "description": "Barang dari besi atau baja"
+  },
+  {
+    "code": "730100",
+    "description": "Sheet piling dari besi atau baja, dibor, dilobangi atau dibuat dari rakitan elemen maupun tidak; angle, shape dan section dilas, dari besi atau baja."
+  },
+  {
+    "code": "730200",
+    "description": "Bahan konstruksi rel kereta api atau trem dari besi atau baja, sebagai berikut : rel, rel simpang dan rel gigi, bilah wesel, sambungan persimpangan, batang kecil wesel dan bagian persimpangan lainnya, bantalan rel (cross-ties), pelat apit, tumpuan, pasak tumpuan, pelat tapak (pelat dasar), jepit rel, pelat alas, ganjal rel dan barang lainnya khusus untuk menyambung atau memasang rel."
+  },
+  {
+    "code": "730300",
+    "description": "Pembuluh, pipa dan profil berongga, dari besi tuang."
+  },
+  {
+    "code": "730400",
+    "description": "Pembuluh, pipa dan profil berongga, tanpa kampuh, dari besi (selain besi tuang) atau baja."
+  },
+  {
+    "code": "730500",
+    "description": "Pembuluh dan pipa lainnya (misalnya, dilas, dikeling, atau disambung semacam itu), mempunyai penampang silang lingkaran, diameter luarnya melebihi 406,4 mm, dari besi atau baja."
+  },
+  {
+    "code": "730600",
+    "description": "Pembuluh, pipa dan profil berongga lainnya (misalnya, kampuh atau dilas terbuka, dikeling atau sambungan semacam itu), dari besi atau baja."
+  },
+  {
+    "code": "730700",
+    "description": "Alat kelengkapan pembuluh atau pipa (misalnya, penyambung, siku-siku, selongsong) dari besi atau baja."
+  },
+  {
+    "code": "730800",
+    "description": "Struktur (tidak termasuk bangunan prapabrikasi dari pos 94.06) dan bagian dari struktur (misalnya, jembatan dan bagian jembatan, daun pintu air, menara, tiang kisi-kisi, atap, rangka atap, pintu dan jendela serta rangkanya dan ambang untuk pintu, penutup jendela, langkan pilar dan tiang), dari besi atau baja; pelat, batang kecil, angle, shape, section, pembuluh dan sejenisnya, disiapkan untuk keperluan struktur, dari besi atau baja."
+  },
+  {
+    "code": "730900",
+    "description": "Reservoir, tangki, tong dan tempat penyimpanan semacamnya untuk segala jenis bahan (selain gas dibawah tekanan atau gas dicairkan), dari besi atau baja, dengan kapasitas melebihi 300 liter, dilapis atau diisolasi panas maupun tidak, tetapi tidak dilengkapi dengan perlengkapan mekanik atau termal."
+  },
+  {
+    "code": "731000",
+    "description": "Tangki, tahang, drum, kaleng, kotak dan tempat penyimpanan semacam itu, untuk berbagai bahan (selain dari gas dibawah tekanan atau gas dicairkan), dari besi atau baja, dengan kapasitas tidak melebihi 300 liter, dilapisi atau diisolasi panas maupun tidak, tetapi tidak dilengkapi dengan perlengkapan mekanik atau termal."
+  },
+  {
+    "code": "731100",
+    "description": "Kemasan untuk gas dibawah tekanan atau gas dicairkan, dari besi atau baja."
+  },
+  {
+    "code": "731200",
+    "description": "Kawat dipilin, tali, kabel, ban anyaman, sling dan sejenisnya, dari besi atau baja, tidak diisolasi elektrik."
+  },
+  {
+    "code": "731300",
+    "description": "Kawat berduri dari besi atau baja; simpai dipuntir atau kawat pipih tunggal, berduri atau tidak, dan kawat rangkap dipilin secara longgar, dari jenis yang digunakan untuk pagar, dari besi atau baja."
+  },
+  {
+    "code": "731400",
+    "description": "Kain (termasuk ban tanpa ujung), anyaman kisi, jaring dan pagar, dari kawat besi atau baja; expanded metal dari besi atau baja."
+  },
+  {
+    "code": "731500",
+    "description": "Rantai dan bagiannya, dari besi atau baja."
+  },
+  {
+    "code": "731600",
+    "description": "Jangkar, jangkar kecil dan bagiannya, dari besi atau baja."
+  },
+  {
+    "code": "731700",
+    "description": "Paku, pasak, paku payung, corrugated nail, paku kokot (selain yang dimaksud pos 83.05) dan barang semacam itu, dari besi atau baja, dengan kepala dari bahan lain maupun tidak, tetapi tidak termasuk barang seperti itu dengan kepala dari tembaga."
+  },
+  {
+    "code": "731800",
+    "description": "Sekrup, baut, mur, sekrup rel, kait sekrup, paku keling, pasak, pasak kunci, cincin pipih (termasuk cincin pipih pegas) dan barang semacam itu, dari besi atau baja."
+  },
+  {
+    "code": "731900",
+    "description": "Jarum jahit, jarum rajut, jarum jelujur, jarum kait, jarum bordir dan barang semacam itu, digunakan dengan tangan, dari besi atau baja; pin pengaman dan pin lainnya dari besi atau baja, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "732000",
+    "description": "Pegas dan daun untuk pegas, dari besi atau baja."
+  },
+  {
+    "code": "732100",
+    "description": "Tungku, kompor, tungku terbuka, alat masak (termasuk tungku dengan ketel tambahan untuk pemanasan sentral), panggangan besar, anglo, gelang gas, piring pemanas, dan peralatan rumah tangga tanpa listrik semacam itu, dan bagiannya, dari besi atau baja."
+  },
+  {
+    "code": "732200",
+    "description": "Radiator untuk pemanasan sentral, tidak dipanaskan dengan listrik, dan bagiannya, dari besi atau baja; pemanas udara dan distributor udara panas (termasuk distributor yang dapat juga mendistribusikan udara segar atau didinginkan), tidak dipanaskan dengan listrik, didalamnya dipasang kipas atau alat tiup yang dijalankan dengan motor, dan bagiannya, dari besi atau baja."
+  },
+  {
+    "code": "732300",
+    "description": "Barang untuk penggunaan di atas meja, di dapur atau peralatan rumah tangga lainnya dan bagiannya, dari besi atau baja; wol besi atau wol baja; penggosok pot dan bantalan gosok atau pemoles, sarung tangan dan sejenisnya, dari besi atau baja."
+  },
+  {
+    "code": "732400",
+    "description": "Perangkat saniter dan bagiannya, dari besi atau baja."
+  },
+  {
+    "code": "732500",
+    "description": "Barang tuangan lainnya dari besi atau baja."
+  },
+  {
+    "code": "732600",
+    "description": "Barang lainnya dari besi atau baja."
+  },
+  {
+    "code": "740000",
+    "description": "Tembaga dan barang daripadanya"
+  },
+  {
+    "code": "740100",
+    "description": "Mate tembaga; tembaga semen (tembaga endapan)."
+  },
+  {
+    "code": "740200",
+    "description": "Tembaga tidak dimurnikan; anoda tembaga untuk pemurnian secara elektrolisa."
+  },
+  {
+    "code": "740300",
+    "description": "Tembaga dimurnikan dan paduan tembaga, tidak ditempa."
+  },
+  {
+    "code": "740400",
+    "description": "Sisa dan skrap tembaga."
+  },
+  {
+    "code": "740500",
+    "description": "Paduan utama dari tembaga."
+  },
+  {
+    "code": "740600",
+    "description": "Bubuk dan serpih tembaga."
+  },
+  {
+    "code": "740700",
+    "description": "Batang, batang kecil dan profil tembaga."
+  },
+  {
+    "code": "740800",
+    "description": "Kawat tembaga."
+  },
+  {
+    "code": "740900",
+    "description": "Pelat, lembaran dan strip tembaga, dengan ketebalan melebihi 0,15 mm."
+  },
+  {
+    "code": "741000",
+    "description": "Foil tembaga (dicetak atau dengan alas kertas, kertas karton, plastik atau alas semacam itu maupun tidak) dengan ketebalan (tidak termasuk alasnya) tidak melebihi 0,15 mm."
+  },
+  {
+    "code": "741100",
+    "description": "Pembuluh dan pipa tembaga."
+  },
+  {
+    "code": "741200",
+    "description": "Alat kelengkapan pembuluh atau pipa tembaga (misalnya, penyambung, siku-siku, selongsong)."
+  },
+  {
+    "code": "741300",
+    "description": "Kawat dipilin, kabel, ban anyaman dan sejenisnya, dari tembaga, tidak diisolasi elektrik."
+  },
+  {
+    "code": "741500",
+    "description": "Paku, tack, paku payung, kokot (selain barang yang dimaksud dalam pos 83.05) dan barang semacam itu, dari tembaga atau besi atau baja dengan kepala tembaga; sekrup, baut, mur, kait sekrup, paku keling, pasak, pasak kunci, cincin pipih (termasuk cincin pipih pegas) dan barang semacam itu, dari tembaga."
+  },
+  {
+    "code": "741800",
+    "description": "Barang untuk penggunaan di atas meja, di dapur atau peralatan rumah tangga lainnya dan bagiannya, dari tembaga; penggosok pot dan bantalan gosok atau poles, sarung tangan dan sejenisnya, dari tembaga; perangkat saniter dan bagiannya, dari tembaga."
+  },
+  {
+    "code": "741900",
+    "description": "Barang lainnya dari tembaga."
+  },
+  {
+    "code": "750000",
+    "description": "Nikel dan barang daripadanya"
+  },
+  {
+    "code": "750100",
+    "description": "Mate nikel, sinter oksida nikel dan produk-antara lainnya dari metalurgi nikel."
+  },
+  {
+    "code": "750200",
+    "description": "Nikel tidak ditempa."
+  },
+  {
+    "code": "750300",
+    "description": "Sisa dan skrap nikel."
+  },
+  {
+    "code": "750400",
+    "description": "Bubuk dan serpih nikel."
+  },
+  {
+    "code": "750500",
+    "description": "Batang, batang kecil, profil dan kawat nikel."
+  },
+  {
+    "code": "750600",
+    "description": "Pelat, lembaran, strip dan foil nikel."
+  },
+  {
+    "code": "750700",
+    "description": "Pembuluh, pipa dan alat kelengkapan pembuluh atau pipa dari nikel (misalnya, penyambung, siku-siku, selongsong)."
+  },
+  {
+    "code": "750800",
+    "description": "Barang lainnya dari nikel."
+  },
+  {
+    "code": "760000",
+    "description": "Aluminium dan barang daripadanya"
+  },
+  {
+    "code": "760100",
+    "description": "Aluminium tidak ditempa."
+  },
+  {
+    "code": "760200",
+    "description": "Sisa dan skrap aluminium."
+  },
+  {
+    "code": "760300",
+    "description": "Bubuk dan serpih aluminium."
+  },
+  {
+    "code": "760400",
+    "description": "Batang, batang kecil dan profil aluminium."
+  },
+  {
+    "code": "760500",
+    "description": "Kawat aluminium."
+  },
+  {
+    "code": "760600",
+    "description": "Pelat, lembaran dan strip aluminium, dengan ketebalan melebihi 0,2 mm."
+  },
+  {
+    "code": "760700",
+    "description": "Aluminium foil (dicetak atau diberi alas kertas, kertas karton, plastik atau alas semacam itu maupun tidak) dengan ketebalan (tidak termasuk alasnya) tidak melebihi 0,2 mm."
+  },
+  {
+    "code": "760800",
+    "description": "Pembuluh dan pipa aluminium."
+  },
+  {
+    "code": "760900",
+    "description": "Alat kelengkapan pembuluh atau pipa aluminium (misalnya, penyambung, siku-siku, selongsong)."
+  },
+  {
+    "code": "761000",
+    "description": "Struktur aluminium (tidak termasuk bangunan prapabrikasi dari pos 94.06) dan bagian dari struktur (misalnya, jembatan dan bagian jembatan, menara, tiang kisi-kisi, atap, rangka atap, pintu dan jendela serta rangkanya dan ambang untuk pintu, langkan, pilar dan tiang); pelat, batang kecil, profil, pembuluh dan sejenisnya dari aluminium, disiapkan untuk keperluan struktur."
+  },
+  {
+    "code": "761100",
+    "description": "Reservoir, tangki, tong dan tempat penyimpanan semacam itu, dari aluminium, untuk berbagai jenis bahan (selain gas di bawah tekanan atau gas cair), dengan kapasitas melebihi 300 l, dilapis atau diisolasi panas maupun tidak, tetapi tidak dilengkapi dengan perlengkapan mekanik atau termal."
+  },
+  {
+    "code": "761200",
+    "description": "Tahang, drum, kaleng, kotak dan tempat penyimpanan semacam itu dari aluminium (termasuk tempat simpan berbentuk tabung kaku atau dapat dilipat), untuk berbagai jenis bahan (selain gas dibawah tekanan atau gas cair), dengan kapasitas tidak melebihi 300 l, dilapis atau diisolasi panas maupun tidak, tetapi tidak dilengkapi dengan perlengkapan mekanik atau termal."
+  },
+  {
+    "code": "761300",
+    "description": "Tempat penyimpanan dari aluminium untuk gas dibawah tekanan atau gas cair."
+  },
+  {
+    "code": "761400",
+    "description": "Kawat pilin, kabel, ban anyaman dan sejenisnya, dari aluminium, tidak diisolasi elektrik."
+  },
+  {
+    "code": "761500",
+    "description": "Barang untuk penggunaan di atas meja, di dapur atau peralatan rumah tangga lainnya dan bagiannya, dari aluminium; penggosok pot dan bantalan gosok atau pemoles, sarung tangan dan sejenisnya, dari aluminium; perangkat saniter dan bagiannya, dari aluminium."
+  },
+  {
+    "code": "761600",
+    "description": "Barang lainnya dari aluminium."
+  },
+  {
+    "code": "780000",
+    "description": "Timbal dan barang daripadanya"
+  },
+  {
+    "code": "780100",
+    "description": "Timbal tidak ditempa."
+  },
+  {
+    "code": "780200",
+    "description": "Sisa dan skrap timbal."
+  },
+  {
+    "code": "780400",
+    "description": "Pelat, lembaran, strip dan foil timbal; bubuk dan serpih timbal."
+  },
+  {
+    "code": "780600",
+    "description": "Barang lainnya dari timbal."
+  },
+  {
+    "code": "790000",
+    "description": "Seng dan barang daripadanya"
+  },
+  {
+    "code": "790100",
+    "description": "Seng tidak ditempa."
+  },
+  {
+    "code": "790200",
+    "description": "Sisa dan skrap seng."
+  },
+  {
+    "code": "790300",
+    "description": "Debu, bubuk dan serpihan seng."
+  },
+  {
+    "code": "790400",
+    "description": "Batang, batang kecil, profil dan kawat seng."
+  },
+  {
+    "code": "790500",
+    "description": "Pelat, lembaran, strip dan foil seng."
+  },
+  {
+    "code": "790700",
+    "description": "Barang lainnya dari seng."
+  },
+  {
+    "code": "800000",
+    "description": "Timah dan barang daripadanya"
+  },
+  {
+    "code": "800100",
+    "description": "Timah tidak ditempa."
+  },
+  {
+    "code": "800200",
+    "description": "Sisa dan skrap timah."
+  },
+  {
+    "code": "800300",
+    "description": "Batang, batang kecil, profil dan kawat timah."
+  },
+  {
+    "code": "800700",
+    "description": "Barang lainnya dari timah."
+  },
+  {
+    "code": "810000",
+    "description": "Logam tidak mulia lainnya; sermet; barang daripadanya"
+  },
+  {
+    "code": "810100",
+    "description": "Tungsten (wolfram) dan barang dari padanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810200",
+    "description": "Molibdenum dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810300",
+    "description": "Tantalum dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810400",
+    "description": "Magnesium dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810500",
+    "description": "Mate kobalt dan produk antara lainnya dari metalurgi kobalt; kobalt dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810600",
+    "description": "Bismut dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810800",
+    "description": "Titanium dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "810900",
+    "description": "Zirkonium dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "811000",
+    "description": "Antimoni dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "811100",
+    "description": "Mangan dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "811200",
+    "description": "Berilium, kromium, germanium, vanadium, galium, hafnium, indium, niobium (columbium), renium dan talium serta barang dari logam tersebut, termasuk sisa dan skrap."
+  },
+  {
+    "code": "811300",
+    "description": "Sermet dan barang daripadanya, termasuk sisa dan skrap."
+  },
+  {
+    "code": "820000",
+    "description": "Perkakas, peralatan, barang tajam, sendok dan garpu, dari logam tidak mulia; bagiannya dari logam tidak mulia"
+  },
+  {
+    "code": "820100",
+    "description": "Perkakas tangan, sebagai berikut : sekop datar, sekop lengkung, beliung, bajak, cangkul, garu dan pengeruk; kapak, sabit paruh dan alat potong semacam itu; gunting bunga dan pemangkas dari segala jenis; sabit tangkai panjang, sabit, pisau jerami, gunting untuk tanaman pagar, pengiris kayu dan perkakas lainnya dari jenis yang digunakan dalam pertanian, perkebunan atau kehutanan."
+  },
+  {
+    "code": "820200",
+    "description": "Gergaji tangan; bilah untuk segala jenis gergaji (termasuk bilah gergaji untuk membelah, untuk membuat celah atau tanpa gigi)."
+  },
+  {
+    "code": "820300",
+    "description": "Kikir, parut, tang (termasuk tang potong), penjepit, gunting seng, gunting pemotong logam, pemotong pipa, catok, tang pembuat lobang dan perkakas tangan semacam itu."
+  },
+  {
+    "code": "820400",
+    "description": "Kunci sekrup dan kunci inggris yang digerakkan dengan tangan (termasuk kunci inggris yang mempunyai pengukur putaran tetapi tidak termasuk kunci pembuat alur sekrup); kunci sekrup berlobang yang dapat dipertukarkan, dengan atau tanpa gagang."
+  },
+  {
+    "code": "820500",
+    "description": "Perkakas tangan (termasuk intan pemotong kaca), tidak dirinci atau termasuk dalam pos lainnya; lampu tiup; vice, klem dan sejenisnya, selain aksesori untuk dan bagian dari, perkakas mesin atau mesin pemotong water-jet; paron; alat tempa portabel; roda gerinda yang digerakkan dengan tangan atau pedal dengan rangkanya."
+  },
+  {
+    "code": "820600",
+    "description": "Perkakas terdiri dari dua jenis barang atau lebih dimaksud pada pos 82.02 sampai dengan 82.05, disiapkan dalam set untuk penjualan eceran."
+  },
+  {
+    "code": "820700",
+    "description": "Perkakas yang dapat dipertukarkan untuk perkakas tangan, digerakkan dengan tenaga maupun tidak, atau untuk mesin perkakas (misalnya, untuk pressing, stamping, punching, tapping, threading, drilling, boring, broaching, milling, turning atau screw driving), termasuk acuan untuk menarik atau mengekstrusi logam, dan perkakas untuk mengebor batu karang atau mengebor tanah."
+  },
+  {
+    "code": "820800",
+    "description": "Pisau dan bilah pemotong, untuk mesin atau untuk perkakas mekanik."
+  },
+  {
+    "code": "820900",
+    "description": "Pelat, tongkat, ujung dan sejenisnya untuk perkakas, tidak terpasang, dari sermet."
+  },
+  {
+    "code": "821000",
+    "description": "Perkakas mekanik yang digerakkan dengan tangan, dengan berat 10 kg atau kurang, digunakan dalam pengolahan, pengkondisian atau penyiapan makanan atau minuman."
+  },
+  {
+    "code": "821100",
+    "description": "Pisau dengan bilah pemotong, bergigi atau tidak (termasuk pisau pangkas), selain pisau dari pos 82.08, dan mata pisau untuk barang tersebut."
+  },
+  {
+    "code": "821200",
+    "description": "Pisau cukur dan silet (termasuk blank silet dalam bentuk strip)."
+  },
+  {
+    "code": "821300",
+    "description": "Gunting, gunting tukang jahit dan gunting semacam itu, serta bilahnya."
+  },
+  {
+    "code": "821400",
+    "description": "Barang tajam lainnya (misalnya, alat pangkas rambut, parang tukang daging atau parang dapur, pisau pemotong dan pisau cincang, pisau kertas); set dan instrumen untuk manikur atau pedikur (termasuk kikir kuku)."
+  },
+  {
+    "code": "821500",
+    "description": "Sendok, garpu, sendok sayur, peniris, cake-server, pisau ikan, pisau mentega, penjepit gula dan perangkat dapur atau meja semacam itu."
+  },
+  {
+    "code": "830000",
+    "description": "Bermacam-macam barang dari logam tidak mulia"
+  },
+  {
+    "code": "830100",
+    "description": "Gembok dan kunci (dioperasikan dengan anak kunci, kombinasi atau secara listrik), dari logam tidak mulia; kunci jepit dan bingkai dengan kunci jepit, kunci terpasang, dari logam tidak mulia; anak kunci untuk semua barang tersebut, dari logam tidak mulia."
+  },
+  {
+    "code": "830200",
+    "description": "Penyangga, alat kelengkapan dan barang semacam itu dari logam tidak mulia yang cocok untuk perabotan, pintu, tangga, jendela, tirai, coachwork, saddlery, koper, kotak, kotak perhiasan atau sejenisnya; rak topi, gantungan topi, kaitan dan barang semacam itu dari logam tidak mulia; castor dengan penyangga dari logam tidak mulia; penutup pintu otomatis dari logam tidak mulia."
+  },
+  {
+    "code": "830300",
+    "description": "Lemari lapis baja atau yang diperkuat, peti pengaman dan pintu serta laci penyimpan untuk ruangan pengaman, peti dokumen atau uang dan sejenisnya, dari logam tidak mulia."
+  },
+  {
+    "code": "830400",
+    "description": "Lemari arsip, lemari kartu indeks, nampan kertas, sandaran kertas, nampan pena, penyangga stempel kantor dan perlengkapan kantor atau meja tulis semacam itu, dari logam tidak mulia, selain perabotan kantor dari pos 94.03."
+  },
+  {
+    "code": "830500",
+    "description": "Alat kelengkapan untuk loose-leaf binder atau arsip, jepitan surat, letter corner, jepitan kertas, pemarka indeks dan barang kantor semacam itu dari logam tidak mulia; kokot dalam bentuk strip (misalnya, untuk kantor, upholstery, pengepakan), dari logam tidak mulia."
+  },
+  {
+    "code": "830600",
+    "description": "Lonceng, gong dan sejenisnya, tanpa listrik, dari logam tidak mulia; patung dan ornamen lainnya, dari logam tidak mulia; bingkai foto, gambar dan semacam itu, dari logam tidak mulia; cermin dari logam tidak mulia."
+  },
+  {
+    "code": "830700",
+    "description": "Pembuluh fleksibel dari logam tidak mulia, dengan atau tanpa alat kelengkapan."
+  },
+  {
+    "code": "830800",
+    "description": "Jepit, bingkai dengan jepit, gesper, jepitan gesper, kait, lubang, lubang tali dan sejenisnya dari logam tidak mulia, dari jenis yang digunakan untuk pakaian atau aksesoris pakaian, alas kaki, perhiasan, jam tangan, buku, tirai, barang dari kulit, barang untuk bepergian atau saddlery atau barang jadi lainnya; paku keling berbentuk tabung atau bercabang, dari logam tidak mulia; manik-manik dan spangle, dari logam tidak mulia."
+  },
+  {
+    "code": "830900",
+    "description": "Sumbat, penutup dan tutup (termasuk sumbat tajuk, penutup sekrup dan sumbat yang dituangkan), kapsul untuk botol, sumbat berulir, penyingkup sumbat, segel dan aksesori pengepakan lainnya, dari logam tidak mulia."
+  },
+  {
+    "code": "831000",
+    "description": "Papan isyarat, papan nama, papan alamat dan papan semacam itu, nomor, huruf dan lambang lainnya, dari logam tidak mulia, tidak termasuk yang dimaksud dalam pos 94.05."
+  },
+  {
+    "code": "831100",
+    "description": "Kawat, batang kecil, pembuluh, pelat, elektroda dan produk semacam itu, dari logam tidak mulia atau dari karbida logam, dilapisi atau diisi dengan fluks dari jenis yang digunakan untuk menyolder, mematri, mengelas atau mengendapkan logam atau karbida logam; kawat dan batang kecil, dari bubuk logam tidak mulia diaglomerasi, digunakan untuk penyemprotan logam."
+  },
+  {
+    "code": "840000",
+    "description": "Reaktor nuklir, ketel, mesin dan peralatan mekanis; bagian daripadanya"
+  },
+  {
+    "code": "840100",
+    "description": "Reaktor nuklir; elemen bahan bakar (cartridges), non radiasi, untuk reaktor nuklir; mesin dan aparatus untuk separasi isotopik."
+  },
+  {
+    "code": "840200",
+    "description": "Ketel uap air atau ketel uap lainnya (selain ketel air panas untuk pemanasan sentral yang juga dapat menghasilkan uap air tekanan rendah); ketel air super-heated."
+  },
+  {
+    "code": "840300",
+    "description": "Ketel pemanasan sentral selain yang dimaksud dari pos 84.02."
+  },
+  {
+    "code": "840400",
+    "description": "Instalasi pembantu untuk digunakan dengan ketel yang dimaksud dari pos 84.02 atau 84.03 (misalnya, economiser, super-heater, soot remover, gas recoverer); kondensor untuk unit tenaga uap air atau unit tenaga uap lainnya."
+  },
+  {
+    "code": "840500",
+    "description": "Generator pemroduksi gas atau generator gas air, dengan atau tanpa alat pemurnian; generator gas asetilena dan generator gas dengan proses air semacam itu, dengan atau tanpa alat pemurnian."
+  },
+  {
+    "code": "840600",
+    "description": "Turbin uap air dan turbin uap lainnya."
+  },
+  {
+    "code": "840700",
+    "description": "Mesin piston pembakaran dalam cetus api bolak-balik atau berputar."
+  },
+  {
+    "code": "840800",
+    "description": "Mesin piston pembakaran dalam nyala kompresi (mesin diesel atau semi diesel)."
+  },
+  {
+    "code": "840900",
+    "description": "Bagian yang cocok untuk digunakan semata-mata atau terutama dengan mesin dari pos 84.07 atau 84.08."
+  },
+  {
+    "code": "841000",
+    "description": "Turbin hidrolik, kincir air, dan regulatornya."
+  },
+  {
+    "code": "841100",
+    "description": "Turbo-jet, turbo-propeller dan turbin gas lainnya."
+  },
+  {
+    "code": "841200",
+    "description": "Mesin dan motor lainnya."
+  },
+  {
+    "code": "841300",
+    "description": "Pompa untuk cairan, dilengkapi dengan alat ukur maupun tidak; elevator cairan."
+  },
+  {
+    "code": "841400",
+    "description": "Pompa udara atau pompa vakum, kompresor udara atau kompresor gas lainnya dan kipas angin atau kipas gas lainnya; hood ventilasi atau hood daur ulang yang digabung dengan kipas, dilengkapi dengan saringan maupun tidak; kabinet pengaman biologis kedap gas, dilengkapi dengan saringan maupun tidak."
+  },
+  {
+    "code": "841500",
+    "description": "Mesin pengatur suhu udara, terdiri dari kipas yang digerakkan dengan motor dan elemen untuk mengubah suhu dan kelembaban, termasuk mesin tersebut yang tidak dapat mengatur kelembaban udara secara terpisah."
+  },
+  {
+    "code": "841600",
+    "description": "Tanur pembakar untuk bahan bakar cair, untuk bahan bakar padat yang dihancurkan atau untuk gas; penyala mekanis, termasuk penggarang mekanisnya, pembuang abu mekanisnya dan peralatan semacam itu."
+  },
+  {
+    "code": "841700",
+    "description": "Tanur dan oven industri atau laboratorium, termasuk incinerator, bukan listrik."
+  },
+  {
+    "code": "841800",
+    "description": "Lemari pendingin, lemari pembeku dan perlengkapan pendingin atau pembeku lainnya, listrik atau lainnya; pompa panas selain mesin pengatur suhu udara dari pos 84.15."
+  },
+  {
+    "code": "841900",
+    "description": "Perlengkapan mesin, pabrik atau laboratorium, dipanaskan secara elektrik maupun tidak (tidak termasuk tanur, oven dan perlengkapan lain-nya dari pos 85.14), untuk mengolah bahan dengan proses yang memerlukan perubahan suhu seperti memanaskan, memasak, memanggang, menyuling, rektifikasi, mensterilkan, mempasteurisasi, menguapkan, mengeringkan, mengevaporasi, menguapkan, mengkondensasi atau mendinginkan, selain mesin atau instalasi dari jenis yang digunakan untuk keperluan rumah tangga; pemanas air instant atau pemanas air dengan tempat penyimpanan, bukan listrik."
+  },
+  {
+    "code": "842000",
+    "description": "Mesin calender atau mesin giling lainnya, selain untuk logam atau kaca, dan silinder untuk mesin tersebut."
+  },
+  {
+    "code": "842100",
+    "description": "Mesin sentrifugal, termasuk pengering sentrifugal; mesin dan aparatus penyaring atau pemurni, untuk cairan atau gas."
+  },
+  {
+    "code": "842200",
+    "description": "Mesin pencuci piring; mesin untuk membersihkan atau mengeringkan botol atau kemasan lainnya; mesin untuk mengisi, menutup, menyegel atau memasang label pada botol, kaleng, kotak, kantong atau kemasan lainnya; mesin untuk menutup dengan selaput pada botol, guci, tabung dan kemasan semacam itu; mesin pengepak atau pembungkus lainnya (termasuk mesin pembungkus heatshrink); mesin untuk mengaerasi minuman."
+  },
+  {
+    "code": "842300",
+    "description": "Mesin penimbang (tidak termasuk timbangan dengan kepekaan timbangan sebesar 5 cg atau lebih baik), termasuk mesin penghitung atau mesin pemeriksa yang dioperasikan dengan anak timbangan; anak timbangan dari segala jenis mesin timbang."
+  },
+  {
+    "code": "842400",
+    "description": "Peralatan mekanis (digerakkan dengan tangan maupun tidak) untuk melemparkan, menyebarkan atau menyemprotkan barang cairan atau bubuk; pemadam api, diisi maupun tidak; pistol semprot dan peralatan semacam itu; mesin penyembur uap air atau pasir dan mesin jet pelempar semacam itu."
+  },
+  {
+    "code": "842500",
+    "description": "Katrol dan kerekan, selain kerekan skip; derek dan kapstan; dongkrak."
+  },
+  {
+    "code": "842600",
+    "description": "Derek kapal; crane, termasuk crane kabel; rangka pengangkat yang dapat berpindah, straddle carrier dan truk kerja yang dilengkapi crane."
+  },
+  {
+    "code": "842700",
+    "description": "Truk forklift; truk kerja lainnya yang dilengkapi dengan perlengkapan pengangkat atau penanganan."
+  },
+  {
+    "code": "842800",
+    "description": "Mesin pengangkat, penanganan, pemuat atau pembongkar lainnya (misalnya, lift, eskalator, konveyor, teleferic)."
+  },
+  {
+    "code": "842900",
+    "description": "Buldoser, angledoser, grader, mesin perata, mesin pengikis, shovel mekanik, ekskavator, shovel loader, mesin pemadat dan mesin gilas jalan, berdaya gerak sendiri."
+  },
+  {
+    "code": "843000",
+    "description": "Mesin pengolah, grading, perata, pengikis, penggali, pemadat, perapi, pengaduk atau pengebor lainnya, untuk tanah, mineral atau bijih; pemancang tiang dan pemancang bor; bajak salju dan blower salju."
+  },
+  {
+    "code": "843100",
+    "description": "Bagian yang cocok untuk digunakan semata-mata atau terutama dengan mesin dari pos 84.25 sampai dengan 84.30."
+  },
+  {
+    "code": "843200",
+    "description": "Mesin pertanian, perkebunan atau kehutanan untuk penyiapan atau kultivasi tanah; mesin giling lapangan rumput atau lapangan olah raga."
+  },
+  {
+    "code": "843300",
+    "description": "Mesin tuai atau mesin tebah, termasuk pengepak jerami atau rumput makanan ternak; mesin pemotong rumput atau rumput kering; mesin untuk membersihkan, menyortir atau memilih mutu telur, buah atau produk pertanian lainnya, selain mesin dari pos 84.37."
+  },
+  {
+    "code": "843400",
+    "description": "Mesin perah susu dan mesin produk susu."
+  },
+  {
+    "code": "843500",
+    "description": "Pengepres, penghancur dan mesin semacam itu yang digunakan dalam pembuatan wine, cider, jus buah atau minuman semacam itu."
+  },
+  {
+    "code": "843600",
+    "description": "Mesin pertanian, perkebunan, kehutanan, mesin pemeliharaan unggas atau lebah lainnya, termasuk mesin tunas dilengkapi dengan perlengkapan mekanis atau termal; inkubator dan penetas untuk unggas."
+  },
+  {
+    "code": "843700",
+    "description": "Mesin untuk membersihkan, menyortir atau memilih mutu biji, butir atau sayuran polongan kering; mesin yang digunakan dalam industri penggilingan atau untuk pembuatan serealia atau sayuran polongan kering, selain mesin tipe pertanian."
+  },
+  {
+    "code": "843800",
+    "description": "Mesin, tidak dirinci atau termasuk dalam pos manapun pada Bab ini, untuk industri pengolahan atau pembuatan makanan atau minuman, selain mesin untuk ekstraksi atau pengolahan lemak atau minyak dari hewan, nabati tertentu atau mikroba."
+  },
+  {
+    "code": "843900",
+    "description": "Mesin untuk membuat pulp dari bahan serat selulosa atau untuk membuat atau merampungkan kertas atau kertas karton."
+  },
+  {
+    "code": "844000",
+    "description": "Mesin penjilid buku, termasuk mesin penjahit buku."
+  },
+  {
+    "code": "844100",
+    "description": "Mesin lainnya untuk membuat pulp kertas, kertas atau kertas karton, termasuk mesin pemotong dari semua jenis."
+  },
+  {
+    "code": "844200",
+    "description": "Mesin, aparatus dan perlengkapan (selain mesin yang dimaksud dari pos 84.56 sampai dengan 84.65) untuk menyiapkan atau membuat pelat, silinder cetak atau komponen cetak lainnya; pelat, silinder cetak dan komponen cetak lainnya; pelat, silinder dan batu litograf, disiapkan untuk keperluan pencetakan (misalnya, diratakan, dibuat tidak licin atau dipoles)."
+  },
+  {
+    "code": "844300",
+    "description": "Mesin cetak digunakan untuk mencetak dengan memakai pelat, silinder dan komponen cetak lainnya dari pos 84.42; mesin cetak, mesin fotocopy dan mesin faksimili lainnya, dikombinasi atau tidak; bagian dan aksesori lainnya."
+  },
+  {
+    "code": "844400",
+    "description": "Mesin untuk mengekstrusi, menarik, mentekstur atau memotong bahan tekstil buatan."
+  },
+  {
+    "code": "844500",
+    "description": "Mesin untuk pengolahan serat tekstil; mesin pemintal, pengganda atau pemilin dan mesin lainnya untuk memproduksi benang tekstil; mesin pengikal atau penggulung tekstil (termasuk penggulung benang pakan) dan mesin untuk menyiapkan benang tekstil untuk digunakan pada mesin dari pos 84.46 atau 84.47."
+  },
+  {
+    "code": "844600",
+    "description": "Mesin tenun (loom)."
+  },
+  {
+    "code": "844700",
+    "description": "Mesin rajut, mesin stitch-bonding dan mesin untuk membuat benang berpalut, tulle, renda, bordir, perapih, jalinan atau jaring dan mesin pembuat rumbai."
+  },
+  {
+    "code": "844800",
+    "description": "Mesin pembantu untuk digunakan dengan mesin dari pos 84.44, 84.45, 84.46 atau 84.47 (misalnya, dobi, Jacquard, penghenti gerak otomatis, mekanisme pengubah puntalan); bagian dan aksesori yang cocok digunakan semata-mata atau terutama dengan mesin dalam pos ini atau dari pos 84.44, 84.45, 84.46 atau 84.47 (misalnya, spindel dan spindel flyer, card clothing, sisir, extruding nipple, puntalan, heald dan heald-frame, jarum rajut)."
+  },
+  {
+    "code": "844900",
+    "description": "Mesin untuk membuat atau merampungkan bulu kempa atau bukan tenunan dalam lembaran atau bentuk, termasuk mesin untuk membuat topi bulu kempa; blok untuk membuat topi."
+  },
+  {
+    "code": "845000",
+    "description": "Mesin cuci tipe rumah tangga atau binatu, termasuk mesin yang dapat digunakan untuk mencuci dan mengeringkan."
+  },
+  {
+    "code": "845100",
+    "description": "Mesin (selain mesin dari pos 84.50) untuk mencuci, membersihkan, memeras, mengeringkan, menyetrika, mengepres (termasuk pengepres fusi), mengelantang, mencelup, menata, merampungkan, melapisi atau meresapi benang tekstil, kain atau barang tekstil sudah jadi dan mesin untuk memberi pasta pada kain dasar atau kain dasar lainnya yang digunakan dalam pembuatan penutup lantai seperti linoleum; mesin untuk menggulung, melepas gulungan, melipat, memotong atau memotong bergerigi kain tekstil."
+  },
+  {
+    "code": "845200",
+    "description": "Mesin jahit, selain dari mesin penjahit buku yang dimaksud dari pos 84.40; perabotan, dasar dan tutup dirancang secara khusus untuk mesin jahit; jarum mesin jahit."
+  },
+  {
+    "code": "845300",
+    "description": "Mesin untuk mengolah, menyamak atau mengerjakan jangat, kulit atau kulit samak atau untuk membuat atau memperbaiki alas kaki atau barang lain dari jangat, kulit atau kulit samak, selain mesin jahit."
+  },
+  {
+    "code": "845400",
+    "description": "Converter, ladle, mesin cetakan ingot dan mesin tuang, dari jenis yang digunakan dalam metalurgi atau dalam pengecoran logam."
+  },
+  {
+    "code": "845500",
+    "description": "Kilang pencanai logam dan gilingannya."
+  },
+  {
+    "code": "845600",
+    "description": "Mesin perkakas untuk mengerjakan berbagai bahan dengan penghilangan bahan, melalui proses penyinaran laser atau sinar lainnya atau sinar foton, ultrasonik, pelucutan elektro, elektro kimia, sinar elektron, sinar ionik atau busur plasma; mesin pemotong water-jet."
+  },
+  {
+    "code": "845700",
+    "description": "Machining center, mesin konstruksi unit (single station) dan mesin transfer multi-station, untuk mengerjakan logam."
+  },
+  {
+    "code": "845800",
+    "description": "Mesin bubut (termasuk turning centre) untuk menghilangkan logam."
+  },
+  {
+    "code": "845900",
+    "description": "Mesin perkakas (termasuk mesin way-type unit head) untuk mengebor, menggurdi, menggiling, membuat ulir atau alur dengan menghilangkan logam, selain mesin bubut (termasuk turning centre) dari pos 84.58."
+  },
+  {
+    "code": "846000",
+    "description": "Mesin perkakas untuk menghaluskan, menajamkan, menggerinda, menggosok, mengasah, memoles atau merampungkan logam atau cermet secara lain dengan memakai batu gerinda, amplas atau produk pemoles, selain mesin pemotong gir, penggerinda gir atau mesin untuk merampungkan gir dari pos 84.61."
+  },
+  {
+    "code": "846100",
+    "description": "Mesin perkakas untuk mengetam, membentuk, menyerut, menggerek, memotong gir, menggerinda gir atau merampungkan gir, menggergaji, memotong dan mesin perkakas lainnya yang bekerja dengan menghilangkan logam atau sermet, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "846200",
+    "description": "Mesin perkakas (termasuk pengepres) untuk mengerjakan logam dengan menempa, memalu atau menempa dengan cetakan (tidak termasuk rolling mill); mesin perkakas (termasuk pengepres, slitting line dan cut-to-length line) untuk mengerjakan logam dengan membengkokkan, melipat, meluruskan, memipihkan, menggunting, melubangi, menakik atau menggigit (tidak termasuk bangku tarik); pengepres untuk mengerjakan logam atau karbida logam, tidak dirinci di atas."
+  },
+  {
+    "code": "846300",
+    "description": "Mesin perkakas lainnya untuk mengerjakan logam atau sermet, tanpa menghilangkan bahannya."
+  },
+  {
+    "code": "846400",
+    "description": "Mesin perkakas untuk mengerjakan batu, keramik, beton, asbes semen atau bahan mineral sejenisnya atau untuk mengerjakan kaca secara dingin."
+  },
+  {
+    "code": "846500",
+    "description": "Mesin perkakas untuk mengerjakan batu, keramik, beton, asbes semen atau bahan mineral sejenisnya atau untuk mengerjakan kaca secara dingin."
+  },
+  {
+    "code": "846600",
+    "description": "Bagian dan aksesori yang cocok untuk digunakan semata-mata atau terutama dengan mesin dari pos 84.56 sampai dengan 84.65, termasuk pemegang barang yang dikerjakan atau pemegang perkakas, self-opening die head, dividing head dan kelengkapan khusus lain untuk mesin perkakas; pemegang perkakas untuk semua tipe perkakas tangan."
+  },
+  {
+    "code": "846700",
+    "description": "Perkakas tangan, digerakkan secara pneumatik, hidraulik atau dengan motor listrik atau bukan listrik terpasang."
+  },
+  {
+    "code": "846800",
+    "description": "Mesin dan aparatus untuk menyolder, mematri, mengelas, dapat memotong maupun tidak, selain yang dimaksud dari pos 85.15; mesin dan peralatan untuk mengeraskan permukaan yang digerakkan dengan gas."
+  },
+  {
+    "code": "847000",
+    "description": "Mesin hitung dan mesin perekam, pereproduksi dan penayang data ukuran saku dengan fungsi menghitung; mesin akunting, mesin cap pengganti perangko, mesin penerbit karcis dan mesin semacam itu, yang dilengkapi dengan alat hitung; register kas."
+  },
+  {
+    "code": "847100",
+    "description": "Mesin pengolah data otomatis dan unitnya; pembaca magnetik atau optik, mesin untuk menyalin data pada media data dalam bentuk kode dan mesin untuk mengolah data tersebut, tidak dirinci atau termasuk dalam pos lainnya."
+  },
+  {
+    "code": "847200",
+    "description": "Mesin kantor lainnya (misalnya, hektograf atau mesin duplikasi stensil, mesin pencetak alamat, mesin penyedia uang kertas otomatis, mesin penyortir koin, mesin penghitung atau pembungkus koin, mesin peruncing pensil, mesin pembuat lubang atau mesin kokot)."
+  },
+  {
+    "code": "847300",
+    "description": "Bagian dan aksesori (selain penutup, kotak pembawa dan sejenisnya) cocok untuk digunakan semata-mata atau terutama dengan mesin dari pos 84.70 sampai dengan 84.72."
+  },
+  {
+    "code": "847400",
+    "description": "Mesin untuk menyortir, mengayak, memisahkan, mencuci, menghancurkan, menggerinda, mencampur atau mengaduk tanah, batu, bijih atau bahan mineral lainnya, dalam bentuk padat (termasuk bubuk atau pasta); mesin untuk aglomerasi, membentuk atau mencetak bahan bakar mineral padat, pasta keramik, semen yang tidak dikeraskan, bahan plesteran atau produk mineral lainnya dalam bentuk bubuk atau pasta; mesin untuk membentuk cetakan dari pasir."
+  },
+  {
+    "code": "847500",
+    "description": "Mesin untuk merakit lampu listrik atau elektronik, tabung atau katup atau bola lampu kilat, dalam glass envelope; mesin untuk membuat atau mengerjakan kaca atau barang dari kaca secara panas."
+  },
+  {
+    "code": "847600",
+    "description": "Mesin penjual barang otomatis (misalnya, mesin perangko, rokok, makanan atau minuman), termasuk mesin penukar uang."
+  },
+  {
+    "code": "847700",
+    "description": "Mesin untuk mengerjakan karet atau plastik atau untuk pembuatan produk dari bahan tersebut, tidak dirinci atau termasuk dalam pos lainnya dalam Bab ini."
+  },
+  {
+    "code": "847800",
+    "description": "Mesin untuk mengolah atau membuat tembakau menjadi barang jadi, tidak dirinci atau termasuk dalam pos lainnya dalam Bab ini."
+  },
+  {
+    "code": "847900",
+    "description": "Mesin dan peralatan mekanis, mempunyai fungsi tersendiri, tidak dirinci atau termasuk dalam pos lainnya dalam Bab ini."
+  },
+  {
+    "code": "848000",
+    "description": "Kotak cetakan untuk pengecoran logam; dasar cetakan; pola cetakan; cetakan untuk logam (selain cetakan ingot), karbida logam, kaca, bahan mineral, karet atau plastik."
+  },
+  {
+    "code": "848100",
+    "description": "Keran, klep, katup dan peralatan semacam itu untuk pipa, dinding ketel uap, tangki, tong atau sejenisnya, termasuk katup pengurang tekanan dan katup yang dikendalikan secara termostatik."
+  },
+  {
+    "code": "848200",
+    "description": "Bantalan peluru atau bantalan gulung."
+  },
+  {
+    "code": "848300",
+    "description": "Poros transmisi (termasuk poros berputar dan poros engkol) dan engkol; rumah bantalan dan bantalan poros polos; gir dan gearing; ball screw atau roller screw; gear box dan pengubah kecepatan lainnya, termasuk torak konverter; roda gaya dan puli, termasuk blok puli; kopling dan poros penyambung (termasuk sambungan universal)."
+  },
+  {
+    "code": "848400",
+    "description": "Gasket dan sambungan semacam itu dari lembaran logam yang dikombinasi dengan bahan lain atau dari dua atau lebih lapisan logam; set atau aneka gasket dan sambungan semacam itu, tidak sama komposisinya, disiapkan dalam kantong, amplop atau kemasan semacam itu; sil mekanis."
+  },
+  {
+    "code": "848500",
+    "description": "Mesin untuk additive manufacturing."
+  },
+  {
+    "code": "848600",
+    "description": "Mesin dan aparatus dari jenis yang semata-mata atau terutama untuk pembuatan boule atau wafer semikonduktor, peralatan semikonduktor, sirkuit elektronik terpadu atau panel layar datar; mesin dan aparatus yang dirinci pada Catatan 11 (C) Bab ini; bagian dan aksesori."
+  },
+  {
+    "code": "848700",
+    "description": "Bagian mesin, tidak mengandung konektor elektrik, isolator, koil, kontak atau bagian elektrik lainnya, tidak dirinci atau termasuk pada pos lainnya dalam Bab ini."
+  },
+  {
+    "code": "850000",
+    "description": "Mesin dan perlengkapan elektris serta bagiannya; perekam dan pereproduksi suara, perekam dan pereproduksi gambar dan suara televisi, dan bagian serta aksesori dari barang tersebut"
+  },
+  {
+    "code": "850100",
+    "description": "Motor dan generator listrik (tidak termasuk perangkat pembangkit tenaga listrik)."
+  },
+  {
+    "code": "850200",
+    "description": "Perangkat pembangkit tenaga listrik dan konverter berputar."
+  },
+  {
+    "code": "850300",
+    "description": "Bagian yang cocok untuk digunakan semata-mata atau terutama dengan mesin dari pos 85.01 atau 85.02."
+  },
+  {
+    "code": "850400",
+    "description": "Transformator elektrik, konverter statis (misalnya, rectifier) dan induktor."
+  },
+  {
+    "code": "850500",
+    "description": "Elektro magnet; magnet permanen dan barang untuk dijadikan magnet permanen setelah diberi gaya magnet; chuck, klem dan peralatan pemegang semacam yang bekerja secara elektro magnetis atau magnet permanen; penyambung, kopling dan rem elektro magnetis; kepala pengangkat elektro magnetis."
+  },
+  {
+    "code": "850600",
+    "description": "Sel primer dan baterai primer."
+  },
+  {
+    "code": "850700",
+    "description": "Akumulator listrik, termasuk separatornya, empat persegi panjang (termasuk bujur sangkar) maupun tidak."
+  },
+  {
+    "code": "850800",
+    "description": "Vacuum cleaner."
+  },
+  {
+    "code": "850900",
+    "description": "Peralatan rumah tangga mekanik elektrik dengan motor listrik terpasang, selain vacuum cleaner dari pos 85.08."
+  },
+  {
+    "code": "851000",
+    "description": "Alat cukur, alat pangkas rambut dan peralatan penghilang rambut, dengan motor listrik terpasang."
+  },
+  {
+    "code": "851100",
+    "description": "Alat penyala atau penghidup elektrik dari jenis yang digunakan untuk mesin pembakaran dalam cetus api atau nyala kompresi (misalnya, magnet penyala, magnet-dinamo, koil penyala, busi pencetus dan busi pijar, starter motor); generator (misalnya, dinamo, alternator) dan sakelar dari jenis yang digunakan dengan mesin tersebut."
+  },
+  {
+    "code": "851200",
+    "description": "Perlengkapan penerangan atau perlengkapan pemberi isyarat elektrik (tidak termasuk barang dari pos 85.39), penghapus kaca, pencair es dan penghilang kabut, dari jenis yang digunakan untuk sepeda atau kendaraan bermotor."
+  },
+  {
+    "code": "851300",
+    "description": "Lampu listrik portabel yang dirancang untuk berfungsi dengan sumber energinya sendiri (misalnya, baterai kering, akumulator, magnet), selain perlengkapan penerangan dari pos 85.12."
+  },
+  {
+    "code": "851400",
+    "description": "Tanur dan oven listrik industri atau laboratorium (termasuk yang difungsikan dengan induksi atau dielectric loss); perlengkapan industri atau laboratorium lainnya untuk pengolahan panas bahan dengan induksi atau dielectric loss."
+  },
+  {
+    "code": "851500",
+    "description": "Mesin dan aparatus penyolder, pematri atau pengelas listrik (termasuk gas dipanaskan secara elektrik), sinar laser atau sinar lainnya atau sinar foton, ultrasonik, sinar elektron, pulsa magnetis atau busur plasma, dapat memotong maupun tidak; mesin dan aparatus listrik untuk penyemprotan panas logam atau sermet."
+  },
+  {
+    "code": "851600",
+    "description": "Pemanas air instan atau pemanas air dengan tempat penyimpanan dan pemanas celup, listrik; aparatus pemanas ruangan dan pemanas tanah, listrik; aparatus penata rambut elektro-termal (misalnya, pengering rambut, pengeriting rambut, pemanas jepit untuk mengeriting rambut) dan pengering tangan; setrika listrik; peralatan elektro-termal lainnya dari jenis yang digunakan untuk keperluan rumah tangga; resistor panas listrik, selain yang dimaksud dari pos 85.45."
+  },
+  {
+    "code": "851700",
+    "description": "Perangkat telepon, termasuk smartphone dan telepon lainnya untuk jaringan seluler atau untuk jaringan tanpa kabel lainnya; aparatus lainnya untuk mengirimkan atau menerima suara, gambar, atau data lainnya termasuk aparatus untuk komunikasi dalam jaringan kabel atau tanpa kabel (seperti local atau wide area network), selain dari aparat transmisi atau penerima dari pos 84.43, 85.25, 85.27 atau 85.28."
+  },
+  {
+    "code": "851800",
+    "description": "Mikrofon dan penyangganya; pengeras suara, dipasang pada rumahnya maupun tidak; headphone dan earphone, dikombinasikan dengan mikrofon maupun tidak dan set yang terdiri dari satu mikrofon dan satu atau lebih pengeras suara; amplifier listrik audio-frequency; set amplifier suara listrik."
+  },
+  {
+    "code": "851900",
+    "description": "Aparatus untuk perekam atau reproduksi suara."
+  },
+  {
+    "code": "852100",
+    "description": "Aparatus perekam atau pereproduksi video, digabung dengan video tuner maupun tidak."
+  },
+  {
+    "code": "852200",
+    "description": "Bagian dan aksesori yang cocok untuk digunakan semata-mata atau terutama dengan aparatus dari pos 85.19 sampai dengan 85.21."
+  },
+  {
+    "code": "852300",
+    "description": "Cakram, pita, media penyimpan non-volatile berbentuk padat, \"smart card\" dan media lain untuk merekam suara atau fenomena lain, baik direkam maupun tidak, termasuk matrice dan master untuk produksi cakram, tetapi selain produk dari Bab 37."
+  },
+  {
+    "code": "852400",
+    "description": "Modul panel layar datar, dilengkapi dengan layar peka sentuh maupun tidak."
+  },
+  {
+    "code": "852500",
+    "description": "Aparatus transmisi untuk penyiaran radio atau televisi digabung dengan aparatus penerima atau dengan aparatus perekam suara maupun tidak; kamera televisi, kamera digital dan kamera perekam video."
+  },
+  {
+    "code": "852600",
+    "description": "Aparatus radar, aparatus pembantu radio navigasi dan aparatus radio kendali jarak jauh."
+  },
+  {
+    "code": "852700",
+    "description": "Aparatus penerima untuk penyiaran radio, dikombinasi maupun tidak, dalam rumah yang sama, dengan aparatus perekam atau pereproduksi suara atau penunjuk waktu."
+  },
+  {
+    "code": "852800",
+    "description": "Monitor dan proyektor, tidak digabung dengan aparatus penerima televisi; aparatus penerima untuk televisi, digabung dengan penerima siaran radio atau aparatus perekam atau pereproduksi suara atau video, maupun tidak."
+  },
+  {
+    "code": "852900",
+    "description": "Bagian yang cocok untuk digunakan semata-mata atau terutama dengan aparatus dari pos 85.24 sampai dengan 85.28."
+  },
+  {
+    "code": "853000",
+    "description": "Perlengkapan isyarat, pengontrol keselamatan atau lalu lintas elektrik untuk rel kereta api, trem, jalan, lalu lintas air, fasilitas parkir, instalasi pelabuhan atau lapangan udara (selain yang dimaksud dari pos 86.08)."
+  },
+  {
+    "code": "853100",
+    "description": "Aparatus isyarat suara atau visual elektrik (misalnya, bel, sirene, panel indikator, alarm pencuri atau kebakaran), selain yang dimaksud dari pos 85.12 atau 85.30."
+  },
+  {
+    "code": "853200",
+    "description": "Kapasitor listrik, tetap, variabel atau dapat disesuaikan (pre-set)."
+  },
+  {
+    "code": "853300",
+    "description": "Resistor listrik (termasuk reostat dan potensiometer), selain resistor panas."
+  },
+  {
+    "code": "853400",
+    "description": "Printed circuit."
+  },
+  {
+    "code": "853500",
+    "description": "Aparatus listrik untuk memindahkan atau melindungi sirkuit listrik, atau untuk membuat koneksi ke atau pada sirkuit listrik (misalnya, sakelar, sekering, penangkal petir, pembatas voltase, penekan kenaikan tegangan, steker dan konektor lainnya, kotak penyambung), untuk voltase melebihi 1.000 volt."
+  },
+  {
+    "code": "853600",
+    "description": "Aparatus listrik untuk memindahkan atau melindungi sirkuit listrik, atau untuk membuat koneksi ke atau pada sirkuit listrik (misalnya, sakelar, relai, sekering, penekan kenaikan tegangan, steker, soket, gagang lampu dan konektor lainnya, kotak penyambung), untuk voltase tidak melebihi 1.000 volt; konektor untuk serat optik, bundel atau kabel serat optik."
+  },
+  {
+    "code": "853700",
+    "description": "Papan, panel, konsol, meja, kabinet dan landasan lainnya, dilengkapi dengan dua atau lebih aparatus dari pos 85.35 atau 85.36, untuk pengontrol listrik atau pendistribusi listrik, termasuk yang dilengkapi dengan instrumen atau aparatus dari Bab 90, dan aparatus pengontrol numerik, selain aparatus sakelar dari pos 85.17."
+  },
+  {
+    "code": "853800",
+    "description": "Bagian yang cocok untuk digunakan semata-mata atau terutama dengan aparatus dari pos 85.35, 85.36 atau 85.37."
+  },
+  {
+    "code": "853900",
+    "description": "Lampu filamen atau lampu discharge listrik, termasuk unit lampu sealed beam dan lampu ultra violet atau infra merah; lampu busur; sumber cahaya light-emitting diode (LED)."
+  },
+  {
+    "code": "854000",
+    "description": "Katup dan tabung termionik, katoda dingin atau katup dan tabung katoda foto (misalnya, katup dan tabung hampa atau berisi uap atau gas, katup dan tabung busur air raksa pengubah arus, tabung sinar katoda, tabung kamera televisi)."
+  },
+  {
+    "code": "854100",
+    "description": "Peralatan semi konduktor (sebagai contoh, dioda, transistor, transduser berbasis semi konduktor); peralatan semi konduktor peka cahaya, termasuk sel fotovoltaik dirakit menjadi modul atau dibuat menjadi panel maupun tidak; light-emitting diode (LED), dirakit dengan light-emitting diode (LED) lainnya maupun tidak; kristal piezoelektrik terpasang."
+  },
+  {
+    "code": "854200",
+    "description": "Sirkuit elektronik terpadu."
+  },
+  {
+    "code": "854300",
+    "description": "Mesin dan aparatus elektrik, mempunyai fungsi tersendiri, tidak dirinci atau termasuk pada pos lainnya dalam Bab ini."
+  },
+  {
+    "code": "854400",
+    "description": "Kawat diisolasi (termasuk dienamel atau dianodisasi), kabel (termasuk kabel koaksial) dan konduktor listrik diisolasi lainnya, dilengkapi dengan konektor maupun tidak; kabel serat optik, dibuat dari serat berselubung tersendiri, dirakit dengan konduktor listrik atau dilengkapi dengan konektor maupun tidak."
+  },
+  {
+    "code": "854500",
+    "description": "Elektroda karbon, sikat karbon, karbon lampu, karbon baterai dan barang lainnya dari grafit atau karbon lainnya, dengan atau tanpa logam, jenis yang digunakan untuk keperluan elektrik."
+  },
+  {
+    "code": "854600",
+    "description": "Isolator listrik dari berbagai bahan."
+  },
+  {
+    "code": "854700",
+    "description": "Alat kelengkapan pengisolasi untuk mesin, peralatan atau perlengkapan elektrik, yang seluruhnya merupakan bahan isolasi yang terpisah dari sejumlah kecil komponen logam (misalnya, soket berulir) yang semata-mata dipasang selama pencetakan untuk keperluan perakitan, selain isolator yang dimaksud dari pos 85.46; pipa saluran listrik beserta sambungannya dari logam tidak mulia dilapisi bahan pengisolasi."
+  },
+  {
+    "code": "854800",
+    "description": "Bagian elektrik dari mesin atau aparatus, tidak dirinci atau termasuk pada pos lainnya dalam Bab ini."
+  },
+  {
+    "code": "854900",
+    "description": "Sisa dan skrap elektrik dan elektronik."
+  },
+  {
+    "code": "860000",
+    "description": "Lokomotif kereta api atau trem, kendaraan yang bergerak di atas rel dan bagiannya; track fixture dan alat kelengkapan rel kereta api atau trem serta bagiannya; perlengkapan pemberi isyarat lalu-lintas mekanis (termasuk elektro-mekanis) dari segala jenis."
+  },
+  {
+    "code": "860100",
+    "description": "Lokomotif rel digerakkan dengan sumber tenaga listrik dari luar atau dengan akumulator listrik."
+  },
+  {
+    "code": "860200",
+    "description": "Lokomotif rel lainnya; tender lokomotif."
+  },
+  {
+    "code": "860300",
+    "description": "Gerbong tertutup dan gerbong terbuka kereta api atau trem berdaya gerak sendiri, selain yang dimaksud dari pos 86.04."
+  },
+  {
+    "code": "860400",
+    "description": "Kendaraan perawatan atau perbaikan kereta api atau trem, berdaya gerak sendiri maupun tidak (misalnya, kendaraan bengkel, crane, balas penumbuk, pembuat jalur rel, gerbong penguji dan pemeriksa rel)."
+  },
+  {
+    "code": "860500",
+    "description": "Gerbong kereta api atau trem penumpang tidak berdaya gerak sendiri; gerbong bagasi, gerbong barang pos dan gerbong kereta api atau trem untuk keperluan khusus lainnya, tidak berdaya gerak sendiri (tidak termasuk yang dimaksud dari pos 86.04)."
+  },
+  {
+    "code": "860600",
+    "description": "Gerbong tertutup dan wagon kereta api atau trem untuk barang, tidak berdaya gerak sendiri."
+  },
+  {
+    "code": "860700",
+    "description": "Bagian dari lokomotif atau kendaraan rel kereta api atau trem atau gerbong."
+  },
+  {
+    "code": "860800",
+    "description": "Track fixture dan alat kelengkapan rel kereta api atau trem; perlengkapan pemberi isyarat, pengontrol keselamatan atau lalu lintas mekanis (termasuk elektro mekanis) untuk rel kereta api, rel trem, jalan, lalu lintas perairan darat, fasilitas parkir, instalasi pelabuhan atau lapangan udara; bagiannya."
+  },
+  {
+    "code": "860900",
+    "description": "Peti kemas (termasuk peti kemas untuk pengangkutan barang cair) dirancang dan dilengkapi secara khusus untuk dibawa dengan satu jenis atau lebih moda pengangkut."
+  },
+  {
+    "code": "870000",
+    "description": "Kendaraan selain yang bergerak di atas rel kereta api atau trem, dan bagian serta aksesorinya"
+  },
+  {
+    "code": "870100",
+    "description": "Traktor (selain traktor dari pos 87.09)."
+  },
+  {
+    "code": "870200",
+    "description": "Kendaraan bermotor untuk pengangkutan sepuluh orang atau lebih, termasuk pengemudi."
+  },
+  {
+    "code": "870300",
+    "description": "Mobil dan kendaraan bermotor lainnya terutama dirancang untuk pengangkutan orang (selain yang dimaksud dari pos 87.02), termasuk station wagon dan mobil balap."
+  },
+  {
+    "code": "870400",
+    "description": "Kendaraan bermotor untuk pengangkutan barang."
+  },
+  {
+    "code": "870500",
+    "description": "Kendaraan bermotor untuk keperluan khusus, selain yang terutama dirancang untuk pengangkutan orang atau barang (misalnya, lori derek, lori crane, kendaraan pemadam kebakaran, lori pencampur beton, lori penyapu jalan, lori penyemprot, mobil bengkel, mobil unit radiologi)."
+  },
+  {
+    "code": "870600",
+    "description": "Sasis dilengkapi dengan mesin, untuk kendaraan bermotor dari pos 87.01 sampai dengan 87.05."
+  },
+  {
+    "code": "870700",
+    "description": "Bodi (termasuk kabin), untuk kendaraan bermotor dari pos 87.01 sampai dengan 87.05."
+  },
+  {
+    "code": "870800",
+    "description": "Bagian dan aksesori kendaraan bermotor dari pos 87.01 sampai dengan 87.05."
+  },
+  {
+    "code": "870900",
+    "description": "Truk kerja, berdaya gerak sendiri, tidak dilengkapi dengan perlengkapan pengangkat atau penanganan, dari tipe yang digunakan di pabrik, gudang, area dok atau bandar udara untuk pengangkutan barang jarak pendek; traktor dari tipe yang digunakan di stasiun kereta api; bagian dari kendaraan tersebut."
+  },
+  {
+    "code": "871000",
+    "description": "Tank dan kendaraan tempur lapis baja lainnya, bermotor, dilengkapi dengan senjata maupun tidak, dan bagian dari kendaraan tersebut."
+  },
+  {
+    "code": "871100",
+    "description": "Sepeda motor (termasuk moped) dan sepeda yang dilengkapi dengan motor bantu, dengan atau tanpa kereta samping; kereta samping."
+  },
+  {
+    "code": "871200",
+    "description": "Sepeda roda dua dan sepeda lainnya (termasuk sepeda roda tiga untuk pengantar), tidak bermotor."
+  },
+  {
+    "code": "871300",
+    "description": "Kendaraan untuk orang cacat, bermotor maupun tidak atau digerakkan secara mekanik lainnya."
+  },
+  {
+    "code": "871400",
+    "description": "Bagian dan aksesori kendaraan dari pos 87.11 sampai dengan 87.13."
+  },
+  {
+    "code": "871500",
+    "description": "Kereta bayi dan bagiannya."
+  },
+  {
+    "code": "871600",
+    "description": "Trailer dan semi trailer; kendaraan lainnya, tidak digerakkan secara mekanik; bagiannya."
+  },
+  {
+    "code": "880000",
+    "description": "Kendaraan udara, kendaraan luar angkasa, dan bagiannya"
+  },
+  {
+    "code": "880100",
+    "description": "Balon udara dan balon udara yang dapat dikemudikan; pesawat layang, pesawat layang gantung dan kendaraan udara lainnya tanpa tenaga penggerak."
+  },
+  {
+    "code": "880200",
+    "description": "Kendaraan udara lainnya (misalnya, helikopter, pesawat udara), kecuali kendaraan udara tak berawak dari pos 88.06; kendaraan luar angkasa (termasuk satelit) serta kendaraan peluncur luar angkasa dan sub orbital."
+  },
+  {
+    "code": "880400",
+    "description": "Parasut (termasuk parasut dan paraglider yang dapat dikemudikan) dan rotochute; bagian dan aksesorinya."
+  },
+  {
+    "code": "880500",
+    "description": "Gir peluncur kendaraan udara; deck-arrestor atau gir semacam itu; pesawat latih terbang di darat; bagian dari barang tersebut."
+  },
+  {
+    "code": "880600",
+    "description": "Kendaraan udara tak berawak."
+  },
+  {
+    "code": "880700",
+    "description": "Bagian dari barang pada pos 88.01, 88.02 atau 88.06."
+  },
+  {
+    "code": "890000",
+    "description": "Kapal, perahu dan struktur terapung serta bangunan"
+  },
+  {
+    "code": "890100",
+    "description": "Kapal pesiar, kapal ekskursi, kapal feri, kapal kargo, tongkang dan kendaraan air semacam itu untuk pengangkutan orang atau barang."
+  },
+  {
+    "code": "890200",
+    "description": "Kapal penangkap ikan; kapal pabrik dan kendaraan air lainnya untuk pemrosesan atau pengawetan produk perikanan."
+  },
+  {
+    "code": "890300",
+    "description": "Yacht dan kendaraan air lainnya untuk pelesir atau olah raga; sampan dan kano."
+  },
+  {
+    "code": "890400",
+    "description": "Kapal penarik dan pendorong."
+  },
+  {
+    "code": "890500",
+    "description": "Kapal suar, kapal pemadam kebakaran, kapal keruk, crane terapung dan kendaraan air lainnya yang fungsi berlayarnya bukan merupakan fungsi utama; dok terapung; platform pengeboran atau produksi terapung atau di bawah air."
+  },
+  {
+    "code": "890600",
+    "description": "Kendaraan air lainnya, termasuk kapal perang dan perahu penyelamat selain sampan."
+  },
+  {
+    "code": "890700",
+    "description": "Struktur terapung lainnya (misalnya, rakit, tangki, coffer-dam, landasan apung, pelampung suar dan rambu laut)."
+  },
+  {
+    "code": "890800",
+    "description": "Bangunan tempat tinggal"
+  },
+  {
+    "code": "890900",
+    "description": "Bangunan bukan tempat tinggal"
+  },
+  {
+    "code": "891000",
+    "description": "Jalan bebas hambatan (kecuali jalan bebas hambatan yang ditinggikan/jalan layang), jalan raya, jalan, jalan kereta api dan landasan pesawat terbang"
+  },
+  {
+    "code": "891100",
+    "description": "Jembatan, jalan layang bebas hambatan dan terowongan"
+  },
+  {
+    "code": "891200",
+    "description": "Pelabuhan, aliran air/terusan, bendungan, irigasi dan bangunan air lainnya"
+  },
+  {
+    "code": "891300",
+    "description": "Pipa saluran jarak jauh, saluran komunikasi dan saluran listrik (kabel)"
+  },
+  {
+    "code": "891400",
+    "description": "Kabel dan pipa saluran lokal dan bangunan"
+  },
+  {
+    "code": "891500",
+    "description": "Bangunan pertambangan dan industri"
+  },
+  {
+    "code": "891600",
+    "description": "Fasilitas olah raga dan rekreasi di ruang terbuka"
+  },
+  {
+    "code": "891700",
+    "description": "Pekerjaan teknik sipil lainnya"
+  },
+  {
+    "code": "900000",
+    "description": "lnstrumen dan aparatus optis, fotografi, sinematografi, pengukur,pemeriksa, presisi, medis ctan bedah; bagian dan aksesorinya"
+  },
+  {
+    "code": "900100",
+    "description": "Serat optik dan bundel serat optik; kabel serat optik selain yang dimaksud dari pos 85.44; lembaran dan pelat dari bahan polarisasi; lensa (termasuk lensa kontak), prisma, cermin dan elemen optik lainnya, dari berbagai bahan, tidak terpasang, selain elemen semacam itu dari kaca tidak dikerjakan secara optik."
+  },
+  {
+    "code": "900200",
+    "description": "Lensa, prisma, cermin dan elemen optik lain-nya, dari berbagai bahan, terpasang, sebagai bagian dari atau alat kelengkapan untuk instrumen atau aparatus, selain elemen semacam itu dari kaca tidak dikerjakan secara optik."
+  },
+  {
+    "code": "900300",
+    "description": "Bingkai dan mounting untuk kacamata, kacamata pelindung atau sejenisnya, serta bagiannya."
+  },
+  {
+    "code": "900400",
+    "description": "Kacamata, kacamata pelindung dan sejenisnya, korektif, protektif atau lainnya."
+  },
+  {
+    "code": "900500",
+    "description": "Teropong ganda, teropong tunggal, teleskop optik lainnya, dan mountingnya; instrumen astronomi lainnya dan mountingnya, tetapi tidak termasuk instrumen untuk radio astronomi."
+  },
+  {
+    "code": "900600",
+    "description": "Kamera fotografi (selain kamera sinematografi); aparatus lampu kilat fotografi dan bola lampu kilat selain lampu tabung dari pos 85.39."
+  },
+  {
+    "code": "900700",
+    "description": "Kamera dan proyektor sinematografi dilengkapi dengan aparatus perekam atau reproduksi suara maupun tidak."
+  },
+  {
+    "code": "900800",
+    "description": "Proyektor gambar, selain sinematografi; pembesar dan pengecil fotografi (selain sinematografi)."
+  },
+  {
+    "code": "901000",
+    "description": "Aparatus dan perlengkapan laboratorium fotografi (termasuk sinemetografi), tidak dirinci atau termasuk pos lainnya dari Bab ini; negatoscope; layar proyeksi."
+  },
+  {
+    "code": "901100",
+    "description": "Mikroskop optik gabungan, termasuk yang untuk fotomikrografi, sinefotomikrografi atau mikroproyeksi."
+  },
+  {
+    "code": "901200",
+    "description": "Mikroskop selain mikroskop optik; aparatus difraksi."
+  },
+  {
+    "code": "901300",
+    "description": "Laser, selain dioda laser; peralatan dan instrumen optik lainnya, tidak dirinci atau termasuk pos lainnya dari Bab ini."
+  },
+  {
+    "code": "901400",
+    "description": "Kompas pencari arah; instrumen dan peralatan navigasi lainnya."
+  },
+  {
+    "code": "901500",
+    "description": "Instrumen dan peralatan survei (termasuk survei photogrammetrical), hidrografi, oseanografi, hidrologi, meteorologi atau geofisika, tidak termasuk kompas; pengukur jarak."
+  },
+  {
+    "code": "901600",
+    "description": "Timbangan dengan kepekaan 5 cg atau lebih peka, dengan atau tanpa anak timbangannya."
+  },
+  {
+    "code": "901700",
+    "description": "Instrumen penggambar, pemberi tanda atau penghitung matematis (misalnya, mesin perancang, pantograf, protraktor, set gambar, mistar hitung, disc calculator); instrumen untuk mengukur panjang, digunakan dengan tangan (misalnya, batang dan pita pengukur, mikro meter, kaliper), tidak dirinci atau termasuk dalam pos lain dari Bab ini."
+  },
+  {
+    "code": "901800",
+    "description": "Instrumen dan peralatan yang digunakan dalam ilmu medis, bedah, perawatan gigi atau kedokteran hewan, termasuk aparatus scintigraphic, aparatus elektro medis dan instrumen penguji penglihatan lainnya."
+  },
+  {
+    "code": "901900",
+    "description": "Peralatan mekano terapi; aparatus pijat; aparatus penguji kecerdasan psikologis; aparatus terapi ozon, terapi oksigen, terapi aerosol, nafas buatan atau pernapasan terapeutik lainnya."
+  },
+  {
+    "code": "902000",
+    "description": "Peralatan nafas dan masker gas lainnya, tidak termasuk masker pelindung yang tidak mempunyai bagian mekanis maupun filter yang dapat diganti."
+  },
+  {
+    "code": "902100",
+    "description": "Peralatan ortopedik, termasuk kruk bebat bedah dan bebat hernia; bidai dan peralatan patah tulang lainnya; anggota badan artifisial; alat bantu dengar dan peralatan lainnya yang dipakai atau dibawa, atau ditanam dalam tubuh, untuk mengganti yang cacat atau tidak mampu."
+  },
+  {
+    "code": "902200",
+    "description": "Aparatus yang didasarkan atas penggunaan sinar X atau radiasi sinar alfa, beta, gamma atau pengion lainnya untuk keperluan medis, pembedahan, perawatan gigi atau kedokteran hewan, maupun tidak, termasuk aparatus radiografi atau radioterapi, tabung sinar X dan generator sinar X lainnya, generator tegangan tinggi, panel dan meja kontrol, tirai, meja pemeriksaan atau perawatan, kursi dan sejenisnya."
+  },
+  {
+    "code": "902300",
+    "description": "Instrumen, aparatus dan model, dirancang untuk keperluan peragaan (misalnya dalam pendidikan atau pameran), tidak cocok untuk keperluan lainnya."
+  },
+  {
+    "code": "902400",
+    "description": "Mesin dan peralatan untuk menguji kekerasan, kekuatan, kompresibilitas, elastisitas atau sifat mekanis lainnya dari suatu bahan (misalnya, logam, kayu, tekstil, kertas, plastik)."
+  },
+  {
+    "code": "902500",
+    "description": "Hidrometer dan instrumen apung semacam itu, termometer, pirometer, barometer, higrometer dan psikrometer, dengan perekam atau tidak dan berbagai kombinasi dari instrumen tersebut."
+  },
+  {
+    "code": "902600",
+    "description": "Instrumen dan aparatus untuk mengukur atau memeriksa aliran, tinggi permukaan, tekanan atau variabel lainnya dari cairan atau gas (misalnya, pengukur arus, pengukur tinggi permukaan, manometer, pengukur panas), tidak termasuk instrumen dan aparatus dari pos 90.14, 90.15, 90.28 atau 90.32."
+  },
+  {
+    "code": "902700",
+    "description": "Instrumen dan aparatus untuk analisa sifat fisika atau kimia (misalnya polarimeter, refraktometer, spektrometer, aparatus analisa gas atau asap); instrumen dan aparatus untuk mengukur atau memeriksa viskositas, porositas, daya muai, tegangan permukaan atau sejenisnya; instrumen dan aparatus untuk mengukur atau memeriksa kuantitas panas, suara atau cahaya (termasuk pengukur cahaya); mikrotom."
+  },
+  {
+    "code": "902800",
+    "description": "Pengukur pasokan atau produksi gas, cairan atau listrik, termasuk pengukur kalibrasinya."
+  },
+  {
+    "code": "902900",
+    "description": "Penghitung putaran, penghitung produksi, taksimeter, pengukur jarak, pedometer dan sejenisnya; indikator kecepatan dan takometer, selain barang dari pos 90.14 atau 90.15; stroboskop."
+  },
+  {
+    "code": "903000",
+    "description": "Osiloskop, penganalisa spektrum dan instrumen serta aparatus lainnya untuk mengukur atau memeriksa kuantitas elektrik, tidak termasuk pengukur dari pos 90.28; instrumen dan aparatus untuk mengukur atau mendeteksi sinar alfa, beta, gamma, sinar X, kosmik atau radiasi pengion lainnya."
+  },
+  {
+    "code": "903100",
+    "description": "Instrumen, peralatan dan mesin pengukur atau pemeriksa, tidak dirinci atau termasuk dalam pos manapun dalam Bab ini; proyektor profil."
+  },
+  {
+    "code": "903200",
+    "description": "Instrumen dan aparatus pengatur atau pengontrol otomatis."
+  },
+  {
+    "code": "903300",
+    "description": "Bagian dan aksesori (tidak dirinci atau termasuk dalam pos lainnya pada Bab ini) untuk mesin, peralatan, instrumen atau aparatus dari Bab 90."
+  },
+  {
+    "code": "910000",
+    "description": "Jam dan arloji serta bagiannya"
+  },
+  {
+    "code": "910100",
+    "description": "Arloji tangan, arloji saku dan arloji lainnya, termasuk penghitung detik, dengan badan arloji dari logam mulia atau dari logam yang dipalut dengan logam mulia."
+  },
+  {
+    "code": "910200",
+    "description": "Arloji tangan, arloji saku dan arloji lainnya, termasuk penghitung detik, selain yang dimaksud dari pos 91.01."
+  },
+  {
+    "code": "910300",
+    "description": "Jam dengan penggerak jam, tidak termasuk jam dari pos 91.04."
+  },
+  {
+    "code": "910400",
+    "description": "Jam panel instrumen dan jam tipe semacam untuk kendaraan darat, kendaraan udara, kendaraan luar angkasa atau kendaraan air."
+  },
+  {
+    "code": "910500",
+    "description": "Jam lainnya."
+  },
+  {
+    "code": "910600",
+    "description": "Aparatus perekam waktu dan aparatus untuk mengukur, merekam atau menunjukkan interval waktu secara lain, dengan penggerak jam atau penggerak arloji atau dengan motor sinkron (misalnya pencatat waktu, perekam waktu)."
+  },
+  {
+    "code": "910700",
+    "description": "Sakelar waktu dengan penggerak jam atau penggerak arloji atau dengan motor sinkron."
+  },
+  {
+    "code": "910800",
+    "description": "Penggerak arloji, lengkap dan dirakit."
+  },
+  {
+    "code": "910900",
+    "description": "Penggerak jam, lengkap dan dirakit."
+  },
+  {
+    "code": "911000",
+    "description": "Penggerak arloji atau penggerak jam, lengkap, tidak dirakit atau dirakit sebagian (set penggerak); penggerak arloji atau penggerak jam, tidak lengkap, dirakit; penggerak arloji atau penggerak jam tidak lengkap, tidak dirakit."
+  },
+  {
+    "code": "911100",
+    "description": "Badan arloji dan bagiannya."
+  },
+  {
+    "code": "911200",
+    "description": "Badan jam dan badan tipe semacam itu untuk barang lain pada Bab ini, dan bagiannya."
+  },
+  {
+    "code": "911300",
+    "description": "Tali arloji, ban arloji dan gelang arloji, serta bagiannya."
+  },
+  {
+    "code": "911400",
+    "description": "Bagian lainnya dari jam atau arloji."
+  },
+  {
+    "code": "920000",
+    "description": "lnstrumen musik; bagian dan aksesori barang tersebut"
+  },
+  {
+    "code": "920100",
+    "description": "Piano, termasuk piano otomatis; harpsichord dan instrumen keyboard bersenar lainnya."
+  },
+  {
+    "code": "920200",
+    "description": "Instrumen musik bersenar lainnya (misalnya, gitar, biola, harpa)."
+  },
+  {
+    "code": "920500",
+    "description": "Instrumen musik tiup (misalnya, organ keyboard berpipa, akordeon, klarinet, trompet, bag pipe), selain organ fairground dan organ jalanan mekanis."
+  },
+  {
+    "code": "920600",
+    "description": "Instrumen musik perkusi (misalnya, drum, xylophone, simbal, kastanyet, marakas)."
+  },
+  {
+    "code": "920700",
+    "description": "Instrumen musik, dengan suara yang dihasilkan, atau harus diperkuat, secara elektrik (misalnya, organ, gitar, akordeon)."
+  },
+  {
+    "code": "920800",
+    "description": "Kotak musik, fairground organ, organ jalanan mekanis, kicauan burung mekanis, gergaji musik dan instrumen musik lainnya yang tidak termasuk dalam pos manapun dari Bab ini; suling pemikat dari segala jenis; peluit, terompet panggil dan instrumen isyarat suara dengan tiupan mulut lainnya."
+  },
+  {
+    "code": "920900",
+    "description": "Bagian (misalnya, mekanisme untuk kotak musik) dan aksesori (misalnya, kartu, cakram, dan gulungan untuk instrumen mekanik) dari instrumen musik; metronom, garpu tala dan pipa penala dari segala jenis."
+  },
+  {
+    "code": "930000",
+    "description": "Senjata dan amunisi; bagian dan aksesorinya"
+  },
+  {
+    "code": "930100",
+    "description": "Senjata militer, selain revolver, pistol dan senjata dari pos 93.07."
+  },
+  {
+    "code": "930200",
+    "description": "Revolver dan pistol, selain yang dimaksud dari pos 93.03 atau 93.04."
+  },
+  {
+    "code": "930300",
+    "description": "Senjata api lainnya dan peralatan semacam itu yang dioperasikan dengan penembakan bahan peledak (misalnya, senapan lantak dan bedil olah raga, senjata api yang diisi dari moncongnya, pistol isyarat dan peralatan lain yang dirancang hanya untuk menembakkan suar isyarat, pistol dan revolver untuk menembakkan peluru kosong, captive-bolt humane killer, senapan pelempar tali)."
+  },
+  {
+    "code": "930400",
+    "description": "Senjata lainnya (misalnya, senapan dan pistol per, angin atau gas, serta tongkat polisi), tidak termasuk yang dimaksud dari pos 93.07."
+  },
+  {
+    "code": "930500",
+    "description": "Bagian dan aksesori dari barang dari pos 93.01 sampai dengan 93.04."
+  },
+  {
+    "code": "930600",
+    "description": "Bom, granat, torpedo, ranjau, misil dan amunisi perang semacam itu serta bagiannya; peluru dan amunisi lainnya serta proyektil dan bagiannya, termasuk sumbat mimis dan sumbat peluru."
+  },
+  {
+    "code": "930700",
+    "description": "Pedang, pedang pendek, bayonet, tombak dan senjata semacam itu serta bagiannya dan sarung pedang serta sarung senjata lainnya."
+  },
+  {
+    "code": "940000",
+    "description": "Perabotan; keperluan tidur, kasur, alas kasur, bantalan kursi dan perabotan yang diisi semacam itu; lampu dan alat kelengkapan penerangan, tidak dirinci atau termasuk dalam pos lain; tanda iluminasi, papan nama iluminasi dan sejenisnya; bangunan prapabrikasi"
+  },
+  {
+    "code": "940100",
+    "description": "Tempat duduk (selain barang yang dimaksud dari pos 94.02), dapat diubah menjadi tempat tidur maupun tidak, dan bagiannya."
+  },
+  {
+    "code": "940200",
+    "description": "Perabotan medis, bedah, perawatan gigi atau kedokteran hewan (misalnya, meja operasi, meja pemeriksaan, tempat tidur rumah sakit dengan alat kelengkapan mekanis, kursi perawatan gigi); kursi cukur dan kursi semacam itu, yang mempunyai penggerak berputar, rebah dan naik turun; bagian dari barang tersebut."
+  },
+  {
+    "code": "940300",
+    "description": "Perabotan lain dan bagiannya."
+  },
+  {
+    "code": "940400",
+    "description": "Alas kasur; barang keperluan tidur dan perabotan semacam itu (misalnya, kasur, selimut tebal, eiderdown, bantalan kursi, pouffe dan bantal) dilengkapi dengan pegas atau diisi atau dilengkapi bagian dalamnya dengan berbagai bahan atau dengan karet atau plastik seluler, disarungi maupun tidak."
+  },
+  {
+    "code": "940500",
+    "description": "Luminer dan alat kelengkapan penerangan termasuk searchlight dan lampu sorot serta bagiannya, tidak dirinci atau termasuk dalam pos lain; tanda iluminasi, papan nama iluminasi dan sejenisnya, mempunyai sumber cahaya permanen, dan bagiannya yang tidak dirinci atau termasuk dalam pos lain."
+  },
+  {
+    "code": "940600",
+    "description": "Bangunan prapabrikasi."
+  },
+  {
+    "code": "950000",
+    "description": "Mainan, permainan dan keperluan olah raga; bagian dan aksesorinya"
+  },
+  {
+    "code": "950300",
+    "description": "Sepeda roda tiga, skuter, mobil berpedal dan mainan beroda semacam itu; kereta boneka; boneka; mainan lainnya; model yang diperkecil (\"skala\") dan model rekreasi semacam itu, dapat digerakkan atau tidak; puzzle dari segala jenis."
+  },
+  {
+    "code": "950400",
+    "description": "Konsol dan mesin video game, permainan meja atau dalam ruangan, termasuk pintable, biliar, meja khusus untuk permainan kasino dan perlengkapan boling otomatis, mesin permainan yang dioperasikan dengan koin, uang kertas, kartu bank, token atau dengan alat pembayaran lainnya."
+  },
+  {
+    "code": "950500",
+    "description": "Barang festival, karnaval atau hiburan lainnya, termasuk alat sulap dan lelucon."
+  },
+  {
+    "code": "950600",
+    "description": "Barang dan perlengkapan untuk latihan fisik umum, gimnastik, atletik, olahraga lainnya (termasuk meja tenis) atau permainan luar ruangan, tidak dirinci atau termasuk dalam pos lain pada Bab ini; kolam renang dan paddling pool."
+  },
+  {
+    "code": "950700",
+    "description": "Joran, mata kail dan perlengkapan pancing lainnya; jaring ikan, jaring kupu-kupu dan jaring semacam itu; \"burung\" pemikat (selain barang-barang dari pos 92.08 atau 97.05) dan perlengkapan berburu atau menembak semacam itu."
+  },
+  {
+    "code": "950800",
+    "description": "Sirkus keliling dan travelling menagerie; wahana taman hiburan dan hiburan taman air; permainan taman hiburan, termasuk galeri tembak; teater keliling."
+  },
+  {
+    "code": "960000",
+    "description": "Bermacam-macam barang hasil pabrik"
+  },
+  {
+    "code": "960100",
+    "description": "Gading, tulang, tempurung kura-kura, tanduk, tanduk rusa, koral, kulit kerang dan bahan ukiran hewani lainnya dikerjakan, serta barang dari bahan tersebut (termasuk barang yang diperoleh melalui pencetakan)."
+  },
+  {
+    "code": "960200",
+    "description": "Bahan ukiran nabati atau mineral dikerjakan dan barang dari bahan tersebut; barang cetakan atau ukiran dari malam, dari stearin, dari getah alam atau resin alam atau dari pasta model, dan barang cetakan atau ukiran lainnya, yang tidak dirinci atau termasuk dalam pos lain; gelatin tidak dikeraskan (kecuali gelatin dari pos 35.03) dikerjakan dan barang dari gelatin tidak dikeraskan."
+  },
+  {
+    "code": "960300",
+    "description": "Sapu, sikat (termasuk sikat yang merupakan bagian dari mesin, peralatan atau kendaraan), penyapu lantai mekanis yang digerakkan dengan tangan, tidak bermotor, pengepel dan kemucing; simpul dan jumbai yang disiapkan untuk pembuatan sapu atau sikat; baki dan roll pengecat; penyapu air (selain roller squeegee)."
+  },
+  {
+    "code": "960400",
+    "description": "Ayakan tangan dan saringan tangan."
+  },
+  {
+    "code": "960500",
+    "description": "Set bepergian untuk keperluan rias pribadi, menjahit atau membersihkan sepatu atau pakaian."
+  },
+  {
+    "code": "960600",
+    "description": "Kancing, kancing tekan, kancing jepret dan kancing pijat, bentukan kancing dan bagian lainnya dari barang tersebut; button blank."
+  },
+  {
+    "code": "960700",
+    "description": "Ritsleting dan bagiannya."
+  },
+  {
+    "code": "960800",
+    "description": "Bolpoin; pena dan marker felt tipped serta pena dan marker porous-tipped lainnya; pulpen, pena stilograf dan pena lainnya; duplicating stylo; pensil putar atau pensil dorong; tangkai pena, tangkai pensil dan tangkai semacam itu; bagian (termasuk tutup dan jepit) dari barang tersebut di atas, selain yang dimaksud dari pos 96.09."
+  },
+  {
+    "code": "960900",
+    "description": "Pensil (selain pensil dari pos 96.08), crayon, inti pensil, pastel, arang gambar, kapur tulis atau gambar dan kapur penjahit."
+  },
+  {
+    "code": "961000",
+    "description": "Sabak dan papan, permukaannya dapat dipakai untuk menulis atau menggambar, berbingkai maupun tidak."
+  },
+  {
+    "code": "961100",
+    "description": "Stempel tanggal, meterai atau nomor, dan sejenisnya (termasuk peralatan untuk mencetak atau menghias timbul label), dirancang untuk digunakan dengan tangan; batang penyusun yang digerakkan dengan tangan dan set pencetak dengan tangan yang dilengkapi batang penyusun."
+  },
+  {
+    "code": "961200",
+    "description": "Pita mesin ketik atau pita semacam itu, bertinta atau disiapkan secara lain untuk memberi kesan, dalam kumparan atau cartridge maupun tidak; bantalan tinta, bertinta maupun tidak, dengan atau tanpa kotak."
+  },
+  {
+    "code": "961300",
+    "description": "Pemantik sigaret dan pemantik lainnya, mekanis atau elektrik maupun tidak, dan bagiannya selain batu api dan sumbu."
+  },
+  {
+    "code": "961400",
+    "description": "Pipa untuk merokok (termasuk cangklong) dan pipa cerutu atau pipa sigaret, dan bagiannya."
+  },
+  {
+    "code": "961500",
+    "description": "Sisir, jepitan perapih rambut dan sejenisnya; tusuk rambut, jepitan pengikal, pengikal rambut, pengeriting rambut dan sejenisnya, selain yang dimaksud dari pos 85.16, dan bagiannya."
+  },
+  {
+    "code": "961600",
+    "description": "Penyemprot wewangian dan penyemprot rias semacam itu, dan batang serta kepala penyemprot; pengoles bedak dan bantalan untuk keperluan kosmetik atau preparat rias."
+  },
+  {
+    "code": "961700",
+    "description": "Termos dan bejana hampa udara lainnya, lengkap; bagiannya selain kaca bagian dalam."
+  },
+  {
+    "code": "961800",
+    "description": "Model orang-orangan dan bagian tubuh lainnya untuk penjahit; otomata dan barang peraga yang menarik lainnya untuk menghias jendela toko."
+  },
+  {
+    "code": "961900",
+    "description": "Sanitary towel (pad) dan tampon saniter, serbet (popok), pembebat popok dan barang semacam itu, dari bahan apapun."
+  },
+  {
+    "code": "962000",
+    "description": "Monopod, bipod, tripod dan barang semacam itu."
+  },
+  {
+    "code": "970000",
+    "description": "Karya seni, barang kolektor dan barang antik"
+  },
+  {
+    "code": "970100",
+    "description": "Lukisan, gambar dan gambar pastel, dikerjakan seluruhnya dengan tangan, selain gambar dari pos 49.06 dan selain barang jadi yang dicat atau didekorasi dengan tangan; kolase, mosaik dan plakat hiasan semacam itu."
+  },
+  {
+    "code": "970200",
+    "description": "Ukiran, cetakan, dan litograf asli."
+  },
+  {
+    "code": "970300",
+    "description": "Arca dan patung asli, dari berbagai bahan."
+  },
+  {
+    "code": "970400",
+    "description": "Perangko atau materai, perangko dibubuhi cap pos, sampul hari pertama, benda pos (kertas bermaterai), dan sejenisnya, bekas atau belum dipakai, selain yang dimaksud dari pos 49.07."
+  },
+  {
+    "code": "970500",
+    "description": "Koleksi dan barang kolektor kepentingan arkeologi, etnografi, sejarah, zoologi, botani, mineralogi, anatomi, paleontologi atau numismatika."
+  },
+  {
+    "code": "970600",
+    "description": "Barang antik yang umurnya melebihi 100 tahun."
+  },
+  {
+    "code": "980000",
+    "description": "Ketentuan khusus untuk industri alat transportasi"
+  },
+  {
+    "code": "980100",
+    "description": "Kendaraan bermotor dalam keadaan terurai tidak lengkap; sasis dengan mesin terpasang dalam keadaan terurai tidak lengkap."
+  },
+  {
+    "code": "980200",
+    "description": "Komponen kendaraan bermotor dalam keadaan terurai tidak lengkap."
+  },
+  {
+    "code": "980400",
+    "description": "Komponen kapal dari Bab 72."
+  },
+  {
+    "code": "980500",
+    "description": "Komponen kapal dari Bab 73."
+  },
+  {
+    "code": "980600",
+    "description": "Komponen kapal dari Bab 74."
+  },
+  {
+    "code": "980700",
+    "description": "Komponen kapal dari Bab 76."
+  },
+  {
+    "code": "980800",
+    "description": "Komponen kapal dari Bab 84."
+  },
+  {
+    "code": "980900",
+    "description": "Komponen kapal dari Bab 85."
+  },
+  {
+    "code": "981000",
+    "description": "Komponen kapal dari Bab 90."
+  },
+  {
+    "code": "981100",
+    "description": "Komponen kapal dari Bab lainnya."
+  },
+  {
+    "code": "990000",
+    "description": "Peranti lunak dan barang digital lainnya"
+  },
+  {
+    "code": "990100",
+    "description": "Peranti lunak dan barang digital lainnya yang ditransmisikan secara elektronik."
   }
 ]
