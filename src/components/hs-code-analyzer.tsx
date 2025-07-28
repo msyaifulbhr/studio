@@ -127,9 +127,9 @@ export function HsCodeAnalyzer() {
                       <p className="text-muted-foreground mt-1">{result.analysisText}</p>
                   </div>
                   <Separator/>
-                   <div className="flex justify-between items-center">
-                      <h4 className="font-semibold text-primary">Kode HS dan Deskripsi</h4>
-                      <p className="font-mono text-lg text-primary bg-primary/10 px-3 py-1 rounded-md">{result.hsCodeAndDescription}</p>
+                   <div>
+                      <h4 className="font-semibold text-primary">Kategori Cocok</h4>
+                      <p className="font-bold text-lg mt-1">{result.hsCodeAndDescription}</p>
                   </div>
               </div>
           </CardFooter>
