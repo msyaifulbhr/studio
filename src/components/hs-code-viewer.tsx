@@ -8,7 +8,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogFooter,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import {
@@ -46,6 +45,10 @@ export function HsCodeViewer({ open, onOpenChange }: HsCodeViewerProps) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const filteredData = useMemo(() => {
+    setCurrentPage(1); // Reset to first page on search
+    if (!searchTerm) {
+      return hsCodesData;
+    }
     return hsCodesData.filter(
       (item) =>
         item.code.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -74,79 +77,78 @@ export function HsCodeViewer({ open, onOpenChange }: HsCodeViewerProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl h-[90vh] flex flex-col">
-        <DialogHeader>
+      <DialogContent className="max-w-4xl w-full h-[90vh] flex flex-col p-0">
+        <DialogHeader className="p-6 pb-2">
           <DialogTitle>Daftar Kode HS</DialogTitle>
           <DialogDescription>
             Cari atau jelajahi daftar lengkap Kode HS yang tersedia.
           </DialogDescription>
         </DialogHeader>
-        <div className="py-4">
-          <Input
-            placeholder="Cari berdasarkan kode atau deskripsi..."
-            value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              setCurrentPage(1); // Reset to first page on search
-            }}
-          />
+
+        <div className="px-6 pb-4 border-b">
+            <Input
+                placeholder="Cari berdasarkan kode atau deskripsi..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full"
+            />
         </div>
-        <div className="flex-grow relative">
-            <ScrollArea className="absolute inset-0">
-                <Table>
-                    <TableHeader className="sticky top-0 bg-background z-10">
-                    <TableRow>
-                        <TableHead className="w-[150px]">Kode HS</TableHead>
-                        <TableHead>Deskripsi</TableHead>
-                    </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                    {paginatedData.map((item) => (
-                        <TableRow key={item.code}>
-                        <TableCell className="font-medium">{item.code}</TableCell>
-                        <TableCell>{item.description}</TableCell>
-                        </TableRow>
-                    ))}
-                    </TableBody>
-                </Table>
-            </ScrollArea>
+        
+        <div className="px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 border-b">
+            <div className="flex items-center space-x-2">
+                <span className="text-sm text-muted-foreground">Item per halaman:</span>
+                <Select value={String(itemsPerPage)} onValueChange={handleItemsPerPageChange}>
+                    <SelectTrigger className="w-[80px]">
+                        <SelectValue placeholder={itemsPerPage} />
+                    </SelectTrigger>
+                    <SelectContent>
+                        {[10, 25, 50, 100].map(val => (
+                            <SelectItem key={val} value={String(val)}>{val}</SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </div>
+            <div className="flex items-center space-x-2">
+                <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                >
+                Sebelumnya
+                </Button>
+                <span className="text-sm text-muted-foreground">
+                Halaman {currentPage} dari {totalPages}
+                </span>
+                <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                >
+                Berikutnya
+                </Button>
+            </div>
         </div>
-        <DialogFooter className="pt-4 sm:justify-between border-t mt-auto">
-          <div className="flex items-center space-x-2">
-            <span className="text-sm text-muted-foreground">Item per halaman:</span>
-            <Select value={String(itemsPerPage)} onValueChange={handleItemsPerPageChange}>
-                <SelectTrigger className="w-[80px]">
-                    <SelectValue placeholder={itemsPerPage} />
-                </SelectTrigger>
-                <SelectContent>
-                    {[10, 25, 50, 100].map(val => (
-                         <SelectItem key={val} value={String(val)}>{val}</SelectItem>
-                    ))}
-                </SelectContent>
-            </Select>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              Sebelumnya
-            </Button>
-            <span className="text-sm text-muted-foreground">
-              Halaman {currentPage} dari {totalPages}
-            </span>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-            >
-              Berikutnya
-            </Button>
-          </div>
-        </DialogFooter>
+        
+        <ScrollArea className="flex-grow">
+          <Table className="relative">
+            <TableHeader className="sticky top-0 bg-background z-10">
+              <TableRow>
+                <TableHead className="w-[150px]">Kode HS</TableHead>
+                <TableHead>Deskripsi</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {paginatedData.map((item) => (
+                <TableRow key={item.code}>
+                  <TableCell className="font-medium">{item.code}</TableCell>
+                  <TableCell>{item.description}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   );
