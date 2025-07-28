@@ -212,9 +212,9 @@ export function HsCodeAnalyzer() {
                     name="productName"
                     render={({ field }) => (
                         <FormItem>
-                        <FormLabel className="text-base">Nama Barang atau Jasa</FormLabel>
+                        <FormLabel className="text-base">Nama Barang</FormLabel>
                         <FormControl>
-                            <Input className="py-6 text-base" placeholder="misalnya, sapi hidup; komputer; jasa konsultasi" {...field} />
+                            <Input className="py-6 text-base" placeholder="misalnya, sapi hidup; komputer" {...field} />
                         </FormControl>
                         <FormMessage />
                         </FormItem>
@@ -313,5 +313,7 @@ export function HsCodeAnalyzer() {
     </div>
   );
 }
+
+    
 
     
