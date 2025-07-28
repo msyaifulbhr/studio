@@ -41,7 +41,7 @@ const prompt = ai.definePrompt({
 
 **CRITICAL INSTRUCTIONS:**
 1.  **Check User Corrections First:** Before any analysis, review the provided list of user corrections. If the user's product name EXACTLY matches a 'productName' in the corrections list, you MUST use the corresponding 'correctHsCode' from that entry. This is your highest priority. Your analysisText should state that a correction was used.
-2.  If the product is not in the corrections list, follow this systematic framework:
+2.  If the product is not in the corrections list, apply the following analysis framework. Do NOT mention that a correction was not found.
 
     🧠 **Analysis Framework for Product Names:**
 
