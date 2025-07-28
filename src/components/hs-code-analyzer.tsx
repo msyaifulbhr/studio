@@ -47,12 +47,18 @@ const formSchema = z.object({
   }),
 });
 
+interface ResultWithOriginal extends ClassifyProductOutput {
+    originalProductName: string;
+    feedbackGiven?: boolean;
+}
+
 export function HsCodeAnalyzer() {
-  const [result, setResult] = useState<ClassifyProductOutput | null>(null);
+  const [results, setResults] = useState<ResultWithOriginal[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [feedbackGiven, setFeedbackGiven] = useState(false);
   const [showFeedbackDialog, setShowFeedbackDialog] = useState(false);
   const [correctHsCode, setCorrectHsCode] = useState('');
+  const [currentItemForFeedback, setCurrentItemForFeedback] = useState<ResultWithOriginal | null>(null);
+
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -64,16 +70,36 @@ export function HsCodeAnalyzer() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsLoading(true);
-    setResult(null);
-    setFeedbackGiven(false);
+    setResults(null);
+    
+    const productNames = values.productName.split(';').map(name => name.trim()).filter(name => name.length > 1);
+
+    if (productNames.length === 0) {
+        setIsLoading(false);
+        toast({
+            title: "Input tidak valid",
+            description: "Silakan masukkan setidaknya satu nama barang yang valid.",
+            variant: "destructive",
+        });
+        return;
+    }
+
     try {
-      const classificationResult = await classifyProduct(values);
-      setResult(classificationResult);
+      const classificationPromises = productNames.map(name => 
+        classifyProduct({ productName: name }).then(result => ({
+            ...result,
+            originalProductName: name,
+        }))
+      );
+
+      const classificationResults = await Promise.all(classificationPromises);
+      setResults(classificationResults);
+
     } catch (error) {
       console.error(error);
       toast({
         title: "Kesalahan",
-        description: "Gagal mengklasifikasikan produk. Silakan coba lagi.",
+        description: "Gagal mengklasifikasikan satu atau lebih produk. Silakan coba lagi.",
         variant: "destructive",
       });
     } finally {
@@ -81,16 +107,15 @@ export function HsCodeAnalyzer() {
     }
   }
 
-  const handleApprove = async () => {
-    // Optionally save the approved result for future learning
+  const handleApprove = async (item: ResultWithOriginal) => {
     try {
       await saveCorrection({
-        productName: form.getValues("productName"),
-        correctHsCode: result!.hsCodeAndDescription.split(' - ')[0],
+        productName: item.originalProductName,
+        correctHsCode: item.hsCodeAndDescription.split(' - ')[0],
       });
       toast({
         title: "Terima Kasih!",
-        description: "Umpan balik Anda membantu kami menjadi lebih baik.",
+        description: `Umpan balik untuk "${item.originalProductName}" telah disimpan.`,
       });
     } catch (error) {
       console.error("Failed to save correction:", error);
@@ -100,37 +125,50 @@ export function HsCodeAnalyzer() {
         variant: "destructive",
       });
     }
-    setFeedbackGiven(true);
+    
+    setResults(prev => 
+        prev!.map(r => r.originalProductName === item.originalProductName ? { ...r, feedbackGiven: true } : r)
+    );
   };
   
-  const handleDisapprove = () => {
+  const handleDisapprove = (item: ResultWithOriginal) => {
+    setCurrentItemForFeedback(item);
     setShowFeedbackDialog(true);
   }
 
   const handleFeedbackSubmit = async () => {
+    if (!currentItemForFeedback) return;
+
     try {
         await saveCorrection({
-            productName: form.getValues("productName"),
+            productName: currentItemForFeedback.originalProductName,
             correctHsCode: correctHsCode
         });
 
         const correctedCodeEntry = hsCodesData.find(item => item.code === correctHsCode);
         const correctedDescription = correctedCodeEntry ? correctedCodeEntry.description : 'Deskripsi tidak ditemukan';
         
-        if (result) {
-          setResult({
-            ...result,
-            hsCodeAndDescription: `${correctHsCode} - ${correctedDescription}`,
-          });
-        }
+        setResults(prev => 
+            prev!.map(r => {
+                if (r.originalProductName === currentItemForFeedback.originalProductName) {
+                    return {
+                        ...r,
+                        hsCodeAndDescription: `${correctHsCode} - ${correctedDescription}`,
+                        feedbackGiven: true,
+                    };
+                }
+                return r;
+            })
+        );
 
         toast({
             title: "Terima Kasih Atas Koreksinya!",
-            description: `Kami telah mencatat bahwa kode yang benar adalah ${correctHsCode}.`,
+            description: `Kami telah mencatat bahwa kode yang benar untuk "${currentItemForFeedback.originalProductName}" adalah ${correctHsCode}.`,
         });
-        setFeedbackGiven(true);
+        
         setShowFeedbackDialog(false);
         setCorrectHsCode('');
+        setCurrentItemForFeedback(null);
 
     } catch (error) {
         console.error("Failed to save correction:", error);
@@ -152,7 +190,7 @@ export function HsCodeAnalyzer() {
                     </div>
                     <div>
                         <CardTitle className="text-3xl font-headline">Cari Kode HS</CardTitle>
-                        <CardDescription className="mt-1">Masukkan nama barang untuk mengklasifikasikannya</CardDescription>
+                        <CardDescription className="mt-1">Masukkan satu atau lebih nama barang (pisahkan dengan titik koma) untuk diklasifikasikan</CardDescription>
                     </div>
                 </div>
             </CardHeader>
@@ -166,7 +204,7 @@ export function HsCodeAnalyzer() {
                         <FormItem>
                         <FormLabel className="text-base">Nama Barang atau Jasa</FormLabel>
                         <FormControl>
-                            <Input className="py-6 text-base" placeholder="misalnya, sapi hidup, komputer, atau jasa konsultasi" {...field} />
+                            <Input className="py-6 text-base" placeholder="misalnya, sapi hidup; komputer; jasa konsultasi" {...field} />
                         </FormControl>
                         <FormMessage />
                         </FormItem>
@@ -190,49 +228,55 @@ export function HsCodeAnalyzer() {
         {isLoading && (
             <div className="flex flex-col items-center justify-center text-center p-8 space-y-4">
             <Loader2 className="h-12 w-12 animate-spin text-primary"/>
-            <p className="text-lg font-medium">AI sedang berpikir...</p>
-            <p className="text-muted-foreground">Mohon tunggu sebentar selagi kami menganalisis produk Anda.</p>
+            <p className="text-lg font-medium">AI sedang menganalisis beberapa barang...</p>
+            <p className="text-muted-foreground">Mohon tunggu sebentar.</p>
             </div>
         )}
 
-        {result && !isLoading && (
-            <Card className="shadow-lg rounded-2xl animate-in fade-in-50">
-            <CardHeader>
-                <CardTitle className="text-xl font-headline">Hasil Klasifikasi</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-                <div>
-                    <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Analisis AI</h4>
-                    <p className="text-foreground/80 mt-2">{result.analysisText}</p>
-                </div>
-                <Separator/>
-                <div>
-                    <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Rekomendasi Kategori</h4>
-                    <p className="text-lg font-bold text-foreground/80 mt-2">{result.hsCodeAndDescription}</p>
-                </div>
-            </CardContent>
-            <CardFooter>
-                {!feedbackGiven ? (
-                <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 py-4 border-t">
-                    <span className="text-sm font-medium text-muted-foreground">Apakah hasil ini sesuai?</span>
-                    <div className="flex gap-2">
-                        <Button variant="outline" size="lg" onClick={handleApprove} className="gap-2">
-                            <ThumbsUp className="h-5 w-5 text-green-500"/>
-                            <span>Setuju</span>
-                        </Button>
-                        <Button variant="outline" size="lg" onClick={handleDisapprove} className="gap-2">
-                            <ThumbsDown className="h-5 w-5 text-red-500"/>
-                            <span>Tidak Setuju</span>
-                        </Button>
-                    </div>
-                </div>
-                ) : (
-                    <div className="w-full text-center text-green-600 font-medium py-4 border-t">
-                        <p>Terima kasih atas masukan Anda!</p>
-                    </div>
-                )}
-            </CardFooter>
-            </Card>
+        {results && !isLoading && (
+            <div className="space-y-4">
+                {results.map((item, index) => (
+                    <Card key={index} className="shadow-lg rounded-2xl animate-in fade-in-50">
+                        <CardHeader>
+                            <CardTitle className="text-xl font-headline">
+                                Hasil Klasifikasi untuk: <span className="font-bold text-primary">{item.originalProductName}</span>
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-6">
+                            <div>
+                                <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Analisis AI</h4>
+                                <p className="text-foreground/80 mt-2">{item.analysisText}</p>
+                            </div>
+                            <Separator/>
+                            <div>
+                                <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Rekomendasi Kategori</h4>
+                                <p className="text-lg font-bold text-foreground/80 mt-2">{item.hsCodeAndDescription}</p>
+                            </div>
+                        </CardContent>
+                        <CardFooter>
+                            {!item.feedbackGiven ? (
+                            <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 py-4 border-t">
+                                <span className="text-sm font-medium text-muted-foreground">Apakah hasil ini sesuai?</span>
+                                <div className="flex gap-2">
+                                    <Button variant="outline" size="lg" onClick={() => handleApprove(item)} className="gap-2">
+                                        <ThumbsUp className="h-5 w-5 text-green-500"/>
+                                        <span>Setuju</span>
+                                    </Button>
+                                    <Button variant="outline" size="lg" onClick={() => handleDisapprove(item)} className="gap-2">
+                                        <ThumbsDown className="h-5 w-5 text-red-500"/>
+                                        <span>Tidak Setuju</span>
+                                    </Button>
+                                </div>
+                            </div>
+                            ) : (
+                                <div className="w-full text-center text-green-600 font-medium py-4 border-t">
+                                    <p>Terima kasih atas masukan Anda!</p>
+                                </div>
+                            )}
+                        </CardFooter>
+                    </Card>
+                ))}
+            </div>
         )}
         
         <AlertDialog open={showFeedbackDialog} onOpenChange={setShowFeedbackDialog}>
@@ -240,7 +284,7 @@ export function HsCodeAnalyzer() {
             <AlertDialogHeader>
                 <AlertDialogTitle>Bantu kami belajar</AlertDialogTitle>
                 <AlertDialogDescription>
-                Jika hasil klasifikasi tidak sesuai, mohon masukkan Kode HS yang benar. Ini akan sangat membantu kami meningkatkan akurasi AI.
+                Hasil untuk <span className="font-semibold">{currentItemForFeedback?.originalProductName}</span> tidak sesuai. Mohon masukkan Kode HS yang benar.
                 </AlertDialogDescription>
             </AlertDialogHeader>
             <div className="py-4">
