@@ -72,9 +72,9 @@ export function HsCodeAnalyzer() {
                 <Wand2 className="h-6 w-6 text-primary"/>
             </div>
             <div className="flex flex-col">
-                <CardTitle className="text-2xl font-headline">Penganalisis Kode HS</CardTitle>
+                <CardTitle className="text-2xl font-headline">cari Kode HS</CardTitle>
                 <CardDescription className="mt-1">
-                  Masukkan nama produk untuk mengklasifikasikannya menggunakan AI.
+                  Masukkan nama barang untuk mengklasifikasikannya
                 </CardDescription>
             </div>
         </div>
@@ -87,7 +87,7 @@ export function HsCodeAnalyzer() {
               name="productName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Nama Produk</FormLabel>
+                  <FormLabel>Nama Barang atau Jasa</FormLabel>
                   <FormControl>
                     <Input placeholder="misalnya, sapi hidup, komputer portabel, atau termometer" {...field} />
                   </FormControl>
@@ -102,7 +102,7 @@ export function HsCodeAnalyzer() {
                   Menganalisis...
                 </>
               ) : (
-                "Analisis"
+                "Cari Kode"
               )}
             </Button>
           </form>
