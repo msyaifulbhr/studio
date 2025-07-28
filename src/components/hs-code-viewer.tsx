@@ -151,5 +151,3 @@ export function HsCodeViewer({ open, onOpenChange }: HsCodeViewerProps) {
     </Dialog>
   );
 }
-
-    
