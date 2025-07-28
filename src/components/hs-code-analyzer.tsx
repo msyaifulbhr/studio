@@ -109,13 +109,21 @@ export function HsCodeAnalyzer() {
       const classificationResults = await Promise.all(classificationPromises);
       setResults(classificationResults);
 
-    } catch (error) {
-      console.error(error);
-      toast({
-        title: "Kesalahan",
-        description: "Gagal mengklasifikasikan satu atau lebih produk. Silakan coba lagi.",
-        variant: "destructive",
-      });
+    } catch (error: any) {
+        console.error(error);
+        if (error.message && error.message.includes("429 Too Many Requests")) {
+            toast({
+                title: "Batas Penggunaan Tercapai",
+                description: "Anda telah melebihi kuota permintaan API untuk hari ini. Silakan coba lagi besok.",
+                variant: "destructive",
+            });
+        } else {
+            toast({
+                title: "Kesalahan",
+                description: "Gagal mengklasifikasikan satu atau lebih produk. Silakan coba lagi.",
+                variant: "destructive",
+            });
+        }
     } finally {
       setIsLoading(false);
     }
