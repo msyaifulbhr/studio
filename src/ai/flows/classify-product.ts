@@ -10,6 +10,8 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import fs from 'fs/promises';
+import path from 'path';
 
 const ClassifyProductInputSchema = z.object({
   productName: z.string().describe('Nama produk yang akan diklasifikasikan.'),
@@ -29,17 +31,17 @@ export async function classifyProduct(input: ClassifyProductInput): Promise<Clas
 
 const prompt = ai.definePrompt({
   name: 'classifyProductPrompt',
-  input: {schema: ClassifyProductInputSchema},
+  input: {schema: z.object({
+    productName: ClassifyProductInputSchema.shape.productName,
+    hsCodes: z.string().describe('Daftar Kode HS yang dipisahkan koma untuk dipertimbangkan.'),
+  })},
   output: {schema: ClassifyProductOutputSchema},
   prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code. Diberikan nama produk, Anda akan mengklasifikasikannya ke dalam Kode HS 6-digit yang paling sesuai dan memberikan deskripsi kategorinya.
 
 Nama Produk: {{{productName}}}
 
 Berikut adalah daftar kemungkinan Kode HS dan deskripsinya:
-010200 - Binatang hidup jenis lembu
-847130 - Mesin pemproses data otomatis, portabel
-902511 - Termometer, tidak dikombinasikan dengan peralatan lain
-630790 - Kain lap
+{{{hsCodes}}}
 
 Berdasarkan nama produk dan daftar di atas, berikan analisis, Kode HS, dan deskripsi kategori.
 
@@ -59,7 +61,14 @@ const classifyProductFlow = ai.defineFlow(
     outputSchema: ClassifyProductOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
+    const hsCodesPath = path.join(process.cwd(), 'src', 'data', 'hs-codes.csv');
+    const hsCodesCsv = await fs.readFile(hsCodesPath, 'utf-8');
+    
+    // Pass the CSV content directly to the prompt.
+    const {output} = await prompt({
+        productName: input.productName,
+        hsCodes: hsCodesCsv,
+    });
     return output!;
   }
 );
