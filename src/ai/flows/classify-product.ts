@@ -20,8 +20,7 @@ export type ClassifyProductInput = z.infer<typeof ClassifyProductInputSchema>;
 
 const ClassifyProductOutputSchema = z.object({
   analysisText: z.string().describe('Analisis klasifikasi produk.'),
-  hsCode: z.string().describe('Kode HS 6-digit untuk produk.'),
-  categoryDescription: z.string().describe('Deskripsi kategori Kode HS.'),
+  hsCodeAndDescription: z.string().describe('Kode HS 6-digit dan deskripsi yang digabungkan untuk produk. e.g. "100500 - Jagung"'),
 });
 export type ClassifyProductOutput = z.infer<typeof ClassifyProductOutputSchema>;
 
@@ -43,15 +42,12 @@ Nama Produk: {{{productName}}}
 Berikut adalah daftar kemungkinan Kode HS dan deskripsinya dalam format 'KODE - Deskripsi':
 {{{hsCodes}}}
 
-Berdasarkan nama produk dan daftar di atas, berikan analisis, Kode HS, dan deskripsi kategori.
+Berdasarkan nama produk dan daftar di atas, berikan analisis dan Kode HS yang digabungkan dengan deskripsinya.
 
-Pastikan Kode HS hanya berisi angka, dan panjangnya 6 digit.
-
-Keluarkan Kode HS dan deskripsi kategori persis seperti yang ditunjukkan dalam daftar di atas (tanpa menyertakan kode dalam deskripsi).
+Keluarkan Kode HS dan deskripsi dalam format 'KODE-Deskripsi' persis seperti yang ditunjukkan dalam daftar di atas.
 
 Teks Analisis:
-Kode HS:
-Deskripsi Kategori:`,
+Kode HS dan Deskripsi:`,
 });
 
 const classifyProductFlow = ai.defineFlow(
@@ -69,11 +65,16 @@ const classifyProductFlow = ai.defineFlow(
       .split('\n')
       .slice(1) // Skip header row
       .map(row => {
-        const [code, description] = row.split(',');
-        if (code && description) {
-          // Wrap description in quotes if it contains commas
-          const cleanDescription = description.includes(',') ? `"${description}"` : description;
-          return `${code.trim()} - ${cleanDescription.trim()}`;
+        const columns = row.split(',');
+        if (columns.length >= 6) {
+          const section = columns[1].replace(/"/g, '').trim();
+          const chapter = columns[2].replace(/"/g, '').trim();
+          const group = columns[3].replace(/"/g, '').trim();
+          const description = columns[5].replace(/"/g, '').trim();
+          if (section && chapter && group && description) {
+            const combinedCode = `${section}${chapter}${group}`;
+            return `${combinedCode} - ${description}`;
+          }
         }
         return '';
       })
