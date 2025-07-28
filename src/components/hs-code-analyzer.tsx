@@ -121,7 +121,7 @@ export function HsCodeAnalyzer() {
           <Separator className="my-0"/>
           <CardFooter className="flex flex-col items-start gap-4 pt-6">
               <h3 className="text-xl font-semibold font-headline">Hasil Klasifikasi</h3>
-              <div className="w-full space-y-4 rounded-lg border bg-muted/20 p-4">
+              <div className="w-full space-y-4 rounded-lg p-4">
                   <div>
                       <h4 className="font-semibold text-primary">Analisis</h4>
                       <p className="text-muted-foreground mt-1">{result.analysisText}</p>
@@ -129,7 +129,7 @@ export function HsCodeAnalyzer() {
                   <Separator/>
                    <div>
                       <h4 className="font-semibold text-primary">Kategori Cocok</h4>
-                      <p className="font-bold text-lg mt-1">{result.hsCodeAndDescription}</p>
+                      <p className="font-bold text-muted-foreground mt-1">{result.hsCodeAndDescription}</p>
                   </div>
               </div>
           </CardFooter>

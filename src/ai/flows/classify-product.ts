@@ -35,16 +35,18 @@ const prompt = ai.definePrompt({
     hsCodes: z.string().describe('Daftar Kode HS yang dipisahkan koma untuk dipertimbangkan.'),
   })},
   output: {schema: ClassifyProductOutputSchema},
-  prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code. Diberikan nama produk, Anda akan mengklasifikasikannya ke dalam Kode HS 6-digit yang paling sesuai dan memberikan deskripsi kategorinya.
+  prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code. Tugas Anda adalah untuk secara ketat mengklasifikasikan nama produk yang diberikan ke dalam Kode HS 6-digit yang PALING SESUAI dari daftar yang disediakan.
+
+PENTING: Anda HARUS memilih salah satu kode dari daftar di bawah ini. JANGAN gunakan pengetahuan eksternal atau sumber lain. Jika tidak ada kode dalam daftar yang cocok dengan produk, Anda HARUS mengembalikan "000000 - Barang" sebagai jawabannya.
 
 Nama Produk: {{{productName}}}
 
-Berikut adalah daftar kemungkinan Kode HS dan deskripsinya dalam format 'KODE - Deskripsi':
+Berikut adalah daftar Kode HS dan deskripsinya yang WAJIB Anda gunakan (dalam format 'KODE - Deskripsi'):
 {{{hsCodes}}}
 
-Berdasarkan nama produk dan daftar di atas, berikan analisis dan Kode HS yang digabungkan dengan deskripsinya.
+Berdasarkan nama produk dan HANYA daftar di atas, berikan analisis singkat dalam Bahasa Indonesia dan Kode HS yang digabungkan dengan deskripsinya.
 
-Keluarkan Kode HS dan deskripsi dalam format 'KODE-Deskripsi' persis seperti yang ditunjukkan dalam daftar di atas.
+Keluarkan Kode HS dan deskripsi dalam format 'KODE - Deskripsi' persis seperti yang ditunjukkan dalam daftar.
 
 Teks Analisis:
 Kode HS dan Deskripsi:`,
