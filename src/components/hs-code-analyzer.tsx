@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, ThumbsUp, ThumbsDown } from "lucide-react";
+import { Loader2, Wand2, ThumbsUp, ThumbsDown, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -34,7 +34,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
@@ -81,11 +80,10 @@ export function HsCodeAnalyzer() {
   }
 
   const handleApprove = () => {
-    // Logic to save the positive feedback can be added here in the future
     console.log("Feedback: Approved", { productName: form.getValues("productName"), hsCode: result?.hsCodeAndDescription });
     toast({
       title: "Terima Kasih!",
-      description: "Umpan balik Anda membantu kami.",
+      description: "Umpan balik Anda membantu kami menjadi lebih baik.",
     });
     setFeedbackGiven(true);
   };
@@ -95,7 +93,6 @@ export function HsCodeAnalyzer() {
   }
 
   const handleFeedbackSubmit = () => {
-    // Logic to save the corrective feedback can be added here
     console.log("Feedback: Disapproved", { productName: form.getValues("productName"), wrongHsCode: result?.hsCodeAndDescription, correctHsCode });
     toast({
         title: "Terima Kasih Atas Koreksinya!",
@@ -103,91 +100,127 @@ export function HsCodeAnalyzer() {
     });
     setFeedbackGiven(true);
     setShowFeedbackDialog(false);
+    setCorrectHsCode('');
   };
 
-
-  return (
-    <Card className="w-full max-w-2xl shadow-2xl rounded-2xl">
-      <CardHeader>
-        <div className="flex items-center gap-3">
-            <div className="p-2 bg-primary/10 rounded-lg">
-                <Wand2 className="h-6 w-6 text-primary"/>
-            </div>
-            <div className="flex flex-col">
-                <CardTitle className="text-2xl font-headline">Cari Kode HS</CardTitle>
-                <CardDescription className="mt-1">
-                  Masukkan nama barang untuk mengklasifikasikannya
-                </CardDescription>
-            </div>
+  const renderResultContent = () => {
+    if (isLoading) {
+      return (
+        <div className="flex flex-col items-center justify-center h-full text-center p-8 space-y-4">
+          <Loader2 className="h-12 w-12 animate-spin text-primary"/>
+          <p className="text-lg font-medium">AI sedang berpikir...</p>
+          <p className="text-muted-foreground">Mohon tunggu sebentar selagi kami menganalisis produk Anda.</p>
         </div>
-      </CardHeader>
-      <CardContent>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <FormField
-              control={form.control}
-              name="productName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Nama Barang</FormLabel>
-                  <FormControl>
-                    <Input placeholder="misalnya, sapi hidup, komputer portabel, atau termometer" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit" disabled={isLoading} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base py-6 rounded-lg">
-              {isLoading ? (
-                <>
-                  <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                  Menganalisis...
-                </>
-              ) : (
-                "Cari Kode"
-              )}
-            </Button>
-          </form>
-        </Form>
-      </CardContent>
-      {isLoading && !result && (
-         <CardFooter>
-            <div className="w-full flex flex-col items-center justify-center text-center p-8 space-y-2">
-                <Loader2 className="h-8 w-8 animate-spin text-primary"/>
-                <p className="text-muted-foreground">AI sedang berpikir...</p>
+      );
+    }
+
+    if (result) {
+      return (
+        <Card className="h-full shadow-lg rounded-2xl">
+          <CardHeader>
+            <CardTitle className="text-xl font-headline">Hasil Klasifikasi</CardTitle>
+            <CardDescription>Berikut adalah rekomendasi kategori untuk "{form.getValues("productName")}".</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div>
+                <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Analisis AI</h4>
+                <p className="text-foreground/80 mt-2">{result.analysisText}</p>
             </div>
-         </CardFooter>
-      )}
-      {result && (
-        <>
-          <Separator className="my-0"/>
-          <CardFooter className="flex flex-col items-start gap-4 pt-6">
-              <h3 className="text-xl font-semibold font-headline">Hasil Klasifikasi</h3>
-              <div className="w-full space-y-4 rounded-lg p-4">
-                  <div>
-                      <h4 className="font-semibold text-primary">Analisis</h4>
-                      <p className="text-muted-foreground mt-1">{result.analysisText}</p>
-                  </div>
-                  <Separator/>
-                   <div>
-                      <h4 className="font-semibold text-primary">Kategori Cocok</h4>
-                      <p className="font-bold text-muted-foreground mt-1">{result.hsCodeAndDescription}</p>
+            <Separator/>
+             <div>
+                <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider">Rekomendasi Kategori</h4>
+                <p className="text-lg font-bold text-foreground mt-2">{result.hsCodeAndDescription}</p>
+            </div>
+          </CardContent>
+          <CardFooter>
+            {!feedbackGiven && (
+              <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 py-4 border-t">
+                  <span className="text-sm font-medium text-muted-foreground">Apakah hasil ini sesuai?</span>
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="lg" onClick={handleApprove} className="gap-2">
+                        <ThumbsUp className="h-5 w-5 text-green-500"/>
+                        <span>Setuju</span>
+                    </Button>
+                    <Button variant="outline" size="lg" onClick={handleDisapprove} className="gap-2">
+                        <ThumbsDown className="h-5 w-5 text-red-500"/>
+                        <span>Tidak Setuju</span>
+                    </Button>
                   </div>
               </div>
-              {!feedbackGiven && (
-                <div className="w-full flex justify-end items-center gap-4 px-4">
-                    <span className="text-sm text-muted-foreground">Apakah hasil ini sesuai?</span>
-                    <Button variant="ghost" size="icon" onClick={handleApprove}>
-                        <ThumbsUp className="h-5 w-5 text-green-500"/>
-                    </Button>
-                    <Button variant="ghost" size="icon" onClick={handleDisapprove}>
-                        <ThumbsDown className="h-5 w-5 text-red-500"/>
-                    </Button>
+            )}
+            {feedbackGiven && (
+                <div className="w-full text-center text-green-600 font-medium py-4 border-t">
+                    <p>Terima kasih atas masukan Anda!</p>
                 </div>
-              )}
+            )}
           </CardFooter>
-        </>
-      )}
+        </Card>
+      );
+    }
+
+    return (
+      <div className="flex flex-col items-center justify-center h-full text-center p-8 space-y-4">
+        <div className="p-4 bg-primary/10 rounded-full">
+            <Search className="h-10 w-10 text-primary" />
+        </div>
+        <p className="text-lg font-medium">Menunggu Pencarian</p>
+        <p className="text-muted-foreground max-w-xs">Masukkan nama barang atau jasa di sebelah kiri untuk memulai proses klasifikasi Kode HS.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 p-4">
+        {/* Kolom Kiri: Input */}
+        <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-lg">
+                    <Wand2 className="h-8 w-8 text-primary"/>
+                </div>
+                <div>
+                    <h1 className="text-3xl font-bold font-headline">Cari Kode HS</h1>
+                    <p className="text-muted-foreground mt-1">Masukkan nama barang untuk mengklasifikasikannya</p>
+                </div>
+            </div>
+            <Card className="shadow-lg rounded-2xl">
+                <CardContent className="pt-6">
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                        <FormField
+                        control={form.control}
+                        name="productName"
+                        render={({ field }) => (
+                            <FormItem>
+                            <FormLabel className="text-base">Nama Barang atau Jasa</FormLabel>
+                            <FormControl>
+                                <Input className="py-6 text-base" placeholder="misalnya, sapi hidup, komputer, atau jasa konsultasi" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                            </FormItem>
+                        )}
+                        />
+                        <Button type="submit" disabled={isLoading} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base py-6 rounded-lg">
+                        {isLoading ? (
+                            <>
+                            <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                            Menganalisis...
+                            </>
+                        ) : (
+                            "Cari Kode"
+                        )}
+                        </Button>
+                    </form>
+                </Form>
+                </CardContent>
+            </Card>
+        </div>
+
+        {/* Kolom Kanan: Hasil */}
+        <aside className="bg-slate-50/50 dark:bg-slate-900/20 rounded-2xl border-2 border-dashed">
+            {renderResultContent()}
+        </aside>
+
+        {/* Dialog untuk umpan balik 'Tidak Setuju' */}
        <AlertDialog open={showFeedbackDialog} onOpenChange={setShowFeedbackDialog}>
         <AlertDialogContent>
           <AlertDialogHeader>
@@ -204,11 +237,11 @@ export function HsCodeAnalyzer() {
             />
           </div>
           <AlertDialogFooter>
-            <AlertDialogCancel>Batal</AlertDialogCancel>
-            <AlertDialogAction onClick={handleFeedbackSubmit} disabled={!correctHsCode}>Kirim</AlertDialogAction>
+            <AlertDialogCancel onClick={() => setCorrectHsCode('')}>Batal</AlertDialogCancel>
+            <AlertDialogAction onClick={handleFeedbackSubmit} disabled={!correctHsCode || correctHsCode.length < 6}>Kirim</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-    </Card>
+    </div>
   );
 }
