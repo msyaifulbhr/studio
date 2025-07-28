@@ -35,21 +35,45 @@ const prompt = ai.definePrompt({
     hsCodes: z.string().describe('Daftar Kode HS yang dipisahkan koma untuk dipertimbangkan.'),
   })},
   output: {schema: ClassifyProductOutputSchema},
-  prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code. Tugas Anda adalah untuk secara ketat mengklasifikasikan nama produk yang diberikan ke dalam Kode HS 6-digit yang PALING SESUAI dari daftar yang disediakan.
+  prompt: `Anda adalah seorang ahli dalam mengklasifikasikan produk ke dalam Harmonized System (HS) Code, dengan kemampuan untuk menganalisis input yang beragam, tidak baku, dan seringkali tidak lengkap. Ikuti framework berpikir sistematis berikut untuk setiap input yang Anda terima:
 
-PENTING: Anda HARUS memilih salah satu kode dari daftar di bawah ini. JANGAN gunakan pengetahuan eksternal atau sumber lain. Jika tidak ada kode dalam daftar yang cocok dengan produk, Anda HARUS menyarankan "000000 - Barang" sebagai jawabannya.
+🧠 **FRAMEWORK BERPIKIR**
 
-Nama Produk: {{{productName}}}
+**1. Normalisasi Bahasa:**
+Terjemahkan kata atau frasa yang tidak baku atau terlalu umum ke dalam istilah teknis atau standar yang lebih tepat.
+Contoh:
+- "apron single" -> "apron (celemek) sekali pakai"
+- "alat tensi digital" -> "sphygmomanometer digital"
+Tujuannya adalah untuk menyamakan istilah agar bisa dicocokkan dengan deskripsi HS Code.
 
-Berikut adalah daftar Kode HS dan deskripsinya yang WAJIB Anda gunakan (dalam format 'KODE - Deskripsi'):
+**2. Deteksi Kategori Umum:**
+Golongkan input ke dalam kategori besar (misalnya: Medis, Laboratorium, Makanan, Elektronik, Tekstil, dll.) untuk mempersempit kemungkinan Bab HS yang relevan.
+
+**3. Analisis Tujuan & Fungsi Barang:**
+Tanyakan secara internal: "Barang ini digunakan untuk apa, oleh siapa, dan di mana?" untuk memahami konteks dan fungsi utama barang tersebut.
+Contoh:
+- "CREATININE PLUS VERS. 2" -> Adalah reagen laboratorium -> Digunakan untuk tes kreatinin -> Harus masuk dalam kategori reagen diagnostik.
+- "ETHICON GEN11 GENERATOR" -> Adalah alat untuk operasi -> Digunakan untuk memotong jaringan dan koagulasi -> Harus masuk dalam kategori alat medis elektronik.
+
+**4. Matching ke HS Code:**
+Gunakan hasil analisis di atas untuk mencocokkan produk dengan Kode HS yang PALING SESUAI dari daftar yang disediakan di bawah. Gunakan metode berikut:
+- **Full-text match:** Cari kecocokan frasa yang persis.
+- **Sinonim match:** Cocokkan dengan sinonim kata (misal, "sapi" ke "lembu").
+- **Fuzzy match:** Cari kemiripan jika tidak ada yang cocok persis.
+- **Prioritas Digit:** Fokus pada 6 digit utama.
+
+**PENTING:** Anda HARUS memilih salah satu kode dari daftar di bawah ini. JANGAN gunakan pengetahuan eksternal atau sumber lain. Jika setelah analisis mendalam tidak ada kode dalam daftar yang cocok, Anda HARUS menyarankan "000000 - Barang" sebagai jawabannya.
+
+**Nama Produk dari User:**
+{{{productName}}}
+
+**Daftar Wajib HS Code dan Deskripsi (format 'KODE - Deskripsi'):**
 {{{hsCodes}}}
 
-Berdasarkan nama produk dan HANYA daftar di atas, berikan analisis singkat dalam Bahasa Indonesia dan Kode HS yang digabungkan dengan deskripsinya.
+**HASIL OUTPUT ANDA (HARUS DALAM BAHASA INDONESIA):**
 
-Keluarkan Kode HS dan deskripsi dalam format 'KODE - Deskripsi' persis seperti yang ditunjukkan dalam daftar.
-
-Teks Analisis:
-Kode HS dan Deskripsi:`,
+**Teks Analisis:** (Berikan analisis singkat Anda berdasarkan framework di atas).
+**Kode HS dan Deskripsi:** (Keluarkan Kode HS dan deskripsi dalam format 'KODE - Deskripsi' persis seperti yang ada di daftar).`,
 });
 
 const classifyProductFlow = ai.defineFlow(
