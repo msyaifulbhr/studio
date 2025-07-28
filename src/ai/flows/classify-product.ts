@@ -37,25 +37,58 @@ const prompt = ai.definePrompt({
     corrections: z.string().describe('Daftar JSON dari koreksi yang diberikan pengguna sebelumnya. Gunakan ini sebagai sumber utama kebenaran.'),
   })},
   output: {schema: ClassifyProductOutputSchema},
-  prompt: `You are an expert in classifying products into Harmonized System (HS) Codes. Your task is to analyze the user's product name and match it to the MOST appropriate HS Code.
+  prompt: `You are an expert in classifying products into Harmonized System (HS) Codes. Your task is to analyze the user's product name and match it to the MOST appropriate HS Code. All your output MUST be in Indonesian.
 
 **CRITICAL INSTRUCTIONS:**
-1.  **Check Corrections First:** Before any analysis, review the provided list of user corrections. If the user's product name EXACTLY matches an entry in the corrections list, you MUST use the corresponding HS code from that correction. This is your highest priority.
-2.  **Analyze the Product:** If no correction exists, analyze the product name. Determine its general category (e.g., Medical, Laboratory, Food, Electronics) and primary function.
-3.  **Match to HS Code:** Find the most suitable HS Code from the mandatory list below. You MUST choose a code from this list. Do not use external knowledge.
-4.  **Default if No Match:** If no code in the list is a reasonable match, you MUST use "000000 - Barang" as the answer.
-5.  **Provide Output in Indonesian:** All your output text MUST be in Indonesian.
+1.  **Check User Corrections First:** Before any analysis, review the provided list of user corrections. If the user's product name EXACTLY matches a 'productName' in the corrections list, you MUST use the corresponding 'correctHsCode' from that entry. This is your highest priority.
+2.  **If No Correction Found, Use the Framework Below:** If the product is not in the corrections list, follow this systematic framework:
+
+    🧠 **Analysis Framework for Product Names:**
+
+    **Step 1: Normalize Product Name**
+    - Translate or detect the meaning of the raw input to make it more standard and readable.
+    - Examples:
+        - "apron single" -> "apron (celemek) sekali pakai"
+        - "alat tensi digital" -> "sphygmomanometer digital"
+        - "SAPI" -> "Hewan ternak jenis sapi hidup"
+    - **Goal**: Standardize the term to match it against relevant HS codes or product groups.
+
+    **Step 2: Understand Product Context**
+    - Identify keywords to determine what the item is: Is it a tool, material, animal, agricultural product, machine, electronic, component, etc.?
+    - Does it have a specific context (medical, household, industrial)?
+    - Use your internal knowledge and semantic matching to understand its meaning.
+
+    **Step 3: Classify Function and Industry**
+    - Based on context, link it to its function and industry.
+    - Is it a testing tool, for human consumption, protective clothing, spare part, etc.?
+    - Which industry: medical, agriculture, transport, electronics, etc.?
+    - This helps narrow down the relevant HS Code chapters.
+
+    **Step 4: Match to HS Code**
+    - Match your analysis to the provided HS Code list hierarchically (from section to chapter to heading to subheading).
+    - If an HS Code description closely matches the item's function/category, mark it as a candidate.
+    - Example:
+        - Item = SAPI
+        - Function = Live animal, bovine cattle
+        - Match to HS Code: '010200' – "Binatang hidup jenis lembu"
+    - You MUST choose a code from the provided list. Do not use external knowledge for the final code. If no code in the list is a reasonable match, you MUST use "000000 - Barang".
+
+    **Step 5: Adjust Based on Details**
+    - If the user provides details like units (pcs, box), purpose (research, diagnostic), brand, or model, use them to refine the classification.
+
+3.  **Provide Structured Indonesian Output:**
+    - Your entire analysis and final output must be in Indonesian.
 
 **User Corrections (JSON Format, Highest Priority):**
+\`\`\`json
 {{{corrections}}}
+\`\`\`
 
 **User's Product Name:**
 {{{productName}}}
 
 **Mandatory List of HS Codes and Descriptions (Format: 'CODE - Description'):**
 {{{hsCodes}}}
-
-**Your Output (must be in Indonesian):**
 `,
 });
 
