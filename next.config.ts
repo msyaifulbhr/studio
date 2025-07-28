@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Make the API key available on the client-side for the warning message.
+  // This does NOT expose the key itself, only whether it has been set.
+  env: {
+    NEXT_PUBLIC_API_KEY_CONFIGURED: (!!process.env.GEMINI_API_KEY).toString(),
+  }
 };
 
 export default nextConfig;

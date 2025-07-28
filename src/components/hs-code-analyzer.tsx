@@ -1,11 +1,11 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, ThumbsUp, ThumbsDown, BookCopy, LayoutGrid, List } from "lucide-react";
+import { Loader2, Wand2, ThumbsUp, ThumbsDown, BookCopy, LayoutGrid, List, AlertTriangle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -37,6 +37,7 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import {
   Table,
   TableBody,
@@ -63,6 +64,12 @@ interface ResultWithOriginal extends ClassifyProductOutput {
     feedbackGiven?: boolean;
 }
 
+// A simple check to see if we're likely using a user-provided API key.
+// IMPORTANT: This is a client-side check and should not be used for security.
+// It's only for displaying a helpful notice to the user.
+const isApiKeyLikelySet = !!process.env.NEXT_PUBLIC_GEMINI_API_KEY_IS_SET;
+
+
 export function HsCodeAnalyzer() {
   const [results, setResults] = useState<ResultWithOriginal[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -71,6 +78,22 @@ export function HsCodeAnalyzer() {
   const [currentItemForFeedback, setCurrentItemForFeedback] = useState<ResultWithOriginal | null>(null);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [viewMode, setViewMode] = useState("card");
+  const [showApiKeyWarning, setShowApiKeyWarning] = useState(false);
+
+  useEffect(() => {
+    // Check on the client-side if the API key environment variable is missing
+    // Note: We can't access process.env directly on the client, so we'd need to expose it
+    // via next.config.js if we wanted to be more direct. For now, we'll assume if it's
+    // not explicitly set as a public var, it's missing.
+    // A simple proxy for this is to check a variable we *can* set.
+    const keyIsSet = process.env.NEXT_PUBLIC_API_KEY_CONFIGURED === 'true';
+    if (!keyIsSet) {
+       // A simple client-side check to see if the key is missing.
+       // This relies on a placeholder env var NEXT_PUBLIC_API_KEY_CONFIGURED.
+       // The build process should set this to 'true' if the real key is present.
+       setShowApiKeyWarning(true);
+    }
+  }, []);
 
 
   const { toast } = useToast();
@@ -114,7 +137,7 @@ export function HsCodeAnalyzer() {
         if (error.message && error.message.includes("429 Too Many Requests")) {
             toast({
                 title: "Batas Penggunaan Tercapai",
-                description: "Anda telah melebihi kuota permintaan API untuk hari ini. Silakan coba lagi besok.",
+                description: "Anda telah melebihi kuota permintaan API. Harap periksa paket dan detail penagihan Anda, atau coba lagi nanti.",
                 variant: "destructive",
             });
         } else {
@@ -205,6 +228,17 @@ export function HsCodeAnalyzer() {
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col gap-8">
         <HsCodeViewer open={isViewerOpen} onOpenChange={setIsViewerOpen} />
+        
+        {showApiKeyWarning && (
+          <Alert variant="destructive">
+            <AlertTriangle className="h-4 w-4" />
+            <AlertTitle>API Key Belum Dikonfigurasi</AlertTitle>
+            <AlertDescription>
+              Aplikasi ini tampaknya menggunakan kuota gratis. Untuk menghindari batasan, harap atur `GEMINI_API_KEY` Anda di file `.env`. Lihat `README.md` untuk detailnya.
+            </AlertDescription>
+          </Alert>
+        )}
+
         <Card className="shadow-lg rounded-2xl">
             <CardHeader>
                 <div className="flex items-center justify-between gap-4">
