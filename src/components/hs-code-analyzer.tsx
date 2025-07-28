@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, ThumbsUp, ThumbsDown } from "lucide-react";
+import { Loader2, Wand2, ThumbsUp, ThumbsDown, BookCopy } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -40,6 +40,8 @@ import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
 import { saveCorrection } from "@/ai/flows/save-correction";
 import hsCodesData from "@/data/hs-codes.json";
+import { HsCodeViewer } from "./hs-code-viewer";
+
 
 const formSchema = z.object({
   productName: z.string().min(2, {
@@ -58,6 +60,7 @@ export function HsCodeAnalyzer() {
   const [showFeedbackDialog, setShowFeedbackDialog] = useState(false);
   const [correctHsCode, setCorrectHsCode] = useState('');
   const [currentItemForFeedback, setCurrentItemForFeedback] = useState<ResultWithOriginal | null>(null);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   const { toast } = useToast();
 
@@ -182,16 +185,23 @@ export function HsCodeAnalyzer() {
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col gap-8">
+        <HsCodeViewer open={isViewerOpen} onOpenChange={setIsViewerOpen} />
         <Card className="shadow-lg rounded-2xl">
             <CardHeader>
-                <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                        <Wand2 className="h-8 w-8 text-primary"/>
+                <div className="flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                        <div className="p-3 bg-primary/10 rounded-lg">
+                            <Wand2 className="h-8 w-8 text-primary"/>
+                        </div>
+                        <div>
+                            <CardTitle className="text-3xl font-headline">Cari Kode HS</CardTitle>
+                            <CardDescription className="mt-1">Masukkan satu atau lebih nama barang (pisahkan dengan titik koma) untuk diklasifikasikan</CardDescription>
+                        </div>
                     </div>
-                    <div>
-                        <CardTitle className="text-3xl font-headline">Cari Kode HS</CardTitle>
-                        <CardDescription className="mt-1">Masukkan satu atau lebih nama barang (pisahkan dengan titik koma) untuk diklasifikasikan</CardDescription>
-                    </div>
+                     <Button variant="outline" onClick={() => setIsViewerOpen(true)}>
+                        <BookCopy className="mr-2 h-4 w-4" />
+                        Lihat Daftar Kode
+                    </Button>
                 </div>
             </CardHeader>
             <CardContent>
@@ -303,3 +313,5 @@ export function HsCodeAnalyzer() {
     </div>
   );
 }
+
+    
