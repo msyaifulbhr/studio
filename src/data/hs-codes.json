@@ -1,0 +1,22 @@
+[
+  {
+    "code": "000000",
+    "description": "Barang"
+  },
+  {
+    "code": "010000",
+    "description": "Binatang hidup"
+  },
+  {
+    "code": "010100",
+    "description": "Kuda, keledai, bagal dan hinnie, hidup"
+  },
+  {
+    "code": "010200",
+    "description": "Binatang hidup jenis lembu"
+  },
+  {
+    "code": "010300",
+    "description": "Babi hidup"
+  }
+]

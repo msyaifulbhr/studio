@@ -59,28 +59,12 @@ const classifyProductFlow = ai.defineFlow(
     outputSchema: ClassifyProductOutputSchema,
   },
   async input => {
-    const hsCodesPath = path.join(process.cwd(), 'src', 'data', 'hs-codes.csv');
-    const hsCodesCsv = await fs.readFile(hsCodesPath, 'utf-8');
+    const hsCodesPath = path.join(process.cwd(), 'src', 'data', 'hs-codes.json');
+    const hsCodesJson = await fs.readFile(hsCodesPath, 'utf-8');
+    const hsCodesData: { code: string; description: string }[] = JSON.parse(hsCodesJson);
     
-    // Process CSV to create 'CODE - Description' format
-    const processedHsCodes = hsCodesCsv
-      .split('\n')
-      .slice(1) // Skip header row
-      .map(row => {
-        const columns = row.split(',');
-        if (columns.length >= 6) {
-          const section = columns[1].replace(/"/g, '').trim();
-          const chapter = columns[2].replace(/"/g, '').trim();
-          const group = columns[3].replace(/"/g, '').trim();
-          const description = columns[5].replace(/"/g, '').trim();
-          if (section && chapter && group && description) {
-            const combinedCode = `${section}${chapter}${group}`;
-            return `${combinedCode} - ${description}`;
-          }
-        }
-        return '';
-      })
-      .filter(Boolean) // Remove empty lines
+    const processedHsCodes = hsCodesData
+      .map(item => `${item.code} - ${item.description}`)
       .join('\n');
 
     const {output} = await prompt({
