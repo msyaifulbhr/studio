@@ -74,6 +74,7 @@ export function HsCodeAnalyzer() {
   const [viewMode, setViewMode] = useState("card");
   const [showApiKeyWarning, setShowApiKeyWarning] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const [rateLimitCooldown, setRateLimitCooldown] = useState(0);
 
   useEffect(() => {
     setIsClient(true);
@@ -83,6 +84,15 @@ export function HsCodeAnalyzer() {
        setShowApiKeyWarning(true);
     }
   }, []);
+
+  useEffect(() => {
+    if (rateLimitCooldown > 0) {
+      const timer = setTimeout(() => {
+        setRateLimitCooldown(rateLimitCooldown - 1);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [rateLimitCooldown]);
 
 
   const { toast } = useToast();
@@ -126,9 +136,10 @@ export function HsCodeAnalyzer() {
         if (error.message && (error.message.includes("429 Too Many Requests") || error.message.includes("You exceeded your current quota"))) {
             toast({
                 title: "Batas Penggunaan Tercapai",
-                description: "Anda telah melebihi kuota permintaan API. Harap periksa paket dan detail penagihan Anda, atau coba lagi nanti.",
+                description: "Anda telah melebihi kuota permintaan API. Silakan coba lagi sebentar.",
                 variant: "destructive",
             });
+            setRateLimitCooldown(60); // Start 60-second cooldown
         } else {
             toast({
                 title: "Kesalahan",
@@ -214,6 +225,8 @@ export function HsCodeAnalyzer() {
     }
   };
 
+  const isButtonDisabled = isLoading || rateLimitCooldown > 0;
+
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col gap-8">
         <HsCodeViewer open={isViewerOpen} onOpenChange={setIsViewerOpen} />
@@ -262,16 +275,23 @@ export function HsCodeAnalyzer() {
                         </FormItem>
                     )}
                     />
-                    <Button type="submit" disabled={isLoading} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base py-6 rounded-lg">
-                    {isLoading ? (
-                        <>
-                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                        Menganalisis...
-                        </>
-                    ) : (
-                        "Cari Kode"
-                    )}
-                    </Button>
+                    <div className="flex flex-col items-center">
+                        {rateLimitCooldown > 0 && (
+                            <div className="text-destructive text-sm mb-2">
+                                Batas penggunaan tercapai. Coba lagi dalam {rateLimitCooldown} detik.
+                            </div>
+                        )}
+                        <Button type="submit" disabled={isButtonDisabled} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base py-6 rounded-lg">
+                        {isLoading ? (
+                            <>
+                            <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                            Menganalisis...
+                            </>
+                        ) : (
+                            "Cari Kode"
+                        )}
+                        </Button>
+                    </div>
                 </form>
             </Form>
             </CardContent>
@@ -395,3 +415,5 @@ export function HsCodeAnalyzer() {
     </div>
   );
 }
+
+    
