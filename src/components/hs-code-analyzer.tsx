@@ -64,12 +64,6 @@ interface ResultWithOriginal extends ClassifyProductOutput {
     feedbackGiven?: boolean;
 }
 
-// A simple check to see if we're likely using a user-provided API key.
-// IMPORTANT: This is a client-side check and should not be used for security.
-// It's only for displaying a helpful notice to the user.
-const isApiKeyLikelySet = !!process.env.NEXT_PUBLIC_GEMINI_API_KEY_IS_SET;
-
-
 export function HsCodeAnalyzer() {
   const [results, setResults] = useState<ResultWithOriginal[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -82,15 +76,8 @@ export function HsCodeAnalyzer() {
 
   useEffect(() => {
     // Check on the client-side if the API key environment variable is missing
-    // Note: We can't access process.env directly on the client, so we'd need to expose it
-    // via next.config.js if we wanted to be more direct. For now, we'll assume if it's
-    // not explicitly set as a public var, it's missing.
-    // A simple proxy for this is to check a variable we *can* set.
     const keyIsSet = process.env.NEXT_PUBLIC_API_KEY_CONFIGURED === 'true';
     if (!keyIsSet) {
-       // A simple client-side check to see if the key is missing.
-       // This relies on a placeholder env var NEXT_PUBLIC_API_KEY_CONFIGURED.
-       // The build process should set this to 'true' if the real key is present.
        setShowApiKeyWarning(true);
     }
   }, []);
@@ -134,7 +121,7 @@ export function HsCodeAnalyzer() {
 
     } catch (error: any) {
         console.error(error);
-        if (error.message && error.message.includes("429 Too Many Requests")) {
+        if (error.message && (error.message.includes("429 Too Many Requests") || error.message.includes("You exceeded your current quota"))) {
             toast({
                 title: "Batas Penggunaan Tercapai",
                 description: "Anda telah melebihi kuota permintaan API. Harap periksa paket dan detail penagihan Anda, atau coba lagi nanti.",

@@ -11,8 +11,9 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import fs from 'fs/promises';
-import path from 'path';
+import hsCodesData from '@/data/hs-codes.json';
+import correctionsData from '@/data/corrections.json';
+
 
 const ClassifyProductInputSchema = z.object({
   productName: z.string().describe('Nama barang yang akan diklasifikasikan.'),
@@ -99,23 +100,11 @@ const classifyProductFlow = ai.defineFlow(
     outputSchema: ClassifyProductOutputSchema,
   },
   async input => {
-    const hsCodesPath = path.join(process.cwd(), 'src', 'data', 'hs-codes.json');
-    const correctionsPath = path.join(process.cwd(), 'src', 'data', 'corrections.json');
-
-    const hsCodesJson = await fs.readFile(hsCodesPath, 'utf-8');
-    const hsCodesData: { code: string; description: string }[] = JSON.parse(hsCodesJson);
-    
-    let correctionsJson = '[]';
-    try {
-        await fs.access(correctionsPath);
-        correctionsJson = await fs.readFile(correctionsPath, 'utf-8');
-    } catch (error) {
-        // corrections.json might not exist yet, which is fine.
-    }
-    
     const processedHsCodes = hsCodesData
       .map(item => `${item.code} - ${item.description}`)
       .join('\n');
+    
+    const correctionsJson = JSON.stringify(correctionsData);
 
     const {output} = await prompt({
         productName: input.productName,
