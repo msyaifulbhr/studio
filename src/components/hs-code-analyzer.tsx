@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, ThumbsUp, ThumbsDown, BookCopy, LayoutGrid, List, AlertTriangle } from "lucide-react";
+import { Loader2, Wand2, BookCopy, LayoutGrid, List, AlertTriangle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -25,16 +25,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -48,8 +38,6 @@ import {
 } from "@/components/ui/table";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
-import { saveCorrection } from "@/ai/flows/save-correction";
-import hsCodesData from "@/data/hs-codes.json";
 import { HsCodeViewer } from "./hs-code-viewer";
 
 
@@ -61,15 +49,11 @@ const formSchema = z.object({
 
 interface ResultWithOriginal extends ClassifyProductOutput {
     originalProductName: string;
-    feedbackGiven?: boolean;
 }
 
 export function HsCodeAnalyzer() {
   const [results, setResults] = useState<ResultWithOriginal[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [showFeedbackDialog, setShowFeedbackDialog] = useState(false);
-  const [correctHsCode, setCorrectHsCode] = useState('');
-  const [currentItemForFeedback, setCurrentItemForFeedback] = useState<ResultWithOriginal | null>(null);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [viewMode, setViewMode] = useState("card");
   const [showApiKeyWarning, setShowApiKeyWarning] = useState(false);
@@ -78,7 +62,6 @@ export function HsCodeAnalyzer() {
 
   useEffect(() => {
     setIsClient(true);
-    // Check on the client-side if the API key environment variable is missing
     const keyIsSet = process.env.NEXT_PUBLIC_API_KEY_CONFIGURED === 'true';
     if (!keyIsSet) {
        setShowApiKeyWarning(true);
@@ -139,7 +122,7 @@ export function HsCodeAnalyzer() {
                 description: "Anda telah melebihi kuota permintaan API. Silakan coba lagi sebentar.",
                 variant: "destructive",
             });
-            setRateLimitCooldown(60); // Start 60-second cooldown
+            setRateLimitCooldown(60); 
         } else {
             toast({
                 title: "Kesalahan",
@@ -151,79 +134,6 @@ export function HsCodeAnalyzer() {
       setIsLoading(false);
     }
   }
-
-  const handleApprove = async (item: ResultWithOriginal) => {
-    try {
-      await saveCorrection({
-        productName: item.originalProductName,
-        correctHsCode: item.hsCodeAndDescription.split(' - ')[0],
-      });
-      toast({
-        title: "Terima Kasih!",
-        description: `Umpan balik untuk "${item.originalProductName}" telah disimpan.`,
-      });
-    } catch (error) {
-      console.error("Failed to save correction:", error);
-      toast({
-        title: "Kesalahan",
-        description: "Gagal menyimpan umpan balik. Silakan coba lagi.",
-        variant: "destructive",
-      });
-    }
-    
-    setResults(prev => 
-        prev!.map(r => r.originalProductName === item.originalProductName ? { ...r, feedbackGiven: true } : r)
-    );
-  };
-  
-  const handleDisapprove = (item: ResultWithOriginal) => {
-    setCurrentItemForFeedback(item);
-    setShowFeedbackDialog(true);
-  }
-
-  const handleFeedbackSubmit = async () => {
-    if (!currentItemForFeedback) return;
-
-    try {
-        await saveCorrection({
-            productName: currentItemForFeedback.originalProductName,
-            correctHsCode: correctHsCode
-        });
-
-        const correctedCodeEntry = hsCodesData.find(item => item.code === correctHsCode);
-        const correctedDescription = correctedCodeEntry ? correctedCodeEntry.description : 'Deskripsi tidak ditemukan';
-        
-        setResults(prev => 
-            prev!.map(r => {
-                if (r.originalProductName === currentItemForFeedback.originalProductName) {
-                    return {
-                        ...r,
-                        hsCodeAndDescription: `${correctHsCode} - ${correctedDescription}`,
-                        feedbackGiven: true,
-                    };
-                }
-                return r;
-            })
-        );
-
-        toast({
-            title: "Terima Kasih Atas Koreksinya!",
-            description: `Kami telah mencatat bahwa kode yang benar untuk "${currentItemForFeedback.originalProductName}" adalah ${correctHsCode}.`,
-        });
-        
-        setShowFeedbackDialog(false);
-        setCorrectHsCode('');
-        setCurrentItemForFeedback(null);
-
-    } catch (error) {
-        console.error("Failed to save correction:", error);
-        toast({
-          title: "Kesalahan",
-          description: "Gagal menyimpan koreksi Anda. Silakan coba lagi.",
-          variant: "destructive",
-        });
-    }
-  };
 
   const isButtonDisabled = isLoading || rateLimitCooldown > 0;
 
@@ -337,27 +247,6 @@ export function HsCodeAnalyzer() {
                                   <p className="text-lg font-bold text-foreground/80 mt-2">{item.hsCodeAndDescription}</p>
                               </div>
                           </CardContent>
-                          <CardFooter>
-                              {!item.feedbackGiven ? (
-                              <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 py-4 border-t">
-                                  <span className="text-sm font-medium text-muted-foreground">Apakah hasil ini sesuai?</span>
-                                  <div className="flex gap-2">
-                                      <Button variant="outline" size="lg" onClick={() => handleApprove(item)} className="gap-2">
-                                          <ThumbsUp className="h-5 w-5 text-green-500"/>
-                                          <span>Setuju</span>
-                                      </Button>
-                                      <Button variant="outline" size="lg" onClick={() => handleDisapprove(item)} className="gap-2">
-                                          <ThumbsDown className="h-5 w-5 text-red-500"/>
-                                          <span>Tidak Setuju</span>
-                                      </Button>
-                                  </div>
-                              </div>
-                              ) : (
-                                  <div className="w-full text-center text-green-600 font-medium py-4 border-t">
-                                      <p>Terima kasih atas masukan Anda!</p>
-                                  </div>
-                              )}
-                          </CardFooter>
                       </Card>
                   ))}
               </div>
@@ -390,30 +279,6 @@ export function HsCodeAnalyzer() {
             </TabsContent>
           </Tabs>
         )}
-        
-        <AlertDialog open={showFeedbackDialog} onOpenChange={setShowFeedbackDialog}>
-            <AlertDialogContent>
-            <AlertDialogHeader>
-                <AlertDialogTitle>Bantu kami belajar</AlertDialogTitle>
-                <AlertDialogDescription>
-                Hasil untuk <span className="font-semibold">{currentItemForFeedback?.originalProductName}</span> tidak sesuai. Mohon masukkan Kode HS yang benar.
-                </AlertDialogDescription>
-            </AlertDialogHeader>
-            <div className="py-4">
-                <Input 
-                placeholder="Masukkan Kode HS yang benar (contoh: 010200)"
-                value={correctHsCode}
-                onChange={(e) => setCorrectHsCode(e.target.value)}
-                />
-            </div>
-            <AlertDialogFooter>
-                <AlertDialogCancel onClick={() => setCorrectHsCode('')}>Batal</AlertDialogCancel>
-                <AlertDialogAction onClick={handleFeedbackSubmit} disabled={!correctHsCode || correctHsCode.length < 6}>Kirim</AlertDialogAction>
-            </AlertDialogFooter>
-            </AlertDialogContent>
-        </AlertDialog>
     </div>
   );
 }
-
-    
