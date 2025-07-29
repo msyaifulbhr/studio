@@ -11,6 +11,7 @@ import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import fs from 'fs/promises';
 import path from 'path';
+import correctionsData from '@/data/corrections.json';
 
 const CorrectionInputSchema = z.object({
   productName: z.string().describe('The original product name entered by the user.'),
@@ -35,18 +36,7 @@ const saveCorrectionFlow = ai.defineFlow(
   },
   async (input) => {
     const correctionsPath = path.join(process.cwd(), 'src', 'data', 'corrections.json');
-    let corrections: CorrectionEntry[] = [];
-
-    try {
-      // Check if file exists before reading
-      await fs.access(correctionsPath);
-      const correctionsJson = await fs.readFile(correctionsPath, 'utf-8');
-      if (correctionsJson) {
-        corrections = JSON.parse(correctionsJson);
-      }
-    } catch (error) {
-      // File doesn't exist, it will be created.
-    }
+    let corrections: CorrectionEntry[] = [...correctionsData];
 
     // Avoid duplicates: if a correction for this product already exists, update it.
     const existingIndex = corrections.findIndex(c => c.productName.toLowerCase() === input.productName.toLowerCase());
