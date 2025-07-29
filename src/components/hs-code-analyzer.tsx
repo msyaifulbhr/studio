@@ -73,8 +73,10 @@ export function HsCodeAnalyzer() {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [viewMode, setViewMode] = useState("card");
   const [showApiKeyWarning, setShowApiKeyWarning] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     // Check on the client-side if the API key environment variable is missing
     const keyIsSet = process.env.NEXT_PUBLIC_API_KEY_CONFIGURED === 'true';
     if (!keyIsSet) {
@@ -216,7 +218,7 @@ export function HsCodeAnalyzer() {
     <div className="w-full max-w-2xl mx-auto flex flex-col gap-8">
         <HsCodeViewer open={isViewerOpen} onOpenChange={setIsViewerOpen} />
         
-        {showApiKeyWarning && (
+        {isClient && showApiKeyWarning && (
           <Alert variant="destructive">
             <AlertTriangle className="h-4 w-4" />
             <AlertTitle>API Key Belum Dikonfigurasi</AlertTitle>
