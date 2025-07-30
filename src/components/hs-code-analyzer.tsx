@@ -1,11 +1,11 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, BookCopy, LayoutGrid, List, AlertTriangle } from "lucide-react";
+import { Loader2, Wand2, BookCopy, ThumbsUp, ThumbsDown, AlertTriangle, Send } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -26,26 +26,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
 import { HsCodeViewer } from "./hs-code-viewer";
-
 
 const formSchema = z.object({
   productName: z.string().min(2, {
     message: "Nama barang harus minimal 2 karakter.",
   }),
 });
+
+interface Correction {
+    productName: string;
+    correctHsCode: string;
+}
 
 interface ResultWithOriginal extends ClassifyProductOutput {
     originalProductName: string;
@@ -58,6 +53,16 @@ export function HsCodeAnalyzer() {
   const [showApiKeyWarning, setShowApiKeyWarning] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [rateLimitCooldown, setRateLimitCooldown] = useState(0);
+
+  const [correctionInput, setCorrectionInput] = useState<string>('');
+  const [editingCorrectionIndex, setEditingCorrectionIndex] = useState<number | null>(null);
+  const [feedbackGiven, setFeedbackGiven] = useState<{[key: number]: 'agreed' | 'disagreed'}>({});
+
+  const getCorrectionsFromLocalStorage = useCallback((): Correction[] => {
+    if (!isClient) return [];
+    const correctionsJson = localStorage.getItem('hs-code-corrections');
+    return correctionsJson ? JSON.parse(correctionsJson) : [];
+  }, [isClient]);
 
   useEffect(() => {
     setIsClient(true);
@@ -76,7 +81,6 @@ export function HsCodeAnalyzer() {
     }
   }, [rateLimitCooldown]);
 
-
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -89,7 +93,9 @@ export function HsCodeAnalyzer() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsLoading(true);
     setResults(null);
-    
+    setFeedbackGiven({});
+    setEditingCorrectionIndex(null);
+
     const productNames = values.productName.split(';').map(name => name.trim()).filter(name => name.length > 1);
 
     if (productNames.length === 0) {
@@ -103,8 +109,9 @@ export function HsCodeAnalyzer() {
     }
 
     try {
+      const corrections = getCorrectionsFromLocalStorage();
       const classificationPromises = productNames.map(name => 
-        classifyProduct({ productName: name }).then(result => ({
+        classifyProduct({ productName: name, userCorrections: corrections }).then(result => ({
             ...result,
             originalProductName: name,
         }))
@@ -133,6 +140,60 @@ export function HsCodeAnalyzer() {
       setIsLoading(false);
     }
   }
+
+  const handleAgreement = (index: number, productName: string, hsCode: string) => {
+    const newCorrection: Correction = { productName: productName, correctHsCode: hsCode.split(' - ')[0] };
+    const corrections = getCorrectionsFromLocalStorage();
+    
+    const existingIndex = corrections.findIndex(c => c.productName.toLowerCase() === productName.toLowerCase());
+    if (existingIndex > -1) {
+        corrections[existingIndex] = newCorrection;
+    } else {
+        corrections.push(newCorrection);
+    }
+    
+    localStorage.setItem('hs-code-corrections', JSON.stringify(corrections));
+    setFeedbackGiven(prev => ({...prev, [index]: 'agreed'}));
+    setEditingCorrectionIndex(null);
+    toast({
+        title: "Terima kasih!",
+        description: `Koreksi untuk "${productName}" telah disimpan.`,
+    });
+  };
+
+  const handleDisagreement = (index: number) => {
+    setEditingCorrectionIndex(index);
+    setCorrectionInput('');
+    setFeedbackGiven(prev => ({...prev, [index]: 'disagreed'}));
+  };
+
+  const handleSaveCorrection = (index: number, productName: string) => {
+    if (!/^\d{6}$/.test(correctionInput)) {
+        toast({
+            title: "Format Kode HS Salah",
+            description: "Silakan masukkan kode HS 6-digit yang valid.",
+            variant: "destructive",
+        });
+        return;
+    }
+    
+    const newCorrection: Correction = { productName: productName, correctHsCode: correctionInput };
+    const corrections = getCorrectionsFromLocalStorage();
+
+    const existingIndex = corrections.findIndex(c => c.productName.toLowerCase() === productName.toLowerCase());
+    if (existingIndex > -1) {
+        corrections[existingIndex] = newCorrection;
+    } else {
+        corrections.push(newCorrection);
+    }
+
+    localStorage.setItem('hs-code-corrections', JSON.stringify(corrections));
+    setEditingCorrectionIndex(null);
+    toast({
+        title: "Terima kasih!",
+        description: `Koreksi Anda untuk "${productName}" telah disimpan.`,
+    });
+  };
 
   const isButtonDisabled = isLoading || rateLimitCooldown > 0;
 
@@ -236,6 +297,47 @@ export function HsCodeAnalyzer() {
                                   <p className="text-lg font-bold text-foreground/80 mt-2">{item.hsCodeAndDescription}</p>
                               </div>
                           </CardContent>
+                          <CardFooter className="flex-col items-start gap-4">
+                            <div className="w-full">
+                              <h4 className="text-sm font-semibold uppercase text-muted-foreground tracking-wider mb-2">Apakah hasil ini benar?</h4>
+                              {editingCorrectionIndex !== index ? (
+                                <div className="flex items-center gap-2">
+                                  <Button 
+                                    variant={feedbackGiven[index] === 'agreed' ? 'default' : 'outline'}
+                                    onClick={() => handleAgreement(index, item.originalProductName, hsCode)}
+                                    disabled={!!feedbackGiven[index]}
+                                  >
+                                    <ThumbsUp className="mr-2 h-4 w-4" /> Setuju
+                                  </Button>
+                                  <Button 
+                                    variant={feedbackGiven[index] === 'disagreed' ? 'destructive' : 'outline'}
+                                    onClick={() => handleDisagreement(index)}
+                                    disabled={!!feedbackGiven[index]}
+                                  >
+                                    <ThumbsDown className="mr-2 h-4 w-4" /> Tidak Setuju
+                                  </Button>
+                                  {feedbackGiven[index] && <p className="text-sm text-muted-foreground ml-4">Terima kasih atas umpan baliknya!</p>}
+                                </div>
+                              ) : (
+                                <div className="w-full space-y-2">
+                                  <p className="text-sm text-foreground">Masukkan kode HS 6-digit yang benar:</p>
+                                  <div className="flex items-center gap-2">
+                                    <Input 
+                                      placeholder="Contoh: 870300" 
+                                      value={correctionInput}
+                                      onChange={(e) => setCorrectionInput(e.target.value)}
+                                      className="max-w-xs"
+                                      maxLength={6}
+                                    />
+                                    <Button onClick={() => handleSaveCorrection(index, item.originalProductName)}>
+                                        <Send className="mr-2 h-4 w-4" /> Kirim Koreksi
+                                    </Button>
+                                    <Button variant="ghost" onClick={() => setEditingCorrectionIndex(null)}>Batal</Button>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          </CardFooter>
                       </Card>
                   )
               })}

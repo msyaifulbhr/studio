@@ -7,10 +7,15 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 import hsCodesData from '@/data/hs-codes.json';
-import correctionsData from '@/data/corrections.json';
+
+const CorrectionSchema = z.object({
+  productName: z.string(),
+  correctHsCode: z.string(),
+});
 
 const ClassifyProductInputSchema = z.object({
   productName: z.string().describe('Nama barang yang akan diklasifikasikan.'),
+  userCorrections: z.array(CorrectionSchema).describe('Koreksi yang diberikan pengguna dari Local Storage.'),
 });
 export type ClassifyProductInput = z.infer<typeof ClassifyProductInputSchema>;
 
@@ -98,7 +103,7 @@ const classifyProductFlow = ai.defineFlow(
       .map(item => `${item.code} - ${item.description}`)
       .join('\n');
     
-    const correctionsJson = JSON.stringify(correctionsData);
+    const correctionsJson = JSON.stringify(input.userCorrections);
 
     const {output} = await prompt({
         productName: input.productName,
