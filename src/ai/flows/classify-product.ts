@@ -2,30 +2,12 @@
 
 /**
  * @fileOverview Classifies a product name into the most appropriate HS Code.
- * It consults user-generated corrections from Firestore to improve accuracy.
  */
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 import hsCodesData from '@/data/hs-codes.json';
-import { getFirestore } from 'firebase-admin/firestore';
-import {initializeApp, getApps, cert} from 'firebase-admin/app';
-
-// Initialize Firebase Admin SDK
-if (!getApps().length) {
-  if (process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
-    const serviceAccount = JSON.parse(
-      Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT_KEY, 'base64').toString('utf-8')
-    );
-    initializeApp({
-      credential: cert(serviceAccount),
-    });
-  } else if (!process.env.VERCEL) {
-    // For local development, you can use Application Default Credentials.
-    // Ensure you've run `gcloud auth application-default login`.
-    initializeApp();
-  }
-}
+import correctionsData from '@/data/corrections.json';
 
 const ClassifyProductInputSchema = z.object({
   productName: z.string().describe('Nama barang yang akan diklasifikasikan.'),
@@ -105,19 +87,6 @@ const prompt = ai.definePrompt({
 `,
 });
 
-async function getCorrectionsFromFirestore() {
-  if (!getApps().length) {
-    console.log("Firebase not initialized, skipping Firestore read.");
-    return [];
-  }
-  const db = getFirestore();
-  const correctionsSnapshot = await db.collection('hs_code_corrections').where('feedback', '==', 'agree').get();
-  if (correctionsSnapshot.empty) {
-    return [];
-  }
-  return correctionsSnapshot.docs.map(doc => doc.data());
-}
-
 const classifyProductFlow = ai.defineFlow(
   {
     name: 'classifyProductFlow',
@@ -129,7 +98,6 @@ const classifyProductFlow = ai.defineFlow(
       .map(item => `${item.code} - ${item.description}`)
       .join('\n');
     
-    const correctionsData = await getCorrectionsFromFirestore();
     const correctionsJson = JSON.stringify(correctionsData);
 
     const {output} = await prompt({
