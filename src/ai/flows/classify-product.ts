@@ -1,19 +1,31 @@
 'use server';
 
 /**
- * @fileOverview Classifies a product name into the most appropriate HS Code and description using the Gemini API.
- * It now consults a user-generated corrections file to improve accuracy over time.
- *
- * - classifyProduct - A function that handles the product classification process.
- * - ClassifyProductInput - The input type for the classifyProduct function.
- * - ClassifyProductOutput - The return type for the classifyProduct function.
+ * @fileOverview Classifies a product name into the most appropriate HS Code.
+ * It consults user-generated corrections from Firestore to improve accuracy.
  */
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 import hsCodesData from '@/data/hs-codes.json';
-import correctionsData from '@/data/corrections.json';
+import { getFirestore } from 'firebase-admin/firestore';
+import {initializeApp, getApps, cert} from 'firebase-admin/app';
 
+// Initialize Firebase Admin SDK
+if (!getApps().length) {
+  if (process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
+    const serviceAccount = JSON.parse(
+      Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT_KEY, 'base64').toString('utf-8')
+    );
+    initializeApp({
+      credential: cert(serviceAccount),
+    });
+  } else if (!process.env.VERCEL) {
+    // For local development, you can use Application Default Credentials.
+    // Ensure you've run `gcloud auth application-default login`.
+    initializeApp();
+  }
+}
 
 const ClassifyProductInputSchema = z.object({
   productName: z.string().describe('Nama barang yang akan diklasifikasikan.'),
@@ -22,7 +34,7 @@ export type ClassifyProductInput = z.infer<typeof ClassifyProductInputSchema>;
 
 const ClassifyProductOutputSchema = z.object({
   analysisText: z.string().describe('Analisis klasifikasi barang dalam Bahasa Indonesia.'),
-  hsCodeAndDescription: z.string().describe('Kode HS 6-digit dan deskripsi yang digabungkan untuk barang. e.g. "382200 - Reagen diagnosa atau laboratorium pada bahan pendukung, olahan reagen diagnosa atau laboratorium pada bahan pendukung maupun tidak, disiapkan dalam bentuk kit maupun tidak, selain yang dimaksud dalam pos 30.06； bahan referensi bersertifikat."'),
+  hsCodeAndDescription: z.string().describe('Kode HS 6-digit dan deskripsi yang digabungkan untuk barang. e.g. "382200 - Reagen diagnosa atau laboratorium..."'),
 });
 export type ClassifyProductOutput = z.infer<typeof ClassifyProductOutputSchema>;
 
@@ -93,17 +105,31 @@ const prompt = ai.definePrompt({
 `,
 });
 
+async function getCorrectionsFromFirestore() {
+  if (!getApps().length) {
+    console.log("Firebase not initialized, skipping Firestore read.");
+    return [];
+  }
+  const db = getFirestore();
+  const correctionsSnapshot = await db.collection('hs_code_corrections').where('feedback', '==', 'agree').get();
+  if (correctionsSnapshot.empty) {
+    return [];
+  }
+  return correctionsSnapshot.docs.map(doc => doc.data());
+}
+
 const classifyProductFlow = ai.defineFlow(
   {
     name: 'classifyProductFlow',
     inputSchema: ClassifyProductInputSchema,
     outputSchema: ClassifyProductOutputSchema,
   },
-  async input => {
+  async (input) => {
     const processedHsCodes = hsCodesData
       .map(item => `${item.code} - ${item.description}`)
       .join('\n');
     
+    const correctionsData = await getCorrectionsFromFirestore();
     const correctionsJson = JSON.stringify(correctionsData);
 
     const {output} = await prompt({

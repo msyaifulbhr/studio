@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Loader2, Wand2, BookCopy, LayoutGrid, List, AlertTriangle } from "lucide-react";
+import { Loader2, Wand2, BookCopy, LayoutGrid, List, AlertTriangle, ThumbsUp, ThumbsDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -38,7 +38,14 @@ import {
 } from "@/components/ui/table";
 import { useToast } from "@/hooks/use-toast";
 import { classifyProduct, type ClassifyProductOutput } from "@/ai/flows/classify-product";
+import { saveCorrection } from "@/ai/flows/save-correction";
 import { HsCodeViewer } from "./hs-code-viewer";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 
 const formSchema = z.object({
@@ -55,7 +62,6 @@ export function HsCodeAnalyzer() {
   const [results, setResults] = useState<ResultWithOriginal[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const [viewMode, setViewMode] = useState("card");
   const [showApiKeyWarning, setShowApiKeyWarning] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [rateLimitCooldown, setRateLimitCooldown] = useState(0);
@@ -134,6 +140,24 @@ export function HsCodeAnalyzer() {
       setIsLoading(false);
     }
   }
+
+  const handleFeedback = async (productName: string, correctHsCode: string, feedback: 'agree' | 'disagree') => {
+    try {
+      await saveCorrection({ productName, correctHsCode, feedback });
+      toast({
+        title: "Umpan Balik Terkirim",
+        description: "Terima kasih atas masukan Anda!",
+      });
+    } catch (error) {
+      console.error("Failed to save correction:", error);
+      toast({
+        title: "Gagal Menyimpan Umpan Balik",
+        description: "Terjadi kesalahan saat menyimpan masukan Anda. Silakan coba lagi.",
+        variant: "destructive",
+      });
+    }
+  };
+
 
   const isButtonDisabled = isLoading || rateLimitCooldown > 0;
 
@@ -216,20 +240,10 @@ export function HsCodeAnalyzer() {
         )}
 
         {results && !isLoading && results.length > 0 && (
-          <Tabs defaultValue="card" className="w-full">
-            <div className="flex justify-center">
-              <TabsList>
-                <TabsTrigger value="card" aria-label="Tampilan Kartu">
-                  <LayoutGrid className="h-5 w-5" />
-                </TabsTrigger>
-                <TabsTrigger value="table" aria-label="Tampilan Tabel">
-                  <List className="h-5 w-5" />
-                </TabsTrigger>
-              </TabsList>
-            </div>
-            <TabsContent value="card">
-              <div className="space-y-4 mt-4">
-                  {results.map((item, index) => (
+          <div className="space-y-4 mt-4">
+              {results.map((item, index) => {
+                  const hsCode = item.hsCodeAndDescription.split(' - ')[0];
+                  return (
                       <Card key={index} className="shadow-lg rounded-2xl animate-in fade-in-50">
                           <CardHeader>
                               <CardTitle className="text-xl font-headline">
@@ -247,37 +261,34 @@ export function HsCodeAnalyzer() {
                                   <p className="text-lg font-bold text-foreground/80 mt-2">{item.hsCodeAndDescription}</p>
                               </div>
                           </CardContent>
+                          <CardFooter className="flex justify-end gap-2">
+                              <TooltipProvider>
+                                <Tooltip>
+                                  <TooltipTrigger asChild>
+                                    <Button variant="outline" size="icon" onClick={() => handleFeedback(item.originalProductName, hsCode, 'agree')}>
+                                        <ThumbsUp className="h-4 w-4 text-green-500"/>
+                                    </Button>
+                                  </TooltipTrigger>
+                                  <TooltipContent>
+                                    <p>Setuju dengan hasil ini</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                                <Tooltip>
+                                  <TooltipTrigger asChild>
+                                     <Button variant="outline" size="icon" onClick={() => handleFeedback(item.originalProductName, hsCode, 'disagree')}>
+                                        <ThumbsDown className="h-4 w-4 text-red-500"/>
+                                    </Button>
+                                  </TooltipTrigger>
+                                  <TooltipContent>
+                                    <p>Tidak setuju dengan hasil ini</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+                          </CardFooter>
                       </Card>
-                  ))}
-              </div>
-            </TabsContent>
-            <TabsContent value="table">
-                <Card className="mt-4 shadow-lg rounded-2xl">
-                    <Table>
-                        <TableHeader>
-                            <TableRow>
-                                <TableHead className="font-bold">Nama Barang</TableHead>
-                                <TableHead className="font-bold">Kode HS</TableHead>
-                                <TableHead className="font-bold">Deskripsi</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {results.map((item, index) => {
-                                const [hsCode, ...descriptionParts] = item.hsCodeAndDescription.split(' - ');
-                                const description = descriptionParts.join(' - ');
-                                return (
-                                    <TableRow key={index}>
-                                        <TableCell>{item.originalProductName}</TableCell>
-                                        <TableCell className="font-mono">{hsCode}</TableCell>
-                                        <TableCell>{description}</TableCell>
-                                    </TableRow>
-                                );
-                            })}
-                        </TableBody>
-                    </Table>
-                </Card>
-            </TabsContent>
-          </Tabs>
+                  )
+              })}
+          </div>
         )}
     </div>
   );
