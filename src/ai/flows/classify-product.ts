@@ -38,7 +38,7 @@ const prompt = ai.definePrompt({
 1.  **Analisis Nama Produk**: Fokus pada nama produk yang diberikan. Gunakan pemahaman Anda tentang terminologi umum untuk mengidentifikasi fungsi, bahan, atau kategori utama produk tersebut.
 2.  **Prioritaskan Kode HS Utama**: Pertama, coba cocokkan produk dengan daftar **Kode HS Prioritas** yang disediakan. Jika Anda menemukan kecocokan yang kuat di sini, gunakan kode tersebut.
 3.  **Gunakan Daftar Lengkap Jika Perlu**: Jika tidak ada kecocokan yang memuaskan dari daftar prioritas, barulah cari dari **Daftar Lengkap Kode HS**.
-4.  **Output Analisis**: Berikan 'analysisText' yang singkat dan jelas yang menjelaskan dasar pemikiran Anda dalam memilih kode tersebut, termasuk menyebutkan jika kode dipilih dari daftar prioritas.
+4.  **Output Analisis**: Berikan 'analysisText' yang informatif. Jelaskan kategori umum produk, alasan logis mengapa produk tersebut masuk ke dalam Kode HS yang Anda pilih, dan sebutkan jika kode tersebut dipilih dari daftar prioritas.
 5.  **Output Kode HS**: Sediakan 'hsCodeAndDescription' dalam format 'KODE - Deskripsi'. Jika sama sekali tidak ada kode yang cocok, gunakan "000000 - Barang".
 
 **Nama Produk Pengguna:**
