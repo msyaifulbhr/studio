@@ -171,7 +171,7 @@ export function HsCodeAnalyzer() {
                             <FormItem>
                             <FormLabel className="text-base">Nama Barang</FormLabel>
                             <FormControl>
-                                <Textarea className="py-3 text-base" placeholder="misalnya, sapi hidup; komputer; sarung tangan (pisahkan dengan titik koma jika lebih dari satu)" {...field} />
+                                <Textarea className="py-3 text-base" placeholder="Misalnya DI RPR; I-SPOT.TB (pisahkan dengan titik koma jika lebih dari satu)" {...field} />
                             </FormControl>
                             <FormMessage />
                             </FormItem>
